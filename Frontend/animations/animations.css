@@ -1,0 +1,45 @@
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 50px auto;
+    font-family:sans-serif;
+}
+.box:hover{
+    transform: scale(1.5);
+    background-color: #2ecc71;
+}
+@keyframes dhairya{
+    0%{
+                top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 200px;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+        
+    }
+    75%{
+        top: 200px;
+        left: 0;
+    }
+    100%{
+  top: 0;
+  left: 0;
+    }
+}
+.box{
+        position: relative;
+        animation: dhairya 5s linear infinite;
+}
+
