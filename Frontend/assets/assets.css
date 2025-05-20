@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+ 
+    text-align: center;
+    padding: 20px;
+    color:#f65;
+}
+h1 {
+     font-family: "Abril Fatface";
+}
+h2{
+font-family:Exile;
+}
+h3{
+font-family:Poetsen One;
+}
+h4{
+font-family: Inconsolata;
+}
+h5{
+font-family: Bebas Neue;
+}
+p{
+font-family: Dancing Script;
+}
+b{
+font-family: Jaro;
+}
+i{
+font-family: Caveat;
+}
+.sahil{
+font-family: Shadows Into Light;
+}
+.agrawal{
+font-family: Satisfy;
+}
+
+
