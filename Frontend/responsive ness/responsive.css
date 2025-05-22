@@ -1,1 +1,33 @@
-/* this is going to be my css file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    line-height:1.6;
+}
+
+header,footer {
+    background-color:#333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+.main1{
+    display:flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #3498db;
+    color: white;
+    padding: 40px;
+    flex: 300px;
+    text-align: center;
+    border-radius: 10px;
+
+}
