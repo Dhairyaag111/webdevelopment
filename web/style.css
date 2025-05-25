@@ -19,14 +19,16 @@ footer {
     flex: 300px;
     text-align: center;
 }
-.hello{
-    display:flex;
+
+.hello {
+    display: flex;
     gap: 60px;
     padding: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
-iframe{
+
+iframe {
     width: 300px;
     height: 260px;
 }
