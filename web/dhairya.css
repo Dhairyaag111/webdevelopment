@@ -1,0 +1,35 @@
+
+
+input{
+    border-radius:8px;
+border: 1px solid black;
+}
+form{
+    border: 1px solid black;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: grey 0px 3px 8px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding: 20px;
+}
+.submit{
+    color: white;
+    border-color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    width: 180px;
+}
+h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.center{
+    margin-top: 140px;
+}
