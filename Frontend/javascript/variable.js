@@ -2,4 +2,4 @@
 let name="Dhairya"
 var a=20
 const Pi=3.14
-prompt("enter any numbe")
+prompt("enter any number")
