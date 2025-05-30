@@ -5,8 +5,9 @@ input{
 border: 1px solid black;
 }
 form{
+    border: 1px solid black;
     padding: 20px;
-    width: 400px;
+    width: 300px;
     justify-content: center;
     align-items: center;
     box-shadow: grey 0px 3px 8px;
@@ -33,6 +34,6 @@ h2{
 .center{
     margin-top: 140px;
 }
-:placeholder-shown{
-    text-align: center;
+img{
+    width: 300px;
 }
