@@ -22,12 +22,12 @@ let e=5
 let avg=(a+b+c+d+e)/5
 console.log("the avg is "+avg)
 
-let a=10
+let area_of_base=10
 let l=12
-let h=14
-let lsa=2*a*l
-let tsa=2*a*l+a*a
-let volume=(1/3)*a*a*h
+let vertical_height=14
+let lsa=2*area_of_base*l
+let tsa=2*area_of_base*l+area_of_base*area_of_base
+let volume=(1/3)*area_of_base*area_of_base*vertical_height
 console.log("lsa is "+lsa)
 console.log("tsa is "+tsa)
 console.log("volume is "+volume)
@@ -35,4 +35,12 @@ console.log("volume is "+volume)
 let base=10
 let height=13
 let area=1/2*base*height
-console.log("the are of triangle is "+area)
+console.log("the area of triangle is "+area)
+
+let breadth=10
+let length=11
+let h=13
+let volume_cube=length*length*length
+let volume_cuboid=length*breadth*h
+console.log("the volume of cube is "+volume_cube)
+console.log("the volume of cuboid is "+volume_cuboid)
