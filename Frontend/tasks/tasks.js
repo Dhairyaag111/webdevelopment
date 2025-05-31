@@ -14,12 +14,12 @@ let n=10
 let median=(n+1)/2 
 console.log("the median is "+median)
 
-let f=1
+let a=1
 let b=2
 let c=3
 let d=4
 let e=5
-let avg=(f+b+c+d+e)/5
+let avg=(a+b+c+d+e)/5
 console.log("the avg is "+avg)
 
 let a=10
@@ -31,3 +31,8 @@ let volume=(1/3)*a*a*h
 console.log("lsa is "+lsa)
 console.log("tsa is "+tsa)
 console.log("volume is "+volume)
+
+let base=10
+let height=13
+let area=1/2*base*height
+console.log("the are of triangle is "+area)
