@@ -19,7 +19,7 @@ let b=2
 let c=3
 let d=4
 let e=5
-let avg=(a+b+c+d+e)/5
+let avg=(f+b+c+d+e)/5
 console.log("the avg is "+avg)
 
 let a=10
