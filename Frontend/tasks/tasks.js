@@ -6,7 +6,7 @@ console.log("compound interest is "+compound_interest)
 
 let fx=1200
 let N=10
-let mean=fx/Ngit 
+let mean=fx/N
 console.log("the mean is "+mean)
  
 
