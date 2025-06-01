@@ -5,3 +5,6 @@ avg of 5 number
 square pyramid lsa, tsa ,volume
 area of triangle 1/2*b*h
 volume cube,cubiod
+
+write a program to swap 2 numbers
+                         3 numbers
