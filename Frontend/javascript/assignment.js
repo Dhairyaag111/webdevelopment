@@ -58,20 +58,20 @@ if (num>0){
 }
 
  
-let num = Number(prompt("Enter any number : "))
-if (num<0){
+let numb = Number(prompt("Enter any number : "))
+if (numb<0){
     console.log("The number is negative!")
 }
 
  
-let num = Number(prompt("Enter any number : "))
-if (num==0){
+let numbe = Number(prompt("Enter any number : "))
+if (numbe==0){
     console.log("The number is zero!")
 }
 
 
-let num = Number(prompt("enter a number:"))
-if(num%2==0){
+let number = Number(prompt("enter a number:"))
+if(number%2==0){
     console.log("the number is even")
 }
 else{
