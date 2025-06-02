@@ -56,3 +56,15 @@ let num = Number(prompt("Enter any number : "))
 if (num>0){
     console.log("The number is positive!")
 }
+
+ 
+let num = Number(prompt("Enter any number : "))
+if (num<0){
+    console.log("The number is negative!")
+}
+
+ 
+let num = Number(prompt("Enter any number : "))
+if (num==0){
+    console.log("The number is zero!")
+}
