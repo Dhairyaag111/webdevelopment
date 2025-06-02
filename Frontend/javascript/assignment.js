@@ -68,3 +68,12 @@ let num = Number(prompt("Enter any number : "))
 if (num==0){
     console.log("The number is zero!")
 }
+
+
+let num = Number(prompt("enter a number:"))
+if(num%2==0){
+    console.log("the number is even")
+}
+else{
+    console.log("the number is odd")
+}
