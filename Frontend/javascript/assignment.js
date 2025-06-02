@@ -77,3 +77,21 @@ if(num%2==0){
 else{
     console.log("the number is odd")
 }
+
+
+let marks = Number(prompt("enter your marks:"))
+if(marks>=80){
+    console.log("you got distinction")
+}
+else if(marks>=70){
+console.log("you got first division")
+}
+else if(marks>=60){
+console.log("you got second division")
+}
+else if(marks>=50){
+console.log("you got third division")
+}
+else{
+    console.log("you are failed")
+}
