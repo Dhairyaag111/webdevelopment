@@ -142,3 +142,27 @@
 // else{
 //     console.log("sorry!there is no day")
 // }
+
+
+// let marks = prompt("enter your marks:")
+// if(marks>=90){
+// console.log("you got A+")
+// }
+// else if(marks>=80){
+//     console.log("you got A")
+// }
+// else if(marks>=70){
+//     console.log("you got B+")
+// }
+// else if(marks>=60){
+//     console.log("you got B")
+// }
+// else if(marks>=50){
+//     console.log("you got C+")
+// }
+// else if(marks>=40){
+//     console.log("you got A")
+// }
+// else{
+//     console.log("you are fail")
+// }
