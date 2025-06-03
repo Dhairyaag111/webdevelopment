@@ -2,6 +2,7 @@
 // // // Assignments operators in java script are used to  assign values to any variable and combine assignments with other operations.
 // // // Some assignment operator of java script are : =, +=, -=, *=, /=, %=
 
+
 // // let sum1=15
 // // sum1+=20
 // // console.log(sum1)
@@ -38,6 +39,7 @@
 // // // console.log("5x8 "+product*8)
 // // // console.log("5x9 "+product*9)
 // // // console.log("5x9 "+product*10)
+
 
 // // let product = prompt("enter a number to show its table:")
 // // console.log(product+"x1="+product*1)
@@ -96,6 +98,7 @@
 // //     console.log("you are failed")
 // // }
 
+
 // // // let num = Number(prompt("enter a number :"))
 // // // if(num%10==0){
 // // //     console.log("the number is divisible by 10")
@@ -104,6 +107,7 @@
 // // //     console.log("the number is not divisible by 10")
 // // // }
 
+
 // // // let num = Number(prompt("enter a number :"))
 // // // if(num%7==0 && num%13==0){
 // // //     console.log("the number is divisible by 7 and 13")
@@ -111,6 +115,7 @@
 // // // else{
 // // //     console.log("the number is not divisible by 7 and 13")
 // // // }
+
 
 // let num = Number(prompt("enter a number between 1 and 7:"))
 // if(num==1){
