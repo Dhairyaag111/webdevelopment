@@ -61,7 +61,7 @@ if (num>0){
 let numb = Number(prompt("Enter any number : "))
 if (numb<0){
     console.log("The number is negative!")
-}
+} 
 
  
 let numbe = Number(prompt("Enter any number : "))
@@ -94,4 +94,12 @@ console.log("you got third division")
 }
 else{
     console.log("you are failed")
+}
+
+let int = Number(prompt("enter a number :"))
+if(int%10==0){
+    console.log("the number is divisible by 10")
+}
+else{
+    console.log("the number is not divisible by 10")
 }
