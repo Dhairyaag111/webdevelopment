@@ -166,6 +166,7 @@
 // // // else{
 // // //     console.log("you are fail")
 // // // }
+ 
 
 // // let num= Number(prompt("enter a number:"))
 // // if(num>0){
@@ -188,6 +189,7 @@
 // //     console.log("the number is equal to zero and it is also even")
 // // }
 
+
 // // let amt= Number(prompt("enter your amount:"))
 // if(amt<=10000){
 //     dis = amt*(2/100)
@@ -199,7 +201,7 @@
 // }
 // else if(amt<=100000){
 //     dis = amt*(15/100)
-//     console.log("your discount amount is "+dis)
+//     console.log("your discount amount is  "+dis)
 // }
 // else{
 //     console.log("sorry!no discount for you.")
