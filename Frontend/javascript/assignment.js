@@ -190,7 +190,7 @@
 // // // }
 
 
-// // // let amt= Number(prompt("enter your amount:"))
+// // let amt= Number(prompt("enter your amount:"))
 // // if(amt<=10000){
 // //     dis = amt*(2/100)
 // //     console.log("your discount amount is "+dis)
