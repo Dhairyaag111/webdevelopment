@@ -208,21 +208,3 @@
 // // }
 
 
-// let a = Number(prompt("enter your purchasing amount:"))
-// if (a<=10000){
-//     dis=a*(2/100)
-//     console.log("You got 2% discount" )
-//     console.log("Your total discount amt is : Rs"+dis)
-// }
-// else if(a<=50000){
-//     let discount=a-10000
-//     dis=(discount*(10/100))+(10000*(2/100))
-//     console.log("You got 2% discount on first Rs10000 and 10% discount on remaining.")
-//     console.log("Your total discount amt is : Rs"+dis)
-// }
-// else if(a>=100000){
-//     let discount=a-50000
-//     dis=(discount*(15/100))+(40000*(10/100))+(10000*(2/100))
-//     console.log("You got 2% discount on first Rs10000 and 10% discount on Rs50000 and 15% on remaining amount.")
-//   console.log("Your total discount amt is : Rs"+dis)
-// }
