@@ -1,6 +1,6 @@
 
 // // // // // // Assignments operators in java script are used to  assign values to any variable and combine assignments with other operations.
-// // // // // // Some assignment operator of java script are : =, +=, -=, *=, /=, %=
+// // // // // // Some assignment operator of java script are : =, +=, -=, *=, /=, %= .
 
 
 // // // // // let sum1=15
