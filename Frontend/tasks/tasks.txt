@@ -1,5 +1,0 @@
-rock,paper,sisors 
-leap year (365,366)
-calculator (+,-,*,/)
-temperature check up (15,30)
-triangle (180 deg)
