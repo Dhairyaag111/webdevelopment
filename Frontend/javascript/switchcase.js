@@ -37,3 +37,28 @@
 //         //    default:
 //     console.log("Your input is incorrect")
 // }
+
+
+// let a = Number(prompt("Enter the first number : "))
+// let b = Number(prompt("Enter the second number : "))
+// let c = prompt("Enter the operator(+,-,*,/) : ")
+// switch(c){
+// case '+':
+//     sum=a+b
+//     console.log("The sum is "+sum)
+//     break
+//     case '-':
+//     diff=a-b
+//     console.log("The difference is "+diff)
+//     break
+//     case '*':
+//     sum=a*b
+//     console.log("The product is "+pro)
+//     break
+//     case '/':
+//     sum=a/b
+//     console.log("The division is "+div)
+//     break
+//     default:
+//     console.log("The operator you enered is invalid")
+// }
