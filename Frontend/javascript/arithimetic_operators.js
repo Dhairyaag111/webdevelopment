@@ -1,9 +1,9 @@
-// // let firstNum=1
-// // let secondNum=2
-// // let sum=firstNum+secondNum
-// // let diff=firstNum-secondNum
-// // console.log(sum)
-// // console.log(diff)
+// let firstNum=1
+// let secondNum=2
+// let sum=firstNum+secondNum
+// let diff=firstNum-secondNum
+// console.log(sum)
+// console.log(diff)
 
 
 // let firstNum=11

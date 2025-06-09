@@ -130,3 +130,33 @@
 //         default:
 //         console.log("The input is wrong.")
 // }
+
+
+// let a = prompt("Enter red, yellow or green for trafic signals : ")
+// switch(a){
+//     case 'red':
+//         console.log("Stop! You can't move.")
+//         break
+//             case 'yellow':
+//         console.log("Get ready! You are going to move.")
+//         break
+//             case 'green':
+//         console.log("Let's go! You can move now.")
+//         break
+
+//         default:
+//         console.log("The trafic colour you entered is incorrect.")
+// }
+
+
+// let u=Number(prompt("Enter any number : "))
+// switch(u){
+//     case u%2=0:
+//     console.log("The number is even.")
+//     break
+//     case u%2=1:
+//     console.log("The number is odd.")
+//     break
+//     default:
+//     console.log("The input is incorrect")
+// }
