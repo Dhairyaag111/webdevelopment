@@ -98,95 +98,95 @@
 // // // // // // // // // // }
 
 
-// // // // // // // // // // // let num = Number(prompt("enter a number :"))
-// // // // // // // // // // // if(num%10==0){
-// // // // // // // // // // //     console.log("the number is divisible by 10")
-// // // // // // // // // // // }
-// // // // // // // // // // // else{
-// // // // // // // // // // //     console.log("the number is not divisible by 10")
-// // // // // // // // // // // }
+ // // // let num = Number(prompt("enter a number :"))
+ // // // if(num%10==0){
+ // // //     console.log("the number is divisible by 10")
+ // // // }
+ // // // else{
+ // // //     console.log("the number is not divisible by 10")
+ // // // }
 
 
-// // // // // // // // // // // let num = Number(prompt("enter a number :"))
-// // // // // // // // // // // if(num%7==0 && num%13==0){
-// // // // // // // // // // //     console.log("the number is divisible by 7 and 13")
-// // // // // // // // // // // }
-// // // // // // // // // // // else{
-// // // // // // // // // // //     console.log("the number is not divisible by 7 and 13")
-// // // // // // // // // // // }
+ // // // let num = Number(prompt("enter a number :"))
+ // // // if(num%7==0 && num%13==0){
+ // // //     console.log("the number is divisible by 7 and 13")
+ // // // }
+ // // // else{
+ // // //     console.log("the number is not divisible by 7 and 13")
+ // // // }
 
 
-// // // // // // // // // let num = Number(prompt("enter a number between 1 and 7:"))
-// // // // // // // // // if(num==1){
-// // // // // // // // //     console.log("today is sunday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==2){
-// // // // // // // // //     console.log("today is monday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==3){
-// // // // // // // // //     console.log("today is tuesday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==4){
-// // // // // // // // //     console.log("today is wednesday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==5){
-// // // // // // // // //     console.log("today is thursday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==6){
-// // // // // // // // //     console.log("today is friday")
-// // // // // // // // // }
-// // // // // // // // // else if(num==7){
-// // // // // // // // //     console.log("today is saturday")
-// // // // // // // // // }
-// // // // // // // // // else{
-// // // // // // // // //     console.log("sorry!there is no day")
-// // // // // // // // // }
+ // let num = Number(prompt("enter a number between 1 and 7:"))
+ // if(num==1){
+ //     console.log("today is sunday")
+ // }
+ // else if(num==2){
+ //     console.log("today is monday")
+ // }
+ // else if(num==3){
+ //     console.log("today is tuesday")
+ // }
+ // else if(num==4){
+ //     console.log("today is wednesday")
+ // }
+ // else if(num==5){
+ //     console.log("today is thursday")
+ // }
+ // else if(num==6){
+ //     console.log("today is friday")
+ // }
+ // else if(num==7){
+ //     console.log("today is saturday")
+ // }
+ // else{
+ //     console.log("sorry!there is no day")
+ // }
 
 
-// // // // // // // // // let marks = prompt("enter your marks:")
-// // // // // // // // // if(marks>=90){
-// // // // // // // // // console.log("you got A+")
-// // // // // // // // // }
-// // // // // // // // // else if(marks>=80){
-// // // // // // // // //     console.log("you got A")
-// // // // // // // // // }
-// // // // // // // // // else if(marks>=70){
-// // // // // // // // //     console.log("you got B+")
-// // // // // // // // // }
-// // // // // // // // // else if(marks>=60){
-// // // // // // // // //     console.log("you got B")
-// // // // // // // // // }
-// // // // // // // // // else if(marks>=50){
-// // // // // // // // //     console.log("you got C+")
-// // // // // // // // // }
-// // // // // // // // // else if(marks>=40){
-// // // // // // // // //     console.log("you got A")
-// // // // // // // // // }
-// // // // // // // // // else{
-// // // // // // // // //     console.log("you are fail")
-// // // // // // // // // }
+ // let marks = prompt("enter your marks:")
+ // if(marks>=90){
+ // console.log("you got A+")
+ // }
+ // else if(marks>=80){
+ //     console.log("you got A")
+ // }
+ // else if(marks>=70){
+ //     console.log("you got B+")
+ // }
+ // else if(marks>=60){
+ //     console.log("you got B")
+ // }
+ // else if(marks>=50){
+ //     console.log("you got C+")
+ // }
+ // else if(marks>=40){
+ //     console.log("you got A")
+ // }
+ // else{
+ //     console.log("you are fail")
+ // }
  
 
-// // // // // // // // let num= Number(prompt("enter a number:"))
-// // // // // // // // if(num>0){
-// // // // // // // //     if(num%2==0){
-// // // // // // // //         console.log("the number is even as well as positive")
-// // // // // // // //     }
-// // // // // // // //     else{
-// // // // // // // //         console.log("the number is odd as well as positive")
-// // // // // // // //     }
-// // // // // // // // }
-// // // // // // // // else if(num<0){
-// // // // // // // //        if(num%2==0){
-// // // // // // // //         console.log("the number is even as well as negative")
-// // // // // // // //     }
-// // // // // // // //     else{
-// // // // // // // //         console.log("the number is odd as well as negative")
-// // // // // // // //     }
-// // // // // // // // }
-// // // // // // // // else{
-// // // // // // // //     console.log("the number is equal to zero and it is also even")
-// // // // // // // // }
+//  let num= Number(prompt("enter a number:"))
+//  if(num>0){
+//      if(num%2==0){
+//          console.log("the number is even as well as positive")
+//      }
+//      else{
+//          console.log("the number is odd as well as positive")
+//      }
+//  }
+//  else if(num<0){
+//         if(num%2==0){
+//          console.log("the number is even as well as negative")
+//      }
+//      else{
+//          console.log("the number is odd as well as negative")
+//      }
+//  }
+//  else{
+//      console.log("the number is equal to zero and it is also even")
+//  }
 
  
 //  let amt= Number(prompt("enter your amount:"))
