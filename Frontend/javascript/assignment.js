@@ -28,92 +28,92 @@
 // console.log(module1)
  
  // // let product=5
-// // // // // // // // // // // console.log("5x1 "+product*1)
-// // // // // // // // // // // console.log("5x2 "+product*2)
-// // // // // // // // // // // console.log("5x3 "+product*3)
-// // // // // // // // // // // console.log("5x4 "+product*4)
-// // // // // // // // // // // console.log("5x5 "+product*5)
-// // // // // // // // // // // console.log("5x6 "+product*6)
-// // // // // // // // // // // console.log("5x7 "+product*7)
-// // // // // // // // // // // console.log("5x8 "+product*8)
-// // // // // // // // // // // console.log("5x9 "+product*9)
-// // // // // // // // // // // console.log("5x9 "+product*10)
+//  console.log("5x1 "+product*1)
+//  console.log("5x2 "+product*2)
+//  console.log("5x3 "+product*3)
+//  console.log("5x4 "+product*4)
+//  console.log("5x5 "+product*5)
+//  console.log("5x6 "+product*6)
+//  console.log("5x7 "+product*7)
+//  console.log("5x8 "+product*8)
+//  console.log("5x9 "+product*9)
+//  console.log("5x9 "+product*10)
 
 
-// // // // // // // // // // let product = prompt("enter a number to show its table:")
-// // // // // // // // // // console.log(product+"x1="+product*1)
-// // // // // // // // // // console.log(product+"x2="+product*2)
-// // // // // // // // // // console.log(product+"x3="+product*3)
-// // // // // // // // // // console.log(product+"x4="+product*4)
-// // // // // // // // // // console.log(product+"x5="+product*5)
-// // // // // // // // // // console.log(product+"x6="+product*6)
-// // // // // // // // // // console.log(product+"x7="+product*7)
-// // // // // // // // // // console.log(product+"x8="+product*8)
-// // // // // // // // // // console.log(product+"x9="+product*9)
-// // // // // // // // // // console.log(product+"x10="+product*10)
-
- 
-// // // // // // // // // // let num = Number(prompt("Enter any number : "))
-// // // // // // // // // // if (num>0){
-// // // // // // // // // //     console.log("The number is positive!")
-// // // // // // // // // // }
+// let product = prompt("enter a number to show its table:")
+// console.log(product+"x1="+product*1)
+// console.log(product+"x2="+product*2)
+// console.log(product+"x3="+product*3)
+// console.log(product+"x4="+product*4)
+// console.log(product+"x5="+product*5)
+// console.log(product+"x6="+product*6)
+// console.log(product+"x7="+product*7)
+// console.log(product+"x8="+product*8)
+// console.log(product+"x9="+product*9)
+// console.log(product+"x10="+product*10)
 
  
-// // // // // // // // // // let numb = Number(prompt("Enter any number : "))
-// // // // // // // // // // if (numb<0){
-// // // // // // // // // //     console.log("The number is negative!")
-// // // // // // // // // // } 
+// let num = Number(prompt("Enter any number : "))
+// if (num>0){
+//     console.log("The number is positive!")
+// }
 
  
-// // // // // // // // // // let numbe = Number(prompt("Enter any number : "))
-// // // // // // // // // // if (numbe==0){
-// // // // // // // // // //     console.log("The number is zero!")
-// // // // // // // // // // }
+// let numb = Number(prompt("Enter any number : "))
+// if (numb<0){
+//     console.log("The number is negative!")
+// } 
+
+ 
+// let numbe = Number(prompt("Enter any number : "))
+// if (numbe==0){
+//     console.log("The number is zero!")
+// }
 
 
-// // // // // // // // // // let number = Number(prompt("enter a number:"))
-// // // // // // // // // // if(number%2==0){
-// // // // // // // // // //     console.log("the number is even")
-// // // // // // // // // // }
-// // // // // // // // // // else{
-// // // // // // // // // //     console.log("the number is odd")
-// // // // // // // // // // }
+// let number = Number(prompt("enter a number:"))
+// if(number%2==0){
+//     console.log("the number is even")
+// }
+// else{
+//     console.log("the number is odd")
+// }
 
 
-// // // // // // // // // // let marks = Number(prompt("enter your marks:"))
-// // // // // // // // // // if(marks>=80){
-// // // // // // // // // //     console.log("you got distinction")
-// // // // // // // // // // }
-// // // // // // // // // // else if(marks>=70){
-// // // // // // // // // // console.log("you got first division")
-// // // // // // // // // // }
-// // // // // // // // // // else if(marks>=60){
-// // // // // // // // // // console.log("you got second division")
-// // // // // // // // // // }
-// // // // // // // // // // else if(marks>=50){
-// // // // // // // // // // console.log("you got third division")
-// // // // // // // // // // }
-// // // // // // // // // // else{
-// // // // // // // // // //     console.log("you are failed")
-// // // // // // // // // // }
+// let marks = Number(prompt("enter your marks:"))
+// if(marks>=80){
+//     console.log("you got distinction")
+// }
+// else if(marks>=70){
+// console.log("you got first division")
+// }
+// else if(marks>=60){
+// console.log("you got second division")
+// }
+// else if(marks>=50){
+// console.log("you got third division")
+// }
+// else{
+//     console.log("you are failed")
+// }
 
 
- // // // let num = Number(prompt("enter a number :"))
- // // // if(num%10==0){
- // // //     console.log("the number is divisible by 10")
- // // // }
- // // // else{
- // // //     console.log("the number is not divisible by 10")
- // // // }
+ // let num = Number(prompt("enter a number :"))
+ // if(num%10==0){
+ //     console.log("the number is divisible by 10")
+ // }
+ // else{
+ //     console.log("the number is not divisible by 10")
+ // }
 
 
- // // // let num = Number(prompt("enter a number :"))
- // // // if(num%7==0 && num%13==0){
- // // //     console.log("the number is divisible by 7 and 13")
- // // // }
- // // // else{
- // // //     console.log("the number is not divisible by 7 and 13")
- // // // }
+ // // let num = Number(prompt("enter a number :"))
+ // // if(num%7==0 && num%13==0){
+ // //     console.log("the number is divisible by 7 and 13")
+ // // }
+ // // else{
+ // //     console.log("the number is not divisible by 7 and 13")
+ // }
 
 
  // let num = Number(prompt("enter a number between 1 and 7:"))
