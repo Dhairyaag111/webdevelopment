@@ -149,14 +149,14 @@
 // }
 
 
-// let u=Number(prompt("Enter any number : "))
-// switch(u){
-//     case u%2=0:
-//     console.log("The number is even.")
-//     break
-//     case u%2=1:
-//     console.log("The number is odd.")
-//     break
-//     default:
-//     console.log("The input is incorrect")
-// }
+//  let u=Number(prompt("Enter any number : "))
+//  switch(u%2){
+//      case 0:
+//      console.log("The number is even.")
+//      break
+//      case 1:
+//      console.log("The number is odd.")
+//      break
+//      default:
+//      console.log("The input is incorrect")
+//  }
