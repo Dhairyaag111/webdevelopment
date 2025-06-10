@@ -304,3 +304,151 @@
 //         //    default:
 //     console.log("Your input is incorrect")
 // }
+
+
+
+// // // // let y= Number(prompt("Enter any year:"))
+// // // // if(y%4==0){
+// // // // console.log("The year you entered is a leap year.")
+// // // // }
+// // // // else{
+// // // // console.log("The year you entered is a normal year.")
+// // // // }
+
+
+// // let a=Number(prompt("Enter a number:"))
+// // let b=Number(prompt("Enter another number:"))
+// // let c=prompt("Enter an operator [add(+),sub(-),mul(*),div(/)]:")
+// // if (c=='+') {
+// //     sum = a+b
+// //     console.log("The sum is "+sum)
+// // }
+// // else if (c=='-'){
+// //     diff = a-b
+// //     console.log("The difference is "+diff)
+// // }
+// // else if (c=='*'){
+// //     pr = a*b
+// //     console.log("The product is "+pr)
+// // }
+// // else if (c=='/'){
+// //     div = a/b
+// //     console.log("The division is "+div.toFixed(2))
+// // }
+// // else{
+// //     console.log("The operator you entered is incorrect.")
+// // }
+
+
+// // // let t = Number(prompt("Enter the temperture of any place:"))
+// // // if(t<15){
+// // //     console.log("The place is very cold.")
+// // // }
+// // // else if(t>=15 && t<30){
+// // //     console.log("The place is normal.")
+// // // }
+// // // else{
+// // //         console.log("The place is very hot.")
+// // // }
+
+
+// // let d= Number(prompt("Enter the first angle of triangle:"))
+// // let e= Number(prompt("Enter the second angle of triangle:"))
+// // let g= Number(prompt("Enter the third angle of triangle:"))
+// // sum = d+e+g
+// // if(sum==180){
+// //     console.log("This is a perfect triangle")
+// // }
+// // else{
+// //    console.log("This is  not a triangle")    
+// // }
+
+
+// let u=prompt("Enter rock, paper, scissor:")
+// let c='rock'
+// if(u==c)
+// {
+//     console.log("Sorry!You Lost.")
+// }
+// else if(u=="paper" && c=="rock" )
+// {
+//         console.log("Cngratulations!You Won.")
+// }
+// else if(u=="scissor" &&  c=="rock" )
+// {
+//          console.log("Its Draw.")
+// }
+// else
+// {
+//     console.log("Your input is incorrect.")
+// }
+
+// let p=100000
+// let t=2
+// let r=12
+// let compound_interest=p*(1+(r/100))^t-1
+// console.log("compound interest is "+compound_interest)
+
+// let fx=1200
+// let N=10
+// let mean=fx/N
+// console.log("the mean is "+mean)
+ 
+
+// let n=10
+// let median=(n+1)/2 
+// console.log("the median is "+median)
+
+// let a=1
+// let b=2
+// let c=3
+// let d=4
+// let e=5
+// let avg=(a+b+c+d+e)/5
+// console.log("the avg is "+avg)
+
+// let area_of_base=10
+// let l=12
+// let vertical_height=14
+// let lsa=2*area_of_base*l
+// let tsa=2*area_of_base*l+area_of_base*area_of_base
+// let volume=(1/3)*area_of_base*area_of_base*vertical_height
+// console.log("lsa is "+lsa)
+// console.log("tsa is "+tsa)
+// console.log("volume is "+volume)
+
+// let base=10
+// let height=13
+// let area=1/2*base*height
+// console.log("the area of triangle is "+area)
+
+// let breadth=10
+// let length=11
+// let h=13
+// let volume_cube=length*length*length
+// let volume_cuboid=length*breadth*h
+// console.log("the volume of cube is "+volume_cube)
+// console.log("the volume of cuboid is "+volume_cuboid)
+
+
+// // let a=10
+// // let b=20
+// // let c=null
+// // c=a
+// // a=b
+// // b=c
+// // console.log("the value of 'a'is "+a)
+// // console.log("the value of 'b'is "+b)
+
+
+// // let d=20
+// // let e=40
+// // let f=60
+// // let g=null
+// // g=d
+// // d=e
+// // e=f
+// // f=g
+// // console.log("the value of 'd'is "+d)
+// // console.log("the value of 'e'is "+e)
+// // console.log("the value of 'f'is "+f)
