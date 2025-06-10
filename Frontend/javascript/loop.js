@@ -23,3 +23,11 @@
     //     console.log(i);
     // }
 
+
+//     for(i=20;i>=1;i=i-1){
+//     console.log(i)
+// }
+
+// for(i=5;i<=30;i=i+5){
+//     console.log(i)
+// }
