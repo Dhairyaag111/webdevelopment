@@ -7,3 +7,7 @@
 //     console.log(i)
 // }
 
+
+// for(i=1;i<=11111;i=i*10+1){
+//     console.log(i)
+// }
