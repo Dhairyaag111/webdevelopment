@@ -60,3 +60,14 @@
 //     console.log(p)
 //     p=p*10+i
 // }
+
+
+// let a=1
+// for(i=1;i<=10;i=i+1){
+//     if(i%2==0){
+//         console.log(-i)
+//     }
+//     else{
+//         console.log(i)
+//     }
+// }
