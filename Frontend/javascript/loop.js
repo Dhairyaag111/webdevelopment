@@ -52,3 +52,11 @@
 //     console.log(p)
 //     p=p/i
 // }
+
+
+
+// p=1
+// for(i=2;i<=6;i=i+1){
+//     console.log(p)
+//     p=p*10+i
+// }
