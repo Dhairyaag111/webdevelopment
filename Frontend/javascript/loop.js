@@ -47,4 +47,8 @@
 //     console.log(s)
 
    
-
+// let p=720
+// for(i=6;i>=1;i=i-1){
+//     console.log(p)
+//     p=p/i
+// }
