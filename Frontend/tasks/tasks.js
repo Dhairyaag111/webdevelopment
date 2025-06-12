@@ -69,6 +69,40 @@
 // else if(c=='Belarus' || c=='belarus'){
 // console.log("The currrency of Belarus is Belarusian Ruble (BYN)")
 // }	
-// else if(c=='Belarus' || c=='belarus'){
-// console.log("The currrency of Belarus is Belarusian Ruble (BYN)")
+// else if(c=='Belgium' || c=='belgium'){
+// console.log("The currrency of Belgium is Euro (EUR)")
+// }
+// else if(c=='Belize' || c=='belize'){
+// console.log("The currrency of Belize is  Belize Dollar (BZD)")
+// }
+// else if(c=='Benin' || c=='benin'){
+// console.log("The currrency of Benin is West African CFA franc (CFA)")
+// }
+// else if(c=='Bhutan' || c=='bhutan'){
+// console.log("The currrency of Bhutan is Bhutanese Ngultrum (BTN)")
+// }
+// else if(c=='Bolivia' || c=='bolivia'){
+// console.log("The currrency of Bolivia is Bolivian boliviano (BOB)")
+// }
+// else if(c=='Bosnia and Herzegovina' || c=='bosnia and herzegovina'){
+// console.log("The currrency of Bosnia and Herzegovina is Bosnia-Herzegovina Convertible Marka (BAM)")
+// }
+// }
+// else if(c=='Botswana' || c=='botswana'){
+// console.log("The currrency of Botswana is Botswana pula (BWP)")
+// }
+// else if(c=='Brazil' || c=='brazil'){
+// console.log("The currrency of Brazil is  Brazilian Real (BRL)")
+// }
+// else if(c=='Brunei' || c=='brunei'){
+// console.log("The currrency of Brunei is Brunei Dollar (BND))")
+// }
+// else if(c=='Bulgaria' || c=='bulgaria'){
+// console.log("The currrency of Bulgaria is Bulgarian Lev  (BGN))")
+// }
+// else if(c=='Burkina Faso' || c=='burkina faso'){
+// console.log("The currrency of Burkina Faso is West African CFA franc (CFA)")
+// }
+// else if(c=='Burundi' || c=='burundi'){
+// console.log("The currrency of Burundi is Burundian Franc (BIF)")
 // }
