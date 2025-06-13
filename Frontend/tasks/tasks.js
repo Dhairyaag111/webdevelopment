@@ -18,6 +18,596 @@
 // }
 
 
+// let c=prompt("Enter the name of country to know its call code: ")
+// switch (c){
+// case "Afghanistan":
+// console.log("+93")
+// break
+// case "Albania":
+// console.log("+355")
+// break
+// case "Algeria":
+// console.log("+213")
+// break
+// case "Andorra":
+// console.log("+376")
+// break
+// case "Angola":
+// console.log("+244")
+// break
+// case "Antigua and Barbuda":
+// console.log("+268")
+// break
+// case "Argentina":
+// console.log("+54")
+// break
+// case "Armenia":
+// console.log("+374")
+// break
+// case "Australia":
+// console.log("+61")
+// break
+// case "Austria":
+// console.log("+43")
+// break
+// case "Azerbaijan":
+// console.log("+994")
+// break
+// case "Bahamas":
+// console.log("+242")
+// break
+// case "Bahrain":
+// console.log("+973")
+// break
+// case "Bangladesh":
+// console.log("+880")
+// break
+// case "Barbados":
+// console.log("+246")
+// break
+// case "Belarus":
+// console.log("+375")
+// break
+// case "Belgium":
+// console.log("+32")
+// break
+// case "Belize":
+// console.log("+501")
+// break
+// case "Benin":
+// console.log("+229")
+// break
+// case "Bhutan":
+// console.log("+975")
+// break
+// case "Bolivia":
+// console.log("+591")
+// break
+// case "Bosnia and Herzegovina":
+// console.log("+387")
+// break
+// case "Botswana":
+// console.log("+267")
+// break
+// case "Brazil":
+// console.log("+55")
+// break
+// case "Brunei":
+// console.log("+673")
+// break
+// case "Bulgaria":
+// console.log("+359")
+// break
+// case "Burkina Faso":
+// console.log("+226")
+// break
+// case "Burundi":
+// console.log("+257")
+// break
+// case "Cabo Verde":
+// console.log("+238")
+// break
+// case "Cambodia":
+// console.log("+885")
+// break
+// case "Cameroon":
+// console.log("+237")
+// break
+// case "Canada":
+// console.log("+1")
+// break
+// case "Central African Republic":
+// console.log("+236")
+// break
+// case "Chad":
+// console.log("+235")
+// break
+// case "Chile":
+// console.log("+56")
+// break
+// case "China":
+// console.log("+86")
+// break
+// case "Colombia":
+// console.log("+57")
+// break
+// case "Comoros":
+// console.log("+269")
+// break
+// case "Congo":
+// console.log("+242")
+// break
+// case "Democratic Republic of Congo":
+// console.log("+243")
+// break
+// case "Costa Rica":
+// console.log("+506")
+// break
+// case "Coratia":
+// console.log("+385")
+// break
+// case "Cuba":
+// console.log("+53")
+// break
+// case "Cyprus":
+// console.log("+357")
+// break
+// case "Czechai":
+// console.log("+420")
+// break
+// case "Denmark":
+// console.log("+45")
+// break
+// case "Djibouti":
+// console.log("+253")
+// break
+// case "Dominica":
+// console.log("+767")
+// break
+// case "Dominican Republic":
+// console.log("+809")
+// break
+// case "Ecuador":
+// console.log("+593")
+// break
+// case "Egypt":
+// console.log("+20")
+// break
+// case "El Salvador":
+// console.log("+503")
+// break
+// case "Equatorial Guinea":
+// console.log("+240")
+// break
+// case "Eritrea":
+// console.log("+291")
+// break
+// case "Estonia":
+// console.log("+372")
+// break
+// case "Eswatini":
+// console.log("+268")
+// break
+// case "Ethiopia":
+// console.log("+251")
+// break
+// case "Fiji":
+// console.log("+679")
+// break
+// case "Finland":
+// console.log("+358")
+// break
+// case "France":
+// console.log("+33")
+// break
+// case "Gabon":
+// console.log("+241")
+// break
+// case "Gambia":
+// console.log("+220")
+// break
+// case "Georgia":
+// console.log("+995")
+// break
+// case "Germany":
+// console.log("+49")
+// break
+// case "Ghana":
+// console.log("+233")
+// break
+// case "Greece":
+// console.log("+30")
+// break
+// case "Grenada":
+// console.log("+473")
+// break
+// case "Guatemala":
+// console.log("+502")
+// break
+// case "Guinea":
+// console.log("+224")
+// break
+// case "Guinea-Bissau":
+// console.log("+245")
+// break
+// case "Guyana":
+// console.log("+592")
+// break
+// case "Haiti":
+// console.log("+509")
+// break
+// case "Vatican City":
+// console.log("+379")
+// break
+// case "Honduras":
+// console.log("+504")
+// break
+// case "Hungary":
+// console.log("+36")
+// break
+// case "Iceland":
+// console.log("+354")
+// break
+// case "India":
+// console.log("+91")
+// break
+// case "Indonesia":
+// console.log("+62")
+// break
+// case "Iran":
+// console.log("+98")
+// break
+// case "Iraq":
+// console.log("+964")
+// break
+// case "Ireland":
+// console.log("+353")
+// break
+// case "Israel":
+// console.log("+972")
+// break
+// case "Italy":
+// console.log("+39")
+// break
+// case "Jamaica":
+// console.log("+876")
+// break
+// case "Japan":
+// console.log("+81")
+// break
+// case "Jordan":
+// console.log("+962")
+// break
+// case "Kazakhstan":
+// console.log("+7")
+// break
+// case "Kenya":
+// console.log("+254")
+// break
+// case "Kiribati":
+// console.log("+686")
+// break
+// case "Kosovo":
+// console.log("+383")
+// break
+// case "Kuwait":
+// console.log("+965")
+// break
+// case "Kyrgyzstan":
+// console.log("+996")
+// break
+// case "Laos":
+// console.log("+856")
+// break
+// case "Latvia":
+// console.log("+371")
+// break
+// case "Lebanon":
+// console.log("+961")
+// break
+// case "Lesotho":
+// console.log("+266")
+// break
+// case "Liberia":
+// console.log("+231")
+// break
+// case "Libya":
+// console.log("+218")
+// break
+// case "Liechtenstein":
+// console.log("+423")
+// break
+// case "Lithuania":
+// console.log("+370")
+// break
+// case "Luxembourg":
+// console.log("+352")
+// break
+// case "Madagascar":
+// console.log("+261")
+// break
+// case "Malawi":
+// console.log("+265")
+// break
+// case "Malayasia":
+// console.log("+60")
+// break
+// case "Mali":
+// console.log("+223")
+// break
+// case "Maldives":
+// console.log("+960")
+// break
+// case "Malta":
+// console.log("+356")
+// break
+// case "Marshall Islands":
+// console.log("+692")
+// break
+// case "Mauritania":
+// console.log("+222")
+// break
+// case "Mauritius":
+// console.log("+230")
+// break
+// case "Mexico":
+// console.log("+52")
+// break
+// case "Micronesia":
+// console.log("+691")
+// break
+// case "Moldova":
+// console.log("+373")
+// break
+// case "Monaco":
+// console.log("+377")
+// break
+// case "Mongolia":
+// console.log("+976")
+// break
+// case "Montenegro":
+// console.log("+382")
+// break
+// case "Morocco":
+// console.log("+212")
+// break
+// case "Mozambique":
+// console.log("+258")
+// break
+// case "Myanmar":
+// console.log("+95")
+// break
+// case "Namibia":
+// console.log("+264")
+// break
+// case "Nauru":
+// console.log("+674")
+// break
+// case "Nepal":
+// console.log("+977")
+// break
+// case "Netherlands":
+// console.log("+31")
+// break
+// case "New Zealand":
+// console.log("+64")
+// break
+// case "Nicaragua":
+// console.log("+505")
+// break
+// case "Niger":
+// console.log("+234")
+// break
+// case "North Korea":
+// console.log("+850")
+// break
+// case "North Macedonia":
+// console.log("+389")
+// break
+// case "Norway":
+// console.log("+47")
+// break
+// case "Oman":
+// console.log("+968")
+// break
+// case "Pakistan":
+// console.log("+92")
+// break
+// case "Palau":
+// console.log("+680")
+// break
+// case "Palestine":
+// console.log("+970")
+// break
+// case "Panama":
+// console.log("+507")
+// break
+// case "Papua New Guinea":
+// console.log("+675")
+// break
+// case "Paraguay":
+// console.log("+595")
+// break
+// case "Peru":
+// console.log("+51")
+// break
+// case "Philippines":
+// console.log("+63")
+// break
+// case "Poland":
+// console.log("+48")
+// break
+// case "Portugal":
+// console.log("+351")
+// break
+// case "Qatar":
+// console.log("+974")
+// break
+// case "Romania":
+// console.log("+40")
+// break
+// case "Russia":
+// console.log("+7")
+// break
+// case "Rwanda":
+// console.log("+250")
+// break
+// case "Saint Kitts and Nevis":
+// console.log("+869")
+// break
+// case "Saint Lucia":
+// console.log("+758")
+// break
+// case "Saint Vincent and the Grenadines":
+// console.log("+784")
+// break
+// case "Samoa":
+// console.log("+685")
+// break
+// case "San Marino":
+// console.log("+378")
+// break
+// case "Sao Tome and Principe":
+// console.log("+239")
+// break
+// case "Saudi Arabia":
+// console.log("+966")
+// break
+// case "Senegal":
+// console.log("+221")
+// break
+// case "Serbia":
+// console.log("+381")
+// break
+// case "Seychelles":
+// console.log("+248")
+// break
+// case "Sierra Leone":
+// console.log("+232")
+// break
+// case "Singapore":
+// console.log("+65")
+// break
+// case "Slovakia":
+// console.log("+421")
+// break
+// case "Slovenia":
+// console.log("+386")
+// break
+// case "Solomon Islands":
+// console.log("+677")
+// break
+// case "Somalia":
+// console.log("+252")
+// break
+// case "South Africa":
+// console.log("+27")
+// break
+// case "South Korea":
+// console.log("+82")
+// break
+// case "South Sudan":
+// console.log("+211")
+// break
+// case "Spain":
+// console.log("+34")
+// break
+// case "Sri Lanka":
+// console.log("+94")
+// break
+// case "Sudan":
+// console.log("+249")
+// break
+// case "Suriname":
+// console.log("+597")
+// break
+// case "Sweden":
+// console.log("+46")
+// break
+// case "Switzerland":
+// console.log("+41")
+// break
+// case "Syria":
+// console.log("+963")
+// break
+// case "Tajikistan":
+// console.log("+992")
+// break
+// case "Tanzania":
+// console.log("+255")
+// break
+// case "Thailand":
+// console.log("+66")
+// break
+// case "Timor-Leste":
+// console.log("+670")
+// break
+// case "Togo":
+// console.log("+228")
+// break
+// case "Tonga":
+// console.log("+676")
+// break
+// case "Trinidad and Tobago":
+// console.log("+868")
+// break
+// case "Tunisia":
+// console.log("+216")
+// break
+// case "Turkey":
+// console.log("+90")
+// break
+// case "Turkmenistan":
+// console.log("+993")
+// break
+// case "Tuvalu":
+// console.log("+688")
+// break
+// case "Uganda":
+// console.log("+256")
+// break
+// case "Ukraine":
+// console.log("+380")
+// break
+// case "United Arab Emirates":
+// console.log("+971")
+// break
+// case "United Kingdom":
+// console.log("+44")
+// break
+// case "United States":
+// console.log("+1")
+// break
+// case "Uruguay":
+// console.log("+598")
+// break
+// case "Uzbekistan":
+// console.log("+998")
+// break
+// case "Vanuatu":
+// console.log("+678")
+// break
+// case "Venezuela":
+// console.log("+58")
+// break
+// case "Vietnam":
+// console.log("+84")
+// break
+// case "Yemen":
+// console.log("+967")
+// break
+// case "Zambia":
+// console.log("+260")
+// break
+// case "Zimbabwe":
+// console.log("+263")
+// break
+// default:
+// console.log("The country you entered dosent exists or the spelling of country you entered is incorrect.")
+// break
+// }
+
+
 // let c=prompt("Enter the name of country to khow its currency: ")
 // if(c=='Afganistan' || c=='afganistan'){
 //     console.log("The currrency of Afganistan is Afgani(AFN)")
