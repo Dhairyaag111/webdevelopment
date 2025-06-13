@@ -235,8 +235,77 @@
 // else if(c=='Yemen'){
 // console.log("The currrency of Yemen is Yemeni Rial (YER)")
 // }
+// else if(c=='Cabo Verde'){
+// console.log("The currrency of Cabo Verde is Cape Verde Escudo (CVE)")
+// }
+// else if(c=='Cameroon'){
+// console.log("The currrency of Cameroon is Central African CFA (CFA)")
+// }
+// else if(c=='Central African Republic'){
+// console.log("The currrency of Central African Republic is Central African CFA (CFA)")
+// }
+// else if(c=='Chad'){
+// console.log("The currrency of Chad is Central African CFA (CFA)")
+// }
+// else if(c=='Comoros'){
+// console.log("The currrency of Comoros is Comorian Franc (KFM)")
+// }
+// else if(c=='Democratic Republic of the Congo'){
+// console.log("The currrency of Democratic Republic of the Congo is Congolese franc (CDF)")
+// }
+// else if(c=='Republic of the Congo'){
+// console.log("The currrency of Republic of the Congo is Central African CFA (CFA)")
+// }
+// else if(c=='Cote d'Ivoire'){
+// console.log("The currrency of Cote d'Ivoire is West African CFA (CFA)")
+// }
+// else if(c=='Djibouti'){
+// console.log("The currrency of Djibouti is Djiboutian Franc (DJF)")
+// }
+// else if(c=='Egypt'){
+// console.log("The currrency of Egypt is Egyptian Pound (EGP)")
+// }
+// else if(c=='Equatorial Guinea'){
+// console.log("The currrency of Equatorial Guinea is Central African CFA (CFA))")
+// }
+// else if(c=='Eritrea'){
+// console.log("The currrency of Eritrea is Eritrean Nakfa (ERN)")
+// }
+// else if(c=='Ethiopia'){
+// console.log("The currrency of Ethiopia is Ethiopian Birr (ETB)")
+// }
+// else if(c=='Gabon'){
+// console.log("The currrency of Gabon is ")
+// }
 // else if(c==''){
-// console.log("The currrency of  is ")
+// console.log("The currrency of  is Central African CFA (CFA)")
+// }
+// else if(c=='Gambia'){
+// console.log("The currrency of Gambia is Gambian Dalasi (GMD)")
+// }
+// else if(c=='Ghana'){
+// console.log("The currrency of Ghana is Ghanaian Cedi (GHC)")
+// }
+// else if(c=='Guinea'){
+// console.log("The currrency of Guinea is Guinean Franc (GNF)")
+// }
+// else if(c=='Guinea-Bissau'){
+// console.log("The currrency of Guinea-Bissau is West African CFA (CFA)")
+// }
+// else if(c=='Kenya'){
+// console.log("The currrency of Kenya is Kenyan Shilling (KES)")
+// }
+// else if(c=='Lesotho'){
+// console.log("The currrency of Lesotho is Lesotho Loti (LSL)")
+// }
+// else if(c=='Liberia'){
+// console.log("The currrency of Liberia is Liberian Dollar (LRD)")
+// }
+// else if(c=='Libya'){
+// console.log("The currrency of Libya is Libyan Dinar (LYD)")
+// }
+// else if(c=='Madagascar'){
+// console.log("The currrency of Madagascar is ")
 // }
 // else if(c==''){
 // console.log("The currrency of  is ")
@@ -277,73 +346,3 @@
 // else if(c==''){
 // console.log("The currrency of  is ")
 // }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-// else if(c==''){
-// console.log("The currrency of  is ")
-// }
-
