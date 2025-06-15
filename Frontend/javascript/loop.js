@@ -116,3 +116,12 @@
 //     a=a*2
 //     i++
 // }
+
+
+// let i=1
+// let a=1
+// while (i<=7){
+//     console.log(a)
+//     a=a+i
+//     i++
+// }
