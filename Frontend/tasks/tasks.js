@@ -625,7 +625,8 @@
 //     console.log("The currrency of Angola is Angolan Kwanza(AOA) ")
 // }
 // else if(c=='Antigua and Barbuda' || c=='antigua and barbuda'){
-//     console.log("The currrency of 	Antigua and Barbuda is East Caribbean Dollar(ECD")}
+//     console.log("The currrency of Antigua and Barbuda is East Caribbean Dollar(ECD)")
+// }
 // else if(c=='Argentina' || c=='argentina'){
 //     console.log("The currrency of Argentina is Argentine Peso (ARS)")
 // }
@@ -677,7 +678,6 @@
 // else if(c=='Bosnia and Herzegovina' || c=='bosnia and herzegovina'){
 // console.log("The currrency of Bosnia and Herzegovina is Bosnia-Herzegovina Convertible Marka (BAM)")
 // }
-// }
 // else if(c=='Botswana' || c=='botswana'){
 // console.log("The currrency of Botswana is Botswana pula (BWP)")
 // }
@@ -709,7 +709,7 @@
 // console.log("The currrency of Georgia is Georgian Lari (GELIndia)")
 // }
 // else if(c=='India' || c=='India'){
-// console.log("The currrency of India is Indian Rupee (INRIndonesia)")
+// console.log("The currrency of India is Indian Rupee (INR)")
 // }
 // else if(c=='Indonesia' || c=='Indonesia'){
 // console.log("The currrency of Indonesia is Indonesian Rupiah (IDR)")
@@ -717,17 +717,17 @@
 // else if(c=='Iran' || c=='Iran'){
 // console.log("The currrency of Iran is Iranian Rial (TRR)")
 // }
-// else if(c=='Iraq' || c==Iraq'){
-// console.log("The currrency of Iraq is Iraqi Dinar (IQDIsrael)")
+// else if(c=='Iraq' || c=='Iraq'){
+// console.log("The currrency of Iraq is Iraqi Dinar (IQD)")
 // }
 // else if(c=='Israel' || c=='Israel'){
 // console.log("The currrency of Israel is Israeli New Sheqel (ILS)")
 // }
 // else if(c=='Japan' || c=='Japan'){
-// console.log("The currrency of Japan is Japanese Yen (JPYJordan)")
+// console.log("The currrency of Japan is Japanese Yen (JPY)")
 // }
 // else if(c=='Jordan' || c=='Jordan'){
-// console.log("The currrency of Jordan is Jordanian Dinar(JODKazakhstan)")
+// console.log("The currrency of Jordan is Jordanian Dinar(JOD)")
 // }
 // else if(c=='Kazakhstan' || c=='Kazakhstan'){
 // console.log("The currrency of Kazakhstan is (KZT)")
@@ -846,7 +846,7 @@
 // else if(c=='Republic of the Congo'){
 // console.log("The currrency of Republic of the Congo is Central African CFA (CFA)")
 // }
-// else if(c=='Cote d'Ivoire'){
+// else if(c=='Cote d Ivoire'){
 // console.log("The currrency of Cote d'Ivoire is West African CFA (CFA)")
 // }
 // else if(c=='Djibouti'){
@@ -941,7 +941,7 @@
 // }
 // else if(c=="South Africa"){
 //     console.log("The currrency of South Africa is South African Rand	(ZAR)")
-// })
+// }
 // else if(c=="South Sudan"){
 //     console.log("The currrency of South Sudan is South Sudanese pound	(SSP)")
 // }
@@ -1036,7 +1036,7 @@
 //     console.log("The currrency of Macedonia is Macedonian Dena (MKD)	")
 // }
 // else if(c=="Malta"){
-//     console.log("The currrency of Malta is Maltese Lira	9MTL)	")
+//     console.log("The currrency of Malta is Maltese Lira	(MTL)	")
 // }
 // else if(c=="Moldova"){
 //     console.log("The currrency of Moldova is Moldovan Leu	(MDL)")
@@ -1063,7 +1063,7 @@
 //     console.log("The currrency of Romania is Romanian Leu	RON	")
 // }
 // else if(c=="Russia"){
-//     console.log(T"he currrency of Russia is Russian Ruble	RUB	")
+//     console.log("The currrency of Russia is Russian Ruble	RUB	")
 // }
 // else if(c=="San Marino"){
 //     console.log("The currrency of San Marino is European Euro	EUR")
