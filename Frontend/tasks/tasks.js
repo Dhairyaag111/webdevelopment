@@ -907,145 +907,145 @@
 //     console.log("The currrency of Mauritius is Mauritian Rupe (MUR)")
 // }
 // else if(c=="Morocco"){
-//     console.log("The currrency of Morocco is Moroccan Dirham MAD")
+//     console.log("The currrency of Morocco is Moroccan Dirham (MAD)")
 // }
 // else if(C=="Mozambique"){
-//     console.log("The currrency of Mozambique is Mozambican Metical MZN")
+//     console.log("The currrency of Mozambique is Mozambican Metical (MZN)")
 // }
 // else if(c=="Namibia"){
-//     console.log("The currrency of Namibia is Namibian Dollar NAD")
+//     console.log("The currrency of Namibia is Namibian Dollar (NAD)")
 // }
 // else if(c=="Niger"){
-//     console.log("The currrency of Niger is West African CFA")
+//     console.log("The currrency of Niger is West African (CFA)")
 // }
 // else if(c=="Nigeria"){
-//     console.log("The currrency of Nigeria is Nigerian Naira	NGN")
+//     console.log("The currrency of Nigeria is Nigerian Naira	(NGN)")
 // }
 // else if(c=="Rwanda"){
-//     console.log("The currrency of Rwanda is Rwandan Franc RWF")
+//     console.log("The currrency of Rwanda is Rwandan Franc (RWF)")
 // }
 // else if(c=="Sao Tome and Principe"){
-//     console.log("The currrency of Sao Tome and Principe is Sao Tome Dobra STD")
+//     console.log("The currrency of Sao Tome and Principe is Sao Tome Dobra (STD)")
 // }
 // else if(c=="Senegal"){
-//     console.log("The currrency of Senegal is West African CFA	XOF")
+//     console.log("The currrency of Senegal is West African CFA	(XOF)")
 // }
 // else if(c=="Seychelles"){
-//     console.log("The currrency of Seychelles is Seychelles Rupee	SCR	)
+//     console.log("The currrency of Seychelles is Seychelles Rupee	(SCR)"	)
 // }
 // else if(c=="Sierra Leone"){
-//     console.log("The currrency of Sierra Leone is Sierra Leonean Leone	SLL	")
+//     console.log("The currrency of Sierra Leone is Sierra Leonean Leone	(SLL)	")
 // }
 // else if(c=="Somalia"){
-//     console.log("The currrency of Somalia is Somali Shilling	SOS")
+//     console.log("The currrency of Somalia is Somali Shilling	(SOS)")
 // }
 // else if(c=="South Africa"){
-//     console.log("The currrency of South Africa is South African Rand	ZAR")
-// }
+//     console.log("The currrency of South Africa is South African Rand	(ZAR)")
+// })
 // else if(c=="South Sudan"){
-//     console.log("The currrency of South Sudan is South Sudanese pound	SSP")
+//     console.log("The currrency of South Sudan is South Sudanese pound	(SSP)")
 // }
 // else if(c=="Sudan"){
-//     console.log("The currrency of Sudan is Sudanese pound	SDG	")
+//     console.log("The currrency of Sudan is Sudanese pound	(SDG)	")
 // }
 // else if(c=="Swaziland"){
-//     console.log("The currrency of Swaziland is Swazi Lilangeni	SZL")
+//     console.log("The currrency of Swaziland is Swazi Lilangeni	(SZL)")
 // }
 // else if(c=="Tanzania"){
-//     console.log("The currrency of Tanzania is Tanzanian Shilling	TZS	")
+//     console.log("The currrency of Tanzania is Tanzanian Shilling	(TZS	)")
 // }
 // else if(c=="Togo"){
-//     console.log("The currrency of Togo is West African CFA	XOF	")
+//     console.log("The currrency of Togo is West African CFA	(XOF	)")
 // }
 // else if(c=="Tunisia"){
-//     console.log("The currrency of Tunisia is Tunisian Dinar	TND")
+//     console.log("The currrency of Tunisia is Tunisian Dinar	(TND)")
 // }
 // else if(c=="Uganda"){
-//     console.log("The currrency of Uganda is Ugandan Shilling	UGX	")
+//     console.log("The currrency of Uganda is Ugandan Shilling	(UGX	)")
 // }
 // else if(c=="Zambia"){
-//     console.log("The currrency of Zambia is Zambian Kwacha	ZMK")
+//     console.log("The currrency of Zambia is Zambian Kwacha	(ZMK)")
 // }
 // else if(c=="Zimbabwe"){
-//     console.log("The currrency of Zimbabwe is Zimbabwean Dollar	ZWD")
+//     console.log("The currrency of Zimbabwe is Zimbabwean Dollar	(ZWD)")
 // }
 // else if(c=="Albania"){
-//     console.log("The currrency of Albania is Albanian Lek	ALL")
+//     console.log("The currrency of Albania is Albanian Lek(	ALL)")
 // } 
 // else if(c=="Croatia"){
-//     console.log("The currrency of Croatia is Croatian Kuna	HRK")
+//     console.log("The currrency of Croatia is Croatian Kuna	(HRK)")
 // }
 // else if(c=="Cyprus"){
-//     console.log("The currrency of Cyprus is Cypriot Pound	CYP	")
+//     console.log("The currrency of Cyprus is Cypriot Pound	(CYP)	")
 // }
 // else if(c=="CzechRepublic"){
-//     console.log("The currrency of CzechRepublic is Czech Koruna	CZK	")
+//     console.log("The currrency of CzechRepublic is Czech Koruna	(CZK)	")
 // }
 // else if(c=="Denmark"){
-//     console.log("The currrency of Denmark is Danish Krone	DKK	")
+//     console.log("The currrency of Denmark is Danish Krone	(DKK	)")
 // }
 // else if(c=="Estonia"){
-//     console.log("The currrency of Estonia is Estonian Kroon	EEK	")
+//     console.log("The currrency of Estonia is Estonian Kroon	(EEK)	")
 // }
 // else if(c=="Finland"){
-//     console.log("The currrency of Finland is European Euro	EUR	")
+//     console.log("The currrency of Finland is European Euro(	EUR)	")
 // }
 // else if(c=="France"){
-//     console.log("The currrency of France is European Euro	EUR	")
+//     console.log("The currrency of France is European Euro	(EUR)	")
 // }
 // else if(c=="Georgia"){
-//     console.log("The currrency of Georgia is Georgian Lari	GEL	")
+//     console.log("The currrency of Georgia is Georgian Lari	(GEL)	")
 // }
 // else if(c=="Germany"){
-//     console.log("The currrency of Germany is European Euro	EUR	")
+//     console.log("The currrency of Germany is European Euro	(EUR)	")
 // }
 // else if(c=="Greece"){
-//     console.log("The currrency of Greece is European Euro	EUR	")
+//     console.log("The currrency of Greece is European Euro	(EUR)	")
 // }
 // else if(c=="Hungary"){
-//     console.log("The currrency of Hungary is Hungarian Forint	HUF	")
+//     console.log("The currrency of Hungary is Hungarian Forint	(HUF)	")
 // }
 // else if(c=="Iceland"){
-//     console.log("The currrency of Iceland is European Euro	EUR	")
+//     console.log("The currrency of Iceland is European Euro	(EUR)	")
 // }
 // else if(c=="Ireland"){
-//     console.log("The currrency of Ireland is Icelandic Krona	ISK	")
+//     console.log("The currrency of Ireland is Icelandic Krona	(ISK)	")
 // }
 // else if(c=="Italy"){
-//     console.log("The currrency of Italy is European Euro	EUR	")
+//     console.log("The currrency of Italy is European Euro	(EUR)	")
 // }
 // else if(c=="Kazakhstan"){
-//     console.log("The currrency of Kazakhstan is Kazakhstani Tenge	KZT	")
+//     console.log("The currrency of Kazakhstan is Kazakhstani Tenge	(KZT)	")
 // }
 // else if(c=="Latvia"){
-//     console.log("The currrency of Latvia is Latvian Lats LVL")
+//     console.log("The currrency of Latvia is Latvian Lats (LVL)")
 // }
 // else if(c=="Kosovo"){
-//     console.log("The currrency of Kosovo is Euro	EUR	")
+//     console.log("The currrency of Kosovo is Euro	(EUR)	")
 // }
 // else if(c=="Liechtenstein"){
-//     console.log("The currrency of Liechtenstein is Swiss Franc CHF")
+//     console.log("The currrency of Liechtenstein is Swiss Franc( )CHF)")
 // }
 // else if(c=="Lithuania"){
-//     console.log("The currrency of Lithuania is Lithuanian Litas LTL ")
+//     console.log("The currrency of Lithuania is Lithuanian Litas (LTL) ")
 // }
 // else if(c=="Luxembourg"){
-//     console.log("The currrency of Luxembourg is  Euro	EUR	")
+//     console.log("The currrency of Luxembourg is  Euro	(EUR)	")
 // }
 // else if(c=="Macedonia"){
-//     console.log("The currrency of Macedonia is Macedonian Dena rMKD	")
+//     console.log("The currrency of Macedonia is Macedonian Dena (MKD)	")
 // }
 // else if(c=="Malta"){
-//     console.log("The currrency of Malta is Maltese Lira	MTL	")
+//     console.log("The currrency of Malta is Maltese Lira	9MTL)	")
 // }
 // else if(c=="Moldova"){
-//     console.log("The currrency of Moldova is Moldovan Leu	MDL")
+//     console.log("The currrency of Moldova is Moldovan Leu	(MDL)")
 // }
 // else if(c=="Monaco"){
-//     console.log("The currrency of Monaco is European Euro	EUR	")
+//     console.log("The currrency of Monaco is European Euro	(EUR)	")
 // }
 // else if(c=="Montenegro"){
-//     console.log("The currrency of Montenegro is European Euro	EUR")
+//     console.log("The currrency of Montenegro is European Euro	(EUR)")
 // }
 // else if(c=="Netherlands"){
 //     console.log("The currrency of Netherlands is European Euro	EUR")
