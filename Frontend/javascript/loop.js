@@ -80,3 +80,14 @@
 //     i=i+1
 // }
 // console.log(sum)
+
+
+// let i=50
+// while(i>=1){
+// if(i%4==0){
+//     console.log(i)
+// }
+//       i=i-1
+// }
+
+
