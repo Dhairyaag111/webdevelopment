@@ -24,3 +24,10 @@
 //     console.log(i)
 //     i=i-1
 // }
+
+
+//     let i=0
+// while(i<=9){
+//     i=i+1
+//     console.log(i*i)
+// }
