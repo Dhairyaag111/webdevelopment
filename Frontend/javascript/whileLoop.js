@@ -28,6 +28,14 @@
 
 //     let i=0
 // while(i<=9){
+//  console.log(i*i)
 //     i=i+1
-//     console.log(i*i)
+// }
+
+
+// let i=1
+// let a=5
+// while(i<=10){
+//      console.log(a+"X"+i+"="+a*i)
+//     i=i+1
 // }
