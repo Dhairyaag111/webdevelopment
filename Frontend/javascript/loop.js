@@ -107,3 +107,12 @@
 // a=a*10+i
 // i=i+1
 // }
+
+
+// let i = 1
+// let a=2
+// while (i<=6){
+//     console.log(a)
+//     a=a*2
+//     i++
+// }
