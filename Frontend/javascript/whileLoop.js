@@ -103,3 +103,13 @@
 //     i++
 // }
 // console.log(s)
+
+
+// let u=Number(prompt("Enter any number: "))
+// var r=0
+// while(u>0){
+//     let d=u%10
+//     r=r*10+d
+//     u=(u/10)>>0
+// }
+// console.log(r)
