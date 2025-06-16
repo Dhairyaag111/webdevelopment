@@ -93,3 +93,13 @@
 //     a=a+i
 //     i++
 // }
+
+
+// let u = Number(prompt("Enter any number to know its factorial: "))
+// let s=u
+// let i=1
+// while(i<u){
+//     s=s*i
+//     i++
+// }
+// console.log(s)
