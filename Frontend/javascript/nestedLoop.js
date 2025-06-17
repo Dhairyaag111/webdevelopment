@@ -10,3 +10,12 @@
 //        console.log("the value of i is "+i+". the value of j is "+j)
 //    } 
 // }
+
+
+// for(i=1;i<=4;i++){
+//     let data =" "
+//     for(j=1;j<=i;j++){
+//         data = data +"1"
+//     }
+//     console.log(data)
+// }
