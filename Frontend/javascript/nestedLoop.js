@@ -19,3 +19,12 @@
 //     }
 //     console.log(data)
 // }
+
+
+// for(let i=1;i<=5;i++){
+//     data=""
+//     for(let j=1;j<=i;j++){
+//         data = data+ "*"
+//     }
+//     console.log(data)
+// }
