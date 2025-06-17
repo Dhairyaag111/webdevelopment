@@ -3,3 +3,10 @@
 //        console.log(j)
 //    } 
 // }
+
+
+// for(let i=2;i<=10;i=i+2){
+//    for(let j=1;j<=5;j=j+1){
+//        console.log("the value of i is "+i+". the value of j is "+j)
+//    } 
+// }
