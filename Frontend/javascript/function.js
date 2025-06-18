@@ -100,3 +100,14 @@
 
 // let a = Number(prompt("Enter the percentage of marks in your exam: "))
 // grade(a)
+
+
+// function simpleinterest(p,t,r){
+//     si = (p*t*r)/100
+//     return si
+// }
+ 
+// let p = Number(prompt("Enter the principle amount: "))
+// let t = Number(prompt("Enter the time: "))
+// let r = Number(prompt("Enter the rate: "))
+// console.log(`The simple interest of Rs${p}, in time ${t}yrs and with rate of ${r}% is Rs${simpleinterest(p,t,r)}.`)
