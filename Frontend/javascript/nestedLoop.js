@@ -30,9 +30,9 @@
 // }
 
 
-// for(let i=5;i>=1;i=i-1){
+// for(let i=5; i>=1; i=i-1){
 //     data=""
-//     for(let j=1;j<=i;j++){
+//     for(let j=1; j<=i; j++){
 //         data = data + "*"
 //     }
 //     console.log(data)
