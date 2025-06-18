@@ -1,1 +1,3 @@
-odd,even
+odd eveb
+grade
+simple interest
