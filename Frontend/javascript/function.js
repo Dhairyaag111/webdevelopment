@@ -24,3 +24,38 @@
 // square(a)
 // let result = cube(a)
 // console.log("The cube of "+a+" is "+cub)
+
+
+// function sum(a,b){
+//     s = a+b
+//     return s
+// }
+
+// function diff(a,b){
+//     d = a-b
+//     return d
+// }
+
+// function pro(a,b){
+//     p = a*b
+//     return p
+// }
+
+// function div(a,b){
+//     di = a/b
+//     return di
+// }
+// let a = Number(prompt("Enter the first number: "))
+// let b = Number(prompt("Enter the second number: "))
+
+// let res_sum = sum(a,b)
+// console.log("The sum of "+a+" and "+b+" is "+s+".")
+
+// let res_diff = diff(a,b)
+// console.log("The differece of "+a+" and "+b+" is "+d+".")
+
+// let res_pro = pro(a,b)
+// console.log("The product of "+a+" and "+b+" is "+p+".")
+
+// let res_div = div(a,b)
+// console.log("The division of "+a+" and "+b+" is "+di.toFixed(2)+".")
