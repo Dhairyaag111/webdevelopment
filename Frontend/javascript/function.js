@@ -59,3 +59,16 @@
 
 // let res_div = div(a,b)
 // console.log("The division of "+a+" and "+b+" is "+di.toFixed(2)+".")
+
+
+
+// function num(n) {
+// if (n % 2 == 0) {
+// console.log("the number is even.");
+// } else {
+// console.log("the number is odd.");
+// }
+// }
+
+// let a = Number(prompt("Enter any number: "))
+// num(a)
