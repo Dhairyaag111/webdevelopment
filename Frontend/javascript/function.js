@@ -98,9 +98,10 @@
 // }
 // }
 
+
+
 // let a = Number(prompt("Enter the percentage of marks in your exam: "))
 // grade(a)
-
 
 // function simpleinterest(p,t,r){
 //     si = (p*t*r)/100
