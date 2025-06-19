@@ -9,6 +9,12 @@
 // mulitplication(a)
 
 
+
+
+
+
+
+
 // function square(a){
 //     sq = a*a
 //     console.log("The square of "+a+" is "+sq)
@@ -24,6 +30,11 @@
 // square(a)
 // let result = cube(a)
 // console.log("The cube of "+a+" is "+cub)
+
+
+
+
+
 
 
 // function sum(a,b){
@@ -62,6 +73,10 @@
 
 
 
+
+
+
+
 // function num(n) {
 // if (n % 2 == 0) {
 // console.log("the number is even.");
@@ -72,6 +87,11 @@
 
 // let a = Number(prompt("Enter any number: "))
 // num(a)
+
+
+
+
+
 
 
 // function grade(a){
@@ -106,6 +126,10 @@
 
 
 
+
+
+
+
 // function simpleinterest(p,t,r){
 //     si = (p*t*r)/100
 //     return si
@@ -115,3 +139,31 @@
 // let t = Number(prompt("Enter the time: "))
 // let r = Number(prompt("Enter the rate: "))
 // console.log(`The simple interest of Rs${p}, in time ${t}yrs and with rate of ${r}% is Rs${simpleinterest(p,t,r)}.`)
+
+
+
+
+
+
+
+// let area = function ar(aoc){
+//     area_of_circle = pi*r*r
+//     return area_of_circle
+// }
+
+// let circumference = function cu(coc){
+//     circumference_of_circle = 2*pi*r
+//     return circumference_of_circle
+// }
+
+// const pi = 3.1415
+// let d = Number(prompt("Enter the diameter of the circle(in cm): "))
+// let r = d/2
+
+
+// let res_ar = area(d)
+// console.log(`The area of circle with the diameter ${d}cm is ${area_of_circle.toFixed(2)} `)
+
+// let res_cu = circumference(d)
+// console.log(`The circumference of circle with the diameter ${d}cm is ${circumference_of_circle.toFixed(2)} `)
+
