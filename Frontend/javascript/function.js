@@ -145,7 +145,6 @@
 
 
 
-
 // let area = function ar(aoc){
 //     area_of_circle = pi*r*r
 //     return area_of_circle
@@ -159,7 +158,6 @@
 // const pi = 3.1415
 // let d = Number(prompt("Enter the diameter of the circle(in cm): "))
 // let r = d/2
-
 
 // let res_ar = area(d)
 // console.log(`The area of circle with the diameter ${d}cm is ${area_of_circle.toFixed(2)} `)
