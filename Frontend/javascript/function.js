@@ -12,9 +12,6 @@
 
 
 
-
-
-
 // function square(a){
 //     sq = a*a
 //     console.log("The square of "+a+" is "+sq)
@@ -30,8 +27,6 @@
 // square(a)
 // let result = cube(a)
 // console.log("The cube of "+a+" is "+cub)
-
-
 
 
 
@@ -75,8 +70,6 @@
 
 
 
-
-
 // function num(n) {
 // if (n % 2 == 0) {
 // console.log("the number is even.");
@@ -87,8 +80,6 @@
 
 // let a = Number(prompt("Enter any number: "))
 // num(a)
-
-
 
 
 
@@ -128,8 +119,6 @@
 
 
 
-
-
 // function simpleinterest(p,t,r){
 //     si = (p*t*r)/100
 //     return si
@@ -139,7 +128,6 @@
 // let t = Number(prompt("Enter the time: "))
 // let r = Number(prompt("Enter the rate: "))
 // console.log(`The simple interest of Rs${p}, in time ${t}yrs and with rate of ${r}% is Rs${simpleinterest(p,t,r)}.`)
-
 
 
 
@@ -165,3 +153,25 @@
 // let res_cu = circumference(d)
 // console.log(`The circumference of circle with the diameter ${d}cm is ${circumference_of_circle.toFixed(2)} `)
 
+
+
+
+
+// let primeNum = function pr(a){
+//     for(i=1;i<=a;i++){
+//         if(a%i==0){
+//               counter++
+//         }
+//     }
+// }
+
+// let counter=0
+// let a = Number(prompt("Enter the number to check whether is prime or not: "))
+// primeNum(a)
+
+// if(counter==2){
+//     console.log("The number is a prime number.")
+// }
+// else{
+//     console.log("The number is not a prime number")
+// }
