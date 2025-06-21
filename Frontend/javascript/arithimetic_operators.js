@@ -17,6 +17,9 @@
 // console.log(product)
 // console.log(division)
 
+
+
+
 // // simple interest program
 // let p=100000
 // let t=10
