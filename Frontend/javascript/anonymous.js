@@ -17,3 +17,26 @@
 // let b = Number(prompt("Enter second number: "))
 
 // console.log("The product is "+myFunc(a,b))
+
+
+
+// let func = function(a,b){
+//     return a-b
+// }
+
+// function nextfunction(num){
+//     if (num<0){
+//         console.log("The number is negative")
+//     }
+//     else if(num>0){
+//         console.log("The number is positive")
+//     }
+//     else{
+//         console.log("The number is equal to zero")
+//     }
+// }
+
+// let a = Number(prompt("Enter the first number: "))
+// let b = Number(prompt("Enter the second number: "))
+
+// nextfunction(func(a,b))
