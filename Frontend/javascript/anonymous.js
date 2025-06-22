@@ -8,6 +8,8 @@
 
 // nextFunction(myFunc(2,3),10)
 
+  
+
 
 // let myFunc = function(a,b){
 //     return a*b
@@ -17,6 +19,9 @@
 // let b = Number(prompt("Enter second number: "))
 
 // console.log("The product is "+myFunc(a,b))
+
+
+
 
 
 
@@ -40,3 +45,13 @@
 // let b = Number(prompt("Enter the second number: "))
 
 // nextfunction(func(a,b))
+
+
+
+
+
+// let func = function(a){
+//     return a*a
+// }
+
+// console.log("The square of 5 is "+func(5))
