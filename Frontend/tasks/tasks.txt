@@ -1,0 +1,3 @@
+creat an anonymous function that returns the square of the number. use it inside the main function to print the square of 5
+write a anonymous function to make a calcualtor
+write a anonyous function to make calculator and check whether its neg,pos,=zero
