@@ -102,3 +102,15 @@
 // let h = Number(prompt("Ener the height of cuboid: "))
 
 // console.log(`The volume of cuboid is ${func(l,b,h)}sq.m`)
+
+
+
+
+
+// let func = (c) =>{
+//    return (c*9/5)+32
+// }
+
+// let c = Number(prompt("Enter the celcius amount to be converted into fahrenhiet: "))
+
+// console.log(`The fahrenhiet amount is ${func(c)}`)
