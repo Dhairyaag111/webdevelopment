@@ -58,6 +58,8 @@
 
 
 
+    
+
 
 //     let func_add = function(a, b){
 //     return a + b;
@@ -91,5 +93,86 @@
 // let a = Number(prompt("Enter the first number: "))
 // let b = Number(prompt("Enter the second number: "))
 // let c = prompt("Enter the operator (+, -, *, /): ")
+
+// nextfunction(a,b,c)
+
+
+
+
+// let func_add = function(a,b){
+//     return a + b
+// }
+// let func_sub = function(a,b){
+//     return a - b
+// }
+// let func_mul = function(a,b){
+//     return a * b
+// }
+// let func_div = function(a,b){
+//     return a/b
+// }
+
+// function nextfunction(a, b, c) {
+//     if (c=="+"){
+//         if(func_add(a,b)>0){
+//             console.log(`The sum of ${a} and ${b} is ${func_add(a,b)}.`)
+//             console.log("The sum is positive")
+//         }
+//         else if(func_add(a,b)<0){
+//             console.log(`The sum of ${a} and ${b} is ${func_add(a,b)}.`)
+//             console.log("The sum is negative")
+//         }
+//         else if(func_add(a,b)==0){
+//             console.log("The sum of ${a} and ${b} is equal to zero")
+//         }
+//     } 
+//     else if (c=="-"){
+//        if(func_sub(a,b)>0){
+//             console.log(`The difference of ${a} and ${b} is ${func_sub(a,b)}.`)
+//             console.log("The difference is positive")
+//         }
+//         else if(func_sub(a,b)<0){
+//             console.log(`The diffenence of ${a} and ${b} is ${func_sub(a,b)}.`)
+//             console.log("The difference is negative")
+//         }
+//         else if(func_sub(a,b)==0){
+//             console.log("The difference of ${a} and ${b} is equal to zero")
+//         }
+//     } 
+//     else if (c=="*"){
+//         if(func_mul(a,b)>0){
+//             console.log(`The product of ${a} and ${b} is ${func_mul(a,b)}.`)
+//             console.log("The product is positive")
+//         }
+//         else if(func_mul(a,b)<0){
+//             console.log(`The product of ${a} and ${b} is ${func_mul(a,b)}.`)
+//             console.log("The product is negative")
+//         }
+//         else if(func_mul(a,b)==0){
+//             console.log("The product of ${a} and ${b} is equal to zero")
+//         }
+//     }
+//     else if(c=="/"){
+//         if(func_div(a,b)>0){
+//             console.log(`The division of ${a} and ${b} is ${func_div(a,b).toFixed(2)}.`)
+//             console.log("The division is positive")
+//         }
+//         else if(func_div(a,b)<0){
+//             console.log(`The division of ${a} and ${b} is ${func_div(a,b).toFixed(2)}.`)
+//             console.log("The division is negative")
+//         }
+//         else if(func_div(a,b)==0){
+//             console.log("The division of ${a} and ${b} is equal to zero")
+//         }
+//     }
+//     else{
+//         console.log("The operator you enter is incorrect")
+//     }
+// }
+// let a = Number(prompt("Enter the first number: "))
+// let b = Number(prompt("Enter the second number: "))
+// let c = prompt("Enter the operator (+, -, *, /): ")
+
+// console.log(c)
 
 // nextfunction(a,b,c)
