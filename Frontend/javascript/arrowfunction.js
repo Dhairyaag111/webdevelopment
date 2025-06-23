@@ -88,3 +88,17 @@
 //  let t = Number(prompt("Enter the time taken: "))
  
 //  speed(d,t)
+
+
+
+
+
+// let func = (l,b,h) =>{
+//     return l*b*h
+// }
+
+// let l = Number(prompt("Ener the length of cuboid: "))
+// let b = Number(prompt("Ener the breadth of cuboid: "))
+// let h = Number(prompt("Ener the height of cuboid: "))
+
+// console.log(`The volume of cuboid is ${func(l,b,h)}sq.m`)

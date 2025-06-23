@@ -2,7 +2,7 @@ area of circle
 accleration
 divisible by 5 and 11
 calcualte distance
-if speed is less tha n equal to thirty return
+if speed is less than equal to thirty return
 vol of cubiod
 celcius to fahrenhiet
 fahrenhiet of celcius
