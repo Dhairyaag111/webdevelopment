@@ -58,7 +58,7 @@
 
 
 // let func = (u,t,a) =>{
-//     return (u*t)+1/2*a*t
+//     return (u*t)+1/2*a*t*t
 // }
 
 // let u = Number(prompt("Enter the initial velocity: "))
