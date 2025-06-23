@@ -53,3 +53,16 @@
 
 // func(a)
 
+
+
+
+
+// let func = (u,t,a) =>{
+//     return (u*t)+1/2*a*t
+// }
+
+// let u = Number(prompt("Enter the initial velocity: "))
+// let t = Number(prompt("Enter the time: "))
+// let a = Number(prompt("Enter the accleration: "))
+
+// console.log(`The distance is ${func(u,a,t)}m`)
