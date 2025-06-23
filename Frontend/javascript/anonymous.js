@@ -50,15 +50,15 @@
 
 
 
-    // let func = function(a){
-    //     return a*a
-    // }
+// let func = function(a){
+//     return a*a
+// }
 
-    // console.log("The square of 5 is "+func(5))
+// console.log("The square of 5 is "+func(5))
 
 
 
-    
+
 
 
 //     let func_add = function(a, b){
