@@ -35,3 +35,21 @@
 // let t = Number(prompt("Ener the time: "))
 
 // console.log(`The acceleration is ${func(v,u,t)}m/s.sq`)
+
+
+
+
+
+// let func = (a) =>{
+//     if(a%5==0 && a%11==0){
+//         console.log("The number is divisible by both 5 and 11.")
+//     }
+//     else{
+//         console.log("The number is not divisible by both 5 and 11.")
+//     }
+// }
+
+// let a = Number(prompt("Enter any number: "))
+
+// func(a)
+
