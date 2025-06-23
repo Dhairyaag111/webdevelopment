@@ -113,4 +113,16 @@
 
 // let c = Number(prompt("Enter the celcius amount to be converted into fahrenhiet: "))
 
-// console.log(`The fahrenhiet amount is ${func(c)}`)
+// console.log(`The fahrenhiet amount is ${func(c)}deg`)
+
+
+
+
+
+// let func = (f) =>{
+//    return (f-32)*5/9
+// }
+
+// let f = Number(prompt("Enter the fahrenheit amount to be converted into celcius: "))
+
+// console.log(`The celcius amount is ${func(f)}deg`)
