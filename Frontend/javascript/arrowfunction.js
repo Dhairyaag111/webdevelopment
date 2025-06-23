@@ -66,3 +66,25 @@
 // let a = Number(prompt("Enter the accleration: "))
 
 // console.log(`The distance is ${func(u,a,t)}m`)
+
+
+
+
+
+// let func = (d,t) =>{
+//     return d/t
+// }
+ 
+//  function speed(d,t){
+//      if(func(d,t)<30){
+//          console.log(`The speed is ${func(d,t).toFixed(2)}m/s.sq`)
+//      }
+//      else{
+//          console.log(" ")
+//      }
+//  }
+ 
+//  let d = Number(prompt("Enter the distance: "))
+//  let t = Number(prompt("Enter the time taken: "))
+ 
+//  speed(d,t)
