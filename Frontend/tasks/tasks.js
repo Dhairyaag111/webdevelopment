@@ -1232,12 +1232,17 @@
 
 
 
-// let u = Number(prompt("Enter a number to know finonacci upto there: "))
-// let a = 0
+// let func = (a)=>{
 // for(i=1;i<=u;i++){
 //     a=a+i
 //     console.log(a)
 // }
+// }
+
+// let u = Number(prompt("Enter a number to know finonacci upto there: "))
+// let a = 0
+
+// func(a)
 
 
 
