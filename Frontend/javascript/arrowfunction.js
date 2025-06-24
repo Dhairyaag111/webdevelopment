@@ -197,3 +197,30 @@
 // }
 // let a = Number(prompt(`Enter any number to check weatheer the given number is prime or not :- `))
 // arrow(a)
+
+
+
+
+
+// let arrow = (a) =>{
+//      if(a>100 || a<2){
+//     console.log("Enter the number between 2 and 100")
+//       }
+      
+//     for (let i = 1; i <= a; i++){
+//         if (a%i==0){
+//             counter++
+//         }
+//     }
+    
+//     if (counter == 2){
+//         console.log("It is a prime number.")
+//     } 
+//     else {
+//         console.log("It's not a prime number.")
+//     }
+// }
+// let counter = 0
+// let a = Number(prompt("Enter any number to check whether the given number is prime or not (between 2 and 100):"))
+
+// arrow(a)
