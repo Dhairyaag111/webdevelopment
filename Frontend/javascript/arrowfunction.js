@@ -131,3 +131,23 @@
 
 // console.log(`The celcius amount is ${func(f)}deg`)
 
+
+
+
+
+// let func = (a) =>{
+//     return a
+// }
+
+// function oddevencheck(a){
+//     if(a%2==1){
+//         console.log(`${a} is a odd number`)
+//     }
+//     else{7
+//         console.log(`${a} is a even number`)
+//     }
+// }
+
+// let a = Number(prompt("Enter a number to check it is odd or even: "))
+
+// oddevencheck(a)
