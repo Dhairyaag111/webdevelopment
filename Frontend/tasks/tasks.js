@@ -1247,3 +1247,10 @@
 
 
 
+// let func = (a)  =>{
+//     if (a<50 || a>500){
+//         console.log("Enter the number between 50 and 500")
+//     }
+// }
+//     let a = Number(prompt("Enter a number: "))
+// func(a)
