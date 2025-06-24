@@ -151,3 +151,27 @@
 // let a = Number(prompt("Enter a number to check it is odd or even: "))
 
 // oddevencheck(a)
+
+
+
+
+
+// let func = (a)=> {
+//     return a
+// }
+
+// function posnegzero(a){
+//     if(a>0){
+//         console.log(`${a} is a postive value`)
+//     }
+//     else if(a<0){
+//         console.log(`${a} is a negative value`)
+//     }
+//     else{
+//         console.log(`The number you entered is zero`)
+//     }
+// }
+
+// let a = Number(prompt("Enter a number to check it is positive, negative or zero: "))
+
+// posnegzero(a)
