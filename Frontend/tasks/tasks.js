@@ -1227,3 +1227,18 @@
 // else{
 //     console.log("The country you entered dosent exists or the spelling of country you entered is incorrect.")
 // }
+
+
+
+
+
+// let u = Number(prompt("Enter a number to know finonacci upto there: "))
+// let a = 0
+// for(i=1;i<=u;i++){
+//     a=a+i
+//     console.log(a)
+// }
+
+
+
+

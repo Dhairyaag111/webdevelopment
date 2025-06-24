@@ -4,5 +4,5 @@ reverse number
 if userinput is < 50 show your value is less than 50
 swap three numbers
 ocnvert minutes into hours and minutes\
-retturn alst digit of number and seocnd last
+return last digit of number and seocnd last
 5 subject total marks
