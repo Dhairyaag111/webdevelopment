@@ -1,8 +1,8 @@
-area of circle
-accleration
-divisible by 5 and 11
-calcualte distance
-if speed is less than equal to thirty return
-vol of cubiod
-celcius to fahrenhiet
-fahrenhiet of celcius
+fibonasi
+if userinput is more than 100 show to enter value less than 100 and show prime number
+reverse number
+if userinput is < 50 show your value is less than 50
+swap three numbers
+ocnvert minutes into hours and minutes\
+retturn alst digit of number and seocnd last
+5 subject total marks
