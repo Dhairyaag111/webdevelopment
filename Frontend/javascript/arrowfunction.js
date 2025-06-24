@@ -31,7 +31,7 @@
 
 
 // let func = (v,u,t) =>{
-//     return v-u/t
+//     return (v-u)/t
 // }
 
 // let v = Number(prompt("Ener the final velocity: "))
@@ -69,7 +69,7 @@
 // let t = Number(prompt("Enter the time: "))
 // let a = Number(prompt("Enter the accleration: "))
 
-// console.log(`The distance is ${func(u,a,t)}m`)
+// console.log(`The distance is ${func(u,t,a)}m`)
 
 
 
@@ -81,7 +81,7 @@
  
 //  function speed(d,t){
 //      if(func(d,t)<30){
-//          console.log(`The speed is ${func(d,t).toFixed(2)}m/s.sq`)
+//          console.log(`The speed is ${func(d,t).toFixed(2)}m/s`)
 //      }
 //      else{
 //          console.log(" ")
@@ -105,7 +105,7 @@
 // let b = Number(prompt("Ener the breadth of cuboid: "))
 // let h = Number(prompt("Ener the height of cuboid: "))
 
-// console.log(`The volume of cuboid is ${func(l,b,h)}sq.m`)
+// console.log(`The volume of cuboid is ${func(l,b,h)}cube.m`)
 
 
 
@@ -130,3 +130,4 @@
 // let f = Number(prompt("Enter the fahrenheit amount to be converted into celcius: "))
 
 // console.log(`The celcius amount is ${func(f)}deg`)
+
