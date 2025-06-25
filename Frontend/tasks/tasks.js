@@ -1284,3 +1284,20 @@
 // let s = Number(prompt("Enter the marks of science: "))
 
 // marks(m,s,c)
+
+
+
+
+// let func = (u)=>{
+// while(u>0){
+//     let d=u%10
+//     r=r*10+d
+//     u=(u/10)>>0
+// }
+//     return r
+// }
+
+// let r = 0
+// let u = Number(prompt("Enter a number to know its reversed value: "))
+
+// console.log(func(u))
