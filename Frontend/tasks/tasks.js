@@ -1239,3 +1239,29 @@
 // }
 //     let a = Number(prompt("Enter a number: "))
 // func(a)
+
+
+
+
+
+// let func = (a) => {
+//     if(a<2 || a>100){
+//     console.log("Please enter the value between 2 and 100.")
+// }
+//     counter=0
+//     for(let i=1;i<=a;i++){
+//         if(a%i==0){
+//             counter++
+//     }
+//     }
+//     if(counter==2){
+//         console.log(`It is a prime number.`)
+//     }
+//     else{
+//         console.log("It's not a prime number")
+//     }
+// }
+
+// let a = Number(prompt("Enter the number between 2 and 100 to check whether it is prime or not: "))
+
+// func(a)
