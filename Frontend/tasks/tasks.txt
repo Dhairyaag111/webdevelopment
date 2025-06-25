@@ -6,3 +6,22 @@ swap three numbers
 ocnvert minutes into hours and minutes\
 return last digit of number and seocnd last
 5 subject total marks
+
+
+
+
+
+let func = (a,b,c) =>{
+let d = a
+a = c
+c = b
+b = d
+}
+
+let a = Number(prompt("Enter the first number: "))
+let b = Number(prompt("Enter the second number: "))
+let c = Number(prompt("Enter the third number: "))
+
+console.log("The number after swaping first number is "+a)
+console.log("The number after swaping second number is "+b)
+console.log("The number after swaping third number is "+c)
