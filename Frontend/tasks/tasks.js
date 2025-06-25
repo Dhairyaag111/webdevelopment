@@ -1265,3 +1265,22 @@
 // let a = Number(prompt("Enter the number between 2 and 100 to check whether it is prime or not: "))
 
 // func(a)
+
+
+
+
+
+// let func = (m,s,c)=> {
+//     return m+c+s
+// }
+
+// function marks(m,s,c,sum){
+//     console.log(`The total marks obtained by you is ${func(m,s,c)}`)
+//     console.log("The percentege you got is "+(func(m,s,c)/3)+"%")
+// }
+
+// let m = Number(prompt("Enter the marks of maths: "))
+// let c = Number(prompt("Enter the marks of computer: "))
+// let s = Number(prompt("Enter the marks of science: "))
+
+// marks(m,s,c)
