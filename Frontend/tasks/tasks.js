@@ -1280,19 +1280,13 @@
 
 
 
-// let func = (m,s,c)=> {
+// let func = (m,s,c)=> {Add commentMore actions
 //     return m+c+s
 // }
 
 // function marks(m,s,c,sum){
 //     console.log(`The total marks obtained by you is ${func(m,s,c)}`)
-//     console.log(// let func = (a)  =>{
-//     if (a<50 || a>500){
-//         console.log("Enter the number between 50 and 500")
-//     }
-// }
-//     let a = Number(prompt("Enter a number: "))
-// func(a)"The percentege you got is "+(func(m,s,c)/3)+"%")
+//     console.log("The percentege you got is "+(func(m,s,c)/3)+"%")
 // }
 
 // let m = Number(prompt("Enter the marks of maths: "))
@@ -1300,6 +1294,22 @@
 // let s = Number(prompt("Enter the marks of science: "))
 
 // marks(m,s,c)
+
+
+
+
+
+// let func = (a)  =>{
+//     if (a<50 || a>500){
+//         console.log("Enter the number between 50 and 500")
+//     }
+// }
+//     let a = Number(prompt("Enter a number: "))
+// func(a)
+
+
+
+
 
 
 
