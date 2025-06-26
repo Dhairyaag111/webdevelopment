@@ -1232,13 +1232,23 @@
 
 
 
-// let func = (a)  =>{
-//     if (a<50 || a>500){
-//         console.log("Enter the number between 50 and 500")
+
+
+// let func = (u)=>{
+//     a = 0
+//     b = 1
+//                 console.log(a)
+//     console.log(b)
+//     for(let i=1 ; i<=u-2 ; i++){
+//         let sum = a+b
+//         a=b
+//         b=sum
+// console.log(sum)
 //     }
 // }
-//     let a = Number(prompt("Enter a number: "))
-// func(a)
+// let u = Number(prompt("Enter the number to the fibonacci upto there: "))
+// func(u)
+
 
 
 
@@ -1276,7 +1286,13 @@
 
 // function marks(m,s,c,sum){
 //     console.log(`The total marks obtained by you is ${func(m,s,c)}`)
-//     console.log("The percentege you got is "+(func(m,s,c)/3)+"%")
+//     console.log(// let func = (a)  =>{
+//     if (a<50 || a>500){
+//         console.log("Enter the number between 50 and 500")
+//     }
+// }
+//     let a = Number(prompt("Enter a number: "))
+// func(a)"The percentege you got is "+(func(m,s,c)/3)+"%")
 // }
 
 // let m = Number(prompt("Enter the marks of maths: "))
@@ -1321,7 +1337,7 @@
 // func (u)
 
 
-
+                                                                       
 
 
 // let func = (a) =>{
@@ -1335,3 +1351,24 @@
 // let a = Number(prompt("Enter a number to know its last and second last digit: "))
 
 // func(a)
+
+
+
+
+
+// let func = (a,b,c) =>{
+// let d = a
+// a = c
+// c = b
+// b = d
+
+// console.log("The number after swaping first number is "+a)
+// console.log("The number after swaping second number is "+b)
+// console.log("The number after swaping third number is "+c)
+// }
+
+// let a = Number(prompt("Enter the first number: "))
+// let b = Number(prompt("Enter the second number: "))
+// let c = Number(prompt("Enter the third number: "))
+
+// func(a,b,c)
