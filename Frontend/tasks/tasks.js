@@ -1301,3 +1301,21 @@
 // let u = Number(prompt("Enter a number to know its reversed value: "))
 
 // console.log(func(u))
+
+
+
+
+
+// let func = (u) =>{
+//      let d = (u/60)>>0
+//      let r = u%60
+//      if(r%u==0){
+//          console.log(`${u} minutes is equal to ${d} hour`)
+//      }
+//      else{
+//      console.log(`${u} minutes is equal to ${d} hours and ${r} minutes`)
+//      }
+// }
+
+// let u = Number(prompt("Enter minutes to be converted into hours: "))
+// func (u)
