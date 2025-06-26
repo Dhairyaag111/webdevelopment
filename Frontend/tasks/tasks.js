@@ -1319,3 +1319,19 @@
 
 // let u = Number(prompt("Enter minutes to be converted into hours: "))
 // func (u)
+
+
+
+
+
+// let func = (a) =>{
+//    let l =  a%10
+//    let r  =  (a%100)
+//    let sl = r/10>>
+//     console.log(`The last digit of ${a} is ${l}`)
+//     console.log(`The second last digit of ${a} is ${sl}`)
+// }
+
+// let a = Number(prompt("Enter a number to know its last and second last digit: "))
+
+// func(a)
