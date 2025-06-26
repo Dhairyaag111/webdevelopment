@@ -1385,3 +1385,25 @@
 // let c = Number(prompt("Enter the third number: "))
 
 // func(a,b,c)
+
+
+
+
+
+
+// let func = (a)=>{
+//     while(a>0){
+//         let d = a%10
+//          r = r*10+d
+//          a = a/10>>0
+//     }
+// }
+//  let r = 0
+// let a = Number(prompt("Enter a number to check whether it is a palindrone number: "))
+//  func(a)
+//    if(r==a){
+//         console.log(`${a} is a palindrone number`)
+//     }
+//     else{
+//         console.log(`${a} is not a palindrone number`)
+//     }
