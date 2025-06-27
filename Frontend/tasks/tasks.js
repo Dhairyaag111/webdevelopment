@@ -1407,3 +1407,21 @@
 //     else{
 //         console.log(`${a} is not a palindrone number`)
 //     }
+
+
+
+
+
+
+// let func = (u)=>{
+//     let sum = 0
+//     while(u>0){
+//         let d = u%10
+//         sum = sum+d
+//         u = (u/10)>>0
+//     }
+// console.log(`The sum of digits is ${sum}`)
+// }
+
+// let u = Number(prompt("Enter a number to know its digit sum: "))
+// func(u)
