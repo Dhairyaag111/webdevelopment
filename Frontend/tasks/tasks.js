@@ -1451,6 +1451,41 @@
  
 
 
+let func = (a)=>{
+    if(a<c && a<b){
+        console.log("The smallest number is "+a)
+    }
+    else if(b<a && a<c) {
+        console.log("The smallest number is "+b)
+    }
+    else if(c<a && c<b){
+        console.log("The smallest number is "+c)
+    }
+    
+   if(a>b && a>c){
+        console.log("The greatest number is "+a)
+    }
+    else if(b>a && b>c){
+        console.log("The greatest number is "+b)
+    }
+    else if(c>a && c>b){
+        console.log("The greatest number is "+c)
+    }
+    else{
+        console.log("Enter three different value")
+    }
+}
+
+let a = Number(prompt("Enter the first number: "))
+let b = Number(prompt("Enter the second number: "))
+let c = Number(prompt("Enter the third number: "))
+
+func(a) 
+
+
+
+
+
 
 // let func = (a) =>{
 //     let great = 0
