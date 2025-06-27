@@ -1433,16 +1433,36 @@
 
 
 // let func = (a) =>{
+//     let small = 10
 //     while(a>0){
 //         let d = a%10
-//         if(d>=big){
-//             big = d
+//         if(d<=small){
+//             small = d
 //         }
 //         a = a/10>>0
 //     }
+//     console.log(small)
 // }
 
-// let big = 0
+//  let a = Number(prompt("Enter a number to know the smallest digit: "))
+// func(a)
+
+
+ 
+
+
+
+// let func = (a) =>{
+//     let great = 0
+//     while(a>0){
+//         let d = a%10
+//         if(d>=great){
+//             great = d
+//         }
+//         a = a/10>>0
+//     }
+//     console.log(great)
+// }
+
 //  let a = Number(prompt("Enter a number to know the greatest digit: "))
-//  func(a)
-//  console.log(`The greatest digit among ${a} is ${big}`)
+// func(a)
