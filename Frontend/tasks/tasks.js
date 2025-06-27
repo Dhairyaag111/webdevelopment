@@ -1399,13 +1399,14 @@
 //     }
 // }
 //  let r = 0
-// let a = Number(prompt("Enter a number to check whether it is a palindrone number: "))
+// let a = Number(prompt("Enter a number to check whether it is a palindrome number: "))
+
 //  func(a)
 //    if(r==a){
-//         console.log(`${a} is a palindrone number`)
+//         console.log(`${a} is a palindrome number`)
 //     }
 //     else{
-//         console.log(`${a} is not a palindrone number`)
+//         console.log(`${a} is not a palindrome number`)
 //     }
 
 
