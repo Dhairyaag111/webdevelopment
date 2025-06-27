@@ -1434,7 +1434,7 @@
 
 // let func = (a) =>{
 //     while(a>0){
-//         let d<= a%10
+//         let d = a%10
 //         if(d>=big){
 //             big = d
 //         }
