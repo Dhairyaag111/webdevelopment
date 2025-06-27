@@ -1426,3 +1426,23 @@
 
 // let u = Number(prompt("Enter a number to know its digit sum: "))
 // func(u)
+
+
+
+
+
+
+// let func = (a) =>{
+//     while(a>0){
+//         let d = a%10
+//         if(d>=big){
+//             big = d
+//         }
+//         a = a/10>>0
+//     }
+// }
+
+// let big = 0
+//  let a = Number(prompt("Enter a number to know the greatest digit: "))
+//  func(a)
+//  console.log(`The greatest digit among ${a} is ${big}`)
