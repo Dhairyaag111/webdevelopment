@@ -1432,55 +1432,37 @@
 
 
 
-// let func = (a) =>{
-//     let small = 10
-//     while(a>0){
-//         let d = a%10
-//         if(d<=small){
-//             small = d
-//         }
-//         a = a/10>>0
+
+// let func = (a)=>{
+//     if(a<c && a<b){
+//         console.log("The smallest number is "+a)
 //     }
-//     console.log(small)
+//     else if(b<a && a<c) {
+//         console.log("The smallest number is "+b)
+//     }
+//     else if(c<a && c<b){
+//         console.log("The smallest number is "+c)
+//     }
+    
+//    if(a>b && a>c){
+//         console.log("The greatest number is "+a)
+//     }
+//     else if(b>a && b>c){
+//         console.log("The greatest number is "+b)
+//     }
+//     else if(c>a && c>b){
+//         console.log("The greatest number is "+c)
+//     }
+//     else{
+//         console.log("Enter three different value")
+//     }
 // }
 
-//  let a = Number(prompt("Enter a number to know the smallest digit: "))
-// func(a)
+// let a = Number(prompt("Enter the first number: "))
+// let b = Number(prompt("Enter the second number: "))
+// let c = Number(prompt("Enter the third number: "))
 
-
- 
-
-
-let func = (a)=>{
-    if(a<c && a<b){
-        console.log("The smallest number is "+a)
-    }
-    else if(b<a && a<c) {
-        console.log("The smallest number is "+b)
-    }
-    else if(c<a && c<b){
-        console.log("The smallest number is "+c)
-    }
-    
-   if(a>b && a>c){
-        console.log("The greatest number is "+a)
-    }
-    else if(b>a && b>c){
-        console.log("The greatest number is "+b)
-    }
-    else if(c>a && c>b){
-        console.log("The greatest number is "+c)
-    }
-    else{
-        console.log("Enter three different value")
-    }
-}
-
-let a = Number(prompt("Enter the first number: "))
-let b = Number(prompt("Enter the second number: "))
-let c = Number(prompt("Enter the third number: "))
-
-func(a) 
+// func(a) 
 
 
 
@@ -1501,3 +1483,69 @@ func(a)
 
 //  let a = Number(prompt("Enter a number to know the greatest digit: "))
 // func(a)
+
+
+
+
+
+
+// let func = (a) =>{
+//     let small = 10
+//     while(a>0){
+//         let d = a%10
+//         if(d<=small){
+//             small = d
+//         }
+//         a = a/10>>0
+//     }
+//     console.log(small)
+// }
+
+//  let a = Number(prompt("Enter a number to know the smallest digit: "))
+// func(a)
+
+
+ 
+
+
+
+
+
+
+
+// function named(a){
+//     if(a>0){
+//         console.log(`${a} is a positive number.`)
+//     }
+//     else if(a<0){
+//         console.log(`${a} is a negative number.`)
+//     }
+//     else{
+//         console.log(`The number is zero.`)
+//     }
+// }
+
+
+// let arrow = (a)=>{
+//     if(a%2==0){
+//         console.log(`${a} is a even number.`)
+//     }
+//     else{
+//         console.log(`${a} is a odd number`)
+//     }
+// }
+
+
+// let anonymous = function(a){
+//     if(a%3==0){
+//         console.log(`${a} is divisible by 3.`)
+//     }
+//     else{
+//         console.log(`${a} is not divisible by 3`)
+//     }
+// }
+
+// let a = Number(prompt("Enter a number check it is positive,negative oe zero and to check it is odd oe even also to check it is divisible by 3 or not : "))
+// named(a)
+// arrow(a)
+// anonymous(a)
