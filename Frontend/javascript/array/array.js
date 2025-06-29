@@ -3,5 +3,5 @@
 
 
 
-// let fruits = ["apple","pineapple","orange"]
+// let fruits = new Array("apple","pineapple","orange")
 // console.log(fruits[2])
