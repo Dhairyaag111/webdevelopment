@@ -28,3 +28,19 @@
 // sum = num1[k] + num2[k]
 // console.log(`${num1[k]} + ${num2[k]} is ${sum}`)
 // }
+
+
+
+
+
+
+
+// let name = []
+// for(i=0;i<=4;i++){
+//     let userinput = prompt("Enter your name: ")
+//     name[i] = userinput
+// }
+
+// for(j=4;j>=0;j--){
+//     console.log(name[j])
+// }
