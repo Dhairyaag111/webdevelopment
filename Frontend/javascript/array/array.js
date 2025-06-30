@@ -63,3 +63,19 @@
 // }
 // }
 
+
+
+
+
+
+// let num = []
+// let sum=0
+// for(i=0;i<=9;i++){
+//     let userInput = Number(prompt("Enter number: "))
+//     num[i] = userInput
+// }
+
+// for(j=0;j<=9;j++){
+// sum = sum + num[j]
+// }
+// console.log(`The sum of all the numbers is ${sum}`)
