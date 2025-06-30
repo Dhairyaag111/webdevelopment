@@ -44,3 +44,22 @@
 // for(j=4;j>=0;j--){
 //     console.log(name[j])
 // }
+
+
+
+
+// let num = []
+// for(i=0;i<=9;i++){
+//     let userInput = Number(prompt("Enter number: "))
+//     num[i] = userInput
+// }
+
+// for(j=0;j<=9;j++){
+// if(num[j]>=50){
+//     console.log(`The number you entered more than 50 is ${num[j]}`)
+// }
+// else{
+//     console.log()
+// }
+// }
+
