@@ -95,7 +95,7 @@
 // num2[i] = userInput2
 // console.log()
 // }
-// for (let j=5;j>=0;j--){
+// for (let j=0;j<=5;j++){
 //     if(num1[j]>num2[j]){
 //         console.log(`${num1[j]} is greatest`)
 //     }
@@ -125,3 +125,44 @@
 // let sum = num1[j] + num2[j]
 // console.log(`The sum of ${num1[j]} and ${num2[j]} is ${sum}`)
 // }
+
+
+
+
+
+
+// let num = []
+// let greatest = 0
+// for(i=0 ; i<=5; i++){
+//     let u = Number(prompt("Enter the number for know the greatest number among them: "))
+//     num[i] = u
+//     console.log()
+// }
+
+// for(j=0 ; j<=5 ; j++){
+//     if(num[j] > greatest){
+//         greatest = num[j]
+//     }
+// }
+// console.log(`The greatest number is ${greatest}`)
+
+
+
+
+
+
+
+// let num = []
+// let smallest = 0
+// for(i=0 ; i<=5; i++){
+//     let u = Number(prompt("Enter the number for know the smallest number among them: "))
+//     num[i] = u
+//     console.log()
+// }
+
+// for(j=0 ; j<=5 ; j++){
+//     if(num[j] < smallest){
+//         smallest = num[j]
+//     }
+// }
+// console.log(`The smallest number is ${smallest}`)
