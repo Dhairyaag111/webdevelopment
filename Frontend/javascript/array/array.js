@@ -79,3 +79,30 @@
 // sum = sum + num[j]
 // }
 // console.log(`The sum of all the numbers is ${sum}`)
+
+
+
+
+
+
+
+// let num1 = []
+// let num2 = []
+// for(i=0;i<=5;i++){
+// let userInput1 = Number(prompt("Enter a number: "))
+// let userInput2 = Number(prompt("Enter a number: "))
+// num1[i] = userInput1
+// num2[i] = userInput2
+// console.log()
+// }
+// for (let j=5;j>=0;j--){
+//     if(num1[j]>num2[j]){
+//         console.log(`${num1[j]} is greatest`)
+//     }
+//       else if(num2[j]>num1[j]){
+//         console.log(`${num2[j]} is greatest`)
+//     }
+//     else{
+//         console.log("The numbers are equal")
+//     }
+// }
