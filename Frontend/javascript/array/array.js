@@ -186,3 +186,37 @@
 //     }
 // }
 // console.log(`The number of positive number in this array is ${positive}`)
+
+
+
+
+
+
+// let num = []
+// for(i=0;i<=9;i++){
+//     let u = Number(prompt("Enter a value: "))
+//     num[i] = u
+  
+// }
+
+// for(j=0;j<=9;j=j+2){
+//     console.log(num[j])
+// }
+
+
+
+
+
+
+
+// let num = []
+// for(i=0;i<=9;i++){
+//     let u = Number(prompt("Enter a value: "))
+//     num[i] = u
+  
+// }
+
+// for(j=1;j<=9;j=j+2){
+//     console.log(num[j])
+// }
+
