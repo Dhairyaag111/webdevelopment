@@ -141,7 +141,7 @@
 
 // for(j=0 ; j<=5 ; j++){
 //     if(num[j] > greatest){
-//         greatest = num[j]
+//         greatest = num[j]    
 //     }
 // }
 // console.log(`The greatest number is ${greatest}`)
@@ -166,3 +166,23 @@
 //     }
 // }
 // console.log(`The smallest number is ${smallest}`)
+
+
+
+
+
+
+// let num = []
+// let positive = 0
+// for(i=0;i<=5;i++){
+//     let u = Number(prompt("Enter a number: "))
+//     num[i] = u
+//     console.log()
+// }
+
+// for(j=0;j<=5;j++){
+//     if(num[j]>0){
+//     positive++
+//     }
+// }
+// console.log(`The number of positive number in this array is ${positive}`)
