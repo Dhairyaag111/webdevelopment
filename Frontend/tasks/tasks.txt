@@ -11,3 +11,10 @@ return last digit of number and seocnd last
 
 
 
+to show which is divisible by 2 and 3 (ask 7 number)
+to show median 
+copy and paste negative value into new array
+
+
+
+
