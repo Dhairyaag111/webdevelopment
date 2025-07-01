@@ -220,3 +220,30 @@
 //     console.log(num[j])
 // }
 
+
+
+
+
+
+
+
+// let num = []
+// even = 0
+// odd = 0
+// for(i=0;i<=9;i++){
+//     let u = Number(prompt("Enter a value: "))
+//     num[i] = u
+//     console.log()
+// }
+
+// for(j=0;j<=9;j++){
+//     if(num[j]%2==0){
+//         even++
+//     }
+//     else{
+//         odd++
+//     }
+// }
+
+// console.log(`The total number of even number in this array is ${even}.`)
+// console.log(`The total number of odd number in this array is ${odd}.`)
