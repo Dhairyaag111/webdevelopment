@@ -233,7 +233,6 @@
 // for(i=0;i<=9;i++){
 //     let u = Number(prompt("Enter a value: "))
 //     num[i] = u
-//     console.log()
 // }
 
 // for(j=0;j<=9;j++){
