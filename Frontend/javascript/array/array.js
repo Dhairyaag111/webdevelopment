@@ -407,3 +407,24 @@
 // }
 // }
 // console.log(num)
+
+
+
+
+
+
+
+// let num = []
+// let great = 0
+// let small = 0
+// for(i=0; i<=5; i++){
+// let u = Number(prompt("Enter numbers to know that the last and first numbers are equal or not: "))
+// num[i] = u
+// console.log()
+// }
+// if(num[5]==num[0]){
+// console.log("The first and last value of an array is equal")
+// }
+// else{
+//     console.log("The first and last numbers are not equal")
+// }
