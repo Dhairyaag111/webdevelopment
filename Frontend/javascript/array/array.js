@@ -274,7 +274,7 @@
 // let num = []
 // let neg = []
 // for (i=0;i<=9;i++){
-//     u = Number(prompt("Enter the number: "))
+//     u = Number(prompt("Enter the number to copy paste negative no. into another array: "))
 //     num[i] = u
 // }
 // for (j=0;j<=9;j++){
@@ -283,3 +283,48 @@
 //     }
 // }
 // console.log(neg)
+
+
+
+
+
+
+
+
+
+// not working
+
+// let x = []
+// let f = []
+// let n = 0
+// for(i=0; i<=9; i++){
+//     let ux = Number(prompt("Enter the value of x: "))
+//     let uf = Number(prompt("Enter the frequencies: "))
+//     x[i] = ux
+//     f[i] = uf 
+//     console.log()
+//     n = n + f[i]
+// }
+//  console.log("N = "+n)
+//  let median = ((n+1)/2>>0
+//  console.log(`Position of median is ${median}`)
+//  console.log(`The value of median is ${x[median]} `)
+
+
+
+
+
+
+
+
+// let num1 = []
+// let a = 0
+// for(i=0; i<=6; i++){
+//     let u = Number(prompt("Enter a number to swap its last and first num and store inot another array: "))
+//     num1[i] = u
+//     console.log()
+// }
+// a = num1[6]
+// num1[6] = num1[0]
+// num1[0] = a
+// console.log(num1)
