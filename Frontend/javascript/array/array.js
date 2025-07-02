@@ -246,3 +246,39 @@
 
 // console.log(`The total number of even number in this array is ${even}.`)
 // console.log(`The total number of odd number in this array is ${odd}.`)
+
+
+
+
+
+
+
+
+// let num = []
+// for (i=0; i<=6; i++){
+//     u = Number(prompt("Enter any number to know that it is divisible by 2 and 3: "))
+//     num[i] = u 
+// }
+// for (j=0; j<=6; j++){
+//     if(num[j]%2==0 && num[j]%3==0){
+//         console.log(`${num[j]} is divisible by both 2 and 3`)
+//     }
+// }
+
+
+
+
+
+
+// let num = []
+// let neg = []
+// for (i=0;i<=9;i++){
+//     u = Number(prompt("Enter the number: "))
+//     num[i] = u
+// }
+// for (j=0;j<=9;j++){
+//     if(num[j]<0){
+//    neg[j] = num[j]
+//     }
+// }
+// console.log(neg)
