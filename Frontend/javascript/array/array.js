@@ -345,3 +345,21 @@
 //     }
 // }
 // console.log(`There are ${zero} zero`)
+
+
+
+
+
+
+
+// let num = []
+// let sum = 0
+// for(i=0; i<=5; i++){
+//     let u = Number(prompt("Enter number to know the sum of only odd number: "))
+//     num[i] = u
+//     console.log()
+//     if(num[i]%2==1){
+//         sum = sum + num[i]
+//     }
+// }
+// console.log(`The sum is ${sum}`)

@@ -18,7 +18,7 @@ copy and paste negative value into new array
 
 
 
-ask 6 numbers and only show sum of add numbers
+ask 6 numbers and only show sum of odd numbers
 ask 6 numbers and show difference between largest and smallest value
 ask 6 numbers and repalce every  negative numbers with 0
 ask 6 numbers and show that the last and first values are same or not
