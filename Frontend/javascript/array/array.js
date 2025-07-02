@@ -388,3 +388,22 @@
 // console.log(`The smalest number is ${small}`)
 // let diff = great-small
 // console.log(`The difference between the largest and smallest number is ${diff}`)
+
+
+
+
+
+
+
+// let num = []
+// let great = 0
+// let small = 0
+// for(i=0; i<=5; i++){
+// let u = Number(prompt("Enter numbers to replace negative value into 0: "))
+// num[i] = u
+// console.log()
+// if(num[i]<0){
+//     num[i] = 0
+// }
+// }
+// console.log(num)
