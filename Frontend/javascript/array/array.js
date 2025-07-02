@@ -328,3 +328,20 @@
 // num1[6] = num1[0]
 // num1[0] = a
 // console.log(num1)
+
+
+
+
+
+
+
+// let num = [],zero=0
+// for(i=0; i<=9; i++){
+//     let u = Number(prompt("Enter number to know how many of them are 0: "))
+//     num[i] = u
+//     console.log()
+//     if(num[i]==0){
+//         zero++
+//     }
+// }
+// console.log(`There are ${zero} zero`)
