@@ -363,3 +363,28 @@
 //     }
 // }
 // console.log(`The sum is ${sum}`)
+
+
+
+
+
+
+
+// let num = []
+// let great = 0
+// let small = 0
+// for(i=0; i<=5; i++){
+// let u = Number(prompt("Enter numbers to know the difference largest and smallest number: "))
+// num[i] = u
+// console.log()
+//     if(num[i]>great){
+//         great = num[i]
+// }
+// if(num[i]<small){
+//     small = num[i]
+// }
+// }
+// console.log(`The largeest number is ${great}`)
+// console.log(`The smalest number is ${small}`)
+// let diff = great-small
+// console.log(`The difference between the largest and smallest number is ${diff}`)
