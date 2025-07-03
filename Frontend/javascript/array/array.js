@@ -372,18 +372,19 @@
 
 // let num = []
 // let great = 0
-// let small = 0
 // for(i=0; i<=5; i++){
 // let u = Number(prompt("Enter numbers to know the difference largest and smallest number: "))
 // num[i] = u
-// console.log()
-//     if(num[i]>great){
-//         great = num[i]
 // }
-// if(num[i]<small){
-//     small = num[i]
+// let small = num[0]
+// for(j=0; j<=5; j++)
+//     if(num[j]>great){
+//         great = num[j]
 // }
+// if(small<num[j]){
+//     small = num[j]
 // }
+
 // console.log(`The largeest number is ${great}`)
 // console.log(`The smalest number is ${small}`)
 // let diff = great-small
