@@ -428,3 +428,21 @@
 // else{
 //     console.log("The first and last numbers are not equal")
 // }
+
+
+
+
+
+
+
+// let num = []
+// let index_counter=0
+// for(i=0; i<=5; i++){
+// let u = Number(prompt("Enter numbers to know how many number is greater than index 0: "))
+// num[i] = u
+// console.log()
+// if(num[i]>num[0]){
+// index_counter ++
+// }
+// }
+// console.log(`The number greater than indez zero (${num[0]}) is ${index_counter}`)
