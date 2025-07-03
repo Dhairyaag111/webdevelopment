@@ -108,3 +108,9 @@
  
  
  
+//  concat method
+
+//  let fruits = ["apple","mango","orange","banana","watermelon"]
+//  let vegetable = ["potato" , "tamato" , "cabbage" , "cauliflower" , "brinjal"]
+//  let plants = fruits.concat(vegetable) 
+//  console.log(plants)
