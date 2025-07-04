@@ -170,3 +170,22 @@
 // let fruits = ["apple","mango","orange","banana","watermelon","grapes","pineapple"]
 // fruits.splice(2,1,"plum")
 // console.log(fruits)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon","grapes","pineapple"]
+// fruits.splice(0,1,"plum")
+// console.log(fruits)
+
+
+
+// slice method
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let newVaraible = fruits.slice(3)
+// console.log(newVaraible)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let newVaraible = fruits.slice(1,3)
+// console.log(newVaraible)
+
