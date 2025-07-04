@@ -218,6 +218,34 @@
 // console.log(position)
 
 
+
 // let fruits = ["apple","mango","orange","banana","watermelon","banana", "pineapple", "banana"]
 // let position = fruits.includes("plum")
 // console.log(position)
+
+
+
+// find method
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// let result = num.find(function(x){
+//     return x>5
+// })
+// console.log(result)
+
+
+
+//  find method (starts with method)
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let result = fruits.find(function(x){
+//     return x.startsWith("m")
+// })
+// console.log(result)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let result = fruits.find(function(x){
+//     return x.startsWith("B")
+// })
+// console.log(result)
