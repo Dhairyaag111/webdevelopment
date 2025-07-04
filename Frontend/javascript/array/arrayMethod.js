@@ -163,3 +163,10 @@
 // let fruits = ["apple","mango"]
 // let  newArray = fruits.flatMap(s=> [s + " is a fruit"])
 // console.log(newArray)
+
+
+// splice method
+
+// let fruits = ["apple","mango","orange","banana","watermelon","grapes","pineapple"]
+// fruits.splice(2,1,"plum")
+// console.log(fruits)
