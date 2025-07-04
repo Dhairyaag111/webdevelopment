@@ -122,3 +122,44 @@
 // let fruits = ["apple","mango","orange","banana","watermelon"]
 // let second =  fruits.concat("grapes", "guava")
 // console.log(second)
+
+
+
+// copy Within method
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// console.log(fruits)
+// fruits.copyWithin(0,2)
+// console.log(fruits)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon","grapes","pineapple"]
+// console.log(fruits)
+// fruits.copyWithin(2,0,3)
+// console.log(fruits)
+
+
+
+// flat method
+
+// let num = [[1,2],[3,4],[5,6]]
+// let num1 = num.flat()
+// console.log(num1)
+
+
+
+//  flatmap metod
+
+// let num = [1,2,3,4,5,6]
+// let newArray = num.flatMap(y=> [y+2])
+// console.log(newArray)
+
+
+// let num = [1,2,3,4,5,6]
+// let newArray = num.flatMap(y=> [y*5])
+// console.log(newArray)
+
+
+// let fruits = ["apple","mango"]
+// let  newArray = fruits.flatMap(s=> [s + " is a fruit"])
+// console.log(newArray)
