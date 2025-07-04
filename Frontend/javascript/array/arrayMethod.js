@@ -189,3 +189,23 @@
 // let newVaraible = fruits.slice(1,3)
 // console.log(newVaraible)
 
+
+
+// array searching
+
+
+// index of method
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let position = fruits.indexOf("banana")
+// console.log(position)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon","banana"]
+// let position = fruits.lastIndexOf("banana")
+// console.log(position)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon","banana", "pineapple", "banana"]
+// let position = fruits.lastIndexOf("banana",6)
+// console.log(position)
