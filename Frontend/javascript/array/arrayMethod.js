@@ -63,12 +63,12 @@
 // console.log(fruits)
 
 
+
 // shift method
 
 // let fruits = ["apple","mango","orange","banana","watermelon"]
 // fruits.shift()
 // console.log(fruits)
-
 
 
 // let fruits = ["apple","mango","orange","banana","watermelon"]
@@ -84,18 +84,9 @@
 // console.log(fruits)
 
 
-
-
-
-
-
 //  let fruits = ["apple","mango","orange","banana","watermelon"]
 // fruits[5] = "grapes"
 //  console.log(fruits)
-
-
-
-
 
 
 //  let fruits = ["apple","mango","orange","banana","watermelon"]
@@ -126,7 +117,6 @@
 //  let array2 = ["hello", "hi" , "laptop" , "computer", "cpu"]
 //  let plants = fruits.concat(vegetable,array,array2) 
 //  console.log(plants)
-
 
 
 // let fruits = ["apple","mango","orange","banana","watermelon"]
