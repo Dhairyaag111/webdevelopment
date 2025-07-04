@@ -208,4 +208,16 @@
 
 // let fruits = ["apple","mango","orange","banana","watermelon","banana", "pineapple", "banana"]
 // let position = fruits.lastIndexOf("banana",6)
+
+
+
+// include method
+
+// let fruits = ["apple","mango","orange","banana","watermelon","banana", "pineapple", "banana"]
+// let position = fruits.includes("banana")
+// console.log(position)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon","banana", "pineapple", "banana"]
+// let position = fruits.includes("plum")
 // console.log(position)
