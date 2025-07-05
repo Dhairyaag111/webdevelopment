@@ -1550,3 +1550,32 @@
 // named(a)
 // arrow(a)
 // anonymous(a)
+
+
+
+
+
+
+
+
+
+
+// let vegetable = ["cucumber","carrot","potato","pea","tomato"]
+// let lengthOfArray = vegetable.length
+// console.log(lengthOfArray)
+
+// let color = ["green","yellow","pink","red","orange"]
+// let position = color.at(3)
+// console.log(position)
+
+// let phone_brand = ["samsung","apple","vivo","redmi","nothing","oppo"]
+// let joining = phone_brand.join("  ///  ")
+// console.log(joining)
+
+// let country = ["Nepal","India","USA","England","Russia","Pakistan"]
+// country.pop()
+// console.log(country)
+
+// let fruits = ["plum","pineapple","grapes","lemon","apple"]
+// fruits.push("mango","orange")
+// console.log(fruits)
