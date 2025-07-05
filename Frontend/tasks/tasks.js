@@ -1579,3 +1579,23 @@
 // let fruits = ["plum","pineapple","grapes","lemon","apple"]
 // fruits.push("mango","orange")
 // console.log(fruits)
+
+// let cars = ["Bently","Aston Martin","Land Rover","BMW","Volvo"]
+// cars.shift()
+// console.log(cars)
+
+// let bike = ["Kawasaki","Harley Davidson","Ducati","Suzuki","BMW"]
+// bike.unshift("Royal Enfield")
+// console.log(bike)
+
+// let month = ["january","Febuary","March","April","May"]
+// delete month[0]
+// console.log(month)
+
+// let subject = ["c.maths","opt.maths","science","english","social"]
+// let concatination = subject.concat("nepali","computer")
+// console.log(concatination)
+
+// let food = ["rice","roti","curry","sandwitch","salad"]
+// food.copyWithin(0,1,2)
+// console.log(food)

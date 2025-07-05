@@ -33,11 +33,8 @@
 
 
 
-// join method
 
-// let fruits = ["apple","mango","orange","banana","watermelon"]
-// let variable = fruits.join()
-// console.log(variable)
+
 // let variable2 = fruits.join(" ~ ")
 // console.log(variable2)
 
