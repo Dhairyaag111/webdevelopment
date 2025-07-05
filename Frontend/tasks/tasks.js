@@ -1599,3 +1599,39 @@
 // let food = ["rice","roti","curry","sandwitch","salad"]
 // food.copyWithin(0,1,2)
 // console.log(food)
+
+// let evenNum = [[2,4],[6,8],[10,12]]
+// let evenFlat = evenNum.flat()
+// console.log(evenFlat)
+
+// let oddNum = [11,13,15,17,19,21,23,25]
+// let oddFM = oddNum.flatMap(n=> (n/10)>>0)
+// console.log(oddFM)
+
+// let sports = ["cricket","football","basketball","swimming"]
+// sports.splice(1,3,"vollyball")
+// console.log(sports)
+
+// let junkFood = ["momo","noodles","burger","pizza","chips"]
+// let slice = junkFood.slice(3)
+// console.log(slice)
+
+// let year = [2020,2021,2022,2023,2024,2025]
+// let year_position = year.indexOf(2023)
+// console.log(year_position)
+
+// let gadgets = ["mobile","T.V","laptop","tab","P.C"]
+// let include = gadgets.includes("P.C")
+// console.log(include)
+
+// let primeNum = [2,3,5,7,11,13,17,19]
+// let find = primeNum.find(function(p){
+//     return p%2==1
+// })
+// console.log(find)
+
+// let clothes = ["t-shirt","shirt","pants","sweater","hoodie"]
+// let result = clothes.find(function(c){
+//     return c.startsWith("s")
+// })
+// console.log(result)
