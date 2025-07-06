@@ -1,0 +1,29 @@
+footer{
+    color: white;
+    background-color: black;
+    padding: 25px;
+    text-align: center;
+}
+body{
+    background-color: rgb(101, 101, 255);
+}
+.iframe{
+    display: flex;
+justify-content: center;
+padding: 20px;
+}
+.button{
+    display: flex ;
+    justify-content: center;
+    padding: 10px;
+}
+button:hover{
+    border: 1px solid red;
+    background-color: red;
+    color: black;
+}
+button{
+    border: 1px solid coral;
+    background-color: coral;
+    color: black;
+}

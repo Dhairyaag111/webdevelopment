@@ -1559,7 +1559,6 @@
 
 
 
-
 // let vegetable = ["cucumber","carrot","potato","pea","tomato"]
 // let lengthOfArray = vegetable.length
 // console.log(lengthOfArray)
