@@ -50,7 +50,7 @@
 // let fruits = ["apple","mango","orange","banana","watermelon", "avacodo"]
 // let counter = 0
 // fruits.forEach(function(a){
-//     if(a[2]=='a'){
+//     if(a[0]=='a'){
 //         counter++
 //     }
 // })
@@ -65,3 +65,18 @@
 //     }
 // })
 // console.log(`The are ${counter} fruits that stats with "a"`)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon", "avacodo"]
+// let counter = 0
+// fruits.forEach(function(a){
+// console.log(a[1])
+// })
+
+
+// let num = [1,20,43,45,70,3350,234,650]
+// num.forEach(function(a){
+//     if(a%10==0){
+//         console.log(a)
+//     }
+// })
