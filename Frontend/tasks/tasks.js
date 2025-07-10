@@ -1647,3 +1647,14 @@
 //         console.log(a)
 //     }
 // })
+
+
+
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// fruits.forEach(function(a){
+//     if(a[0]==a[1]){
+//         console.log(a)
+//     }
+// })
