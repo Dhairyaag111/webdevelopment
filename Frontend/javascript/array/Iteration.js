@@ -83,12 +83,23 @@
 
 
 
-    // let num = [12,20,43,45,70,30,24,60]
+    // let num= [12,20,43,45,70,30,24,60]
     // let d =0
-    // let b = 0 
+    // let sum = 0 
     // num.forEach(function(a){
     //  d = a%10
     //   a = a/10>>0
     //       sum = d + a
     //     console.log(sum)
-    // })`
+    // })
+
+
+
+//     let num = [12,24,43,45,71,38,24,60]
+// let d =0
+// let sum = 0
+// num.forEach(function(a){
+// d = a%10
+// sum = sum + d
+// })
+// console.log(sum)
