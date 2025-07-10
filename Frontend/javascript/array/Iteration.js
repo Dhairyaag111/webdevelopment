@@ -80,3 +80,15 @@
 //         console.log(a)
 //     }
 // })
+
+
+
+    // let num = [12,20,43,45,70,30,24,60]
+    // let d =0
+    // let b = 0 
+    // num.forEach(function(a){
+    //  d = a%10
+    //   a = a/10>>0
+    //       sum = d + a
+    //     console.log(sum)
+    // })`
