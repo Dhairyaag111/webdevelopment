@@ -45,3 +45,23 @@
 // })
 // console.log(`Even number = ${ecounter}`)
 // console.log(`Odd number = ${ocounter}`)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon", "avacodo"]
+// let counter = 0
+// fruits.forEach(function(a){
+//     if(a[2]=='a'){
+//         counter++
+//     }
+// })
+// console.log(`The are ${counter} fruits that stats with "a"`)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let counter = 0
+// fruits.forEach(function(a){
+//     if(a.startsWith("a") || a.startsWith("A")){
+//         counter++
+//     }
+// })
+// console.log(`The are ${counter} fruits that stats with "a"`)
