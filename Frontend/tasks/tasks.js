@@ -1634,3 +1634,16 @@
 //     return c.startsWith("s")
 // })
 // console.log(result)
+
+
+
+
+
+// let num = [12,34,64,78,84,23,54,42,62,67]
+// let  l = 0
+// num.forEach(function(a){
+//     l = a%10
+//     if((a/10>>0)>l){
+//         console.log(a)
+//     }
+// })
