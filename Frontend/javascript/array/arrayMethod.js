@@ -248,3 +248,22 @@
 // console.log(result)
 
 
+
+// sort method
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// fruits.sort()
+// console.log(fruits)
+
+
+
+// reverse method
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// fruits.reverse()
+// console.log(fruits)
+
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// num.reverse()
+// console.log(num)
