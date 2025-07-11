@@ -121,3 +121,10 @@
 //     return a*2
 // })
 // console.log(num2)
+
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// let num1 = num.map(function(a){
+//     return a+""
+// })
+// console.log(num1)
