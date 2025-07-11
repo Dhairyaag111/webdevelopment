@@ -25,7 +25,12 @@ ask 6 numbers and count and show how many numbers are greater than index no. zer
 
 
 
+
+
 all method redo
+
+
+
 
 
 
@@ -38,3 +43,18 @@ print number if the first digit is even and another number is odd
 
 from three digit number print those where first and last digit match
 from three number print those where mid digit is greater than both ends
+
+
+
+
+
+
+replace every even no. with even and odd no. with odd
+convert gender symbols to full forms
+from 2 letter string array ,if both letters are same return yes and if they are not same return no
+in true false return up thumb an downb thumb
+show the index of the word 
+two letter string return reverse two string
+return second character from two character string array
+if no. ends with return yes else return no
+result evalutation if above 40 pass else fail
