@@ -135,3 +135,10 @@
 //     return 2025-a
 // })
 // console.log(age)
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon",]
+// let first = fruits.map(function(a){
+//     return a[0]
+// })
+// console.log(first)
