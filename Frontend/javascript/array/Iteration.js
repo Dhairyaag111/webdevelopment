@@ -142,3 +142,19 @@
 //     return a[0]
 // })
 // console.log(first)
+
+
+//  let tf = ["true","false","false","false","true","true","false"]
+//  let variable = tf.map(function(a){
+//      if(a=="true"){
+//          return "yes"
+//      }
+//      else if(a=="false"){
+//          return "no"
+//      }
+//      else{
+//          return "error"
+//      }
+//  })
+//  console.log(variable)
+
