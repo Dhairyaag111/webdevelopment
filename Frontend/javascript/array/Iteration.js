@@ -4,7 +4,15 @@
 // }
 
 
-// for each 
+// .forEach 
+
+// let num = [2,4,6,8]
+// let num1 = []
+// num.forEach(function(a){
+//     num1.push(a*2)
+// })
+// console.log(num1)
+
 
     // let fruits = ["apple","mango","orange","banana","watermelon"]
     // fruits.forEach(function (x){
@@ -103,3 +111,13 @@
 // sum = sum + d
 // })
 // console.log(sum)
+
+
+
+// .map
+
+// let num = [2,4,6,8]
+// let num2 = num.map(function(a){
+//     return a*2
+// })
+// console.log(num2)
