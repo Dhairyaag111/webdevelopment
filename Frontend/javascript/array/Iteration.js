@@ -128,3 +128,10 @@
 //     return a+""
 // })
 // console.log(num1)
+
+
+// let year = [2000,2021,2018,2024,2009]
+// let age = year.map(function(a){
+//     return 2025-a
+// })
+// console.log(age)
