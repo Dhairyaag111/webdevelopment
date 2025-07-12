@@ -1755,3 +1755,12 @@
 // console.log(variable)
 
 
+// let string = ['aa','je','ps','ts','oe','eg']
+// let s = 0
+// let variable = string.map(function(a){
+// s = a[1] + a[0]
+// return s
+// })
+// console.log(variable)
+
+
