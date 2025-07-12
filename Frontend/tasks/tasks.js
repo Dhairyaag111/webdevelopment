@@ -1755,6 +1755,13 @@
 // console.log(variable)
 
 
+// let word = ["apple","car","truck","mouse","keyboard"]
+// let variable = word.map(function(a,b){
+//     return b
+// })
+// console.log(variable)
+
+
 // let string = ['aa','je','ps','ts','oe','eg']
 // let s = 0
 // let variable = string.map(function(a){
