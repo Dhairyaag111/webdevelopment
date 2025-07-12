@@ -1740,3 +1740,18 @@
 // console.log(variable)
 
 
+// let tf = ['true','false','true','true','true','false','false','true']
+// let variable = tf.map(function(a){
+//     if(a=='true'){
+//         return "👍"
+//     }
+//     else if(a=='false'){
+//         return '👎'
+//     }
+//     else{
+//         return 'error'
+//     }
+// })
+// console.log(variable)
+
+
