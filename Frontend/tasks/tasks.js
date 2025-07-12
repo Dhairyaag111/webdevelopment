@@ -1556,7 +1556,7 @@
 
 
 
-
+// all method redo
 
 
 // let vegetable = ["cucumber","carrot","potato","pea","tomato"]
@@ -1639,6 +1639,9 @@
 
 
 
+
+
+
 // let num = [12,34,64,78,84,23,54,42,62,67]
 // let  l = 0
 // num.forEach(function(a){
@@ -1649,18 +1652,12 @@
 // })
 
 
-
-
-
 // let fruits = ["apple","mango","orange","banana","watermelon"]
 // fruits.forEach(function(a){
 //     if(a[0]==a[1]){
 //         console.log(a)
 //     }
 // })
-
-
-
 
 
 // let num = [12,34,64,78,84,23,54,42,63,67]
@@ -1673,10 +1670,6 @@
 // })
 
 
-
-
-
-
 // let num = [132,343,641,787,874,232,544,424,631,676]
 // let l = 0
 // num.forEach(function(a){
@@ -1685,10 +1678,6 @@
 //         console.log(a)
 //     }
 // })
-
-
-
-
 
 
 // let num = [132,343,641,787,874,232,544,424,631,676]
@@ -1702,5 +1691,26 @@
 //         console.log(a)
 //     }
 // })
+
+
+
+
+
+
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// let variable = num.map(function(a){
+//     if(a%2==0){
+//         return "even"
+//     }
+//     else{
+//         return "odd"
+//     }
+// })
+// console.log(variable)
+
+
+
+
 
 

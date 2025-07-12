@@ -40,7 +40,6 @@ print number where first digit is greater than second digit
 make an array of words to show if the first and second letter is same 
 print number if sum of digit is odd
 print number if the first digit is even and another number is odd
-
 from three digit number print those where first and last digit match
 from three number print those where mid digit is greater than both ends
 
