@@ -1728,6 +1728,15 @@
 // console.log(variable)
 
 
-
+// let string = ["aa","dv","er","qq","eu","pp"]
+// let variable = string.map(function(a){
+//     if(a[0]==a[1]){
+//         return "yes"
+//     }
+//     else{
+//         return "no"
+//     }
+// })
+// console.log(variable)
 
 
