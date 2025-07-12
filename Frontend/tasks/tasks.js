@@ -1772,3 +1772,15 @@
 // console.log(variable)
 
 
+// let num = [10,234,34,10,32,5434,30,890]
+// let l = 0
+// let variable = num.map(function(a){
+//     l = a%10
+//     if(l==0){
+//         return "yes"
+//     }
+//     else{
+//         return "no"
+//     }
+// })
+// console.log(variable)
