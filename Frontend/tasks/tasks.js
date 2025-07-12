@@ -1710,6 +1710,23 @@
 // console.log(variable)
 
 
+// let gender = ['m','f','m','o','f','o','m','o','f','m','f','o']
+// let variable = gender.map(function(a){
+//     if(a=='m'){
+//         return "male"
+//     }
+//     else if(a=='f'){
+//         return "female"
+//     }
+//     else if(a=='o'){
+//         return "others"
+//     }
+//     else{
+//         return "error"
+//     }
+// })
+// console.log(variable)
+
 
 
 
