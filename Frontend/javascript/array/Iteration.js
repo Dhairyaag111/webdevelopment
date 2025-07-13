@@ -263,3 +263,26 @@
 //     sum = sum + a
 // })
 // console.log(sum)
+
+
+
+
+
+
+// .keys
+
+
+
+// (with 'of' keyword )
+// let fruits = ["apple","mango","orange","banana","watermelon",]
+// let keys = fruits.keys()
+//     for(key of keys){
+// console.log(key)
+// }
+
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// let keys = num.keys()
+//     for(key of keys){
+// console.log(key)
+// }
