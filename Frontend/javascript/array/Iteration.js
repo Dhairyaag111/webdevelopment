@@ -286,3 +286,16 @@
 //     for(key of keys){
 // console.log(key)
 // }
+
+
+
+
+
+// .with
+
+
+
+// let fruits = ["apple","mango","orange","banana","watermelon"]
+// let variable = fruits.with(2,'grapes')
+// console.log(fruits)
+// console.log(variable)
