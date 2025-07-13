@@ -202,3 +202,23 @@
 //     }
 //     })
 // console.log(` the highest number is ${variable}`)
+
+
+
+
+
+// .every
+
+
+// let even = [2,4,6,8,10,12]
+// let variable = even.every(function(a){
+// return a%2==0
+// })
+// console.log(variable)
+
+
+// let marks = [25,66,78,53,77,82,12,22]
+// let variable = marks.every(function(a){
+//     return a>40
+// })
+// console.log(variable)
