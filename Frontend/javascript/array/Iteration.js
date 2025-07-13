@@ -188,3 +188,17 @@
 //     return a+b
 // })
 // console.log(variable)
+
+
+
+// let num = [120,34,76,46,890,75,100]
+// let h = 0
+// let variable = num.reduce(function(a,b){
+//     if(a>b){
+//         return h = a
+//     }
+//     else{
+//     return b
+//     }
+//     })
+// console.log(` the highest number is ${variable}`)
