@@ -55,5 +55,5 @@ in true false return up thumb an downb thumb
 show the index of the word 
 two letter string return reverse two string
 return second character from two character string array
-if no. ends with return yes else return no
+if no. ends with 0 return yes else return no
 result evalutation if above 40 pass else fail
