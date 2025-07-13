@@ -222,3 +222,44 @@
 //     return a>40
 // })
 // console.log(variable)
+
+
+
+
+
+// .some
+
+
+// let num = [11,43,22,31]
+// let variable = num.some(function(a){
+//     return a%2==0
+// })
+// console.log(variable)
+
+
+
+
+// .from
+
+
+// let num = [11,43,22,31]
+// let variable = Array.from(num,function(a){
+// return a*a
+// })
+// console.log(variable)
+
+
+// let fruits = "apple"
+// let sum = 0
+// let array = Array.from(fruits)
+// console.log(array)
+
+
+// let fruits = "apple"
+// let sum = ''
+// let array = Array.from(fruits)
+// console.log(array)
+// array.forEach(function(a){
+//     sum = sum + a
+// })
+// console.log(sum)
