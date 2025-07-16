@@ -61,8 +61,19 @@
 
 
 
+
 // .trim
 
 // let name = "    Dhairya    "
 // console.log(name)
 // console.log(name.trim())
+
+
+
+// .padStart and padEnd
+
+// let text = "5"
+// let ps = text.padStart(4,"O")
+// let pe = text.padEnd(4,"X")
+// console.log(ps)
+// console.log(pe)
