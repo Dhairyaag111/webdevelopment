@@ -95,3 +95,18 @@
 // let name = "hello world hi everyone"
 //  let variable = name.split("")
 //  console.log(variable)
+
+
+
+
+// ,startsWith
+
+// let name = "hello world hi everyone"
+//     console.log(name.startsWith("h"))
+    
+    
+    
+// .endsWith 
+    
+// let name = "hello world hi everyone" 
+// console.log(name.endsWith("e"))
