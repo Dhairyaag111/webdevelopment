@@ -1791,3 +1791,109 @@
 //     }
 // })
 // console.log(variable)
+
+
+
+
+
+
+
+
+
+// const home = new Object ()
+// home.homeColor = "orange"
+// home.rooms = 3
+// home.kitchen = 1
+// home.washroom = 2
+// home.tv = 1
+// home.address = "Birtamode-4,Jhappa"
+// console.log(home)
+
+
+// const laptop = {
+//     color: "grey",
+//     os: "windows 10",
+//     charger: 1,
+//     generation: "10th",
+//     RAM: "8gb"
+// }
+// console.log(laptop)
+
+
+// const school = {
+//     name: "Greenfield World School"
+//    contact: "023-532208"
+//     grades: "pg to 12"
+//     students: 500
+//     address: "Birtamode-1,Jhapa"
+// }
+// console.log(school)
+
+
+// const mobile = {
+//     color: "green",
+//     os: "Android",
+//     camera: "64MP",
+//     brand: "redmi"
+//     RAM: "4gb"
+// }
+// console.log(mobile)
+
+
+// const tablet = {
+//     color: "black",
+//     os: "android",
+//     charger: 1,
+//     brand = "samsung"
+//     RAM: "6gb"
+//     pen: 1
+// }
+// console.log(tablet)
+
+
+// const smartWatch = {
+//     color: "blakc",
+//     os: "ios",
+//     strapType: "sports",
+//     brand: "apple"
+//     RAM: "1gb"
+// }
+// console.log(smartWatch)
+
+
+// const TV = {
+//     color: "black",
+//     brand: "hisense",
+//     size: "43 inch",
+// };
+// console.log(TV)
+
+
+// const router = {
+//     color: "white",
+//     brand: "WorldLink",
+//     speed: "2.4 to 5"
+// }
+// console.log(router)
+
+
+// const movie = {
+//  name: "3 idiots",
+//   director: "RajKumar Hirani",
+//   releaseDate: "2009-12-25",
+//   genres: "Comedy,Drama"
+//   cast: "Amir Khan, Sharman Joshi, R. Madhawan"
+// }
+// console.log(movie)
+
+
+// const carsDetails = {
+    
+// carBrand: "Renault",
+// carName = "Duster"
+// color: "White",
+// isSold: true,
+// capacity: 5,
+// milage: "10km/ltr"
+// }
+// console.log(carsDetails)

@@ -57,3 +57,9 @@ two letter string return reverse two string
 return second character from two character string array
 if no. ends with 0 return yes else return no
 result evalutation if above 40 pass else fail
+
+
+
+
+
+10 different objects 
