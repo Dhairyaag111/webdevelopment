@@ -77,3 +77,21 @@
 // let pe = text.padEnd(4,"X")
 // console.log(ps)
 // console.log(pe)
+
+
+
+
+// .replace 
+
+// let name = "hello world hi everyone"
+//  let variable = name.replace("hello","hi")
+//  console.log(variable)
+
+
+
+
+// .split
+
+// let name = "hello world hi everyone"
+//  let variable = name.split("")
+//  console.log(variable)
