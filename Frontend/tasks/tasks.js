@@ -1821,11 +1821,11 @@
 
 
 // const school = {
-//     name: "Greenfield World School"
-//    contact: "023-532208"
-//     grades: "pg to 12"
-//     students: 500
-//     address: "Birtamode-1,Jhapa"
+//     name: "Greenfield World School",
+//    contact: "023-532208",
+//     grades: "pg to 12",
+//     students: 500,
+//     address: "Birtamode-1,Jhapa",
 // }
 // console.log(school)
 
@@ -1834,7 +1834,7 @@
 //     color: "green",
 //     os: "Android",
 //     camera: "64MP",
-//     brand: "redmi"
+//     brand: "redmi",
 //     RAM: "4gb"
 // }
 // console.log(mobile)
@@ -1844,8 +1844,8 @@
 //     color: "black",
 //     os: "android",
 //     charger: 1,
-//     brand = "samsung"
-//     RAM: "6gb"
+//     brand = "samsung",
+//     RAM: "6gb",
 //     pen: 1
 // }
 // console.log(tablet)
@@ -1855,7 +1855,7 @@
 //     color: "blakc",
 //     os: "ios",
 //     strapType: "sports",
-//     brand: "apple"
+//     brand: "apple",
 //     RAM: "1gb"
 // }
 // console.log(smartWatch)
@@ -1864,7 +1864,7 @@
 // const TV = {
 //     color: "black",
 //     brand: "hisense",
-//     size: "43 inch",
+//     size: "43 inch"
 // };
 // console.log(TV)
 
@@ -1881,7 +1881,7 @@
 //  name: "3 idiots",
 //   director: "RajKumar Hirani",
 //   releaseDate: "2009-12-25",
-//   genres: "Comedy,Drama"
+//   genres: "Comedy,Drama",
 //   cast: "Amir Khan, Sharman Joshi, R. Madhawan"
 // }
 // console.log(movie)
