@@ -88,3 +88,35 @@
 // let d = carsDetails.price * u/100
 // carsDetails.discount = d
 // console.log(carsDetails.discount)
+
+
+
+
+
+
+// let object = prompt("Enter the name of your object: ")
+// let carBrand = prompt ("Enter car brand: ")
+// let carName = prompt ("Enter car name: ")
+// let carColor = prompt ("Enter car color: ")
+// let carPrice = Number(prompt ("Enter car price: "))
+// let carCapacity = Number(prompt ("Enter car capacity: "))
+// let carMilage = Number(prompt ("Enter car milage: "))
+
+// const carsDetails = {
+  
+// }
+
+//  carsDetails.brand = carBrand
+//  carsDetails.color = carColor
+//  carsDetails.name = carName
+//  carsDetails.price = carPrice
+//  carsDetails.capacity = carCapacity
+//  carsDetails.milage = carMilage
+ 
+ //  console.log("")
+// console.log("The car brand is "+carsDetails.brand)
+// console.log( "The car color is "+carsDetails.color)
+// console.log("The car name is "+carsDetails.name )
+// console.log( "The car price is "+carsDetails.price )
+// console.log("The car capacity is "+ carsDetails.capacity)
+// console.log("The car milage is "+ carsDetails.milage)
