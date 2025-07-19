@@ -94,7 +94,7 @@
 
 
 
-// let object = prompt("Enter the name of your object: ")
+// let object = prompt("Enter the name of your object(i.e car): ")
 // let carBrand = prompt ("Enter car brand: ")
 // let carName = prompt ("Enter car name: ")
 // let carColor = prompt ("Enter car color: ")
