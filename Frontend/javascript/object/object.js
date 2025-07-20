@@ -136,3 +136,20 @@
 // }
 
 // console.log(person.fullName())
+
+
+
+
+// const laptop = {
+//     color: prompt("Enter the color of your laptop: "),
+//     RAM:  prompt("Enter the RAM of the laptop: "),
+//     size: prompt("Enter the size of the laptop: "),
+//     os: prompt("Enter the operating sysetm of the laptop: "),
+//     generation: prompt("Enter the generation of the laptop: "),
+//     brand:prompt("Enter the brand name of your laptop: "),
+    
+//     details: function (){
+//         return `The brand name is ${this.brand} , its color is ${this.color} , the size is ${this.size} , its os is ${this.os} , it is ${this.generation} and it has ${this.RAM} RAM in it`
+//     }
+// }
+// console.log(laptop.details())
