@@ -120,3 +120,19 @@
 // console.log( "The car price is "+carsDetails.price )
 // console.log("The car capacity is "+ carsDetails.capacity)
 // console.log("The car milage is "+ carsDetails.milage)
+
+
+
+
+//  this.
+
+// const person  = {
+//     firstName: "Dhairya",
+//     lastName: "Agrawal",
+//     id: 43324,
+//     fullName : function(){
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// console.log(person.fullName())
