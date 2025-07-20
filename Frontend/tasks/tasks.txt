@@ -1,75 +1,37 @@
-fibonasi
-if userinput is more than 100 show to enter value less than 100 and show prime number
-reverse number
-if userinput is < 50 show your value is less than 50
-swap three numbers
-ocnvert minutes into hours and minutes\
-return last digit of number and seocnd last
-5 subject total marks
-
-
-
-
-to show which is divisible by 2 and 3 (ask 7 number)
-to show median 
-copy and paste negative value into new array
-
-
-
-
-ask 6 numbers and only show sum of odd numbers
-ask 6 numbers and show difference between largest and smallest value
-ask 6 numbers and repalce every  negative numbers with 0
-ask 6 numbers and show that the last and first values are same or not
-ask 6 numbers and count and show how many numbers are greater than index no. zero
-
-
-
-
-
-all method redo
 
 
 
 
 
 
-(for only second digit)
-
-print number where first digit is greater than second digit
-make an array of words to show if the first and second letter is same 
-print number if sum of digit is odd
-print number if the first digit is even and another number is odd
-from three digit number print those where first and last digit match
-from three number print those where mid digit is greater than both ends
 
 
 
 
 
 
-replace every even no. with even and odd no. with odd
-convert gender symbols to full forms
-from 2 letter string array ,if both letters are same return yes and if they are not same return no
-in true false return up thumb an downb thumb
-show the index of the word 
-two letter string return reverse two string
-return second character from two character string array
-if no. ends with 0 return yes else return no
-result evalutation if above 40 pass else fail
-
-
-
-
-
-10 different objects 
 
 
 
 
 
 
-make person object and ask user's age (if less than 18 not eligible for vote else eligible for vote)
-ask students 5 subjects marks and calculate marks and return fail or pass
-ask user a number and if it is prime number return prime number else return composite number
-ask user number upto which user want fibonacci series
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

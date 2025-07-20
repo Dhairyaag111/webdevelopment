@@ -1233,6 +1233,28 @@
 
 
 
+// to show which is divisible by 2 and 3 (ask 7 number)
+// to show median 
+// copy and paste negative value into new array
+// ask 6 numbers and only show sum of odd numbers
+// ask 6 numbers and show difference between largest and smallest value
+// ask 6 numbers and repalce every  negative numbers with 0
+// ask 6 numbers and show that the last and first values are same or not
+// ask 6 numbers and count and show how many numbers are greater than index no. zero
+
+
+
+// fibonasi
+// if userinput is more than 100 show to enter value less than 100 and show prime number
+// reverse number
+// if userinput is < 50 show your value is less than 50
+// swap three numbers
+// ocnvert minutes into hours and minutes\
+// return last digit of number and seocnd last
+// 5 subject total marks
+
+
+
 
 // let func = (u)=>{
 //     a = 0
@@ -1248,11 +1270,6 @@
 // }
 // let u = Number(prompt("Enter the number to the fibonacci upto there: "))
 // func(u)
-
-
-
-
-
 
 
 // let func = (a) => {
@@ -1280,9 +1297,6 @@
 
 
 
-
-
-
 // let func = (m,s,c)=> {Add commentMore actions
 //     return m+c+s
 // }
@@ -1299,9 +1313,6 @@
 // marks(m,s,c)
 
 
-
-
-
 // let func = (a)  =>{
 //     if (a<50 || a>500){
 //         console.log("Enter the number between 50 and 500")
@@ -1309,12 +1320,6 @@
 // }
 //     let a = Number(prompt("Enter a number: "))
 // func(a)
-
-
-
-
-
-
 
 
 // let func = (u)=>{
@@ -1332,9 +1337,6 @@
 // console.log(func(u))
 
 
-
-
-
 // let func = (u) =>{
 //      let d = (u/60)>>0
 //      let r = u%60
@@ -1350,9 +1352,6 @@
 // func (u)
 
 
-                                                                       
-
-
 // let func = (a) =>{
 //    let l =  a%10
 //    let r  =  (a%100)
@@ -1364,9 +1363,6 @@
 // let a = Number(prompt("Enter a number to know its last and second last digit: "))
 
 // func(a)
-
-
-
 
 
 // let func = (a,b,c) =>{
@@ -1385,10 +1381,6 @@
 // let c = Number(prompt("Enter the third number: "))
 
 // func(a,b,c)
-
-
-
-
 
 
 // let func = (a)=>{
@@ -1642,6 +1634,15 @@
 
 
 
+// (for only second digit)
+
+// print number where first digit is greater than second digit
+// make an array of words to show if the first and second letter is same 
+// print number if sum of digit is odd
+// print number if the first digit is even and another number is odd
+// from three digit number print those where first and last digit match
+// from three number print those where mid digit is greater than both ends
+
 // let num = [12,34,64,78,84,23,54,42,62,67]
 // let  l = 0
 // num.forEach(function(a){
@@ -1697,6 +1698,16 @@
 
 
 
+
+// replace every even no. with even and odd no. with odd
+// convert gender symbols to full forms
+// from 2 letter string array ,if both letters are same return yes and if they are not same return no
+// in true false return up thumb an down thumb
+// show the index of the word 
+// two letter string return reverse two string
+// return second character from two character string array
+// if no. ends with 0 return yes else return no
+// result evalutation if above 40 pass else fail
 
 // let num = [1,2,3,4,5,6,7,8,9,10]
 // let variable = num.map(function(a){
@@ -1797,7 +1808,7 @@
 
 
 
-
+// 10 different objects 
 
 // const home = new Object ()
 // home.homeColor = "orange"
@@ -1896,3 +1907,69 @@
 // milage: "10km/ltr"
 // }
 // console.log(carsDetails)
+
+
+
+
+
+
+// make person object and ask user's age (if less than 18 not eligible for vote else eligible for vote)
+// ask students 5 subjects marks and calculate marks and return fail or pass
+// ask user a number and if it is prime number return prime number else return composite number
+// ask user number upto which user want fibonacci series
+
+// const person = {
+//     age: prompt("Enter your age to know whether you are eligible for vote or not: ")
+// }
+// let checker = function(){
+//     if(person.age>18){
+//        return "You are eligible for voting"
+//     }
+//     else{
+//     return "You are not eligible for voting"    }
+// }
+// console.log(checker())
+
+
+
+// const marks = {
+//     maths: Number(prompt("Enter the marks of maths: ")),
+//     science:Number(prompt("Enter the marks of science: ")),
+//     nepali: Number(prompt("Enter the marks of nepali: ")),
+//     computer: Number(prompt("Enter the marks of computer: ")),
+//     english: Number(prompt("Enter the marks of english: "))
+// }
+// let func = function(){
+//     let sum = marks.maths+marks.science+marks.english+marks.nepali+marks.computer
+//     let avg = sum/5
+//     if(avg>=40){
+//         return "pass"
+//     }
+//     else if (avg<40){
+//         return "fail"
+//     }
+//     else{
+//         return "error"
+//     }
+// }
+// console.log(func())
+
+
+// const prime = {
+//     number: Number(prompt("Enter a number to check whether it is prime or not: "))
+// }
+// let counter = 0
+// let func = function(){
+//     for(i=1;i<=prime.number;i++){
+//         if(prime.number%i==0){
+//             counter++
+//         }
+//     }
+//     if(counter==2){
+//         return "It is a prime number"
+//     }
+//     else{
+//         return "It is a composite number"
+//     }
+// }
+// console.log(func())
