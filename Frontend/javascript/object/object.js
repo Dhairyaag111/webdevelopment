@@ -153,3 +153,17 @@
 //     }
 // }
 // console.log(laptop.details())
+
+
+
+
+// const laptop = {
+//     color: prompt("Enter the color of your laptop: "),
+//     brand:prompt("Enter the brand name of your laptop: "),
+    
+// }
+//     laptop.details = function (){
+//         return `(${this.color} color laptop of ${this.brand})`.toUpperCase()
+//     }
+
+// console.log(laptop.details())

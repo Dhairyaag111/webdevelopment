@@ -63,3 +63,13 @@ result evalutation if above 40 pass else fail
 
 
 10 different objects 
+
+
+
+
+
+
+make person object and ask user's age (if less than 18 not eligible for vote else eligible for vote)
+ask students 5 subjects marks and calculate marks and return fail or pass
+ask user a number and if it is prime number return prime number else return composite number
+ask user number upto which user want fibonacci series
