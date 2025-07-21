@@ -1975,13 +1975,17 @@
 // console.log(func())
 
 
-const fibonacci = {
-    number: Number(prompt("Enter a number upto where you want fibonacci series: "))
-}
-let a = 0
-let b = 1
-   for(i=1 ; i<=fibonacci.number; i++){
-        let sum = a+b
-        a=b
-        b=sum
-console.log(sum)
+// const fibonacci = {
+//     number: Number(prompt("Enter a number upto where you want fibonacci series: ")),
+//      fNumber : function(){
+// let a = 0
+// let b = 1
+//    for(i=1 ; i<=(this.number); i++){
+//         let sum = a+b
+//         a=b
+//         b=sum
+// console.log(sum)
+// }
+// }
+// }
+// fibonacci.fNumber()
