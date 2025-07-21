@@ -1937,29 +1937,23 @@
 //     science:Number(prompt("Enter the marks of science: ")),
 //     nepali: Number(prompt("Enter the marks of nepali: ")),
 //     computer: Number(prompt("Enter the marks of computer: ")),
-//     english: Number(prompt("Enter the marks of english: "))
-// }
-// let func = function(){
-//     let sum = marks.maths+marks.science+marks.english+marks.nepali+marks.computer
-//     let avg = sum/5
-//     if(avg>=40){
+//     english: Number(prompt("Enter the marks of english: ")),
+//      checker:  function(){
+//     if(this.maths>=40 && this.science>=40 && this.nepali>=40 && this.computer>=40 && this.english>=40){
 //         return "pass"
 //     }
-//     else if (avg<40){
-//         return "fail"
-//     }
 //     else{
-//         return "error"
-//     }
+//         return "fail"
 // }
-// console.log(func())
+// }
+// }
+// console.log(marks.checker())
 
 
-// const prime = {
-//     number: Number(prompt("Enter a number to check whether it is prime or not: "))
-// }
 // let counter = 0
-// let func = function(){
+// const prime = {
+//     number: Number(prompt("Enter a number to check whether it is prime or not: ")),
+//  primeChecker:function(){
 //     for(i=1;i<=prime.number;i++){
 //         if(prime.number%i==0){
 //             counter++
@@ -1972,7 +1966,8 @@
 //         return "It is a composite number"
 //     }
 // }
-// console.log(func())
+// }
+// console.log(prime.primeChecker())
 
 
 // const fibonacci = {
