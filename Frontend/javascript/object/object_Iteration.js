@@ -1,12 +1,4 @@
-// let person = {
-//     name: "Dhairya",
-//     age: 15,
-//     isMarried: "No",
-//     address: "Birtamode,Jhapa"
-// }
-// for( let key in person){
-//     console.log(`${key} : ${person[key]}`)
-// }
+
 
 
 
@@ -15,7 +7,7 @@
 //     age: 15,
 //     address: "birtamode",
 //     school: "Green Field World School",
-//     grade : "10 'A'"",
+//     grade : "10 'A'",
 //     house: "Yellow"
 // }
 
