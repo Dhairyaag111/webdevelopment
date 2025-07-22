@@ -2019,3 +2019,14 @@
 //     if(typeof person[key] == "string")
 //     console.log(`${key} : ${person[key]}`)
 // }
+
+
+
+
+
+// find the property with highest numric value
+// how many value are ecxactly true
+// sum of numric value only
+// print only key value pair where key starts with "s"
+// create a copy of all key value in another object
+// replace every string value into your name

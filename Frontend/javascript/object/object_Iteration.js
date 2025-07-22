@@ -106,3 +106,22 @@
 //     console.log(`${key} : ${person[key]}`)
 //     }
 // }
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009
+// }
+// for(let keys in person){
+//   if(typeof (person[keys]) == "string"){
+//       if((person[keys].length)>4){
+//           console.log(`${keys} : ${person[keys]}`)
+//       }
+//   }
+// }
