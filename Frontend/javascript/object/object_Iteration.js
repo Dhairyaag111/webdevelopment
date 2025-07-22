@@ -61,3 +61,18 @@
 //         }
 // }
 // console.log(`Number of boolean properties is ${c}`)
+
+
+
+// let student = {
+//     name: "Dhairya",
+//     age: 15,
+//     address: "birtamode",
+//     school: "Green Field World School",
+//     grade : "10 'A'",
+//     house: "Yellow"
+// }
+
+// for(key in student){
+//  console.log(`${key.toUpperCase()} : ${student[key]}`)
+// }
