@@ -2067,3 +2067,20 @@
 // c++
 // }
 // console.log(`Number of true properties is ${c}`)
+
+
+
+
+
+// const number = {
+//     num1: 32,
+//     num2: 42,
+//     num3: 98,
+//     num4: 12,
+//     num5: 73
+// }
+// let sum = 0
+// for(key in number){
+//  sum = sum + number[key]
+// }
+// console.log(sum)
