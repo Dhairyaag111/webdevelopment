@@ -1984,3 +1984,26 @@
 // }
 // }
 // fibonacci.fNumber()
+
+
+
+
+// make objects with salary and at end add 1000 rs in all salary
+// print keys those value is string
+
+
+// let salary = {
+// ram: 10000,
+// shyam: 20000,
+// hari: 15000,
+// om: 24000,
+// sita: 18000
+// }
+
+// for (key in salary){
+//     let newSalary = salary[key]+1000
+//     console.log(`${key} : ${newSalary}`)
+// }
+
+
+
