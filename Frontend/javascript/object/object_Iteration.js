@@ -45,3 +45,19 @@
 // }
 // console.log(`Number of true properties is ${c}`)
  
+
+// let person = {
+//     isMarried: false,
+//     isageMoreThan10: true,
+//     isBoy: true,
+//     studiesInGrade10: true,
+//     eligibleForVote: false,
+//     name: "Dhairya"
+// }
+// let c = 0
+// for(let key in person){
+//     if(typeof(person[key]) == "boolean"){
+//         c++
+//         }
+// }
+// console.log(`Number of boolean properties is ${c}`)
