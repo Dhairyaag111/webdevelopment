@@ -90,3 +90,19 @@
 //     if(typeof person[key] == "number")
 //     console.log(`${key} : ${person[key]}`)
 // }
+
+
+
+// let person = {
+//     name: null,
+//     age:null,
+//     isMarried: "No",
+//     address: undefined,
+//     grade: null,
+//     birthYear: undefined
+// }
+// for(key in person){
+//     if(person[key] == undefined ||  person[key] == null){
+//     console.log(`${key} : ${person[key]}`)
+//     }
+// }
