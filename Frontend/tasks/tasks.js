@@ -2104,3 +2104,24 @@
 //         console.log(`${key} : ${person[key]}`)
 // }
 // }
+
+
+
+
+
+// let person1 = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     sn: 1,
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+// let person2 = {
+// }
+// for(key in person1){
+// person2[key] = person1[key]
+// console.log( `${key}: ${person2[key]}`)
+// }
