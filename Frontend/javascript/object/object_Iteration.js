@@ -76,3 +76,17 @@
 // for(key in student){
 //  console.log(`${key.toUpperCase()} : ${student[key]}`)
 // }
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009
+// }
+// for(key in person){
+//     if(typeof person[key] == "number")
+//     console.log(`${key} : ${person[key]}`)
+// }
