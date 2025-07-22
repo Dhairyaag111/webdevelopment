@@ -2050,3 +2050,20 @@
 //     }
 // }
 //     console.log(greatest)
+
+
+
+
+// let person = {
+//     isMarried: false,
+//     isageMoreThan10: true,
+//     isBoy: true,
+//     studiesInGrade10: true,
+//     eligibleForVote: false
+// }
+// let c = 0
+// for(key in person){
+// if(person[key] == true)
+// c++
+// }
+// console.log(`Number of true properties is ${c}`)
