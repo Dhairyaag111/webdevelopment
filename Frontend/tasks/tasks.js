@@ -2084,3 +2084,23 @@
 //  sum = sum + number[key]
 // }
 // console.log(sum)
+
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     sn: 1,
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+// for(key in person){
+//     if(key.startsWith("s")){
+//         console.log(`${key} : ${person[key]}`)
+// }
+// }
