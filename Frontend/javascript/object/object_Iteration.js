@@ -214,3 +214,24 @@
 //          console.log(`${key} : ${person2[key]}`)
 //     }
 // }
+
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: false,
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009,
+//     salary: null
+// }
+// let person2 = {
+    
+// }
+// for(key in person){
+//     person2 = person
+//     console.log(`${key} : ${typeof (person2[key])}`)
+// }
