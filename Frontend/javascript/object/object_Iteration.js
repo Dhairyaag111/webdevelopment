@@ -193,3 +193,24 @@
 // }
 // console.log(`number of string key is ${counter_key}`)
 // console.log(`number of string value is ${counter_value}`)
+
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009
+// }
+// const person2 = {
+//     }
+// for(key in person){
+//     if(typeof (person[key]) == "number"){
+//         person2[key] = person[key]
+//          console.log(`${key} : ${person2[key]}`)
+//     }
+// }
