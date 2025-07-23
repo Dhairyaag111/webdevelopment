@@ -125,3 +125,24 @@
 //       }
 //   }
 // }
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009
+// }
+// let counter = 0
+// for(key in person){
+//  if(key.startsWith("a") || key.startsWith("e") || key.startsWith("i") || key.startsWith("o") || key.startsWith("u")){
+//      counter++
+//      console.log(`${key} : ${person[key]}`)
+//  }
+// }
+// console.log("")
+// console.log(`Number of vowel keys is ${counter}`)
