@@ -2125,3 +2125,25 @@
 // person2[key] = person1[key]
 // console.log( `${key}: ${person2[key]}`)
 // }
+
+
+
+
+
+
+// let person1 = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     sn: 1,
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+// for(key in person1){
+// if(typeof (person1[key])=="string"){
+//     person1[key] = "dhairya"
+// console.log(`${key} : ${person1[key]}`)
+// }
+// }
