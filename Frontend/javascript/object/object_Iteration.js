@@ -233,5 +233,6 @@
 // }
 // for(key in person){
 //     person2 = person
-//     console.log(`${key} : ${typeof (person2[key])}`)
+//    person2[key] = typeof(person[key])
 // }
+// console.log(person2)
