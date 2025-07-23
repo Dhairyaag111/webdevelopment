@@ -146,3 +146,22 @@
 // }
 // console.log("")
 // console.log(`Number of vowel keys is ${counter}`)
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: "No",
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009
+// }
+// let counter = 0
+// for(key in person){
+//  if(key[0] == "a" || key[0] == "e" || key[0] == "i" || key[0] == "o" || key[0] == "u"){
+//      counter++
+//      console.log(`${key} : ${person[key]}`)
+//  }
+// }
+// console.log("")
+// console.log(`Number of vowel keys is ${counter}`)
