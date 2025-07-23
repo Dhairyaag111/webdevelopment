@@ -236,3 +236,30 @@
 //    person2[key] = typeof(person[key])
 // }
 // console.log(person2)
+
+
+
+
+
+
+// let person = {
+//     name: "Dhairya",
+//     age: 15,
+//     isMarried: false,
+//     address: "Birtamode,Jhapa",
+//     grade: 10,
+//     birthYear: 2009,
+//     notGettingSalary: true
+// }
+
+// for(key in person){
+//    if(typeof(person[key]) == "boolean"){
+//        if(person[key]==true){
+//            person[key]= "yes"
+//    }
+//    else{
+//        person[key] = "no"
+//    }
+// }
+// }
+// console.log(person)

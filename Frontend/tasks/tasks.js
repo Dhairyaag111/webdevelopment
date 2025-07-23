@@ -2147,3 +2147,11 @@
 // console.log(`${key} : ${person1[key]}`)
 // }
 // }
+
+
+
+
+
+
+// count how many starts with capital letter
+// to add only even no. values from the object 
