@@ -2154,7 +2154,7 @@
 
 
 // to add only even no. values from the object 
-// count how many starts with capital letter
+// count how many key starts with capital letter
 
 
 
@@ -2173,3 +2173,25 @@
 //     }
 // }
 // console.log(sum)
+
+
+
+
+
+// let person1 = {
+//     name: "Dhairya",
+//     Age: 15,
+//     IsMarried: "No",
+//     Sn: 1,
+//     address: "Birtamode,Jhapa",
+//     Grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+// let counter = 0
+// for(key in person1){
+// if((key.charCodeAt(0))>=65 && (key.charCodeAt(0))<=90){
+//     counter++
+// }
+// }
+// console.log(`No. of key with first letter capital is ${counter}`)
