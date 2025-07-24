@@ -2195,3 +2195,11 @@
 // }
 // }
 // console.log(`No. of key with first letter capital is ${counter}`)
+
+
+
+
+
+
+
+// find key with longest value string
