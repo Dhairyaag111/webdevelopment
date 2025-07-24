@@ -2153,5 +2153,23 @@
 
 
 
-// count how many starts with capital letter
 // to add only even no. values from the object 
+// count how many starts with capital letter
+
+
+
+
+// const number = {
+//     num1: 32,
+//     num2: 42,
+//     num3: 97,
+//     num4: 12,
+//     num5: 73
+// }
+// let sum = 0
+// for(key in number){
+//     if(number[key]%2==0){
+//  sum = sum + number[key]
+//     }
+// }
+// console.log(sum)
