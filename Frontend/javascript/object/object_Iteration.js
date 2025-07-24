@@ -305,3 +305,22 @@
 // console.log(`${keys} : ${rev}`)
 // }
 // }
+
+
+
+
+//   let person1 = {
+//     name: "Dhairya",
+//     age: 15,
+//     address: "birtamode",
+//     school: "Green Field World School",
+//     grade : "10 'A'",
+//     house: "Yellow"
+// }
+// let person2 = {
+    
+// }
+// for(let key in person1){
+// person2 = person1
+// console.log(`${person2[key]} : ${key}`)
+//     }
