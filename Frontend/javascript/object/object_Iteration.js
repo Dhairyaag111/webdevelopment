@@ -263,3 +263,22 @@
 // }
 // }
 // console.log(person)
+
+
+
+
+// let person1 = {
+//     name: "Dhairya",
+//     Age: 15,
+//     IsMarried: "No",
+//     Sn: 1,
+//     address: "Birtamode,Jhapa",
+//     Grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+// for(key in person1){
+// if(key.length>4){
+//     console.log(`${key} : ${person1[key]}`)
+// }
+// }
