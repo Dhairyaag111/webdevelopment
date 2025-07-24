@@ -282,3 +282,26 @@
 //     console.log(`${key} : ${person1[key]}`)
 // }
 // }
+
+
+
+
+
+//   let person1 = {
+//     name: "Dhairya",
+//     age: 15,
+//     address: "birtamode",
+//     school: "Green Field World School",
+//     grade : "10 'A'",
+//     house: "Yellow"
+// }
+// for(let keys in person1){
+// if(typeof(person1[keys]) === "string"){
+//     let data = person1[keys]
+//     let rev = ""
+//     for(let i =data.length-1; i>=0; i--){
+//         rev =rev +  data[i]
+//     }
+// console.log(`${keys} : ${rev}`)
+// }
+// }
