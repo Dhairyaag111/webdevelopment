@@ -317,10 +317,13 @@
 //     grade : "10 'A'",
 //     house: "Yellow"
 // }
+
 // let person2 = {
-    
 // }
+
 // for(let key in person1){
-// person2 = person1
-// console.log(`${person2[key]} : ${key}`)
+//     person2[person1[key]] =  key
 //     }
+//     console.log(person2)
+
+
