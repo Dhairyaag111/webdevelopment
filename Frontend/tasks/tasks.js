@@ -2203,3 +2203,35 @@
 
 
 // find key with longest value string
+
+
+
+// let person = {
+//     name: "Dhairya Agrawal",
+//     Age: 15,
+//     IsMarried: "No",
+//     Sn: 1,
+//     address: "Birtamode,Jhapa",
+//     Grade: 10,
+//     birthYear: 2009,
+//     section: "A"
+// }
+
+// let greatest = ""
+// let great = 0
+
+
+// for(let key in person){
+//     if(typeof(person[key])==="string"){
+//       let len = 0
+//       for (let i in person[key]){
+//           len++
+//       }
+//           if(len > great){
+//               great = len
+//               greatest = key
+//           }
+// }
+// }
+// console.log(`The longest key is: ${greatest}`)
+// console.log(`the length of the value of the key is: ${great}`)
