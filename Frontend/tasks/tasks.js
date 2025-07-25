@@ -2235,3 +2235,9 @@
 // }
 // console.log(`The longest key is: ${greatest}`)
 // console.log(`the length of the value of the key is: ${great}`)
+
+
+
+
+
+// a task to make the combination of objects,date and math minimum 200 lines of code required
