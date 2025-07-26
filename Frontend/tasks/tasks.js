@@ -2241,3 +2241,162 @@
 
 
 // a task to make the combination of objects,date and math minimum 200 lines of code required
+
+
+// let person = {
+//     name:prompt("Enter your name: "),
+//     grade: Number(prompt("Enter your grade you study :")),
+//     age:Number(prompt("Enter your age: ")),
+//     roll_no: Number(prompt("Enter your roll number: ")),
+//     school:prompt("Enter your school name: "),
+//     address:prompt("Enter your address: ")
+// }
+// console.log("")
+// if(person.age>=0 && person.age<=12){
+//     console.log("You are in your Childhood.")
+// }
+// else if(person.age>=13 && person.age<=19){
+//     console.log("You are in your Teenage.")
+// }
+// else if(person.age>=20 && person.age<=30){
+//     console.log("You are in your Adulthood.")
+// }
+// else if(person.age>=31 && person.age<=60){
+//     console.log("You are in your Midage.")
+// }
+// else if(person.age>=61){
+//     console.log("You are in your Seniorage .")
+// }
+// console.log("")
+// let date1 = new Date()
+// let u = prompt("If you want to know the current GMT time press 'y':")
+// if(u=="y" || u=="Y"){
+// console.log(`The GMT time is ${date1.getHours()}:${date1.getMinutes()}:${date1.getSeconds()} of ${date1.getFullYear()} `)
+// }
+// else{
+//     console.log("Sorry you will not know the GMT time")
+//     }
+// console.log("")
+// let person2 = {
+//     height: Number(prompt("Enter your height (in meters) :")),
+//      weight: Number(prompt("Enter your weight (in kilogram) :"))
+// }
+
+// let bmi = person2.weight/(person2.height*person2.height)
+// person2.bmi= Math.round(bmi)
+// console.log(`Your BMI is around ${(person2.bmi)} AND`)
+// if(bmi>0  && bmi<18.5){
+//     console.log(`You are Under Weighted `)
+// }
+// if(bmi>=18.5 && bmi<25){
+//     console.log(`You are Healthy Weighted`)
+// }
+// if(bmi>=25 && bmi<30){
+//     console.log(`You are Over Weighted`)
+// }
+// if(bmi>=30 && bmi<35){
+//     console.log(`You are having Obesity Class I`)
+// }
+// if(bmi>=35 && bmi<40){
+//     console.log(`You are Obesity Class II`)
+// }
+// if(bmi>=40){
+//     console.log(`You are having Obesity Class III`)
+//     console.log("You will die fix")
+// }
+// console.log("")
+
+// let u2 = prompt("Enter 'y' if you want use a calculator: ")
+// if(u2=="y" || u2=="Y"){
+//     let object = {
+//         num1: Number(prompt("Enter first the number: ")),
+//         num2:Number(prompt("Enter the second number: ")),
+//         operator: prompt("Enter a operator (+,-,*,/): ")
+//     }
+//     if(object.operator=="+"){
+//         console.log(`The sum is ${object.num1+object.num2}`)
+//     }
+//     else if(object.operator=="-"){
+//         console.log(`The difference is ${object.num1-object.num2}`)
+//     }
+//     else if(object.operator=="*"){
+//         console.log(`The product is ${object.num1*object.num2}`)
+//     }
+//     else if(object.operator=="/"){
+//         console.log(`The division is ${object.num1/object.num2}`)
+//     }
+// } 
+// else{
+//     console.log("You cant yse calculator")
+// }
+
+// console.log("")
+
+// let date2 = new Date()
+// let month = date2.getMonth()
+// let day = date2.getDay()
+// if(day==0){
+//     day = "Sunday"
+// }
+// else if(day==1){
+//     day="Monday"
+// }
+// else if(day==2){
+//     day="Tuesday"
+// }
+// else if(day==3){
+//     day="Wednesday"
+// }
+// else if(day==4){
+//     day="Thursday"
+// }
+// else if(day==5){
+//     day="Friday"
+// }
+// else if(day==6){
+//     day="Saturday"
+// }
+
+// if(month==0){
+//     console.log("The month going on is January and the day is "+day)
+// }
+// else if(month==1){
+//     console.log("The month going on is Febuary and the day is "+day)
+// }
+// if(month==2){
+//     console.log("The month going on is March and the day is "+day)
+// }
+// if(month==3){
+//     console.log("The month going on is April and the day is "+day)
+// }
+// if(month==4){
+//     console.log("The month going on is May and the day is "+day)
+// }
+// if(month==5){
+//     console.log("The month going on is June and the day is "+day)
+// }
+// if(month==6){
+//     console.log("The month going on is July and the day is "+day)
+// }
+// if(month==7){
+//     console.log("The month going on is August and the day is "+day)
+// }
+// if(month==8){
+//     console.log("The month going on is September and the day is "+day)
+// }
+// if(month==9){
+//     console.log("The month going on is October and the day is "+day)
+// }
+// if(month==10){
+//     console.log("The month going on is November and the day is "+day)
+// }
+// if(month==11){
+//     console.log("The month going on is December and the day is "+day)
+// }
+
+// console.log("Today's date is "+date2.getDate())
+// console.log("")
+
+// let monthLeft = 11-(date2.getMonth())
+// let daysLeft = ((monthLeft)*30)+(30-(date2.getDate()))
+// console.log(`Days left for Upcomming new year is around ${daysLeft}`)
