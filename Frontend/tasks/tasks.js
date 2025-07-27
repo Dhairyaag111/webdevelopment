@@ -2396,7 +2396,6 @@
 
 // console.log("Today's date is "+date2.getDate())
 // console.log("")
-
 // let monthLeft = 11-(date2.getMonth())
 // let daysLeft = ((monthLeft)*30)+(30-(date2.getDate()))
 // console.log(`Days left for Upcomming new year is around ${daysLeft}`)
