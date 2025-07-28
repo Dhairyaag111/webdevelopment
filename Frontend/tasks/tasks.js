@@ -2417,4 +2417,31 @@
 
 
 // from an array ,print only positive numbers , stop if the num is greater than 100
-// from 1 to 50 skip all odd numbers stop if num is divisible by 4 nad 6
+// from 1 to 50 skip all odd numbers stop if num is divisible by 4 and 6
+
+
+
+// let array = [1,2,61,6,34,67,53,65,13,54,98,32,164,12,53,75,97,12,15]
+// for(i=0;i<array.length;i++){
+//     if(array[i]>0){
+//         console.log(array[i])
+//     }
+//     if(array[i]>100){
+//         break
+//     }
+// }
+
+
+
+
+// let array = [18,27,28,47,29,34,10,48,29,19,17,23,42]
+// for(i=0;i<array.length;i++){
+// if(array[i]%2!=0){
+//  continue   
+// }
+// if(array[i]%6==0 && array[i]%4==0){
+//     break
+// }
+// console.log(array[i])
+// }
+
