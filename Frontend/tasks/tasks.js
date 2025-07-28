@@ -2412,3 +2412,9 @@
 // else if(date1.getHours()>20{
 //     console.log(`Good Night! ${person.name}`)
 // }
+
+
+
+
+// from an array ,print only positive numbers , stop if the num is greater than 100
+// from 1 to 50 skip all odd numbers stop if num is divisible by 4 nad 6
