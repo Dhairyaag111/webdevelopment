@@ -118,3 +118,30 @@
 //         break
 //     }
 // }
+
+
+// let c = 0 
+// for(i=10;i>=0;i--){
+// if(i%2==0){
+//     continue
+// }
+// if(i==1){
+//     break
+// }
+// console.log(i)
+// }
+
+
+
+// let string = "Hello! My name is Dhairya"
+// for(i=0;i<=string.length-1;i++){
+//     if(string[i]=='a' || string[i]=='e' || string[i]=='i' || string[i]=='o'|| string[i]=='u'){
+//         continue
+//     }
+//     if(string[i]=='z'){
+//         break
+//     }
+//       if(string[i]!='a' || string[i]!='e' || string[i]!='i' || string[i]!='o'|| string[i]!='u'){
+//         console.log(string[i])
+//     }
+// }
