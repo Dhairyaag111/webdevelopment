@@ -73,3 +73,48 @@
 // }
 
 
+
+
+// for(i=1;i<=10;i++){
+//     if(i==6){
+//     break
+//     }
+//     console.log(i)
+// }
+
+
+
+// for(i=1;i<=10;i++){
+//     if(i==6){
+//     continue
+//     }
+//     console.log(i)
+// }
+
+
+// for(i=1;i<=120;i++){
+//     if(i%7==0){
+//     break
+//     }
+//     console.log(i)
+// }
+
+
+// for(i=1;i<=20;i++){
+//     if(i%2==0){
+//     continue
+//     }
+//     console.log(i)
+// }
+
+
+// let c = 0 
+// for(i=1;i<=30;i++){
+//     if(i%5==0){
+//         console.log(i)
+//         c++
+//     }
+//     if(c>=3){
+//         break
+//     }
+// }
