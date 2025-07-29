@@ -21,3 +21,13 @@
 
 
 
+// let userInput = Number(prompt("Enter a number: "))
+// try{
+//     let result = user/0
+// }
+// catch(error){
+//     console.log(error.message)
+// }
+// finally{
+//     console.log("It will show in any situation")
+// }
