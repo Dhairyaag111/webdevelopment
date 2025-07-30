@@ -47,3 +47,18 @@
 // }catch(error){
 //     console.log("Please enter a valid integer number.")
 // }
+
+
+
+// user = prompt("Enter your name : ")
+// try{
+//     if( user==="null" || user==="undefined" || user==="NaN" || user===""){
+//         user.toFixed()
+//     }
+//     else{
+//         console.log("You entered your name : "+user)
+//     }
+// }
+// catch(error){
+//     console.log("Please enter a proper name string ")
+// }
