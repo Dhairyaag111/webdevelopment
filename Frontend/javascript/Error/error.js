@@ -31,3 +31,19 @@
 // finally{
 //     console.log("It will show in any situation")
 // }
+
+
+
+
+// user = prompt("Enter any number : ")
+// try{
+//     let conv = parseInt(user)
+//     if(isNaN(conv)){
+//         conv.toFixed(120)
+//     }
+//     else{
+//         console.log("You have entered : "+conv)
+//     }
+// }catch(error){
+//     console.log("Please enter a valid integer number.")
+// }
