@@ -2445,3 +2445,21 @@
 // console.log(array[i])
 // }
 
+
+
+
+
+
+// Armstrong number
+
+// let u = Number(prompt("Enter a number: "))
+// let last = u%10
+// let n1 = u/10>>0
+// let mid = n1%10
+// let first = n1/10>>0
+// if(last^3+mid^3+first^3==u){
+//     console.log("It is a Armstrong number")
+// }
+// else{
+//     console.log(" It is not a armstrong number")
+// }
