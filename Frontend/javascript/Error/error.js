@@ -93,3 +93,35 @@
 // }catch(e){
 //     console.log(e)
 // }
+
+
+
+
+// let userInput = prompt("Enter your name: ")
+// try{
+//     if(userInput===""){
+//         throw "Your name can't be empty"
+//     }
+//     else{
+//         console.log("Your name is : "+userInput)
+//     }
+// }catch(error){
+//     console.log(error)
+// }
+
+
+
+
+// let array = [1,5,435,23,53,12,56,"hello",45,2,53,12,75]
+// for(i=0;i<array.length;i++){
+//     try{
+//         if(isNaN(array[i])){
+//             throw array[i]+" is not a number it is a string"
+//         }
+//         else{
+//             console.log(array[i])
+//         }
+//     }catch(error){
+//         console.log(error)
+//     }
+// }
