@@ -2468,3 +2468,40 @@
 
 
 // to make a calculator with operators if the operator is wrong and if the second number is 0 in division case throw error"
+
+
+
+// let a = Number(prompt("Enter first number: "))
+// let b = Number(prompt("Enter second number: "))
+// let o = prompt("Enter operator(+,-,*,/): ")
+// let func  = (a,b,o) =>{
+//   try{  
+//     if(typeof(a)!="number" || typeof(b)!="number"){
+//         throw "Please enter a proper number"
+//     }
+//     else if(o!=="+" && o!=="-" && o!=="*" && o!=="/"){
+//         throw "Please enter a proper operator"
+//     }
+//      else if(o==="+"){
+//             console.log("The sum is "+(a+b))
+//         }
+//      else if(o==="-"){
+//             console.log("The difference is "+(a-b))
+//         }
+//      else if(o==="*"){
+//             console.log("The product is "+(a*b))
+//         }
+//      else if(o==="/"){
+//             if(b===0){
+//                 throw "The second number should not be m 0 in division case"
+//             }
+//             else{
+//                 console.log("The division is "+(a/b))
+//             }
+//         }
+      
+//   }catch(e){
+//       console.log(e)
+//   }
+// }
+// func(a,b,o)
