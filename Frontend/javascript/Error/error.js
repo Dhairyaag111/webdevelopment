@@ -125,3 +125,21 @@
 //         console.log(error)
 //     }
 // }
+
+
+
+
+// let a = Number(prompt("Enter first number: "))
+// let b = Number(prompt("Enter second number: "))
+// let func = (a,b) =>{
+//     try{
+//         if(isNaN(a) || isNaN(b) || b===0){
+//         throw "Please enter a number not a string and enter second number 0"
+//     }
+//     else{
+//         console.log("You entered "+a+" and "+b)
+//     }}catch(error){
+//         console.log(error)
+//     }
+// }
+// func(a,b)
