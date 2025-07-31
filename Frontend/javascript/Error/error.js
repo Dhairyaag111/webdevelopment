@@ -62,3 +62,34 @@
 // catch(error){
 //     console.log("Please enter a proper name string ")
 // }
+
+
+
+
+// let array = ["ram","shyam","sita","gita","hari"]
+// let u = prompt("Enter a name: ")
+//       try{
+//           if(array.includes(u)){
+//         console.log("you are registered already")
+//     }
+//     else{
+//         array.toFixed()
+//     }}
+// catch(error){
+//     console.log("You are not registered")
+// }
+
+
+
+
+// let u = Number(prompt("Enter your age: "))
+// try{
+//     if(u<18){
+//         throw "You are not eligible for vote"
+//     }
+//     else{
+//         console.log("You are eligible for vote")
+//     }
+// }catch(e){
+//     console.log(e)
+// }
