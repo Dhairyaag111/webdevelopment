@@ -2463,3 +2463,8 @@
 // else{
 //     console.log(" It is not a armstrong number")
 // }
+
+
+
+
+// to make a calculator with operators if the operator is wrong and if the second number is 0 in division case throw error"

@@ -143,3 +143,30 @@
 //     }
 // }
 // func(a,b)
+
+
+
+
+
+// let object = {
+//     name: prompt("Enter your name: "),
+//     email: prompt("Enter your email: "),
+//     age: Number(prompt("Enter your age: "))
+// }
+// try{
+// if(object.name==="" || object.email===""){
+//     throw "Your name and email should not be empty"
+// }
+// else{
+//     console.log("Your name is "+object.name+" and your email is "+object.email)
+// }
+
+// if(object.age<18){
+//     console.log( "You age should must be more than 18" )
+// }
+// else{
+//     console.log("Your age is "+object.age)
+// }
+// }catch(error){
+//     console.log(error)
+// }
