@@ -170,3 +170,19 @@
 // }catch(error){
 //     console.log(error)
 // }
+
+
+
+
+
+
+// let array = ["notes.txt","photo.jpg","document.pdf","malware.exe","student.txt","library,txt"]
+// try{
+//     for(let i = 0; i<array.length; i++){
+//         if(array[i].includes(".exe")){
+//             throw `${array[i]} is a malware  in your device.`
+//     }
+//     }
+// }catch(error){
+//     console.log(error)
+// }
