@@ -19,3 +19,28 @@
 //     console.log("")
 //     let obj3 = new car("AUDI","Blue","98765 hp",6,500000)
 //     obj3.properties()
+
+
+
+
+
+
+// class student{
+//     constructor(name,percentage){
+//         this.name = name
+//         this.percentage = percentage
+//     }
+//      checker(){
+//          if(this.percentage>40){
+//              console.log(this.name+" is pass")
+//          }
+//          else{
+//              console.log(this.name+" is fail")
+//          }
+//      }
+// }
+// let obj1 = new student("RAM",26)
+// obj1.checker()
+// console.log("")
+// let obj2 = new student("SHYAM",54)
+// obj2.checker()
