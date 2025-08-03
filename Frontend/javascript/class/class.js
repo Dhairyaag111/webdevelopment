@@ -44,3 +44,55 @@
 // console.log("")
 // let obj2 = new student("SHYAM",54)
 // obj2.checker()
+
+
+
+
+
+// class student{
+//     constructor(name,percentage){
+//         this.name = name
+//         this.percentage = percentage
+//     }
+//      checker(marks){
+//          if(this.percentage>40){
+//              console.log(this.name+" is pass and marks is "+sci)
+//          }
+//          else{
+//              console.log(this.name+" is fail and marks is "+sci)
+//          }
+//      }
+// }
+// let obj1 = new student("RAM",26)
+// obj1.checker(54)
+// console.log("")
+// let obj2 = new student("SHYAM",54)
+// obj2.checker(26)
+
+
+
+
+
+
+// class loginPage{
+//     constructor(username,password){
+//         this.username = username
+//         this.password = password
+//     }
+//      checker(u,p){
+//          if(this.username===u && this.password===p){
+//              console.log("You are logined")
+//          }
+//          else{
+//              console.log("You are not logined")
+//          }
+//      }
+// }
+// let obj1 = new loginPage("RAM","qwertyuiop")
+// obj1.checker("SHYAM","qwertyuiop")
+// console.log("")
+// let obj2 = new loginPage("SHYAM","asdfghjkl")
+// obj2.checker("SHYAM","qwertyuiop")
+// console.log("")
+// let obj3 = new loginPage("HARI","zxcvbnm")
+// obj3.checker("HARI","zxcvbnm")
