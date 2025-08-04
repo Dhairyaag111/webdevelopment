@@ -2520,24 +2520,27 @@
 
 
 
-// class fan_class{
-//     constructor(fan){
-//         this.fan = fan
-//     }
-//      checker(){
-//          if(this.fan==="on"){
-//              console.log("Fan is on")
-//          }
-//          else{
-//              console.log("Fan is off")
-//          }
-//      }
+// class fanClass{
+//     constructor(){
+//         this.state = "off"
 // }
-// let obj1 = new fan_class("on")
-// obj1.checker()
-// console.log("")
-// let obj2 = new fan_class("off")
-// obj2.checker()
+// turnOn(){
+//     this.state = "on"
+//     console.log("The fan is "+this.state)
+// }
+// turnOff(){
+//     this.state = "off"
+//     console.log("The fan is "+this.state)
+// }
+// getStatus(){
+//     console.log("The fan is currently "+this.state)
+// }
+// }
+// let obj1 = new fanClass()
+// obj1.turnOff()
+// obj1.getStatus()
+// obj1.turnOn()
+// obj1.getStatus()
 
 
 
