@@ -16,7 +16,6 @@
 
 
 
-
 //     class person{
 //     constructor(name,age){
 //         this.name = name
@@ -41,3 +40,33 @@
 
 // obj.age1 = 20
 // console.log(obj.age1)
+
+
+
+
+
+
+// class book{
+//     constructor(title,author,_rating){
+//         this.title = title
+//         this.author = author
+//         this._rating = _rating
+//     }
+//     get rate(){
+//         return this._rating
+//     }
+//     set rate(newRating){
+//         if(newRating>=0 && newRating<=5){
+//             this._rating = newRating
+//         }
+//         else{
+//             console.log("Rating value should from 0 to 5")
+//         }
+//     }
+// }
+
+// let obj = new book("Biography","manche",3.5)
+// console.log(obj.rate)
+
+// obj.rate = -2
+// console.log(obj.rate)
