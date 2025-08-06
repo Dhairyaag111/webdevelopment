@@ -2593,3 +2593,14 @@
 // console.log("")
 // let obj2 = new passenger("HARI",49)
 // obj2.checker()
+
+
+
+
+
+
+
+// create a temperature class ,stores  _celcius,_farenhiet setter farenhiet into celcius
+// create a user class with name and age the setter should not allow age less than 0 and more than 100,the getter should return user infomation
+// create a bank class with owner name and balance setter should not allow negative value , the getter chould return information
+// create a class with usernam eand password setter sets the password more than 6 and less than 12 , getter should return password is hidden
