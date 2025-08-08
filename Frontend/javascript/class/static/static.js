@@ -113,3 +113,89 @@
 // }
 
 // console.log(random.otp())
+
+
+
+
+
+// class Checker{
+//     static guesser(password){
+//         switch (password){
+//             case "Dhairya1":
+//                 console.log("Yes I have guessed it")
+//                 break
+//             case "nayan1":
+//                 console.log("Yes i guessed it.")
+//                 break
+//             default:
+//                 console.log("Sorry i was unable to guess your password. Good job your password is strong.")
+//         }
+//     }
+// }
+
+// Checker.guesser("nayan")
+
+
+
+
+
+
+
+
+
+// class game{
+//     static play(u){
+//         let c = Math.floor(Math.random()*4)
+//         let a = ""
+//         if(c===1){
+//          a = "scissors"
+//         }
+//         else if(c===2){
+//            a = "rock"
+//         }
+//         else{
+//             a = "paper"
+//         }
+//         if(u==="rock" && a==="rock"){
+//             console.log("Computer chosed rock")
+//             console.log("Its draw")
+//         }
+//         else if(u==="rock" && a==="scissors"){
+//             console.log("Computer chosed scissors")
+//             console.log("You won")
+//         }
+//         else if(u==="rock" && a==="paper"){
+//             console.log("Computer chosed paper")
+//             console.log("You lost")
+//         }
+//          else if(u==="paper" && a==="scissors"){
+//              console.log("Computer chosed scissors")
+//             console.log("You lost")
+//         }
+//         else if(u==="paper" && a==="rock"){
+//             console.log("Computer chosed rock")
+//             console.log("You won")
+//         }
+//         else if(u==="paper" && a==="paper"){
+//             console.log("Computer chosed paper")
+//             console.log("Its draw")
+//         }
+//         else if(u==="scissors" && a==="scissors"){
+//             console.log("Computer chosed scissors")
+//             console.log("Its draw")
+//         }
+//         else if(u==="scissors" && a==="paper"){
+//             console.log("Computer chosed paper")
+//             console.log("You won")
+//         }
+//         else if(u==="scissors" && a==="rock"){
+//             console.log("Computer chosed rock")
+//             console.log("You lost")
+//         }
+//         else{
+//             console.log("Your input is wrong. Please enter correct input.")
+//         }
+        
+//     }
+// }
+// game.play(prompt("Enter rock, paper or scissors to play: "))
