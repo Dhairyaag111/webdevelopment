@@ -199,3 +199,95 @@
 //     }
 // }
 // game.play(prompt("Enter rock, paper or scissors to play: "))
+
+
+
+
+
+
+
+// let user = prompt("Enter 'Y' if you want to add money in bank else enter 'N': ")
+// let add = 0
+// let balance = 0
+// let c = user.toUpperCase()
+// class bankAcc{
+//     static balance(c){
+//         if(c==="Y"){
+//   add = Number(prompt("Enter amount you want to add: "))       
+//   balance = balance + add
+//         }
+//         else if(c==="N"){
+//             console.log("Bye Bye.")
+//         }
+//         else{
+//         console.log("Your input is wrong")
+//         }
+//     }
+// }
+// bankAcc.balance(c)
+// console.log("Your bank balance is "+balance)
+
+
+
+
+
+
+
+
+
+
+//         let counterU = 0
+//         let counterC = 0
+//      let use = prompt("Enter 'Y' if you want to play rock paper scissor: ")
+//      let user = use.toUpperCase()
+//        while(user==="Y"){
+// class game{
+//     static play(u){
+//         let c = Math.floor(Math.random()*4)
+//         let a = ""
+//         if(c===1){
+//          a = "scissors"
+//         }
+//         else if(c===2){
+//         a = "rock"
+//         }
+//         else{
+//         a = "paper"
+//         }
+//         console.log("Computer chosed "+a)
+//         if(u===a){
+//             console.log("Its draw")
+//         }
+//         else if(u==="rock" && a==="scissors"){
+//             console.log("You won")
+//             counterU ++
+//         }
+//         else if(u==="rock" && a==="paper"){
+//             console.log("You lost")
+//             counterC ++
+//         }
+//          else if(u==="paper" && a==="scissors"){
+//             console.log("You lost")
+//             counterC ++
+//         }
+//         else if(u==="paper" && a==="rock"){
+//             console.log("You won")
+//             counterU ++
+//         }
+//         else if(u==="scissors" && a==="paper"){
+//             console.log("You won")
+//             counterU ++
+//         }
+//         else if(u==="scissors" && a==="rock"){
+//             console.log("You lost")
+//             counterC ++
+//         }
+//         else{
+//             console.log("Your input is wrong. Please enter correct input.")
+//         }
+//     }
+// }
+// }
+// console.log("Your score is "+counterU)
+// console.log("Computer score is "+counterC)
+// game.play(prompt("Enter rock, paper or scissors to play: "))
