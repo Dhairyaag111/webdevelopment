@@ -236,14 +236,12 @@
 
 
 
-//         let counterU = 0
-//         let counterC = 0
-//      let use = prompt("Enter 'Y' if you want to play rock paper scissor: ")
-//      let user = use.toUpperCase()
-//        while(user==="Y"){
+// let counterU = 0
+// let counterC = 0
 // class game{
 //     static play(u){
-//         let c = Math.floor(Math.random()*4)
+//         function playRPS(){
+//             let c = Math.floor(Math.random()*3)
 //         let a = ""
 //         if(c===1){
 //          a = "scissors"
@@ -285,9 +283,29 @@
 //         else{
 //             console.log("Your input is wrong. Please enter correct input.")
 //         }
+//         console.log("Your score is "+counterU)
+//         console.log("Computer score is "+counterC)
+//         }
+//         function final(){
+//             let use = prompt("Enter 'Y' if you want to play rock paper scissor else enter 'N': ")
+//      let user = use.toUpperCase()
+//      let desire = true
+//         while(desire){
+//             if(user==='Y'){
+//                 playRPS()
+//             }
+//             if(user==='N'){
+//                 console.log("Thank you play again")
+//                 desire = false
+//                 break
+//             }
+//         }
 //     }
+//         function finalPlay(){
+//     playRPS()
+//     final()
+//     }
+//         finalPlay()
 // }
 // }
-// console.log("Your score is "+counterU)
-// console.log("Computer score is "+counterC)
 // game.play(prompt("Enter rock, paper or scissors to play: "))
