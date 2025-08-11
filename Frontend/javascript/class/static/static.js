@@ -239,8 +239,9 @@
 // let counterU = 0
 // let counterC = 0
 // class game{
-//     static play(u){
+//     static play(){
 //         function playRPS(){
+//         let u = prompt("Enter rock, paper or scissors to play: ")
 //             let c = Math.floor(Math.random()*3)
 //         let a = ""
 //         if(c===1){
@@ -293,11 +294,10 @@
 //         while(desire){
 //             if(user==='Y'){
 //                 playRPS()
+//                 console.log("")
 //             }
 //             if(user==='N'){
 //                 console.log("Thank you play again")
-//                 desire = false
-//                 break
 //             }
 //         }
 //     }
@@ -308,4 +308,4 @@
 //         finalPlay()
 // }
 // }
-// game.play(prompt("Enter rock, paper or scissors to play: "))
+// game.play()
