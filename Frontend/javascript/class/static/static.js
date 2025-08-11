@@ -241,11 +241,11 @@
 // class game{
 //     static play(){
 //         function playRPS(){
-//         let u = prompt("Enter rock, paper or scissors to play: ")
+//         let u = prompt("Enter rock, paper or scissor to play: ")
 //             let c = Math.floor(Math.random()*3)
 //         let a = ""
 //         if(c===1){
-//          a = "scissors"
+//          a = "scissor"
 //         }
 //         else if(c===2){
 //         a = "rock"
@@ -257,7 +257,7 @@
 //         if(u===a){
 //             console.log("Its draw")
 //         }
-//         else if(u==="rock" && a==="scissors"){
+//         else if(u==="rock" && a==="scissor"){
 //             console.log("You won")
 //             counterU ++
 //         }
@@ -265,7 +265,7 @@
 //             console.log("You lost")
 //             counterC ++
 //         }
-//          else if(u==="paper" && a==="scissors"){
+//          else if(u==="paper" && a==="scissor"){
 //             console.log("You lost")
 //             counterC ++
 //         }
@@ -273,11 +273,11 @@
 //             console.log("You won")
 //             counterU ++
 //         }
-//         else if(u==="scissors" && a==="paper"){
+//         else if(u==="scissor" && a==="paper"){
 //             console.log("You won")
 //             counterU ++
 //         }
-//         else if(u==="scissors" && a==="rock"){
+//         else if(u==="scissor" && a==="rock"){
 //             console.log("You lost")
 //             counterC ++
 //         }
@@ -288,16 +288,19 @@
 //         console.log("Computer score is "+counterC)
 //         }
 //         function final(){
+//      let desire = true
+//         while(desire){ 
 //             let use = prompt("Enter 'Y' if you want to play rock paper scissor else enter 'N': ")
 //      let user = use.toUpperCase()
-//      let desire = true
-//         while(desire){
 //             if(user==='Y'){
 //                 playRPS()
 //                 console.log("")
 //             }
 //             if(user==='N'){
 //                 console.log("Thank you play again")
+//                 desire = false
+//                 break
+                
 //             }
 //         }
 //     }
