@@ -235,7 +235,6 @@
 
 
 
-
 // let counterU = 0
 // let counterC = 0
 // class game{
@@ -299,8 +298,7 @@
 //             if(user==='N'){
 //                 console.log("Thank you play again")
 //                 desire = false
-//                 break
-                
+//                 break     
 //             }
 //         }
 //     }
@@ -312,3 +310,34 @@
 // }
 // }
 // game.play()
+
+
+
+
+
+
+
+
+//     let c = Math.floor(Math.random()*100)
+//     let userInput = 0
+// function guesser(){
+//    userInput = Number(prompt("Enter a number to guess: "))
+// }
+// function guesser1(){
+//     let desire = true
+//     while(desire)
+//         if(userInput===c){
+//         console.log("Yes you guessed. The number is "+c)
+//         desire = false
+//     }
+//     else if(userInput<c){
+//         console.log("Too low")
+//         guesser()
+//     }
+//     else if (userInput>c){
+//         console.log("Too high")
+//         guesser()
+//     }
+// }
+// guesser()
+// guesser1()
