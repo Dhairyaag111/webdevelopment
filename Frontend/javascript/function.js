@@ -287,3 +287,48 @@
 //     }
 // }
 // quiz()
+
+
+
+
+
+
+
+// let deposit, withDrawl, balance = 0
+// let desire = true
+// console.log("Welcome to our new bank")
+// function bank() {
+//     deposit = Number(prompt("Enter amount you want to deposit: "))
+//     balance = balance + deposit
+//     console.log("Your balance is " + balance)
+// }
+// function money() {
+//     while (desire) {
+//         let check = prompt("Enter 'Y' if you want to deposit more money, Enter 'N' if you want to withdraw money else enter 'no': ")
+//         if ((check.toUpperCase()) === "Y") {
+//             console.log("")
+//            bank()
+//            console.log("")
+//         }
+//         else if ((check.toUpperCase()) === "N") {
+//        withDrawl = Number(prompt("Enter amount you want to withdraw: "))
+//             if (withDrawl > balance) {
+//                 console.log("")
+//                 console.log("Insufficient amount of fund in your bank")
+//                 console.log("")
+//             } 
+//             else {
+//                 balance = balance - withDrawl
+//                 console.log("")
+//                 console.log("Your new balance " + balance)
+//                 console.log("")
+//         }
+//     }
+//         else if ((check.toUpperCase()) === "NO"){
+//             console.log("Visit again")
+//             desire = false
+//         }
+// }
+// }
+// bank()
+// money()
