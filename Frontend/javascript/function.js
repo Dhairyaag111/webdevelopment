@@ -175,3 +175,115 @@
 // else{
 //     console.log("The number is not a prime number")
 // }
+
+
+
+
+
+
+
+//     let c = Math.floor(Math.random()*100)
+//     let userInput = 0
+// function guesser(){
+//    userInput = Number(prompt("Enter a number to guess: "))
+// }
+// function guesser1(){
+//     let desire = true
+//     while(desire)
+//         if(userInput===c){
+//         console.log("Yes you guessed. The number is "+c)
+//         desire = false
+//     }
+//     else if(userInput<c){
+//         console.log("Too low")
+//         guesser()
+//     }
+//     else if (userInput>c){
+//         console.log("Too high")
+//         guesser()
+//     }
+// }
+// guesser()
+// guesser1()
+
+
+
+
+
+
+
+
+
+// let q = ""
+// let score = 0
+// let userInput = ""
+// let ran = 0
+
+// function quiz() {
+//     userInput = prompt("Enter how many quiz question you want to play(min:5, max:20): ")
+//     let arrayQ = [
+//         "▪️Which is is smallest country in the world?",
+//         "▪️What is the capital city of Australia?",
+//         "▪️How many colors are there in a rainbow?",
+//         "▪️What is the fastest land animal in the world?",
+//         "▪️In which ocean is the Bermuda Triangle located?",
+//         "▪️Which animal is known as the 'King of the Jungle'?",
+//         "▪️What is the national sport of Japan?",
+//         "▪️In computing, what does 'HTTP' stand for?",
+//         "▪️I am an odd number. Remove one letter and I become even. What am I?",
+//         "▪️What is the chemical symbol for gold?",
+//         "▪️Which gas do humans exhale the most?",
+//         "▪️Who wrote the famous play Romeo and Juliet?",
+//         "▪️Which planet is known as the 'Red Planet'?",
+//         "▪️Which country invented paper?",
+//         "▪️Who invented the telephone?",
+//         "▪️Which continent is known as the 'Dark Continent'?",
+//         "▪️Which part of the cell contains genetic material?",
+//         "▪️How many sides does a hexagon have?",
+//         "▪️Which festival is known as the Festival of Lights in India?",
+//         "▪️Which bird can mimic human speech?"
+//     ]
+//     let arrayA = [
+//         "Vatican City",
+//         "Canberra",
+//         "Seven",
+//         "Cheetah",
+//         "Atlantic Ocean",
+//         "Lion",
+//         "Sumo wrestling",
+//         "HyperText Transfer Protocol",
+//         "Seven",
+//         "Au",
+//         "Carbon dioxide",
+//         "William Shakespeare",
+//         "Mars",
+//         "China",
+//         "Alexander Graham Bell",
+//         "Africa",
+//         "Nucleus",
+//         "Six",
+//         "Diwali",
+//         "Parrot"
+//     ]
+
+//     if (userInput >= 5 && userInput <= 20) {
+//         for (i = 0; i < userInput; i++) {
+//             ran = Math.floor(Math.random() * 20)
+//             q = prompt(arrayQ[ran] + ": ")
+//             let n = q.toUpperCase()
+//             let n1 = (arrayA[ran]).toUpperCase()
+
+//             if (n === n1) {
+//                 console.log("correct answer")
+//                 score++
+//             } else {
+//                 console.log("Wrong answer")
+//                 console.log("The correct answer is " + arrayA[ran])
+//             }
+//         }
+//         console.log("Your total score is " + score)
+//     } else {
+//         console.log("The input should be between 5 and 20")
+//     }
+// }
+// quiz()
