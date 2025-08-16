@@ -214,6 +214,7 @@
 
 
 
+
 // let q = ""
 // let score = 0
 // let userInput = ""
@@ -294,6 +295,8 @@
 
 
 
+
+
 // let deposit, withDrawl, balance = 0
 // let desire = true
 // console.log("Welcome to our new bank")
@@ -338,9 +341,128 @@
 
 
 
-// mood predicter to ask mood and return its emoji
+// mood predicter
+
+
+
+// function predictor(){
+//     let userInput = prompt("Enter your mood rigth now: ")
+//     let u = userInput.toUpperCase()
+//     if(u==="HAPPY"){
+//         console.log("😊")
+//     }
+//     if(u==="EXCITED"){
+//         console.log("🤩")
+//     }
+//     if(u==="LOVING"){
+//         console.log("😍")
+//     }
+//     if(u==="CONFIDENT"){
+//         console.log("😎")
+//     }
+//     if(u==="PLAYFUL"){
+//         console.log("😉")
+//     }
+//     if(u==="PROUD"){
+//         console.log("🥲")
+//     }
+//     if(u==="ENERGETIC"){
+//         console.log("⚡")
+//     }
+//     if(u==="RELAXED"){
+//         console.log("🧘")
+//     }
+//     if(u==="ROMANTIC"){
+//         console.log("💞")
+//     }
+//     if(u==="CURIOUS"){
+//         console.log("🤔")
+//     }
+//     if(u==="INSPIRED"){
+//         console.log("🌟")
+//     }
+//     if(u==="SAD"){
+//         console.log("😥")
+//     }
+//     if(u==="ANGRY"){
+//         console.log("😠")
+//     }
+//     if(u==="FRUSTRATED"){
+//         console.log("😤")
+//     }
+//     if(u==="LONELY"){
+//         console.log("🙁")
+//     }
+//     if(u==="TIRED"){
+//         console.log("😫")
+//     }
+//     if(u==="BORED"){
+//         console.log("🥱")
+//     }
+//     if(u==="JEALOUS"){
+//         console.log("😏")
+//     }
+//     if(u==="GUILTY"){
+//         console.log("😔")
+//     }
+//     if(u==="EMBARRASSED"){
+//         console.log("🫢")
+//     }
+//     if(u==="DISAPPOINTED"){
+//         console.log("😒")
+//     }
+//     if(u==="STRESSED"){
+//         console.log("😩")
+//     }
+//     if(u==="HEARTBROKEN"){
+//         console.log("💔")
+//     }
+//     if(u==="CONFUSED"){
+//         console.log("😕")
+//     }
+//     if(u==="ASHAMED"){
+//         console.log("😐")
+//     }
+//     if(u==="SURPRISED"){
+//         console.log("😧")
+//     }
+//     if(u==="SHOCKED"){
+//         console.log("😱")
+//     }
+//     if(u==="AWKWARD"){
+//         console.log("😬")
+//     }
+//     if(u==="NOSTALGIC"){
+//         console.log("🥹")
+//     }
+//     if(u==="SHY"){
+//         console.log("🫣")
+//     }
+//     if(u==="CALM"){
+//         console.log("😇")
+//     }
+//     if(u==="CHILL"){
+//         console.log("😌")
+//     }
+// }
+// predictor()
+
+
+
+
+
+
+
+
 // food order simulator to show menu and ask what to eat again if yes ask to oeder more if no show bill
 // to show the percent how much the two name are compatible
 // password cracker ask user a password and guess the password to user
 // encryption to user input
 // library simulator
+
+
+
+
+let array1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T","U","V","W","X","Y","Z"," ","1","2","3","4","5","6","7","8"   ,"9", "0", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "[", "]", "{", "}", ";", "'", ",", ".", "/", "_", "+", "|", ":", "<", ">", "?"]
+
+let array2 = ["z", "x", "v", "c", "b", "n", "m", "l", "k", "q", "h", "g", "f", "d", "s", "a", "p", "o", "i", "u", "y", "t", "r", "e", "w", "j", "Z", "X", "V", "C", "B", "N", "M", "L", "K", "Q", "H", "G", "F", "D", "S", "S", "P", "O", "I", "U", "Y", "T", "R", "E", "W", "J", "Qw1", "q1", "w2", "y3", "y1", "dd2", "7tr", "er7", "uy8", "ge9", "oi0", "dq12", "asr", "vk18", "o14", "klr1", "rs45", "rp45", "si96", "jb93", "po98", "sg77", "msd7", "ks61", "ms56", "ss81", "ss9", "ms73", "ms11", "jh38", "hp33", "st10", "ys12", "ba56", "pc33", "as4", "kn69", "as2", "rs99", "rj8"]
