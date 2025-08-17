@@ -452,17 +452,163 @@
 
 
 
+// to show the percent how much the two name are compatible
+
+
+
+// function perfect(){
+//     let user1 = prompt("Enter name of boy: ")
+//     let user2 = prompt("Enter name of girl: ")
+//     let random = Math.floor(Math.random()*101)
+//     console.log(`${user1} and ${user2} are ${random}% compatible`)
+//     if(random<11){
+//         console.log("Very bad compatible percentage")
+//     }
+//     if(random<31 && random>10){
+//    console.log("bad compatibele percentage")
+//     }
+// if(random>30 && random<61){
+//     console.log("good compatible percentage")
+// }
+// if(random>60 && ramdom<85){
+//     console.log("goood compatible percentage")
+// }
+// if(random>84){
+//     console.log("perfect compatible percentage")
+// }
+// }
+// perfect()
+
+
+
+
 
 
 // food order simulator to show menu and ask what to eat again if yes ask to oeder more if no show bill
-// to show the percent how much the two name are compatible
-// password cracker ask user a password and guess the password to user
-// encryption to user input
+
+
+// function simulator(){
+//     let menu = {
+//     "VEG.MOMO": 100,
+//     "CHICKEN.MOMO": 140,
+//     "VEG.CHOWMIN": 120,
+//     "CHICKEN.CHOWMIN": 160,
+//     "VEG.ROLL": 120,
+//     "CHICKEN.ROLL": 180,
+//     "VEG.BURGER": 180,
+//     "CHICKEN.BURGER": 220,
+//     "PIZZA": 250,
+//     "COLD DRINK": 100
+// }
+// console.log(menu)
+// let bill = 0
+// let desire = true
+// while(desire){
+//     let user = prompt("Enter 'Y' if ypu want to eat else enter 'N': ").toUpperCase()
+//     if(user==='Y'){
+// let userInput = prompt("Enter what you want to eat: ").toUpperCase()
+//     if(menu[userInput]){
+//         bill = bill + menu[userInput]
+//         console.log("You ordered "+userInput+" and the current bill  is "+bill)
+//     }
+//     }
+//     else{
+//         desire = false
+//     }
+// }
+//     console.log("Your total bill is of Rs "+bill)
+    
+// }
+// simulator()
+
+
+
+
+
 // library simulator
 
 
 
+// function simulator(){
+//     let lists = {
+//   "DON QUIXOTE": 499,
+//   "PRIDE AND PREJUDICE": 349,
+//   "MOBY DICK": 1200,
+//   "JANE EYRE": 799,
+//   "THE GREAT GATSBY": 599,
+//   "TO KILL A MOCKINGBIRD": 1499,
+//   "WAR AND PEACE": 1299,
+//   "FRANKENSTEIN": 617,
+//   "THE HOBBIT": 699,
+//   "1984": 999
+  
+  
+// }
+// console.log(lists)
+// let bill = 0
+// let desire = true
+// while(desire){
+//     let user = prompt("Enter 'Y' if you want to buy book else enter 'N': ").toUpperCase()
+//     if(user==='Y'){
+//         let userInput = prompt("Enter which book you want: ").toUpperCase()
+//     if(lists[userInput]){
+//         bill = bill + lists[userInput]
+//         console.log("You bought "+userInput+" and the amount is "+bill)
+//     }
+// }
+// else{
+//     desire = false
+//     }
+// }
+//     console.log("Your total bill is of Rs "+bill)
+    
+// }
+// simulator()
 
-let array1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T","U","V","W","X","Y","Z"," ","1","2","3","4","5","6","7","8"   ,"9", "0", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "[", "]", "{", "}", ";", "'", ",", ".", "/", "_", "+", "|", ":", "<", ">", "?"]
 
-let array2 = ["z", "x", "v", "c", "b", "n", "m", "l", "k", "q", "h", "g", "f", "d", "s", "a", "p", "o", "i", "u", "y", "t", "r", "e", "w", "j", "Z", "X", "V", "C", "B", "N", "M", "L", "K", "Q", "H", "G", "F", "D", "S", "S", "P", "O", "I", "U", "Y", "T", "R", "E", "W", "J", "Qw1", "q1", "w2", "y3", "y1", "dd2", "7tr", "er7", "uy8", "ge9", "oi0", "dq12", "asr", "vk18", "o14", "klr1", "rs45", "rp45", "si96", "jb93", "po98", "sg77", "msd7", "ks61", "ms56", "ss81", "ss9", "ms73", "ms11", "jh38", "hp33", "st10", "ys12", "ba56", "pc33", "as4", "kn69", "as2", "rs99", "rj8"]
+
+
+
+
+
+
+// encryption to user input
+
+
+
+// function encrypt(){
+//     let userInput = prompt("Enter something: ")
+//     let length = userInput.length
+//     let array1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T","U","V","W","X","Y","Z"," ","1","2","3","4","5","6","7","8"   ,"9", "0", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "[", "]", "{", "}", ";", "'", ",", ".", "/", "_", "+", "|", ":", "<", ">", "?"]
+
+// let array2 = ["z", "x", "v", "c", "b", "n", "m", "l", "k", "q", "h", "g", "f", "d", "s", "a", "p", "o", "i", "u", "y", "t", "r", "e", "w", "j", "Z", "X", "V", "C", "B", "N", "M", "L", "K", "Q", "H", "G", "F", "D", "S", "S", "P", "O", "I", "U", "Y", "T", "R", "E", "W", "J", "Qw1", "q1", "w2", "y3", "y1", "dd2", "7tr", "er7", "uy8", "ge9", "oi0", "dq12", "asr", "vk18", "o14", "klr1", "rs45", "rp45", "si96", "jb93", "po98", "sg77", "msd7", "ks61", "ms56", "ss81", "ss9", "ms73", "ms11", "jh38", "hp33", "st10", "ys12", "ba56", "pc33", "as4", "kn69", "as2", "rs99", "rj8"]
+    
+//     let s = ""
+//     let d = ""
+// for(i=0;i<userInput.length;i++){
+// let index = array1.indexOf(userInput[i])
+// if(index !== -1){
+// s = s + array2[index]
+// }
+// else{
+//     s = s + userInput[i]
+// }
+// }
+// console.log(s)
+// for(i=0;i<s.length;i++){
+// let index = array2.indexOf(s[i])
+// if(index !== -1){
+// d = d + array1[index]
+// }
+// else{
+//      d = d + s[i]
+// }
+// }
+// console.log(d)
+// }
+// encrypt()
+
+
+
+// password cracker ask user a password and guess the password to user
+
