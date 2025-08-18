@@ -157,6 +157,99 @@
 
 
 
+// in heritance, in capsulation, Polymorphism, abstraction
+
+
+// public
+
+// console.log("public")
+
+// class Bank{
+//     constructor(){
+//     this.balance = 1000
+//     }
+    
+//     deposit(amt){
+//         this.balance = this.balance + amt
+//     }
+    
+//     withdraw(amt){
+//         this.balance = this.balance - amt
+//     }
+    
+//     total(){
+//         console.log("The total amount is "+this.balance)
+//     }
+// }
+
+
+// const obj = new Bank()
+// obj.total()
+// obj.deposit(1000)
+// obj.total()
+// obj.withdraw(1500)
+// obj.total()
+// console.log(obj.balance)
 
 
 
+
+// private 
+
+
+// console.log("Private")
+
+// class Bank{
+//     #balance = 1000
+    
+    
+//     deposit(amt){
+//         this.#balance =  this.balance + amt
+//     }
+    
+//     withdraw(amt){
+//         this.#balance = this.balance - amt
+//     }
+    
+//     total(){
+//         console.log("The total amount is "+this.#balance)
+//     }
+    
+//     #show(){
+//         console.log("It is private and unaccessible.")
+// }
+// }
+
+// const obj = new Bank()
+// obj.total()
+// obj.deposit(1000)
+// obj.total()
+// obj.withdraw(1500)
+// obj.total()
+// console.log(obj.balance)
+// obj.show()
+
+
+
+
+
+
+// 1. Vehicle Inheritance
+// Create a base class Vehicle with properties brand and year.
+// Make two child classes Car and Bike that extend Vehicle.
+// Add a method in each child to display its type.
+
+
+
+// 2. Employee Hierarchy
+// Create a class Employee with name and salary.
+// Extend it into Manager that adds department.
+// Extend again into SeniorManager that adds bonus.
+// Write a method to calculate total salary (salary + bonus).
+
+
+
+// 3. Shape Area (Polymorphism)
+// Create a base class Shape with a method area().
+// Create Circle and Rectangle classes extending it.
+// Override area() method in each child.
