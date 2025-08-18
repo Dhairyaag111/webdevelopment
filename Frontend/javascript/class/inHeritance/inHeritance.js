@@ -62,32 +62,32 @@
 //  show hierarchial inheritance(create a parent class shape , create 3 child class    circle =, square, rectangle and calculate thieir area)
 
 
-let radius,length,breadth=0
-class shape{
-    property(){   
-     radius = 7
-     length = 10
-     breadth = 5
-}
-}
+// let radius = 7
+// let length  = 10
+// let breadth = 5
+// class shape{
+// }
+// class circle extends shape{
+//     area(){
+//         console.log("Area of circle is "+3.1415*radius*radius)
+//     }
+// }
 
-class circle extends shape{
-    area(){
-        console.log("Area of circle is "+3.1415*radius*radius)
-    }
-}
+// class square extends shape{
+//     area(){
+//         console.log("Area of square is "+length*length)
+//     }
+// }
 
-class square extends shape{
-    area(){
-        console.log("Area of square is "+length*length)
-    }
-}
+// class rectangle extends shape{
+//     area(){
+//         console.log("Area of rectangle is "+length*breadth)
+//     }
+// }
 
-class rectangle extends shape{
-    area(){
-        console.log("Area of rectangle is "+length*breadth)
-    }
-}
-
-let obj = new circle()
-obj.area()
+// let obj = new circle()
+// obj.area()
+// let obj1 = new square()
+// obj1.area()
+// let obj2 = new rectangle()
+// obj2.area()
