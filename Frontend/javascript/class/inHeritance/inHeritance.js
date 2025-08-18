@@ -131,3 +131,32 @@
 // obj.display1()
 // obj.displayDog()
 // obj.displayCat()
+
+
+
+
+
+
+
+
+// class A{
+//     display(){
+//         console.log("Hello")
+//     }
+// }
+
+// class B extends A{
+//      display1(){
+//          super.display()
+//          console.log("Hi")
+//      }
+// }
+
+// let obj = new B()
+// obj.display1()
+
+
+
+
+
+
