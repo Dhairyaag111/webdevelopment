@@ -91,3 +91,43 @@
 // obj1.area()
 // let obj2 = new rectangle()
 // obj2.area()
+
+
+
+
+
+
+
+
+// class animal{
+//     constructor(name){
+//         this.name = name
+//     }
+//     display1(){
+//         console.log("The name is "+this.name)
+//     }
+// }
+// class dog extends animal{
+//     constructor(name,breed){
+//         super(name)
+//         this.name = name
+//         this.breed = breed
+//     }
+//     displayDog(){
+//         console.log("The name is "+this.name+" and the breed is "+this.breed)
+//     }
+// }
+// class cat extends dog{
+//     constructor(name,breed){
+//         super(name)
+//         this.name = name
+//         this.breed = breed
+//     }
+//         displayCat(){
+//         console.log("The name is "+this.name+" and the breed is "+this.breed)
+//     }
+// }
+// let obj = new cat("abc","xyz")
+// obj.display1()
+// obj.displayDog()
+// obj.displayCat()
