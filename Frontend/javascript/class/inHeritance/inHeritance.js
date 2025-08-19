@@ -351,19 +351,14 @@
 
 
 // class shape{
-//     constructor(radius,length1,breadth){
-//         this.radius = radius
-//         this.length1 = length1
-//         this.breadth = breadth
-//     }
 //     area(){
-//         console.log("The area fo circle is "+3.1415*this.radius*this.radius)
-//         console.log("The area of rectangle is "+this.length1*this.breadth)
+//         console.log("The area of circle  ")
+//         console.log("The area of rectangle  ")
 //     }
 // }
 // class circle extends shape{
 //     constructor(radius){
-//         super(radius)
+//         super()
 //         this.radius = radius
 //     }
 //     area(){
@@ -372,7 +367,7 @@
 // }
 // class rectangle extends shape{
 //     constructor(length1,breadth){
-//         super(length1,breadth)
+//         super()
 //         this.length1 = length1
 //         this.breadth = breadth
 //     }
@@ -383,9 +378,7 @@
 
 // let obj = new circle(7)
 // let obj1 = new rectangle(10,5)
-// let obj2 = new shape(7,10,5)
 // obj.area()
 // console.log("")
 // obj1.area()
 // console.log("")
-// obj2.area()
