@@ -241,6 +241,51 @@
 
 
 
+// class vehicle{
+//     constructor(brand,year){
+//         this.brand = brand
+//         this.year = year
+//     }
+//     displayVehicle(){
+//         console.log("The brand is "+this.brand+" and year is "+this.year)
+//     }
+// }
+
+// class car extends vehicle{
+//       constructor(brand,year){    
+//     super(brand,year)
+//     this.brand = brand
+//     this.year = year
+// }
+//     displayCar(){
+//         console.log("The brand of car is "+this.brand+" and year is "+this.year)
+//     }
+// }
+
+// class bike extends vehicle{
+//       constructor(brand,year){    
+//     super(brand,year)
+//     this.brand = brand
+//     this.year = year
+// }
+//     displayBike(){
+//         console.log("The brand of bike is "+this.brand+" and year is "+this.year)
+//     }
+// }
+
+// let obj = new  bike("bmw","2002")
+// let obj1 = new  car("bmw","2002")
+// obj.displayVehicle()
+// obj.displayBike()
+// obj1.displayVehicle()
+// obj1.displayCar()
+
+
+
+
+
+
+
 // 2. Employee Hierarchy
 // Create a class Employee with name and salary.
 // Extend it into Manager that adds department.
@@ -249,7 +294,98 @@
 
 
 
+//     class employee{
+//     constructor(name,salary){
+//         this.name = name
+//         this.salary = salary
+//     }
+//     display1(){
+//         console.log("The name of employee is "+this.name+" and his monthly salary is "+this.salary)
+//     }
+// }
+
+// class manager extends employee{
+//     constructor(name,department){
+//         super(name)
+//         this.name = name
+//         this.department = department
+//     }
+//     displayDepartment(){
+//         console.log(this.name+" works as a "+this.department)
+//     }
+// }
+// class SeniorManager extends employee{
+//     constructor(name,salary,bonus){
+//         super(name,salary)
+//         this.name = name
+//         this.salary = salary
+//         this.bonus = bonus
+//     }
+//     displayTotal(){
+//         console.log(this.name+"'s tota; salary with bonus is "+this.salary+this.bonus)
+//     }
+// }
+
+// let obj = new manager("ram","manager")
+// obj.displayDepartment()
+
+// let obj1 = new SeniorManager("ram",30000,5000)
+// obj1.displayTotal()
+
+
+// let obj2 = new employee("ram",30000)
+// obj2.display1()
+
+
+
+
+
+
+
 // 3. Shape Area (Polymorphism)
 // Create a base class Shape with a method area().
 // Create Circle and Rectangle classes extending it.
 // Override area() method in each child.
+
+
+
+
+// class shape{
+//     constructor(radius,length1,breadth){
+//         this.radius = radius
+//         this.length1 = length1
+//         this.breadth = breadth
+//     }
+//     area(){
+//         console.log("The area fo circle is "+3.1415*this.radius*this.radius)
+//         console.log("The area of rectangle is "+this.length1*this.breadth)
+//     }
+// }
+// class circle extends shape{
+//     constructor(radius){
+//         super(radius)
+//         this.radius = radius
+//     }
+//     area(){
+//         console.log("The area of circle is "+3.1415*this.radius*this.radius)
+//         }
+// }
+// class rectangle extends shape{
+//     constructor(length1,breadth){
+//         super(length1,breadth)
+//         this.length1 = length1
+//         this.breadth = breadth
+//     }
+//     area(){
+//         console.log("The area of rectangle is "+this.length1*this.breadth)
+//     }
+// }
+
+// let obj = new circle(7)
+// let obj1 = new rectangle(10,5)
+// let obj2 = new shape(7,10,5)
+// obj.area()
+// console.log("")
+// obj1.area()
+// console.log("")
+// obj2.area()
