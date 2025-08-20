@@ -20,7 +20,7 @@ header,footer {
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
 }
 .box{
     background-color: #3498db;
