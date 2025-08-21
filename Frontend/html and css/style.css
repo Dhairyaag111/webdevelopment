@@ -1,16 +1,20 @@
 body {
     background-color: #ff7629;
     padding: 10px;
+    font-family: sans-serif;
     display: flex;
+    font-size: 13px;
     justify-content: center;
 }
 
 .main {
     background-color: rgb(0, 0, 0);
-    height: 700px;
-    width: 340px;
-    padding: 10px;
-    border-radius: 20px;    
+    height: 720px;
+    width: 350px;
+    padding: 30px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    border-radius: 35px;
 }
 
 p {
@@ -19,17 +23,22 @@ p {
     padding: 4px;
     font-size: 18px;
 }
-.basic{
-    border-bottom:1px solid #ff7629;
+
+.basic {
+    border-bottom: 1px solid #ff7629;
     color: #ff7629;
 }
 
 footer {
-    margin-top: 170px;
-    display: flex;
+    margin-top: 260px;
+    font-weight: bolder;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+}
+
+button {
+    border-radius: 16px;
+    margin: 5px;
 }
 
 .first {
@@ -37,16 +46,14 @@ footer {
     color: #ff7629;
     width: 72px;
     height: 40px;
-    border-radius: 18px;
     border: 2px solid black;
     background-color: rgb(39, 37, 37);
 }
 
-.emu {
+.acb {
     width: 72px;
     height: 72px;
-    border-radius: 18px;
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: rgba(184, 177, 177, 0.493);
     font-size: 24px;
     border: 2px solid black;
     color: white;
@@ -57,46 +64,116 @@ footer {
 .minus {
     width: 72px;
     height: 72px;
-    border-radius: 18px;
     background-color: #ff7629;
     font-size: 30px;
     border: 2px solid black;
     color: black;
 }
 
-.same {
+.sen,
+.ffs,
+.ott,
+.d {
     width: 72px;
     height: 72px;
-    border-radius: 18px;
     background-color: rgb(39, 37, 37);
     font-size: 30px;
     border: 2px solid black;
     color: #ff7629;
 }
-.plus{
-        width: 72px;
-    height: 110px;
-    border-radius: 18px;
+
+.sen {
+    margin: 5px;
+}
+
+.fourthLayer .plus {
+    width: 75px;
+    height: 115px;
     background-color: #ff7629;
     font-size: 30px;
     border: 2px solid black;
     color: black;
 }
-.equal{
-            width: 72px;
-    height: 110px;
-    border-radius: 18px;
-    background-color: white;
+
+.fifthLayer .equal {
+    width: 75px;
+    height: 115px;
+    background-color: rgb(248, 248, 248);
     font-size: 30px;
-    border: 2px solid black;
     color: black;
+    border: 2px solid black;
 }
-.zero{
-    width: 150px;
+
+.firstLayer {
+
+    position: relative;
+    top: -30px;
+    width: 350px;
+}
+
+.secondLayer {
+    position: relative;
+    top: -25px;
+    width: 350px;
+}
+
+.thirdLayer {
+    position: relative;
+    top: -20px;
+    width: 350px;
+}
+
+.fourthLayer {
+    position: relative;
+    top: -15px;
+    width: 350px;
+    display: flex;
+}
+
+.fourthLayer button {
+    margin: 6.5px;
+}
+
+.fifthLayer .ott {
+    position: relative;
+    top: -47px;
+    left: -1px;
+}
+
+.fifthLayer {
+    border: 1px solid white;
+    display: flex;
+    width: 350px;
+    position: relative;
+    top: -10px;
+}
+
+.fifthLayer button {
+    margin: 6.5px;
+}
+
+
+.sixthLayer {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    position: relative;
+    bottom: 80px;
+    margin-top: -14px;
+}
+
+.sixthLayer .zero {
+    width: 250px;
     height: 72px;
-    border-radius: 18px;
     background-color: rgb(39, 37, 37);
     font-size: 30px;
     border: 2px solid black;
     color: #ff7629;
+    margin: 5px;
 }
+
+.sixthLayer .d {
+    margin: 5px;
+    margin-left: 27px;
+} 
