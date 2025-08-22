@@ -10,10 +10,10 @@ body {
 .main {
     background-color: rgb(0, 0, 0);
     height: 720px;
-    width: 350px;
-    padding: 30px;
-    padding-bottom: 55px;
-    padding-top: 55px;
+    width: 343px;
+    padding: 25px;
+    padding-bottom: 65px;
+    padding-top: 50px;
     border-radius: 35px;
 }
 
@@ -30,14 +30,14 @@ p {
 }
 
 footer {
-    margin-top: 260px;
+    margin-top: 265px;
     font-weight: bolder;
     justify-content: center;
     align-items: center;
 }
 
 button {
-    border-radius: 16px;
+    border-radius: 18px;
     margin: 5px;
 }
 
@@ -45,6 +45,7 @@ button {
     font-size: 18px;
     color: #ff7629;
     width: 72px;
+    
     height: 40px;
     border: 2px solid black;
     background-color: rgb(39, 37, 37);
@@ -72,8 +73,7 @@ button {
 
 .sen,
 .ffs,
-.ott,
-.d {
+.ott{
     width: 72px;
     height: 72px;
     background-color: rgb(39, 37, 37);
@@ -93,6 +93,7 @@ button {
     font-size: 30px;
     border: 2px solid black;
     color: black;
+    margin-right: 15px;
 }
 
 .fifthLayer .equal {
@@ -102,10 +103,11 @@ button {
     font-size: 30px;
     color: black;
     border: 2px solid black;
+    margin-top: 12px;
+    margin-right: 15px;
 }
 
 .firstLayer {
-
     position: relative;
     top: -30px;
     width: 350px;
@@ -141,7 +143,6 @@ button {
 }
 
 .fifthLayer {
-    border: 1px solid white;
     display: flex;
     width: 350px;
     position: relative;
@@ -154,13 +155,10 @@ button {
 
 
 .sixthLayer {
-    border: 1px solid white;
     display: flex;
-    justify-content: space-evenly;
     width: 250px;
     position: relative;
-    bottom: 80px;
-    margin-top: -14px;
+    bottom: 93.5px;
 }
 
 .sixthLayer .zero {
@@ -170,10 +168,16 @@ button {
     font-size: 30px;
     border: 2px solid black;
     color: #ff7629;
-    margin: 5px;
 }
 
 .sixthLayer .d {
     margin: 5px;
     margin-left: 27px;
+    width: 120px;
+    height: 72px;
+    background-color: rgb(39, 37, 37);
+    font-size: 30px;
+    border: 2px solid black;
+    color: #ff7629;
 } 
+          
