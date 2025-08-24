@@ -1,6 +1,4 @@
 bahamas
 cuba
 czechia
-finland
-greece
-georgia
+
