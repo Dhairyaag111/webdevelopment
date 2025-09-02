@@ -3,10 +3,18 @@
 
 <head>
     <style>
+
         body {
+            width: 100%;
+            height: 100%;
+             background-size: cover;         /* Ensures it covers the whole screen */
+    background-position: center;    /* Keeps it centered */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-attachment: fixed; 
             font-family: sans-serif;
             display: flex;
             justify-content: center;
+            background-image: url(https://media.istockphoto.com/id/1366027192/photo/beautiful-caribbean-sea-and-blue-sky-travel-background.jpg?s=1024x1024&w=is&k=20&c=0h5uh4Y31X6QrUgGq5YKk82taJAfnKNYGS7b788SVpI=);
         }
 
         .main {
@@ -15,6 +23,9 @@
             height: 445px;
             width: 500px;
             border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.493);
+            position: relative;
+            top: 500px;
         }
 
         .heading1 {
@@ -36,6 +47,7 @@
             bottom: 75px;
             font-weight: 600;
             font-size: 13.5px;
+            color: white;
         }
 
         .first {
@@ -52,6 +64,7 @@
             width: 400px;
             height: 30px;
             border-radius: 20px;
+            opacity: 1;
         }
 
         button {
@@ -68,7 +81,7 @@ border: 1px solid #e39548;
             border-radius: 10px;
             position: relative;
             bottom: 50px;
-            height: 150px;
+            height: 150px;  
         }
 
         .circle {
@@ -169,6 +182,9 @@ border: 1px solid #e39548;
         svg{
             position: relative;
             left: 45px;
+        }
+        input::placeholder{
+            color: white;
         }
     </style>
     <meta charset="UTF-8">
