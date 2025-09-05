@@ -39,16 +39,19 @@ header {
     border-bottom: 2px solid transparent;
     padding: 30px 0;
 }
-.nav_bar a:hover{    
+
+.nav_bar a:hover {
     border-bottom: 2px solid #f54e77;
-    
+
 }
-.nav_bar a .check{
+
+.nav_bar a .check {
     position: relative;
     bottom: 2px;
     padding: 32px 0;
 }
-.nav_bar a sup{
+
+.nav_bar a sup {
     font-size: 10px;
     color: #f54e77;
 }
@@ -90,4 +93,28 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.banner_container {
+    margin: 40px 0;
+}
+
+.banner_image {
+    width: 100%;
+}
+
+.category_heading {
+    font-weight: 700;
+    color: #3e4152;
+    letter-spacing: 0.15em;
+    font-size: 1.8em;
+    max-height: 5em;
+}
+.category_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sale_item{
+    width: 250px;
 }
