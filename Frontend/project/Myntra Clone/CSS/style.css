@@ -13,7 +13,6 @@ header {
     align-items: center;
     border-bottom: 1px solid #cdbebe;
 }
-
 .myntra_home {
     height: 45px;
 }
@@ -126,7 +125,7 @@ header {
     display: flex;
     justify-content: left;
     padding: 15px;
-    gap: 150px;
+    gap: 110px;
 }
 
 .texts {
@@ -148,6 +147,31 @@ h3 {
     font-size: 14px;
     margin-bottom: 25px;
 }
-.logos{
+
+.logos {
     margin-top: 20px;
+}
+
+.logo {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.additional1,
+.additional2 {
+    width: 280px;
+    display: flex;
+    padding-bottom: 25px;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    bottom: 235px;
+    left: 1050px;
+}
+
+.additional span {
+    font-weight: 700;
 }
