@@ -126,6 +126,7 @@ header {
     justify-content: left;
     padding: 15px;
     gap: 110px;
+    flex-wrap: wrap;
 }
 
 .texts {

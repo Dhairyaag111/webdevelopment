@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+            background-color: #103e67;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .heading p {
+            font-weight: 500;
+            font-size: 40px;
+            padding: 10px 100px;
+        }
+
+        .components {
+            font-size: 12px;
+            display: flex;
+            gap: 40px;
+            margin-top: 25px;
+            margin-right: 100px;
+        }
+
+        .comp {
+            text-decoration: none;
+            padding-bottom: 20px;
+        }
+
+        .comp:hover {
+            border-bottom: 2px solid #665973;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main .first {
+            margin-top: 150px;
+            font-size: 55px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        .main .second {
+            font-size: 23px;
+            font-weight: 600;
+            color: #a7aeca;
+            padding-bottom: 40px;
+        }
+
+        .btn {
+            border: 1px solid white;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <p>Encore</p>
+        </div>
+        <div class="components">
+            <a href="#" class="comp">HOME</a>
+            <a href="#" class="comp">EVENTS</a>
+            <a href="#" class="comp">SCHEDULE</a>
+            <a href="#" class="comp">VENUE</a>
+            <a href="#" class="comp">REGISTER</a>
+        </div>
+    </header>
+    <div class="main">
+        <p class="first">Dedicated to AltCampus' friends and family</p>
+        <p class="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Voluptate repudiandae alias at
+            fugit officia facere</p>
+
+        <button class="btn">Register Now</button>
+    </div>
+</body>
+
+</html>
