@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url(../img/img4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 180px 0;
+        }
+
+        .texts {
+            width: 500px;
+        }
+
+        .text1 {
+            font-size: 40px;
+            color: #064f94;
+        }
+
+        .text2,
+        .text3 {
+            font-size: 24px;
+        }
+
+        .booking {
+            border: transparent;
+            border-radius: 10px;
+            padding: 25px 20px 20px 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+        }
+
+        .circles {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 20px;
+            font-weight: 600
+        }
+
+        .flying {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .place {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .requirments {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 200px;
+            border-radius: 10px;
+            border: transparent;
+            background-color: #064f94;
+            color: white;
+        }
+        .btn:hover{
+            background-color: #1068bb;
+        }
+
+        input,
+        select {
+            background-color: transparent;
+            border: 2px solid rgb(107, 105, 105);
+            margin-top: 2px;
+        }
+
+        .flying input,
+        .place input {
+            padding: 10px 40px 10px 2px;
+            border-radius: 8px;
+        }
+
+        .flying,
+        .place,
+        .requirments {
+            color: #043664;
+        }
+
+        .flying input:hover,
+        .place input:hover {
+            border: 2px dashed #064f94;
+        }
+        select{
+            width: 140px;
+            padding: 10px 40px 10px 2px;
+            border-radius: 8px;
+        }
+        select:hover{
+            border: 2px dashed #064f94;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flight</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="texts">
+            <p class="text1">BOOK YOUR FLIGHT TODAY!</p>
+            <p class="text2">Make your travel experience with planes.</p>
+            <p class="text3">Discover the World from Above</p>
+        </div>
+        <div class="booking">
+            <div class="circles">
+                <p>
+                    <input type="radio" name="choice" id="option1">
+                    Roundtrip:
+                </p>
+                <p>
+                    <input type="radio" name="choice" id="option2">
+                    One Way:
+                </p>
+                <p>
+                    <input type="radio" name="choice" id="option2">
+                    Multi-City:
+                </p>
+            </div>
+            <div class="flying">
+                <div class="fly1">
+                    <p class="flying1">FLYING FROM:</p>
+                    <input type="text" placeholder="City or airport">
+                </div>
+                <div class="fly2">
+                    <p class="flying2">FLYING TO:</p>
+                    <input type="text" placeholder="City or airport">
+                </div>
+            </div>
+            <div class="place">
+                <div class="pl1">
+                    <p class="place1">DEPARTING:</p>
+                    <input type="text">
+                </div>
+                <div class="pl2">
+                    <p class="place2">RETURNING:</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="requirments">
+                <div class="r1">
+                    <p class="re1">ADULTS(18+):</p>
+                    <select name="adult" id="hi">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </div>
+                <div class="r2">
+                    <p class="re2">CHILDREN(0-17):</p>
+                    <select name="child" id="hi">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </div>
+                <div class="r3">
+                    <p class="re3">TRAVEL CLASS:</p>
+                    <select name="" id="">
+                        <option value="first">First Class</option>
+                        <option value="economy">Economy Class</option>
+                        <option value="business">Business Class</option>
+                        <option value="premium">Premium Economy Class</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn">SHOW FLIGHTS</button>
+        </div>
+    </div>
+</body>
+
+</html>
