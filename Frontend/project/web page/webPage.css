@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+header .first {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+header .first p {
+    font-size: 25px;
+    color: #4d6059;
+}
+
+header .first a {
+    text-decoration: none;
+    color: #4d6059;
+    margin-top: 6.5px;
+}
+
+header .second {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 6.5px;
+}
+
+header .second .btn1 {
+    background-color: transparent;
+    border: transparent;
+    color: #4d6059;
+}
+
+header .second .btn2 {
+    background-color: #4d6059;
+    padding: 10px;
+    border: transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.heading {
+    width: 100%;
+    height: 80px;
+    background-color: #1c211f;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px 70px;
+    font-size: 120px;
+}
+
+.sub_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #485b54;
+    flex-wrap: wrap;
+}
+
+.sub_heading .first {
+    display: flex;
+    gap: 20px;
+}
+
+.sub_heading .first button {
+    padding: 3px 8px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #3c4d48;
+    color: white;
+}
+
+.sub_heading .second select {
+    padding: 15px 2px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #3c4d48;
+    color: white;
+}
+
+.images {
+    background-color: #eaf3f0;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.images .first .grp img {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.images .first .grp .text1 {
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    gap: 10px;
+}
+
+.texts1 {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+}
+
+.images .first .grp .text1 button {
+    padding: 8px;
+    background-color: #3c4d48;
+    color: white;
+    border: transparent;
+    border-radius: 8px;
+}
+
+.p1 {
+    font-size: 20px;
+    color: #4d6059;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size: 15px;
+    color: #4d6059;
+}
+
+.images .first {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p {
+    font-family: sans-serif;
+    color: #7e8b87;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.grp {
+    padding: 5px 5px 50px 5px;
+}
