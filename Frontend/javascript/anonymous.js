@@ -23,6 +23,17 @@
 
 
 
+// let func = function(a,b){
+//     console.log(a)
+//     console.log(b)
+// }
+
+// let a = prompt("Enter name: ")
+// let b = prompt("Enter surname: ")
+
+// func(a,b)
+
+
 
 
 // let func = function(a,b){
