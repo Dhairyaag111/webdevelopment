@@ -7,17 +7,6 @@
 
 
 
-
-// let func = =>{
-//     console.log(a+b)
-// }
-
-// func(5)
-
-
-
-
-
 //     let func = (r)=>{
 //     return pi*r*r
 // }

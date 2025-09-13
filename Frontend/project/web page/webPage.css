@@ -213,7 +213,7 @@ header .second .btn2 {
 
 .last {
     display: flex;
-    padding: 20px 80px  80px;
+    padding: 0 80px 0 80px;
     gap: 10px;
 }
 
@@ -236,7 +236,7 @@ header .second .btn2 {
     border-radius: 6px;
     padding: 20px;
 }
-footer .first,footer .second{
+footer .third,footer .second{
     padding-left: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
