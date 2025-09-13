@@ -57,16 +57,6 @@ header .second .btn2 {
     color: white;
 }
 
-header .second .btn1:hover {
-    background-color: #a6aaa8;
-    color: white;
-}
-
-header .second .btn2:hover {
-    background-color: #a6aaa8;
-    color: black;
-}
-
 .heading {
     height: 80px;
     background-color: #1c211f;
@@ -110,7 +100,7 @@ header .second .btn2:hover {
 
 .images {
     background-color: #eaf3f0;
-    padding: 100px 80px;
+    padding: 50px 80px 0 80px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -188,24 +178,65 @@ header .second .btn2:hover {
     bottom: 11px;
 }
 
-footer {
+.footer_main {
     display: flex;
-    background-color: #1b201e;
+    gap: 150px;
+    padding-top: 55px;
+    flex-wrap: wrap;
 }
 
-footer .first {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 20px 80px;
-    width: 335px;
+.footer_main .first {
+    padding: 0 80px;
+    width: 350px;
 }
-footer .p1{
+
+.footer_main .p1 {
     color: white;
     font-size: 30px;
     font-weight: lighter;
     padding: 5px 0 25px 0;
 }
-footer .p2{
+
+.footer_main .p2 {
     color: white;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+.footer_main .ps {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.last {
+    display: flex;
+    padding: 20px 80px  80px;
+    gap: 10px;
+}
+
+.last input {
+    padding: 10px 25px 10px 15px;
+    border-radius: 6px;
+    background-color: #3c4d48;
+    border: transparent;
+}
+
+.last input::placeholder {
+    color: #9ca9a5;
+
+}
+
+.last button {
+    color: white;
+    background-color: #63726c;
+    border: transparent;
+    border-radius: 6px;
+    padding: 20px;
+}
+footer .first,footer .second{
+    padding-left: 80px;
+    padding-bottom: 50px;
 }
