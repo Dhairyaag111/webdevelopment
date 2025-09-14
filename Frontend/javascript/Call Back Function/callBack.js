@@ -257,3 +257,33 @@
 
 // let array1 = [1,2,3,4,5]
 // main(array1,secondFunction)
+
+
+
+
+
+
+
+
+
+// let main = function(a,b,func){
+//     if(a>b){
+//         func(a,b,"mul")
+//     }
+//     else{
+//         func(a,b,"add") 
+//     }
+// }
+
+// let second = function(a,b,value){
+//     if(value==="mul"){
+//         console.log("The product is "+a*b)
+//     }
+//     else{
+//         console.log("The sum is "+(a+b))
+//     }
+// }
+
+// let a = Number(prompt("Enter first number: "))
+// let b = Number(prompt("Enter second number: "))
+// main(a,b,second)
