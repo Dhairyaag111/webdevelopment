@@ -238,3 +238,22 @@
 // let c = prompt("Enter your age: ")
 // let d = prompt("Enter the grade you are studying: ")
 // main(a,b,c,d,first,second,third,fourth)
+
+
+
+
+
+
+
+// let main = function(array1,func){
+//     for(let i = 0; i<array1.length; i++){
+//     console.log(func(array1[i]))
+//     }
+// }
+
+// let secondFunction = function(number){
+//         return number*2
+// }
+
+// let array1 = [1,2,3,4,5]
+// main(array1,secondFunction)
