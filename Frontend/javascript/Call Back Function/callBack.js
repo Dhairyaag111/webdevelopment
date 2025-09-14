@@ -287,3 +287,11 @@
 // let a = Number(prompt("Enter first number: "))
 // let b = Number(prompt("Enter second number: "))
 // main(a,b,second)
+
+
+
+
+
+
+
+// task to reverse letters of a "callback",convert "callback" into "callfront", make "callback" capital
