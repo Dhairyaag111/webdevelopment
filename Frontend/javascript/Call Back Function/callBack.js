@@ -211,3 +211,30 @@
 
 
 
+// let main = function(a,b,c,d,f1,f2,f3,f4){
+//     f1(a)
+//     f2(b)
+//     f3(c)
+//     f4(d)
+//     console.log(`${a} ${b} ${c} ${d}`)
+// }
+
+// let first = function(a){
+//     return a
+// }
+// let second = function(b){
+//     return b
+// }
+// let third = function(c){
+//     return c
+// }
+// let fourth = function(d){
+//     return d
+// }
+
+
+// let a = prompt("Enter your name: ")
+// let b = prompt("Enter your address: ")
+// let c = prompt("Enter your age: ")
+// let d = prompt("Enter the grade you are studying: ")
+// main(a,b,c,d,first,second,third,fourth)
