@@ -373,3 +373,23 @@
 
 
 // reverse number using call back for 4 digit
+
+
+
+// let main = function(number,func){
+//     console.log(func(number))
+// }
+
+// let second = function(number){
+    
+// let l = number%10
+//     let sl = (number/10>>0)%10
+//     let s = (number/100>>0)%10
+//     let f = number/1000>>0
+//     return l+""+sl+""+s+""+f
+    
+    
+// }
+
+// let number = Number(prompt("Enter a  4 digit number:  " ))
+// main(number,second)
