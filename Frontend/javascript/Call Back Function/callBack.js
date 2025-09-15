@@ -295,3 +295,22 @@
 
 
 // task to reverse letters of a "callback",convert "callback" into "callfront", make "callback" capital
+
+
+// let main = function(word, func1, func2, func3) {
+//     console.log(func1(word))
+//     console.log(func2(word))
+//     console.log(func3(word))
+// }
+
+// let secondFunction = function(word) {
+//     return  word.toUpperCase()
+// }
+// let thirdFunction = function(word) {
+//     return word.split("").reverse().join("")
+// }
+// let fourthFunction = function(word) {
+//     return word.replace("back", "front")
+// }
+
+// main("callback", secondFunction, thirdFunction, fourthFunction)
