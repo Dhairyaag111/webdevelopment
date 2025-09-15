@@ -314,3 +314,54 @@
 // }
 
 // main("callback", secondFunction, thirdFunction, fourthFunction)
+
+
+
+
+
+
+
+
+// let main = function(array1,func1){
+//     console.log(func1(array1))
+// }
+
+// let secondFunction = function(array1){
+//      let result = array1.map(function(num){
+//          return num*num*num
+//      }) 
+//      return result
+// }
+// let a = [5,10,15,20,25]
+// main(a,secondFunction)
+
+
+
+
+
+
+
+
+// let main = function(array1, func1) {
+//     console.log(func1(array1))
+// }
+
+// let second = function(array1) {
+//     let result = array1.map(function(num) {
+//         let counter = 0
+//         for (i = 1; i <= num; i++) {
+//             if (num % i === 0) {
+//                 counter++
+//             }
+//         }
+//         if (counter > 2) {
+//             return (num + " is not a prime number.")
+//         } else {
+//             return (num + " is a prime number.")
+//         }
+//     })
+//     return result
+// }
+
+// let a = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+// main(a, second)
