@@ -33,3 +33,27 @@
 //         clearInterval(variable)
 //     }
 // },500)
+
+
+
+
+
+// let main = function(number,func){
+//     setTimeout(()=>{
+//     console.log(func(number))
+//     },1000)
+    
+//    let a =  setInterval(()=>{
+//     console.log(number)
+//     number++
+//     if(number>=21){
+//         clearInterval(a)
+//     }
+// }, 1200)
+// }
+// let second = function(number){
+//     return "The number you entered is "+number
+// }
+
+// let number = Number(prompt("Enter number to know  number sequently up to 20: "))
+// main(number,second)
