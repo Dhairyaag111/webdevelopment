@@ -19,3 +19,17 @@
 // },4000)
 
 // console.log("Print3")
+
+
+
+
+
+
+//     let counter = 0
+// let variable = setInterval(()=>{
+//     console.log(counter)
+//     counter = counter + 2
+//     if(counter===20){
+//         clearInterval(variable)
+//     }
+// },500)
