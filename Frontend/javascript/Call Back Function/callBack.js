@@ -387,9 +387,29 @@
 //     let s = (number/100>>0)%10
 //     let f = number/1000>>0
 //     return l+""+sl+""+s+""+f
-    
-    
+
+// // // // // // return (number.toString()).split("").reverse().join("")
+
 // }
 
 // let number = Number(prompt("Enter a  4 digit number:  " ))
 // main(number,second)
+
+
+
+
+
+
+// let main = function(number, func) {
+//     console.log(func(number))
+// }
+
+// let second = function(number) {
+
+//     return (number.toString()).split("").reverse().join("")
+
+
+// }
+
+// let number = Number(prompt("Enter a  4 digit number:  "))
+// main(number, second)
