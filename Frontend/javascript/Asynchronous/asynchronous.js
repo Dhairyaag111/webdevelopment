@@ -57,3 +57,18 @@
 
 // let number = Number(prompt("Enter number to know  number sequently up to 20: "))
 // main(number,second)
+
+
+
+
+
+
+
+
+
+// let first = function(){
+//     let date  = new Date
+//     console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds())
+// }
+
+// setInterval(first,1000)
