@@ -72,3 +72,34 @@
 // }
 
 // setInterval(first,1000)
+
+
+
+
+
+
+    // let number = Number(prompt("Enter a number: "))
+    // let num = 0
+    // let first = setInterval(()=>{
+    //     console.log(num)
+    //     num++
+    //     if(num===number){
+    //         console.log("Boom💥")
+    //         clearInterval(first)
+    //     }
+    // },1000)
+
+
+
+
+
+//     let number = Number(prompt("Enter a number: "))
+// let num = 0
+// let first = setInterval(()=>{
+//     console.log(number)
+//     number--
+//     if(num===number){
+//         console.log("Boom💥")
+//         clearInterval(first)
+//     }
+// },1000)
