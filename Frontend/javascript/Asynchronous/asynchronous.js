@@ -103,3 +103,18 @@
 //         clearInterval(first)
 //     }
 // },1000)
+
+
+
+
+
+
+// let number = 0
+// let first = setInterval(()=>{
+//     console.log("Still waiting "+number)
+//     number++
+//     if(number===10){
+//         console.log("Task completed.")
+//         clearInterval(first)
+//     }
+// },1000)
