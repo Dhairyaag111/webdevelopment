@@ -118,3 +118,35 @@
 //         clearInterval(first)
 //     }
 // },1000)
+
+
+
+
+
+
+
+// let first = setInterval(()=>{
+//     console.log("Still waiting ....")
+// },1000)
+
+// let second = setTimeout(()=>{
+//     console.log("Task Completed")
+//         clearInterval(first)
+// },10000)
+
+
+
+
+
+
+
+// let word = "true"
+// let first = setInterval(()=>{
+// console.log(word? "ON":"OFF")
+// word = !word
+// },1000)
+                                 
+// setTimeout(()=>{
+//     console.log("Stopped blinking.")
+//     clearInterval(first)
+// },10000)
