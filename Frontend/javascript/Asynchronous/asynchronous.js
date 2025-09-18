@@ -42,7 +42,7 @@
 //     setTimeout(()=>{
 //     console.log(func(number))
 //     },1000)
-    
+
 //    let a =  setInterval(()=>{
 //     console.log(number)
 //     number++
@@ -78,16 +78,16 @@
 
 
 
-    // let number = Number(prompt("Enter a number: "))
-    // let num = 0
-    // let first = setInterval(()=>{
-    //     console.log(num)
-    //     num++
-    //     if(num===number){
-    //         console.log("Boom💥")
-    //         clearInterval(first)
-    //     }
-    // },1000)
+// let number = Number(prompt("Enter a number: "))
+// let num = 0
+// let first = setInterval(()=>{
+//     console.log(num)
+//     num++
+//     if(num===number){
+//         console.log("Boom💥")
+//         clearInterval(first)
+//     }
+// },1000)
 
 
 
@@ -145,8 +145,36 @@
 // console.log(word? "ON":"OFF")
 // word = !word
 // },1000)
-                                 
+
 // setTimeout(()=>{
 //     console.log("Stopped blinking.")
 //     clearInterval(first)
 // },10000)
+
+
+
+
+
+
+
+// function cleanUtensils(func1) {
+//     setTimeout(() => {
+//         console.log("Cleaning the utentils.")
+//     }, 1200)
+//     setTimeout(() => {
+//         console.log(trashOut())
+//     }, 1800)
+//     setTimeout(() => {
+//         console.log(goToShop())
+//     }, 2400)
+// }
+
+// function trashOut(func2) {
+//     return ("Throwing trash out.")
+// }
+
+// function goToShop() {
+//     return ("Going to shop")
+// }
+
+// cleanUtensils(trashOut(goToShop))
