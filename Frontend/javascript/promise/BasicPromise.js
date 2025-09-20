@@ -13,3 +13,57 @@
 // }).catch(function(err) {
 //     console.log(err)
 // })
+
+
+
+
+
+
+// const prom = new Promise((resolve, reject)=>{
+//     let counter = 0
+//     let interval = setInterval(()=>{
+//         console.log(counter)
+//         counter++
+//         if(counter===6){
+//             resolve("I will run after 5 seconds ☺️")
+//             clearInterval(interval)
+//         }
+//     }, 1000)
+// }).then((mssg)=> console.log(mssg))
+
+
+
+
+
+
+
+// let u = prompt("enter your birth year: ")
+// let promise = new Promise((resolve,reject)=>{
+// let date = new Date
+// let a = date.getFullYear()-u
+// resolve("You are "+a+" years old.")
+// })
+// promise.then((message)=>{
+//     console.log(message)
+// })
+
+
+
+
+
+
+
+// let u = prompt("enter something:")
+// let promise = new Promise((resolve,reject)=>{
+//     if(typeof(u)===Number){
+//         resolve("You entered a number")
+//     }
+//     else{
+//         reject("You didn't entered a number")
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message)
+// }).catch((err)=>{
+//     console.log(err)
+// })
