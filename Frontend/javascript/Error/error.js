@@ -191,3 +191,41 @@
 
 
 
+
+
+
+// let userInput = Number(prompt("Enter a number: "))
+// let promise = new Promise(resolve=>{
+//     resolve(userInput)
+// })
+// promise.then(value=>{
+//     if(value%2===0){
+//         console.log("Its a even number.")
+//     }
+//     else{
+//         throw new Error("You entered an odd number.")
+//     }
+// }).catch((err)=>{
+//     console.log(err.message)
+// })
+
+
+
+
+
+
+
+// let userInput = Number(prompt("Enter a number: "))
+// let promise = new Promise(resolve=>{
+//     if(userInput%2===0){
+//         resolve("Its a even number.")
+//     }
+//     else{
+//         throw new Error("You entered an odd number.")
+//     }
+// })
+// promise.then(value=>{
+//     console.log(value)
+// }).catch((err)=>{
+//     console.log(err.message)
+// })
