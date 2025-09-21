@@ -67,3 +67,29 @@
 // }).catch((err)=>{
 //     console.log(err)
 // })
+
+
+
+
+
+
+
+
+// let name = prompt("Enter your name: ")
+// let age = Number(prompt("Enter your age: "))
+// let promise = new Promise((resolve)=>{
+//     resolve({
+//         n: name,
+//         a: age
+//     })
+// })
+
+// promise.then((obj)=>{
+//     console.log(obj.n)
+//     return obj
+// }).then((obj)=>{
+//     console.log("Hello Good afternoon! "+obj.n)
+//     return obj
+// }).then((obj)=>{
+//     console.log("Hello Good afternoon! "+obj.n+" you are "+obj.a+" years old")
+// })
