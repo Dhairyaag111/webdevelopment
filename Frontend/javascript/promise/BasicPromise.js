@@ -93,3 +93,25 @@
 // }).then((obj)=>{
 //     console.log("Hello Good afternoon! "+obj.n+" you are "+obj.a+" years old")
 // })
+
+
+
+
+
+
+
+
+
+// let promise = new Promise((resolve)=>{
+//     resolve({
+//         name: "sita",
+//         age: 20
+//     })
+// })
+
+// promise.then(obj=>{
+//     console.log(obj.name)
+//     return obj
+// }).then(obj=>{
+//     console.log(obj.age)
+// })
