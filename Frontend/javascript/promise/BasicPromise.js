@@ -182,3 +182,55 @@
 // }).then(obj => {
 // console.log(obj.userName+" is a "+(obj.isAdult? "is not a minor":"is a minor"))
 // })
+
+
+
+
+
+
+
+
+// create a promise that resolvs with 100,throw an error if number is 100.catch it,return 50,then in the next .then,add 25 and lock the result
+
+
+// let promise = new Promise(resolve=>{
+//     resolve(100)
+// })
+
+// promise.then(value=>{
+//     if(value===100){
+//         throw("The number you entered is exactly 100")
+//     }
+// }).catch(err=>{
+//         console.log(err)
+//         return 50
+// }).then(value=>{
+//     console.log("The final output is "+(value+25))
+// })
+
+
+
+
+// create a promise that resolvs with 10. first .then should return a new promise that doubles the number after 2 seconds.second .then should triple the number after 4 seconds. third .then should find the square,cube and square root of that number
+
+
+// let user = Number(prompt("Enter a number: "))
+// let promise = new Promise(resolve=>{
+//     resolve(user)
+// })
+
+// promise.then(value=>{
+//     setTimeout(()=>{
+//         console.log(value*2)
+//     },2000)
+//     return value
+// }).then(value=>{
+//     setTimeout(()=>{
+//     console.log(value*3)
+//     },4000)
+//     return value
+// }).then(value=>{
+//     console.log(value*value)
+//     console.log(value*value*value)
+//     console.log(Math.sqrt(value))
+//     })
