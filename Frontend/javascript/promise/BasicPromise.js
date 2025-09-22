@@ -211,6 +211,8 @@
 
 
 
+
+
 // create a promise that resolvs with 10. first .then should return a new promise that doubles the number after 2 seconds.second .then should triple the number after 4 seconds. third .then should find the square,cube and square root of that number
 
 
@@ -234,3 +236,42 @@
 //     console.log(value*value*value)
 //     console.log(Math.sqrt(value))
 //     })
+
+
+
+
+
+// WAP a program to a,b,c using promise and it's then
+
+// let promise = new Promise(resolve=>{
+//     resolve("a")
+// })
+
+// promise.then((value)=>{
+//     return Promise.resolve(value+"b")
+// }).then(value2=>{
+//     console.log(value2+"c")
+// })
+
+
+
+
+
+
+
+
+// let userName = prompt("Enter your name: ")
+// let userMarks = Number(prompt("Enter your marks: "))
+// let promise = new Promise(resolve=>{
+//     resolve({
+//         name: userName,
+//         marks: userMarks
+//     })
+// })
+// promise.then(obj=>{
+//     obj.isPassed = obj.marks>=40 ? "Pass": "Fail"
+//     return obj
+// }).then(obj=>{
+//     console.log(obj.name+" has "+(obj.isPassed)+"ed")
+// })
+
