@@ -275,3 +275,24 @@
 //     console.log(obj.name+" has "+(obj.isPassed)+"ed")
 // })
 
+
+
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve("start")
+// })
+
+// promise.then(value=>{
+//     throw("It is an error.")
+// }).catch(err=>{
+//     console.log(err)
+//     return "recovered"
+// }).then(val2=>{
+//     console.log(val2)
+// })
+
