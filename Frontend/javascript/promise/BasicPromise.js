@@ -296,3 +296,114 @@
 //     console.log(val2)
 // })
 
+
+
+
+
+
+
+// Start with a Promise that resolves with 2.
+// First .then() multiply by 2.
+// Second .then() add 5 after 0.5 sec (use another Promise).
+// If result > 8, throw error "Too big!".
+// Catch error, return 1.
+// Multiply by 10 in final .then() and log result.
+
+
+// let promise = new Promise(resolve=>{
+//     resolve(2)
+// })
+
+// promise.then(value=>{
+//     return value*2
+// }).then(val2=>{
+//     return new Promise(resolve=>{
+//   setTimeout(()=>{
+//      resolve(val2+5)
+//     },500 )
+//     })
+// }).then(val3=>{
+//     if(val3>8){
+//         throw ("The number is too big")
+//     }
+// }).catch(err=>{
+//     console.log(err)
+//     return 1    
+// }).then(val4=>{
+//     console.log(val4*10)
+// })
+
+
+
+
+
+
+
+// // Create a Promise that resolves with "javascript".
+// First .then() → convert to uppercase.
+// Second .then() → take first 4 letters.
+// Third .then() → add " is fun".
+// Log the final string.
+
+
+// let promise = new Promise(resolve=>{
+//     resolve("javascript")
+// })
+// promise.then(value=>{
+//     return value.toUpperCase()
+// }).then(val2=>{
+//     return val2[0]+val2[1]+val2[2]+val2[3]
+// }).then(val3=>{
+//     console.log(val3+" is fun")
+// })
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve([1,2,3,4,5])
+// })
+
+// promise.then((val)=> val.map(b => b*2)).then((val)=>{
+//     return val.filter(b =>b>5)
+// }).then(val => console.log(val))
+
+
+
+
+
+
+
+
+
+
+// Create a Promise that resolves with { name: "Aarav", score: 35 }.
+// If score < 40, throw "Failed".
+// Catch it and set score to 50.
+// Add status: "Pass" and log the object.
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve({
+//         name: "Aarav",
+//         score: 35
+//     })
+// })
+// promise.then(obj=>{
+//     if(obj.score<40){
+//         throw ("Failed")
+//     }
+// }).catch(err=>{
+//     console.log(err)
+//     return ({
+//         name: "Aarav",
+//         score: 35
+//     })
+// }).then(obj=>{
+//     obj.status = obj.score>40? "pass":"fail"
+//     console.log(obj)
+// })
