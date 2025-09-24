@@ -481,24 +481,36 @@
 
 
 
-    // let promise = new Promise(resolve=>{
-    //     resolve({
-    //         number:7,
-    //         word:"banana"
-    //     })
-    // })
-    // promise.then(obj=>{
-    //     obj.number = obj.number*obj.number
-    //     return obj
-    // }).then(obj=>{
-    //     return obj.number+"-"+obj.word
-    // }).then(val=>{
-    //     console.log(val.length)
-    // })
+// let promise = new Promise(resolve=>{
+//     resolve({
+//         number:7,
+//         word:"banana"
+//     })
+// })
+// promise.then(obj=>{
+//     obj.number = obj.number*obj.number
+//     return obj
+// }).then(obj=>{
+//     return obj.number+"-"+obj.word
+// }).then(val=>{
+//     console.log(val.length)
+// })
 
 
 
 
 
 
-    
+
+// let promise = new Promise(resolve=>{
+//     resolve(["Ram","Sita","Hari","Rita"])
+// })
+// promise.then(arr=>{
+//     let arr2 = arr.filter(a=> a.startsWith("R"))
+//     return arr2
+// }).then(arr2=>{
+//     let c =  arr2.map(b=> b.toUpperCase())
+//     return c
+// }).then(arr3=>{
+//     console.log(arr3)
+// })
