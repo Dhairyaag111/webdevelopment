@@ -362,6 +362,8 @@
 
 
 
+
+
 // let promise = new Promise(resolve=>{
 //     resolve([1,2,3,4,5])
 // })
@@ -377,14 +379,10 @@
 
 
 
-
-
 // Create a Promise that resolves with { name: "Aarav", score: 35 }.
 // If score < 40, throw "Failed".
 // Catch it and set score to 50.
 // Add status: "Pass" and log the object.
-
-
 
 
 // let promise = new Promise(resolve=>{
@@ -407,3 +405,75 @@
 //     obj.status = obj.score>40? "pass":"fail"
 //     console.log(obj)
 // })
+
+
+
+
+
+
+
+
+
+
+
+// Reverse + Join Chain
+// Create a Promise that resolves with "hello world".
+// First .then() → split into array of words
+// Second .then() → reverse the array.
+// Third .then() → join with " - ".
+// Log the result.
+
+
+// output
+
+// ["hello","world"]      
+// ["world","hello"]     
+// "world - hello"
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve("hello world")
+// })
+
+// promise.then(value1=>{
+//     let v = value1.split(" ")
+//     console.log(v)
+//     return v
+// }).then(v=>{
+//     console.log(v.reverse())
+//    return v.reverse()
+// }).then(v=>{
+//     console.log(v.reverse().join("- "))
+// })
+
+
+
+
+
+
+
+// Async Array Chain (with setTimeout)
+// Create a Promise that resolves with [2, 4, 6].
+// First .then() → return new Promise that adds 1 to each element after 1 second.
+// Second .then() → log the new array.
+
+// Output : [3, 5, 7]
+
+
+// let promise = new Promise(resolve=>{
+//     resolve([2,4,6])
+// })
+// promise.then(arr1=>{
+//     return new Promise(resolve=>{
+//         setTimeout(()=>{
+//             resolve( arr1.map(a=> a+1))
+//         },3000)
+//     })
+// }).then(arr2=>{
+//     console.log(arr2)
+// })
+
+
+
+
