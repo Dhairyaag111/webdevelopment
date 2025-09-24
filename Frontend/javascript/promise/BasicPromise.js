@@ -477,3 +477,28 @@
 
 
 
+
+
+
+
+    // let promise = new Promise(resolve=>{
+    //     resolve({
+    //         number:7,
+    //         word:"banana"
+    //     })
+    // })
+    // promise.then(obj=>{
+    //     obj.number = obj.number*obj.number
+    //     return obj
+    // }).then(obj=>{
+    //     return obj.number+"-"+obj.word
+    // }).then(val=>{
+    //     console.log(val.length)
+    // })
+
+
+
+
+
+
+    
