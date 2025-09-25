@@ -514,3 +514,139 @@
 // }).then(arr3=>{
 //     console.log(arr3)
 // })
+
+
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve({
+//         city : "Kathmandu",
+//         population : 1500000
+//     })
+// })
+// promise.then(obj=>{
+//     if (obj.population<1000000) throw ("Too Small")
+//     return obj
+// }).catch(err=>{
+//     console.log(err)
+//     return ({city : "Pokhara", population : 500000})
+// }).then(obj=>{
+//     obj.country = "Nepal"
+//     return obj
+// }).then(obj=>{
+//     console.log(obj)
+// })
+
+
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve("madam")
+// })
+// promise.then(val1=>{
+//    return  val1.split("").join("")
+// }).then(val2=>{
+//     if(val2.split("").reverse().join("")===val2) return "Palindrone"
+//     else return "Not palindrone"
+// }).then(val3=>{
+//     console.log(val3)
+// })
+
+
+
+
+
+
+
+// Error if Array Empty
+// Create a Promise that resolves with [].
+// First .then() → if array is empty, throw "No data!".
+// Catch error → return [1, 2, 3].
+// Next .then() → double each number.
+// Log the result.
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve([])
+// })
+// promise.then(arr=>{
+//     if (arr.length===0) throw "NO data"
+//     return arr
+// }).catch(err=>{
+//     console.log(err)
+//     return [1,2,3]
+// }).then(arr=>{
+//     console.log(arr.map(a=> a*2))
+// })
+
+
+
+
+
+
+
+
+//  Word Count Chain
+// Create a Promise that resolves with "I love learning JavaScript".
+// First .then() → split into words.
+// Second .then() → count number of words.
+// Third .then() → log "Total words: X".
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve("I love learning javascript")
+// })
+// promise.then(word=>{
+//     return word.split(" ")
+// }).then(word=>{
+//     console.log(word)
+//     return word.length
+// }).then(length=>{
+//     console.log("Total words: "+length)
+// })
+
+
+
+
+
+
+// User Grades Evaluation
+// Write a promise that resolves with a student’s scores:
+// { name: "Sita", scores: [80, 60, 90, 100] }
+// In the first .then, calculate the average score.
+// In the second .then, decide the grade (A, B, C) based on the average.
+// In the third .then, return a message "Sita has scored Grade A with avg 82.5".
+// Add a .catch if the scores array is empty.
+
+
+
+// let promise = new Promise(resolve=>{
+//     resolve({ name: "Sita", scores: [80, 60, 90, 100] })
+// })
+// promise.then(obj=>{
+//     let total = 0
+//     for(i=0; i<(obj.scores).length; i++){
+//         total = total + obj.scores[i]
+//     } 
+//     obj.avg = total/4
+//     return obj
+// }).then(obj=>{
+//     if(obj.avg>90) obj.grade = "A"
+//     else if(obj.avg>80) obj.grade = "B"
+//     else if(obj.avg>70) obj.grade = "C"
+//     return obj
+// }).then(obj=>{
+//     return "Sita has scored Grade "+obj.grade+" with avg "+obj.avg
+// }).then(val=>{
+//     console.log(val)
+// })
