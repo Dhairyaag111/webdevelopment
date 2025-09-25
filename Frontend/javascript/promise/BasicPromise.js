@@ -654,3 +654,31 @@
 // }).catch(err=>{
 //     console.log(err)
 // })
+
+
+
+
+
+
+
+// let promise = new Promise((resolve,reject)=>{
+//     let arr = { name: "Sita", scores: [80,60,90,100] }
+//     if((arr.scores).length===0) reject("The score array is empty")
+//     else resolve(arr)
+// })
+// promise.then(obj=>{
+//     let variable = (obj.scores).reduce((a,b)=>{
+//         return (a+b)
+//     })
+//     obj.avg = variable/4
+//     return obj
+// }).then(obj=>{
+//     obj.grade = obj.avg>90? "A":obj.avg>80? "B":obj.avg>70? "C":"D"
+//     return obj
+// }).then(obj=>{
+//     return "Sita has scored Grade "+obj.grade+" with avg "+obj.avg
+// }).then(val=>{
+//     console.log(val)
+// }).catch(err=>{
+//     console.log(err)
+// })
