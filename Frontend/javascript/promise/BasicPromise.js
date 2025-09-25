@@ -630,8 +630,10 @@
 
 
 
-// let promise = new Promise(resolve=>{
-//     resolve({ name: "Sita", scores: [80, 60, 90, 100] })
+// let promise = new Promise((resolve,reject)=>{
+//     let arr = { name: "Sita", scores: [80, 60, 90, 100] }
+//     if((arr.scores).length===0) reject("The score array is empty")
+//     else resolve(arr)
 // })
 // promise.then(obj=>{
 //     let total = 0
@@ -649,4 +651,6 @@
 //     return "Sita has scored Grade "+obj.grade+" with avg "+obj.avg
 // }).then(val=>{
 //     console.log(val)
+// }).catch(err=>{
+//     console.log(err)
 // })
