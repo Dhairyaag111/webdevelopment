@@ -682,3 +682,23 @@
 // }).catch(err=>{
 //     console.log(err)
 // })
+
+
+
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
+//     let a = Math.floor((Math.random()*41)+10)
+//     resolve(a)
+// })
+// promise.then(val1=>{
+//     console.log(val1)
+//     return val1*val1
+// }).then(val2=>{
+//     return Math.sqrt(val2)
+// }).then(val3=>{console.log((val3.toString()).includes(2)? "Lucky Number":"Try Again")
+// })
