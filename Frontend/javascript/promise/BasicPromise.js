@@ -692,6 +692,26 @@
 
 
 // let promise = new Promise(resolve=>{
+//     resolve(["Giraffe","Elephant","Cat","Dog","Lion"])
+// })
+// promise.then(val1=>{
+//    return val1.filter(a=> a.length>3)  
+// }).then(val2=>{
+//     return val2.map(a=> a.toLowerCase())
+//  }).then(val3=>{
+//      return val3.sort()
+//  }).then(val4=>{
+//      console.log( val4.join(","))
+//  })
+
+
+
+
+
+
+
+
+// let promise = new Promise(resolve=>{
 //     let a = Math.floor((Math.random()*41)+10)
 //     resolve(a)
 // })
@@ -702,3 +722,80 @@
 //     return Math.sqrt(val2)
 // }).then(val3=>{console.log((val3.toString()).includes(2)? "Lucky Number":"Try Again")
 // })
+
+
+
+
+
+
+
+// Q3. Student Rank Finder
+// A promise resolves with:
+// [{ name: "Aayush", marks: 90 },
+//  { name: "Sita", marks: 85 },
+//  { name: "Gopal", marks: 92 },
+//  { name: "Maya", marks: 70 }]
+// 1st .then: Sort students by marks (highest → lowest).
+// 2nd .then: Add a rank field (1st, 2nd, 3rd, …).
+// 3rd .then: Map into strings like "Rank 1: Gopal (92)".
+// 4th .then: Join into final leaderboard string.
+
+
+
+
+
+
+
+// Q4. Async Delay Puzzle
+// A promise resolves with "Start".
+// 1st .then: After 1 second, add " → Step1".
+// 2nd .then: After 2 seconds, add " → Step2".
+// 3rd .then: After 3 seconds, add " → Step3".
+// Final result should print with delays:
+// Start → Step1 → Step2 → Step3.
+
+
+
+// Q4. Async Delay Puzzle
+// A promise resolves with "Start".
+// 1st .then: After 1 second, add " → Step1".
+// 2nd .then: After 2 seconds, add " → Step2".
+// 3rd .then: After 3 seconds, add " → Step3".
+// Final result should print with delays:
+// Start → Step1 → Step2 → Step3.
+
+
+
+
+
+
+
+// Q5. Shopping Discount Challenge
+// A promise resolves with:
+// [{ name: "Shoes", price: 2000 },
+//  { name: "Shirt", price: 1200 },
+//  { name: "Cap", price: 500 }]
+// 1st .then: Add property discountPrice (20% off each item).
+// 2nd .then: Filter items with discountPrice > 1000.
+// 3rd .then: Extract only names.
+// 4th .then: If no item left, throw error "No expensive items!".
+// .catch: Handle the error.
+
+
+
+
+
+
+
+
+
+
+// Q6. Hidden Message Game
+// A promise resolves with the string "PROGRAMMING".
+// 1st .then: Convert to lowercase.
+// 2nd .then: Split into letters.
+// 3rd .then: Keep only unique letters.
+// 4th .then: Sort alphabetically.
+// 5th .then: Join into a hidden message string.
+
+
