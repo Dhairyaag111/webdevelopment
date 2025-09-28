@@ -729,7 +729,7 @@
 
 
 
-// Q3. Student Rank Finder
+// Student Rank Finder
 // A promise resolves with:
 // [{ name: "Aayush", marks: 90 },
 //  { name: "Sita", marks: 85 },
@@ -746,7 +746,7 @@
 
 
 
-// Q4. Async Delay Puzzle
+// Async Delay Puzzle
 // A promise resolves with "Start".
 // 1st .then: After 1 second, add " → Step1".
 // 2nd .then: After 2 seconds, add " → Step2".
@@ -756,13 +756,24 @@
 
 
 
-// Q4. Async Delay Puzzle
-// A promise resolves with "Start".
-// 1st .then: After 1 second, add " → Step1".
-// 2nd .then: After 2 seconds, add " → Step2".
-// 3rd .then: After 3 seconds, add " → Step3".
-// Final result should print with delays:
-// Start → Step1 → Step2 → Step3.
+// let promise = new Promise(resolve=>{
+//     resolve("Start")
+// })
+// promise.then(val1=>{
+//     console.log(val1)
+//     setTimeout(()=>{
+//         console.log  ("→  Step1")
+//     },1000)
+// }).then(val2=>{
+//     setTimeout(()=>{
+//         console.log ("→  Step2"  )  
+//     },2000)
+// }).then(val3=>{
+//     setTimeout(()=>{
+//        console.log ("→  Step3")
+//     },3000)
+// })
+
 
 
 
@@ -775,11 +786,40 @@
 // [{ name: "Shoes", price: 2000 },
 //  { name: "Shirt", price: 1200 },
 //  { name: "Cap", price: 500 }]
-// 1st .then: Add property discountPrice (20% off each item).
+// 1st .then: Add property discountPrice (50% off each item).
 // 2nd .then: Filter items with discountPrice > 1000.
 // 3rd .then: Extract only names.
 // 4th .then: If no item left, throw error "No expensive items!".
+
+
+
 // .catch: Handle the error.
+// let promise = new Promise(resolve=>{
+//     resolve(
+//         [{ name: "Shoes", price: 2000 },
+//  { name: "Shirt", price: 1200 },
+//  { name: "Cap", price: 500 }, {name : "Belt", price : 5000}]
+//         )
+// })
+// promise.then(arr=>{
+//    arr.map(a=>{
+//        a.discount = a.price*0.5
+//        return a
+//    })
+//     return arr
+// }).then(arr=>{
+//      let newObject = arr.filter(obj => {
+//          return obj.discount > 1000
+//      })
+//      return newObject
+// }).then(arr => {
+//     arr.map(c=> {
+//         console.log (c.name)
+//     })
+//     if(arr.length===0) throw" no expensive items"
+// }).catch(err=>{
+//         console.log(err)
+// })
 
 
 
@@ -790,12 +830,28 @@
 
 
 
-// Q6. Hidden Message Game
-// A promise resolves with the string "PROGRAMMING".
-// 1st .then: Convert to lowercase.
-// 2nd .then: Split into letters.
-// 3rd .then: Keep only unique letters.
-// 4th .then: Sort alphabetically.
-// 5th .then: Join into a hidden message string.
+ // Hidden Message Game 
+ // A promise resolves with the string "PROGRAMMING". 
+ // 1st .then: Convert to lowercase. 
+ // 2nd .then: Split into letters. 
+ // 3rd .then: Keep only unique letters. 
+ // 4th .then: Sort alphabetically. 
+ // 5th .then: Join into a hidden message string.
 
 
+
+// let promise = new Promise(resolve=>{
+//     resolve("PROGRAMMING")
+// })
+// promise.then(val1=>{
+//         return val1.toLowerCase()
+// }).then(val2=>{
+//     return val2.split("")
+// }).then(val3=> {
+//    return  [...new Set(val3)]
+// }).then(val =>{
+//     return val.sort()
+// })
+// .then(val5=>{
+//     console.log(val5.join(""))
+// })
