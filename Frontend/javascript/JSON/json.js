@@ -31,3 +31,40 @@
 // let data3 = JSON.stringify(data2)
 // console.log(data3)
 // console.log(typeof(data3))
+
+
+
+
+
+// let Json=`[{
+//     "name":"Sahil",
+//     "lastName":"Agrwal",
+//     "grade":10,
+//     "favouriteNumber":[10,14,18,22],
+//     "address":{
+//         "country":"Nepal",
+//         "city":"Birtamode"
+//     }
+//     },
+//    {
+//    "name": "Nayan Pathak",
+//    "address" : "Birtamode"
+//    },
+//     {
+//     "name": "Dhiarya Agrawal",
+//     "address" : "India"
+//     },
+//     {
+//     "name": "SahiL Agrawal",
+//     "address" : "Illam"
+//     },
+//     {
+//     "name": "Sita Thapa",
+//     "address" : "Kathmandu"
+//     }]`
+// console.log(typeof(Json))
+// let newJson=JSON.parse(Json)
+// console.log(typeof(newJson))
+// console.log(newJson)
+// console.log(newJson[0].address)
+// console.log(newJson[2].name)
