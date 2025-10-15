@@ -56,49 +56,83 @@
 
 
 
-fetch("https://www.apicountries.com/countries")
-.then(a=>{
-    return a.json()
-}).then(b=>{
-     console.log(b[156])
-     console.log("The name of the country is "+(b[156].name))
-     console.log("The top level domain of the country is "+(b[156].topLevelDomain))
-     console.log("The alpha 2 code of the country is "+(b[156].alpha2Code))
-     console.log("The alpha 2 code of the country is "+(b[156].alpha3Code))
-     console.log("The calling codes of the country is "+(b[156].callingCodes))
-     console.log("The capital of the country is "+(b[156].capital))
-     console.log("The alt spellings of the country is "+(b[156].altSpellings))
-     console.log("The subregion of the country is "+(b[156].subregion))
-     console.log("The region of the country is "+(b[156].region))
-     console.log("The population of country is "+(b[156].population))
-     console.log("The population of country is "+(b[156].population))
-     console.log("The latitude of country is "+(b[156].latlng[0])+" and the longitude of country is "+(b[156].latlng[1]))
-     console.log("The demonym of country is "+(b[156].demonym))
-     console.log("The area of country is "+(b[156].area))
-     console.log("The gini of country is "+(b[156].gini))
-     console.log("The timezones of country is "+(b[156].timezones))
-     console.log("The borders of country is "+(b[156].borders.join(" and ")))
-     console.log("The native name of country is "+(b[156].nativeName))
-     console.log("The numeric code of country is "+(b[156].numericCode))
-     console.log("The currencies code of country is "+(b[156].currencies[0].code))
-     console.log("The currencies name of country is "+(b[156].currencies[0].name))
-     console.log("The currencies symbol of country is "+(b[156].currencies[0].symbol))
-     console.log("The iso639_1 language of country is "+(b[156].languages[0].iso639_1))
-     console.log("The iso639_2 language of country is "+(b[156].languages[0].iso639_2))
-     console.log("The language name of country is "+(b[156].languages[0].name))
-     console.log("The language native name of country is "+(b[156].languages[0].nativeName))
-     console.log("The br translations of country is "+(b[156].languages[0].br))
-     console.log("The pt translations of country is "+(b[156].translations.pt))
-     console.log("The nl translations of country is "+(b[156].translations.nl))
-     console.log("The hr translations of country is "+(b[156].translations.hr))
-     console.log("The fa translations of country is "+(b[156].translations.fa))
-     console.log("The de translations of country is "+(b[156].translations.de))
-     console.log("The es translations of country is "+(b[156].translations.es))
-     console.log("The fr translations of country is "+(b[156].translations.fr))
-     console.log("The ja translations of country is "+(b[156].translations.ja))
-     console.log("The it translations of country is "+(b[156].translations.it))
-     console.log("The hu translations of country is "+(b[156].translations.hu))
-     console.log("The regional blocs acronym of country is "+(b[156].regionalBlocs[0].acronym))
-     console.log("The cioc of country is "+(b[156].cioc))
-     console.log(b[156].independent? "The country is independent":"The country is not independent")
-})
+// fetch("https://www.apicountries.com/countries")
+// .then(a=>{
+//     return a.json()
+// }).then(b=>{
+//      console.log(b[156])
+//      console.log("The name of the country is "+(b[156].name))
+//      console.log("The top level domain of the country is "+(b[156].topLevelDomain))
+//      console.log("The alpha 2 code of the country is "+(b[156].alpha2Code))
+//      console.log("The alpha 2 code of the country is "+(b[156].alpha3Code))
+//      console.log("The calling codes of the country is "+(b[156].callingCodes))
+//      console.log("The capital of the country is "+(b[156].capital))
+//      console.log("The alt spellings of the country is "+(b[156].altSpellings))
+//      console.log("The subregion of the country is "+(b[156].subregion))
+//      console.log("The region of the country is "+(b[156].region))
+//      console.log("The population of country is "+(b[156].population))
+//      console.log("The population of country is "+(b[156].population))
+//      console.log("The latitude of country is "+(b[156].latlng[0])+" and the longitude of country is "+(b[156].latlng[1]))
+//      console.log("The demonym of country is "+(b[156].demonym))
+//      console.log("The area of country is "+(b[156].area))
+//      console.log("The gini of country is "+(b[156].gini))
+//      console.log("The timezones of country is "+(b[156].timezones))
+//      console.log("The borders of country is "+(b[156].borders.join(" and ")))
+//      console.log("The native name of country is "+(b[156].nativeName))
+//      console.log("The numeric code of country is "+(b[156].numericCode))
+//      console.log("The currencies code of country is "+(b[156].currencies[0].code))
+//      console.log("The currencies name of country is "+(b[156].currencies[0].name))
+//      console.log("The currencies symbol of country is "+(b[156].currencies[0].symbol))
+//      console.log("The iso639_1 language of country is "+(b[156].languages[0].iso639_1))
+//      console.log("The iso639_2 language of country is "+(b[156].languages[0].iso639_2))
+//      console.log("The language name of country is "+(b[156].languages[0].name))
+//      console.log("The language native name of country is "+(b[156].languages[0].nativeName))
+//      console.log("The br translations of country is "+(b[156].languages[0].br))
+//      console.log("The pt translations of country is "+(b[156].translations.pt))
+//      console.log("The nl translations of country is "+(b[156].translations.nl))
+//      console.log("The hr translations of country is "+(b[156].translations.hr))
+//      console.log("The fa translations of country is "+(b[156].translations.fa))
+//      console.log("The de translations of country is "+(b[156].translations.de))
+//      console.log("The es translations of country is "+(b[156].translations.es))
+//      console.log("The fr translations of country is "+(b[156].translations.fr))
+//      console.log("The ja translations of country is "+(b[156].translations.ja))
+//      console.log("The it translations of country is "+(b[156].translations.it))
+//      console.log("The hu translations of country is "+(b[156].translations.hu))
+//      console.log("The regional blocs acronym of country is "+(b[156].regionalBlocs[0].acronym))
+//      console.log("The cioc of country is "+(b[156].cioc))
+//      console.log(b[156].independent? "The country is independent":"The country is not independent")
+// })
+
+
+
+
+
+
+
+
+// fetch("https://68ef93bdb06cc802829df689.mockapi.io/employee")
+// .then(a=>{
+//     return a.json()
+// }).then(b=>{
+//     console.log(b)
+// })
+
+
+
+// fetch("https://68ef93bdb06cc802829df689.mockapi.io/employee",{
+//     method: 'POST',
+//     headers: {'content-type':'application/json'},
+//     body: JSON.stringify({
+//     createdAt: '2082-06-26 Wednesday',
+//     name: 'Eric Rohan sahil',
+//     number: '9999999999',
+//     id: '16'
+//     })
+// }).then(a=>{
+//     a.json()
+//     return fetch("https://68ef93bdb06cc802829df689.mockapi.io/employee")
+// }).then(b=>{
+//     return b.json()
+// }).then(c=>{
+//     console.log(c)
+// })
