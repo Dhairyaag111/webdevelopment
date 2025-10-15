@@ -136,3 +136,15 @@
 // }).then(c=>{
 //     console.log(c)
 // })
+
+
+
+
+// const prompt = require("prompt-sync")()
+// let id = prompt("Enter id: ")
+// fetch("https://68ef93bdb06cc802829df689.mockapi.io/employee")
+// .then(a=>{
+//     return a.json()
+// }).then(b=>{
+//     console.log(b[id-1])
+// })
