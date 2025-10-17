@@ -209,3 +209,39 @@
 //     return c.json()
 // }).then(data => console.log(data))
 
+
+
+
+
+const prompt = require("prompt-sync")()
+// let count = Number(prompt("Enter the number of facts you want: "))
+// let language = prompt("Enter the language you want: ")
+// let id = Number(prompt("Enter the id of the fact: "))
+// fetch("https://meowfacts.herokuapp.com/?count="+count)
+// .then(a=>{
+//     return a.json()
+// }).then(b=>{
+//     console.log(b)
+//     return fetch("https://meowfacts.herokuapp.com/?id="+id+"/")
+// }).then(c=>{
+//     return c.json()
+// }).then(d=>{
+//     console.log(d)
+//     return fetch("https://meowfacts.herokuapp.com/?lang="+language)
+// }).then(e=>{
+//     return e.json()
+// }).then(f=>{
+//     console.log(f)
+// })
+
+console.log("Valid languages : eng, cze, ces, ger, ben, esp, rus, por, fin, ukr, urd, ita, zho, kor")
+let lang = prompt("Enter the language : ")
+let count = Number(prompt("Enter hwo many facts do you want ? : "))
+fetch("https://meowfacts.herokuapp.com/?lang=" + lang + "&&count=" + count)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        let id = Number(prompt("Enter the id of the facts you want to know : "))
+        return fetch("https://meowfacts.herokuapp.com/?lang=" + lang + "&&id=" + id)
+    }).then(sec => sec.json())
+    .then(data => console.log(data))
