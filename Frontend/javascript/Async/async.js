@@ -237,6 +237,7 @@ const prompt = require("prompt-sync")()
 
 
 
+
 // console.log("Valid languages : eng, cze, ces, ger, ben, esp, rus, por, fin, ukr, urd, ita, zho, kor")
 // let lang = prompt("Enter the language : ")
 // let count = Number(prompt("Enter hwo many facts do you want ? : "))
