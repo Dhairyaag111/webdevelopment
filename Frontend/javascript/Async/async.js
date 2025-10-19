@@ -213,7 +213,7 @@
 
 
 
-const prompt = require("prompt-sync")()
+// const prompt = require("prompt-sync")()
 // let count = Number(prompt("Enter the number of facts you want: "))
 // let language = prompt("Enter the language you want: ")
 // let id = Number(prompt("Enter the id of the fact: "))
@@ -237,7 +237,7 @@ const prompt = require("prompt-sync")()
 
 
 
-
+// const prompt = require("prompt-sync")()
 // console.log("Valid languages : eng, cze, ces, ger, ben, esp, rus, por, fin, ukr, urd, ita, zho, kor")
 // let lang = prompt("Enter the language : ")
 // let count = Number(prompt("Enter hwo many facts do you want ? : "))
@@ -249,3 +249,17 @@ const prompt = require("prompt-sync")()
 //         return fetch("https://meowfacts.herokuapp.com/?lang=" + lang + "&&id=" + id)
 //     }).then(sec => sec.json())
 //     .then(data => console.log(data))
+
+
+
+
+
+
+const prompt = require("prompt-sync")()
+let currency = prompt("Enter the currency name: ")
+fetch("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/"+currency+".json")
+.then(a=>{
+    return a.json()
+}).then(b=>{
+    console.log(b)
+})
