@@ -468,3 +468,23 @@
 //         b=sum
 // console.log(sum)
 // }
+
+
+
+
+
+
+
+// let u = Number(prompt("Enter a number: "))
+// let counter = 0
+// for(i=1 ; i<=u; i++){
+//     if(u%i===0){
+//         counter++
+//     }
+// }
+// if(counter===2){
+//     console.log("Its a prime number")
+// }
+// else{
+//     console.log("Its not a prime number")
+// }
