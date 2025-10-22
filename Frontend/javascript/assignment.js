@@ -452,3 +452,19 @@
 // // console.log("the value of 'd'is "+d)
 // // console.log("the value of 'e'is "+e)
 // // console.log("the value of 'f'is "+f)
+
+
+
+
+
+
+
+// let number =  Number(prompt("Enter a number upto where you want fibonacci series: "))
+// let a = 0
+// let b = 1
+// for(i=1 ; i<=(number); i++){
+//     let sum = a+b
+//         a=b
+//         b=sum
+// console.log(sum)
+// }
