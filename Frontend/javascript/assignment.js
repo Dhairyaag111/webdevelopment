@@ -488,3 +488,16 @@
 // else{
 //     console.log("Its not a prime number")
 // }
+
+
+
+
+
+
+// let u = Number(prompt("Enter a 3 digit number to check the gretest digit: "))
+// let third = u%10
+// let second = (u%100)/10>>0
+// let first = u/100>>0
+// if(first>second && first>third) console.log("The greatest digit is "+first)
+// else if(second>first && second>third) console.log("The greatest digit is "+second)
+// else console.log("The greatest number is "+third)
