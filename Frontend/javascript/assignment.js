@@ -511,3 +511,14 @@
 //     if(i%3!=0) console.log(i)
 //     if(i%3===0) console.log("x")
 // }
+
+
+
+
+
+// let u = Number(prompt("Enter a 4 digit number: "))
+// let first = u/1000>>0
+// let second = (u%1000)/100>>0
+// let third = (u%100)/10>>0
+// let fourth = u%10>>0
+// console.log(`${fourth}${second}${third}${first}`)
