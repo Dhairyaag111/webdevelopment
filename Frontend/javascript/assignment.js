@@ -522,3 +522,16 @@
 // let third = (u%100)/10>>0
 // let fourth = u%10>>0
 // console.log(`${fourth}${second}${third}${first}`)
+
+
+
+
+
+
+
+// let u = Number(prompt("Enter a 5 digit number: "))
+// let first = u/10000>>0
+// let second = (u%10000)/1000>>0
+// let third = (u%1000)/100>>0
+// let fourth = (u%100)/10>>0
+// console.log(`${fifth}${second}${third}${fourth}${first}`)
