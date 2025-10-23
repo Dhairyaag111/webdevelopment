@@ -501,3 +501,15 @@
 // if(first>second && first>third) console.log("The greatest digit is "+first)
 // else if(second>first && second>third) console.log("The greatest digit is "+second)
 // else console.log("The greatest number is "+third)
+
+
+
+
+
+
+
+// for(i=1; i<=100; i++){
+//     if(i%3!=0){
+//         console.log(i)
+//     }
+// }
