@@ -552,3 +552,15 @@
 // let fifth = u%10
 // let decimal = first*2*2*2*2+second*2*2*2+third*2*2+fourth*2+fifth
 // console.log(decimal)
+
+
+
+
+
+
+// let array = [1,2,3,4,5,6,7,8,9,10]
+// let array2 = []
+// for(i=array.length-1; i>=0; i--){
+// array2.push(array[i]) 
+// }
+// console.log(array2)
