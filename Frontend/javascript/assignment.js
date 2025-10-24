@@ -544,10 +544,3 @@
 
 
 
-// let u = Number(prompt("Enter a 4 digit binary numbernumber: "))
-// let first = u/1000>>0
-// let second = (u%1000)/100>>0
-// let third = (u%100)/10>>0
-// let fourth = u%10>>0
-// let decimal = first*2+second*2+third*2+fourth*2
-// console.log("The decimal value is "+decimal)
