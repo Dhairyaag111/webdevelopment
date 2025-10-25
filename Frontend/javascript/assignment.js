@@ -544,14 +544,6 @@
 
 
 
-// let u = Number(prompt("Enter a 5 digit binary numbernumber: "))
-// let first = u/10000>>0
-// let second = (u%10000)/1000>>0
-// let third = (u%1000)/100>>0
-// let fourth = (u%100)/10>>0
-// let fifth = u%10
-// let decimal = first*2*2*2*2+second*2*2*2+third*2*2+fourth*2+fifth
-// console.log(decimal)
 
 
 
