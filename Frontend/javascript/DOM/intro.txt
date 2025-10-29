@@ -1,0 +1,29 @@
+DOM stands for document object model 
+It is a programming interface that allows js to interact with css and html - so that scripts can read , modify and contro the structure style and content of webpage
+Think of i tlike this: HTML builds the house, CSS decorates the house and JS controlls the lights, doors and everything inside
+So, When a webpage is loaded and the browser converts html into tree like structure and thats the DOM tree 
+
+How browser creates DOM?
+i.   The browser download your html file 
+ii.  It parses the html from top to bottom 
+iii. Every tag becomes an object(node) in memory
+iv.  These node are linked together to forming a DOM tree
+v.   JS can then use the document object to access and modify these nodes
+  
+
+DOM tree visualization- Each HTML element becomes a node in a tree:
+ROOT NODE: <html> </html>
+BRANCH NODE: <head> </head>  <body> /body>  <div> </div>   etc.
+LEAF NODE: text content inside tags
+ 
+
+Window, Document.navigator
+When a webpage loads, the browser creates several global object 
+i. Window : It represents the browser window itself. 
+   It is the top most object in the hierarchy. 
+   It content everything including the document.
+
+ii. Document : It represent the webpage(html document) currently loaded in the window
+
+iii. Navigator : Represents the browser being used.
+     Contents information about the browser name, version, language, etc
