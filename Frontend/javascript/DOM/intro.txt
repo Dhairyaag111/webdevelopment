@@ -12,18 +12,20 @@ v.   JS can then use the document object to access and modify these nodes
   
 
 DOM tree visualization- Each HTML element becomes a node in a tree:
-ROOT NODE: <html> </html>
-BRANCH NODE: <head> </head>  <body> /body>  <div> </div>   etc.
+ROOT NODE:   <html> </html>
+BRANCH NODE: <head> </head>  
+             <body> </body>  
+             <div> </div>  etc.           
 LEAF NODE: text content inside tags
  
 
 Window, Document.navigator
 When a webpage loads, the browser creates several global object 
-i. Window : It represents the browser window itself. 
-   It is the top most object in the hierarchy. 
-   It content everything including the document.
+i.   Window : It represents the browser window itself. 
+     It is the top most object in the hierarchy. 
+     It content everything including the document.
 
-ii. Document : It represent the webpage(html document) currently loaded in the window
+ii.  Document : It represent the webpage(html document) currently loaded in the window
 
 iii. Navigator : Represents the browser being used.
      Contents information about the browser name, version, language, etc
