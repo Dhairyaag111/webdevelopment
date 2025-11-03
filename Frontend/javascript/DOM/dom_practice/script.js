@@ -34,3 +34,29 @@
 
 
 
+// Query Selector:-
+// It can access all the matched element in the form of css by defining the parent and child element. It give the output in single form.
+
+// let element = document.querySelector('.second .h')
+// console.log(element)
+
+// let element = document.querySelector('.second .h')
+// console.log(element.textContent)
+
+
+
+// Query Selector All:-
+/// It can access all the matched element in the form of css by defining the parent and child element. It give the output in array form.
+
+// let element = document.querySelectorAll('.second p')
+// console.log(element)
+
+// let element = document.querySelectorAll('.second p')
+// console.log(element[1].textContent)
+
+
+
+
+
+
+

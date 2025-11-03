@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="first">Increase</button>
+    <button class="answer">0</button>
+    <button class="second">Decrease</button>
+    <script>
+        let value = 0
+        document.querySelector('.first').onclick=()=>{
+            value++
+            document.querySelector('.answer').innerText=value
+        }
+        document.querySelector('.second').onclick=()=>{
+            value--
+            document.querySelector('.answer').innerText=value
+        }
+        
+    </script>
+</body>
+</html>
