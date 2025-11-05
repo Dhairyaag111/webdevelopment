@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="first">Enter first number</label>
+    <input type="number" class="first">
+    <br><br>
+    <label for="second">Enter second number</label>
+    <input type="number" class="second">
+    <br><br>
+    <button class="button">Sum</button>
+    <br><br>
+    <label for="third">The sum is</label>
+    <input type="number" readonly class="third">
+    <script>
+        document.querySelector('.button').onclick = () => {
+        let f = Number(document.querySelector('.first').value)
+        let s =  Number(document.querySelector('.second').value)
+            document.querySelector('.third').value = f + s
+        }
+    </script>
+</body>
+
+</html>
