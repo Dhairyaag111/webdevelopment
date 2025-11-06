@@ -14,15 +14,27 @@
     <label for="second">Enter second number</label>
     <input type="number" class="second">
     <br><br>
-    <button class="button">Sum</button>
+    <button class="button">Get results</button>
     <br><br>
     <label for="third">The sum is</label>
     <input type="number" readonly class="third">
+    <br><br>
+    <label for="fourth">The difference is</label>
+    <input type="number" readonly class="fourth">
+    <br><br>
+    <label for="fifth">The product is</label>
+    <input type="number" readonly class="fifth">
+    <br><br>
+    <label for="sixth">The quotient is</label>
+    <input type="number" readonly class="sixth">
     <script>
         document.querySelector('.button').onclick = () => {
-        let f = Number(document.querySelector('.first').value)
-        let s =  Number(document.querySelector('.second').value)
+            let f = Number(document.querySelector('.first').value)
+            let s = Number(document.querySelector('.second').value)
             document.querySelector('.third').value = f + s
+            document.querySelector('.fourth').value = f - s
+            document.querySelector('.fifth').value = f * s
+            document.querySelector('.sixth').value = f / s
         }
     </script>
 </body>

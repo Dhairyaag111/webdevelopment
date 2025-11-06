@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .zero {
+            height: 70px;
+            width: 144px;
+        }
+
+        .plus {
+            height: 150px;
+            width: 70px;
+            position: relative;
+            right: 83px;
+            top: 96px;
+        }
+
+        button {
+            height: 70px;
+            width: 70px;
+            font-size: 30px;
+            border-radius: 10px;
+            border: 1px solid grey;
+        }
+
+        .main {
+            flex-wrap: wrap;
+            height: 520px;
+            width: 293px;
+            padding: 5px 10px 5px 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid black;
+            margin-top: 60px;
+        }
+
+        input {
+            padding-top: 70px;
+            font-size: 24px;
+            text-align: right;
+            border: 1 px solid grey;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" readonly>
+        <div class="first">
+            <button class="clear">C</button>
+            <button class="backspace">⌫</button>
+            <button class="divide">/</button>
+            <button class="multiply">*</button>
+        </div>
+        <div class="second">
+            <button class="seven">7</button>
+            <button class="eight">8</button>
+            <button class="nine">9</button>
+            <button class="minus">-</button>
+        </div>
+        <div class="third">
+            <button class="four">4</button>
+            <button class="five">5</button>
+            <button class="six">6</button>
+        </div>
+        <div class="fourth">
+            <button class="one">1</button>
+            <button class="two">2</button>
+            <button class="three">3</button>
+        </div>
+        <div class="fifth">
+            <button class="zero">0</button>
+            <button class="dot">.</button>
+            <button class="equal">=</button>
+        </div>
+        <button class="plus">+</button>
+    </div>
+    <script>
+        let currentValue = ""
+        document.querySelector('.seven').onclick = () => {
+            currentValue = currentValue + 7
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector(".eight").onclick = () => {
+            currentValue = currentValue + 8
+            document.querySelector("input").value = currentValue
+        }
+        document.querySelector('.nine').onclick = () => {
+            currentValue = currentValue + 9
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.four').onclick = () => {
+            currentValue = currentValue + 4
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.five').onclick = () => {
+            currentValue = currentValue + 5
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.six').onclick = () => {
+            currentValue = currentValue + 6
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.one').onclick = () => {
+            currentValue = currentValue + 1
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.two').onclick = () => {
+            currentValue = currentValue + 2
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.three').onclick = () => {
+            currentValue = currentValue + 3
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.zero').onclick = () => {
+            currentValue = currentValue + 0
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.dot').onclick = () => {
+            currentValue = currentValue + "."
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.clear').onclick = () => {
+            currentValue = ""
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.divide').onclick = () => {
+            currentValue = currentValue + "/"
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.multiply').onclick = () => {
+            currentValue = currentValue + "*"
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.minus').onclick = () => {
+            currentValue = currentValue + "-"
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.plus').onclick = () => {
+            currentValue = currentValue + "+"
+            document.querySelector('input').value = currentValue
+        }
+        document.querySelector('.equal').onclick = () => {
+            let result = eval(currentValue)
+            currentValue = result
+            document.querySelector('input').value = currentValue
+            currentValue = ""
+        }
+        document.querySelector('.backspace').onclick = () => {
+            currentValue = currentValue.slice(0,-1)
+            document.querySelector('input').value = currentValue
+        }
+    </script>
+</body>
+
+</html>
