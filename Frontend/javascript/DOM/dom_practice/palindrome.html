@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" class="first" placeholder="Enter a number">
+    <button class="output">Output</button>
+    <input type="text" class="second" readonly style="width: 180px;">
+    <script>
+        document.querySelector('.output').onclick = () => {
+            let u = Number(document.querySelector('.first').value)
+            if (u == ((u%10)+""+((u%100)/10>>0)+""+(u/100>>0)))  document.querySelector('.second').value = 'The number is palindrone'
+            else document.querySelector('.second').value = 'The number is not palindrone'
+        }
+    </script>
+</body>
+
+</html>
