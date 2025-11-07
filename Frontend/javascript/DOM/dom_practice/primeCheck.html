@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body >
+
+<body>
     <input type="number" placeholder="Enter a number" class="one">
     <button class="output">Output</button>
     <input type="text" readonly class="two">
@@ -13,12 +15,13 @@
         document.querySelector(".output").onclick = () => {
             let one = Number(document.querySelector('.one').value)
             let counter = 0
-            for(i=1; i<=one; i++){
-                if(one%i==0) counter++
-                if (counter===2) document.querySelector('.two').value="Its a prime number"
-                else document.querySelector('.two').value="Its not a prime number"
+            for (i = 1; i <= one; i++) {
+                if (one % i == 0) counter++
+                if (counter === 2) document.querySelector('.two').value = "Its a prime number"
+                else document.querySelector('.two').value = "Its not a prime number"
             }
         }
     </script>
 </body>
+
 </html>
