@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button">Click Me</button>
+    <input type="text" placeholder="Enter Width" class="one">
+    <input type="text" placeholder="Enter Height" class="two">
+    <input type="text" placeholder="Enter the color" class="three">
+    <div class="main"></div>
+    <script>
+        document.querySelector('.button').onclick = () => {
+            let one = Number(document.querySelector('.one').value)
+            let two = Number(document.querySelector('.two').value)
+            let three = document.querySelector('.three').value
+            document.querySelector('.main').innerHTML = "<div style='width:"+one+"px; height:"+two+"px; background-color:"+three+";'></div>"
+        }
+        </script>
+</body>
+</html>
