@@ -2,31 +2,82 @@
 <html lang="en">
 
 <head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        button {
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 6px 12px 6px 6px;
+        }
+
+        button:hover {
+            background-color: red;
+            border: transparent;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 125px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px dotted black;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <input type="text" placeholder="Enter Width" class="one" style="width: 180px;">
-    <br><br>
-    <input type="text" placeholder="Enter Height" class="two" style="width: 180px;">
-    <br><br>
-    <input type="text" placeholder="Enter the color" class="three" style="width: 180px;">
-    <br><br>
-    <input type="text" placeholder="Enter how many box you want" class="four" style="width: 180px;">
-    <br><br>
-    <button class="button">Click Me</button>
+    <div class="container">
+        <input type="text" placeholder="Enter Width" class="one" style="width: 180px;">
+        <br><br>
+        <input type="text" placeholder="Enter Height" class="two" style="width: 180px;">
+        <br><br>
+        <input type="text" placeholder="Enter the color" class="three" style="width: 180px;">
+        <br><br>
+        <input type="text" placeholder="Enter how many box you want" class="four" style="width: 180px;">
+        <br><br>
+        <button class="button">Click Me</button>
+    </div>
     <br><br>
     <div class="main"></div>
+    <input type="text" class="last" readonly style="border: transparent; width: 200px;">
     <script>
         document.querySelector('.button').onclick = () => {
             let one = Number(document.querySelector('.one').value)
             let two = Number(document.querySelector('.two').value)
             let three = document.querySelector('.three').value
             let val = Number(document.querySelector('.four').value)
-            for (let i = 0; i < val; i++) {
-                document.querySelector('.main').innerHTML += `<div style='width:${one}px; height:${two}px; background-color:${three}; margin:100px;'></div>`
+            if (val <= 10 && val > 0) {
+                for (let i = 0; i < val; i++) {
+                    document.querySelector('.main').innerHTML += `<div style='width:${one}px; height:${two}px; background-color:${three}; margin:100px;'></div>`
+                }
+            }
+            else if (val > 10) {
+                document.querySelector('.last').value = "The maximun amount of box is 10"
             }
         }
     </script>
