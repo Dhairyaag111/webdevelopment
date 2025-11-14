@@ -154,19 +154,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 // // fetch('https://68f0e48f0b966ad5003497eb.mockapi.io/employee')
 // // .then(res => res.json())
 // // .then(data => console.log(data))
+
+
 
 
 

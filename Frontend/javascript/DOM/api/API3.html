@@ -45,7 +45,7 @@
         }
         .output{
             padding: 10px;
-            width: 300px;
+            width: 500px;
             height: 200px;
             margin-top: 40px;
             font-size: 20px;
@@ -61,16 +61,32 @@
     <div class="main">
         <input type="text" placeholder="Enter id" class="id1">
         <button>SEE</button>
+        <a href="API2.html"><button>Add Data</button></a>
     </div>
     <div class="output">
+        <p class="first"></p>
+        <p class="second"></p>
+        <p class="third"></p>
+        <p class="fourth"></p>
+    </div>
     <script>
-        let id = (document.querySelector('.id1').value)
         document.querySelector('button').onclick = () => {
-            fetch('https://6915cf83465a9144626dad69.mockapi.io/Test/'+id).then(a => {
+            let id = document.querySelector('.id1').value
+            console.log(id)
+            fetch('https://6917127ca7a34288a27f700b.mockapi.io/Test/'+id).then(a => {
                 return a.json()
             }).then(b=>{
-                document.querySelector('.output').innerText = b
+                if(!b['id']){
+                    document.querySelector('.output .first').innerHTML = "Sorry no data found"
+                }
+                else{
+                document.querySelector('.output .first').innerHTML = "createdAt : "+b['createdAt']
+                document.querySelector('.output .second').innerHTML = "name : "+b['name']
+                document.querySelector('.output .third').innerHTML = "number : "+b['number']
+                document.querySelector('.output .fourth').innerHTML = "id : "+b['id']
+            }
             })
+            
         }
     </script>
 </body>

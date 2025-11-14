@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        .main{
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -12,20 +18,24 @@
             border: 1px dotted black;
             padding: 20px;
             width: 20%;
-            margin-left: 500px;
+            margin-left: 520px;
             border-radius: 15px;
         }
-        input{
+
+        .main {
             width: 200px;
             padding: 10px;
             border: transparent;
             border-radius: 12px;
             background-color: rgb(0, 102, 255);
-        }
-        input::placeholder{
             color: white;
         }
-        button{
+
+        .main::placeholder {
+            color: white;
+        }
+
+        button {
             width: 150px;
             padding: 10px;
             border: transparent;
@@ -38,23 +48,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="main">
-        <input type="text" placeholder="Enter createdAt" class="one">
-        <input type="text" placeholder="Enter name" class="two">
-        <input type="text" placeholder="Enter number" class="three">
-        <input type="text" placeholder="Enter id" class="four">
-        <button>ADD</button>
+    <div class="container">
+        <input type="text" placeholder="Enter createdAt" class=" main one">
+        <input type="text" placeholder="Enter name" class=" main two">
+        <input type="text" placeholder="Enter number" class=" main three">
+        <input type="text" placeholder="Enter id" class=" main four">
+        <button class="first">ADD</button>
+        <a href="API3.html"><button class="second">See Data</button></a>
     </div>
+    <input type="text" class="last" readonly style="border: transparent; text-align: center; padding-top: 10px; font-size: 20px; font-weight: bold; font-family: sans-serif;">
     <script>
-        // fetch('https://6915cf83465a9144626dad69.mockapi.io/Test').then(a=>{
-        //     return a.json()
-        // }).then(b=>{
-        //     console.log(b)
-        // })
-        document.querySelector('button').onclick = () => {
-            
+        document.querySelector('.first').onclick = () => {
+                    fetch('https://6917127ca7a34288a27f700b.mockapi.io/Test', {
+            method: 'POST',
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+                createdAt: document.querySelector('.one').value,
+                name:  document.querySelector('.two').value,
+                number:  document.querySelector('.three').value,
+                id:  document.querySelector('.four').value
+            })
+        })
+        document.querySelector('.last').value = "Data added!"
         }
     </script>
 </body>
+
 </html>
