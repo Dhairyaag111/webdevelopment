@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head {
+            font-size: 60px;
+            font-family: cursive;
+            font-weight: 600;
+            margin-top: 80px;
+
+        }
+
+        button {
+            width: 200px;
+            padding: 15px;
+            border: transparent;
+            border-radius: 15px;
+            background-color: blue;
+            color: white;
+            font-size: 35px;
+        }
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        button:hover {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .output {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papaer Scissor</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="head">Let's play cricket game</h1>
+    </div>
+    <div class="button">
+        <button class="Rock">Rock</button>
+        <button class="Paper">Paper </button>
+        <button class="Scissor">Scissor</button>
+    </div>
+    <div class="output" style="width: 400px; height: 100px; font-family: cursive; margin-top: 50px;">
+        <p class="p"> </p>
+        <p class="p2"> </p>
+    </div>
+    <script>
+        document.querySelector('.Rock').onclick = () => {
+            let number = (Math.random() * 3) >> 0
+            let computer = ""
+            let u = 'Rock'
+            if (number === 0) computer = 'Paper'
+            else if (number === 1) computer = 'Scissor'
+            else computer = 'Rock'
+            if (computer === 'Rock') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Rock"
+                document.querySelector('.output .p2').innerText = "Its Draw😐"
+            }
+            else if (computer === 'Paper') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Paper"
+                document.querySelector('.output .p2').innerText = "You Losed☹️"
+            }
+            else if (computer === 'Scissor') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Scissor"
+                document.querySelector('.output .p2').innerText = "You Won🏆"
+            }
+        }
+        document.querySelector('.Paper').onclick = () => {
+            let number = (Math.random() * 3) >> 0
+            let computer = ""
+            let u = 'Paper'
+            if (number === 0) computer = 'Paper'
+            else if (number === 1) computer = 'Scissor'
+            else computer = 'Rock'
+            if (computer === 'Paper') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Paper"
+                document.querySelector('.output .p2').innerText = "Its Draw😐"
+            }
+            else if (computer === 'Scissor') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Scissor"
+                document.querySelector('.output .p2').innerText = "You Losed☹️"
+            }
+            else if (computer === 'Rock') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Rock"
+                document.querySelector('.output .p2').innerText = "You Won🏆"
+            }
+        }
+        document.querySelector('.Scissor').onclick = () => {
+            let number = (Math.random() * 3) >> 0
+            let computer = ""
+            let u = 'Scissor'
+            if (number === 0) computer = 'Paper'
+            else if (number === 1) computer = 'Scissor'
+            else computer = 'Rock'
+            if (computer === 'Scissor') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Scissor"
+                document.querySelector('.output .p2').innerText = "Its Draw😐"
+            }
+            else if (computer === 'Rock') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Rock"
+                document.querySelector('.output .p2').innerText = "You Losed☹️"
+            }
+            else if (computer === 'Paper') {
+                document.querySelector('.output .p').innerText = "Computer choosed : Paper"
+                document.querySelector('.output .p2').innerText = "You Won🏆"
+            }
+        }
+    </script>
+</body>
+
+</html>
