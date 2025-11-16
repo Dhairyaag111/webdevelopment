@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Countries Information</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="user">
+            <input type="text" placeholder="Enter the country name" class="name">
+            <input type="text" placeholder="Enter the currency of country" class="currency">
+            <input type="text" placeholder="Enter the language of country" class="language">
+            <input type="text" placeholder="Enter the capital of country" class="capital">
+        </div>
+        <div class="button">
+            <button>SEE INFORMATION</button>
+        </div>
+        <div class="output">
+            <p class="p1"></p>
+            <p class="p2"></p>
+            <p class="p3"></p>
+            <p class="p4"></p>
+        </div> 
+    </div>
+    <script>
+        document.querySelector('.button').onclick = () => {
+            let name1 = document.querySelector('.name').value
+            let currency1 = document.querySelector('.currency').value
+            let language1 = document.querySelector('.language').value
+            let capital1 = document.querySelector('.capital').value
+            fetch('https://restcountries.com/v3.1/name/'+name1).then(a=>{
+                return a.json()
+            }).then(b=>{
+                document.querySelector('.p1').innerText = JSON.stringify(b)
+            })
+        }
+    </script>
+</body>
+
+</html>
