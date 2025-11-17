@@ -23,7 +23,7 @@
             <p class="p2"></p>
             <p class="p3"></p>
             <p class="p4"></p>
-        </div> 
+        </div>
     </div>
     <script>
         document.querySelector('.button').onclick = () => {
@@ -31,9 +31,9 @@
             let currency1 = document.querySelector('.currency').value
             let language1 = document.querySelector('.language').value
             let capital1 = document.querySelector('.capital').value
-            fetch('https://restcountries.com/v3.1/name/'+name1).then(a=>{
+            fetch('https://restcountries.com/v3.1/name/' + name1).then(a => {
                 return a.json()
-            }).then(b=>{
+            }).then(b => {
                 document.querySelector('.p1').innerText = JSON.stringify(b)
             })
         }
