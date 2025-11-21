@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Switch Page</title>
+</head>
+<body>
+    <div class="main">
+        <input type="text" placeholder="In which colour you want to convert the background?">
+        <button>Click for colour change</button>
+    </div>
+    <script>
+        let u = document.querySelector('input').value
+        document.querySelector('button').onclick=()=>{
+            document.querySelector('body').innerHTML = '<body style="background-color:'+u+';"></body>'
+        }
+    </script>
+</body>
+</html>
