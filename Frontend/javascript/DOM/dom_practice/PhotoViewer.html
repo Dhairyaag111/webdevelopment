@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .click {
+            padding: 20px;
+            font-size: 40px;
+            background-color: rgb(13, 0, 255);
+            border-radius: 12px;
+            border: transparent;
+            color: white;
+            margin-top: 120px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Simple Photo</title>
+</head>
+
+<body>
+    <div class="main">
+        <button class="click">Click To View</button>
+        <img src="" alt="" height="200px" width="200px">
+    </div>
+    <script>
+        document.querySelector('.click').onclick = () => {
+            let ramdom = Math.random()
+            console.log((ramdom * 6) >> 0)
+            if(random===1){
+                document.querySelector('img').innerHTML = '<img src="/Frontend/img/20250911_1246_image.png" alt="not found">'
+            }
+            else if(random===2){
+                document.querySelector('img').innerHTML = '<img src="/Frontend/img/c4241014abef4ab599e92beb2b103e86.png" alt="not found">'
+            }
+            else if(random===3){
+                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img1.png" alt="not found">'
+            }
+            else if(random===4){
+                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img2.png" alt="not found">'
+            }
+            else if(random===5){
+                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img3.png" alt="not found">'
+            }
+        }
+    </script>
+</body>
+
+</html>
