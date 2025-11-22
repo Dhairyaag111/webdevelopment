@@ -6,14 +6,14 @@
     <title>Light Switch Page</title>
 </head>
 <body>
-    <div class="main">
+    <div class="main" style="height: 100%; width: 100%;">
         <input type="text" placeholder="In which colour you want to convert the background?">
         <button>Click for colour change</button>
     </div>
     <script>
         let u = document.querySelector('input').value
         document.querySelector('button').onclick=()=>{
-            document.querySelector('body').innerHTML = '<body style="background-color:'+u+';"></body>'
+            document.querySelector('body').innerHTML = '<div style="background-color:'+u+';"></div>'
         }
     </script>
 </body>

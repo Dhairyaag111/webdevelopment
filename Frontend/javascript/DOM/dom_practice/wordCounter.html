@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 220px;
+}
+label{
+    font-size: 30px;
+    font-family: cursive;
+}
+input{
+    padding-left: 5px ;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+input:hover{
+    background-color: black;
+    color: white;
+}
+button{
+font-size: 25px;
+padding: 12px;
+border-radius: 15px;
+border: transparent;
+background-color: rgb(13, 0, 255);
+color: white;
+}
+button:hover{
+    background-color: red;
+}
+p{
+    font-size: 30px;
+    font-weight: bond;
+    font-family: cursive;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word counter</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="second">
+            <label for="userInput" class="userInputLabel">Enter a word:- </label>
+    <input type="text" class="userInput">
+        </div>
+    <br>
+    <button>Enter to know number</button>
+    <br>
+    <p></p>
+    </div>
+    <script>
+        document.querySelector('button').onclick = () => {
+            let user = document.querySelector('input').value
+            let finalAns = user.split("").length
+            document.querySelector('p').innerHTML = '<p>The total number of letters in "'+user+'" is '+finalAns+'</p>'
+        }
+    </script>
+</body>
+
+</html>
