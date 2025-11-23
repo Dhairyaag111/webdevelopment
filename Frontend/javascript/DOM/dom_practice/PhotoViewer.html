@@ -32,6 +32,17 @@
         button:hover {
             background-color: red;
         }
+
+        .display{
+            height: 200px;
+            width: 200px;
+            /* background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+            overflow: hidden;
+
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,26 +52,31 @@
 <body>
     <div class="main">
         <button class="click">Click To View</button>
-        <img src="" alt="" height="200px" width="200px">
+        <div class="display"></div>
+        <!-- <img src="/Frontend/img/20250911_1246_image.png" alt=""> -->
     </div>
     <script>
         document.querySelector('.click').onclick = () => {
-            let ramdom = Math.random()
-            console.log((ramdom * 6) >> 0)
+            let random = (Math.random()*6)>>0
             if(random===1){
-                document.querySelector('img').innerHTML = '<img src="/Frontend/img/20250911_1246_image.png" alt="not found">'
+                console.log(random)
+                document.querySelector('.display').innerHTML = '<img src="/Frontend/img/20250911_1246_image.png" alt="not found" height="200px" width="200px" style="object-fit: contain;" >'
             }
             else if(random===2){
-                document.querySelector('img').innerHTML = '<img src="/Frontend/img/c4241014abef4ab599e92beb2b103e86.png" alt="not found">'
+                console.log(random)
+                document.querySelector('.display').innerHTML = '<img src="/Frontend/img/c4241014abef4ab599e92beb2b103e86.png" alt="not found" height="200px" width="200px" style="object-fit: contain;">'
             }
             else if(random===3){
-                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img1.png" alt="not found">'
+                console.log(random)
+                document.querySelector('.display').innerHTML = '<img src="/Frontend/img/img1.png" alt="not found" height="200px" width="200px" style="object-fit: contain;">'
             }
             else if(random===4){
-                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img2.png" alt="not found">'
+                console.log(random)
+                document.querySelector('.display').innerHTML = '<img src="/Frontend/img/img2.png" alt="not found" height="200px" width="200px" style="object-fit: contain;">'
             }
             else if(random===5){
-                document.querySelector('img').innerHTML = '<img src="/Frontend/img/img3.png" alt="not found">'
+                console.log(random)
+                document.querySelector('.display').innerHTML = '<img src="/Frontend/img/img3.png" alt="not found" height="200px" width="200px" style="object-fit: contain;">'
             }
         }
     </script>
