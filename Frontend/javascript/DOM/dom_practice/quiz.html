@@ -4,104 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: serif;
-        }
-
-        .main {
-            margin: 50px;
-            background-color: white;
-            height: 400px;
-            width: 80%;
-            border: 2px solid black;
-        }
-
-        .userInputLabel {
-            margin: 15px;
-            padding: 5px;
-        }
-
-        .userInput {
-            margin: 15px;
-            padding: 5px;
-            height: 20px;
-            border: 3px solid grey;
-        }
-
-        .getUserInput {
-            height: 25px;
-            width: 50px;
-            margin-top: 10px;
-            margin-left: 50%;
-        }
-
-        .showQuestion {
-            margin: 15px;
-            height: 200px;
-            width: 90%;
-            background-color: aqua;
-        }
-
-        .getNextQuestion {
-            height: 25px;
-            width: 50px;
-            margin-top: 10px;
-            margin-left: 50%;
-        }
-
-    </style>
-    <title>Document</title>
+    <title>Play Simple Quiz</title>
 </head>
 
 <body>
+    <div class="user">
+        <input type="text" placeholder="Enter the number of quiz you want to play(Max:10)">
+    </div>
     <div class="main">
-        <label for="userInput" class="userInputLabel">Enter how many quiz you wanna do : </label>
-        <input type="text" class="userInput">
-        <button type="submit" class="getUserInput">Click</button>
-
-        <div class="showQuestion">
-                <button type="submit" class="getNextQuestion">Click</button>
-        </div>
+        <p class="question"></p>
+        <button>Click1</button>
+    </div>
+    <div class="ans">
+        <input type="text" placeholder="Enter the answer">
+        <button>Click2</button>
+    </div>
+    <div class="output">
+        <p class="p1"></p>
+        <p class="p2"></p>
     </div>
     <script>
-        let question = [
-            'What is the sum of 2+2? ',
-            'what is the largest planet of our solar system? ',
-            'What is the mass of electron?',
-            'What is the capital city of South Africa?'
+        let array1 = [
+            "What is the capital of France?",
+            "Which is the 2nd longest river in the word?",
+            "What is the value of 'g' on the surface of the Earth in number?",
+            "Which is the country where Lord Buddha was born?",
+            "In Which year UNO was formed?",
+            "Which is the largest sand desert?",
+            "Which is the largest ocean in the world?",
+            "What is the value of 'G' in number?",
+            "Who is the richest person in the world?",
+            "In Which year India became independent?"
         ]
-
-        let answer = [
-            4,
-            'Jupiter',
-            '1.37*10^-18',
-            'Cape Town'
+        let array2 = [
+            "paris",
+            "amazon",
+            "9.83",
+            "nepal",
+            "1945",
+            "sahara",
+            "pacific",
+            "6.67",
+            "elon musk",
+            "1947"
         ]
-        document.querySelector('.main .getUserInput').onclick = () => {
-            let userInput = 3
-            // let marg = 20
-
-            // for(let i=0; i<userInput; i++){
-            //     document.querySelector('.showQuestion').innerHTML += `
-            //         <h4 style='margin:${marg}px' >${question[i]}</h4>
-            //     `
-            //     marg += 5
-            // }
-            while(userInput >=0){
-                document.querySelector('.showQuestion').innerHTML += `
-                <p>
-                ${question[userInput]}
-                </p>
-                `
-                userInput--
-            }
-
+        let userInput = 0
+        let current = 0
+        document.querySelector('.main button').onclick = () => {
+            userInput = Number(document.querySelector('.user input').value)
+            func()
         }
-
+        document.querySelector('.ans button').onclick = () => {
+            ans = (document.querySelector('.ans input').value).toLowerCase().trim()
+            if (ans === array2[current]) {
+                document.querySelector('.p1').innerText = "Correct answer"
+            }
+            else {
+                document.querySelector('.p1').innerText = "Wrong answer"
+            }
+            current++
+            if (current === userInput) {
+                document.querySelector('.p2').innerText = "Quiz finished "
+                document.querySelector('.ans input').value = ""
+                document.querySelector('.question').innerText = ""
+            }
+            else {
+                func()
+            }
+        }
+        function func() {
+            document.querySelector('.question').innerText = array1[current]
+            document.querySelector('.ans input').value = ""
+        } 
     </script>
 </body>
 
 </html>
+
+
+
+
+
