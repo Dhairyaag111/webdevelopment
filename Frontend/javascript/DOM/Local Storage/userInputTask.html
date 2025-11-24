@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .main {
+            padding: 20px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 120px;
+            gap: 20px;
+            border-radius: 15px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+
+        input {
+            padding-left: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 10px 80px 10px 80px;
+            border-radius: 12px;
+            background-color: blue;
+            color: white;
+            border: transparent;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+        p{
+            font-size: 35px;
+            font-family: sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <label for="name">Enter your name:- </label>
+            <input type="text" class="name" required>
+        </div>
+        <div class="first">
+            <label for="age">Enter your age:-</label>
+            <input type="text" class="age" required>
+        </div>
+        <div class="first">
+            <label for="gender">Enter your gender:-</label>
+            <input type="text" class="gender" required>
+        </div>
+        <div class="first">
+            <label for="phoneNumber">Enter your phone number:- </label>
+            <input type="text" class="phoneNumber" required>
+        </div>
+    </div>
+    <button class="save" type="submit">Save</button>
+    <p></p>
+    <script>
+        document.querySelector('.save').onclick = () => {
+            let name = document.querySelector('.name').value
+            let age = document.querySelector('.age').value
+            let gender = document.querySelector('.gender').value
+            let phoneNumber = document.querySelector('.phoneNumber').value
+            localStorage.setItem('Name',name)
+            localStorage.setItem('Age',age)
+            localStorage.setItem('Gender',gender)
+            localStorage.setItem('Phone Number',phoneNumber)
+            if(name==="" && age==="" && gender==="" && phoneNumber===""){
+                document.querySelector('p').innerText = "You have to fill everything"
+            }
+            else{
+                document.querySelector('p').innerText = "Saved successfully"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
