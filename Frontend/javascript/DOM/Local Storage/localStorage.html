@@ -17,10 +17,16 @@
             age:111,
             grade:86315
         }
+        let object3 = {
+            name:"superman",
+            age:123,
+            grade:143252
+        }
         localStorage.setItem("userInput",JSON.stringify(object))
         localStorage.setItem("userInput2",JSON.stringify(object2))
+        localStorage.setItem("userInput3",JSON.stringify(object3))
+        localStorage.removeItem("userInput2")
         localStorage.clear()
-
     </script>
 </body>
 </html>
