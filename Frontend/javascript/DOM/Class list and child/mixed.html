@@ -1,0 +1,51 @@
+<!-- 1. Display good morning. good afternoon, , good evening and goot night based on current hours.Ask name of user and show it on the display
+ 2. Create a button in js which shows how many number of times it has been pressed. It should show red color when the number is odd and show green color if even.The number of times the button clicked should not vanish even after refreshing the browser
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            margin-top: 230px;
+            font-family: cursive;
+            font-size: 40px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+        <h1></h1>
+    </div>
+    <script>
+        let time = 0
+        console.log(time)
+        if(time>=5 && time<12){
+            document.querySelector('h1').innerText = "Good Morning"
+        }
+        else if(time>=12 && time<16){
+            document.querySelector('h1').innerText = "Good Afternoon"
+        }
+        else if(time>=16 && time<20){
+            document.querySelector('h1').innerText = "Good Evening"
+        }
+        else if((time>=20 && time<=24) || (time>0 && time<5) | time === 0){
+            document.querySelector('h1').innerText = "Good Night"
+        }
+    </script>
+  </body>
+  </html>
