@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List</title>
+</head>
+<body>
+    <div class="main">
+        <button class="firstButton secondButton">Click me</button>
+    </div>
+    <script>
+        console.log(document.querySelector('.firstButton').classList)
+
+        document.querySelector('.secondButton').classList.add('thirdButton')
+
+        console.log(document.querySelector('.thirdButton').classList)
+
+        document.querySelector('.thirdButton').classList.remove('secondButton')
+
+        console.log(document.querySelector('.firstButton').classList)
+    </script>
+</body>
+</html>
