@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 200px;    
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            flex-direction: column;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child</title>
+</head>
+<body>
+    <div class="main">
+    </div>
+    <script>
+        let newButton = document.createElement('button')
+        let newButton2 = document.createElement('p')
+        let newButton3 = document.createElement('h3')
+        newButton.innerText = "Click Me"
+        newButton2.innerText = "Hello"
+        newButton3.innerText = "Bye Bye"
+        document.querySelector('.main').appendChild(newButton3)
+        document.querySelector('.main').appendChild(newButton)
+        document.querySelector('.main').appendChild(newButton2)
+    </script>
+</body>
+</html>
