@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            gap: 20px;
+        }
+        .first {
+            border-radius: 5px;
+            border: transparent;
+            background-color: rgb(116, 113, 113);
+            height: 60px;
+            width: 180px;
+            color: white;
+            font-size: 30px;
+        }
+        .second{
+            border-radius: 5px;
+            border: transparent;
+            background-color: rgb(116, 113, 113);
+            height: 40px;
+            width: 160px;
+            color: white;
+            font-size: 20px;
+        }
+        .one{
+            background-color: Red;
+        }
+        .two{
+            background-color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Button</title>
+</head>
+
+<body>
+    <div class="main">
+        <button type="submit" class="first">Click me</button>
+        <h3></h3>
+        <button class="second">Save Clicks</button>
+    </div>
+    <script>
+        counter = localStorage.getItem("Total Clicks") || 0
+        document.querySelector('.first').onclick=()=>{
+            counter++
+            if(counter%2==1){
+                document.querySelector('.first').classList.add("one")
+                document.querySelector('.first').classList.remove('two')
+            }
+            else{
+                document.querySelector('.first').classList.add('two')
+            }
+            document.querySelector('h3').innerText = "Current No. of clicks is "+counter
+        }
+        document.querySelector('.second').onclick=()=>{
+            localStorage.setItem("Total Clicks",counter)
+            document.querySelector('h3').innerText = "Clicks Saved!"
+        }
+    </script>
+</body>
+
+</html>
