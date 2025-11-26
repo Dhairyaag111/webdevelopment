@@ -20,6 +20,10 @@
             margin-top: 230px;
             font-family: cursive;
             font-size: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 30px;
         }
         
     </style>
@@ -29,23 +33,30 @@
   </head>
   <body>
     <div class="main">
+        <div class="first">
+            <label for="userInput">Enter your name:- </label>
+        <input type="text" class="userInput">
+        </div>
+        <button>Click</button>
         <h1></h1>
     </div>
     <script>
         let variable = new Date()
         let time = variable.getHours()
-        console.log(time)
-        if(time>=5 && time<12){
-            document.querySelector('h1').innerText = "Good Morning"
+        document.querySelector('button').onclick=()=>{
+            let user = document.querySelector('.userInput').value
+            if(time>=5 && time<12){
+            document.querySelector('h1').innerText = "Good Morning! "+user
         }
         else if(time>=12 && time<16){
-            document.querySelector('h1').innerText = "Good Afternoon"
+            document.querySelector('h1').innerText = "Good Afternoon! "+user
         }
         else if(time>=16 && time<20){
-            document.querySelector('h1').innerText = "Good Evening"
+            document.querySelector('h1').innerText = "Good Evening! "+user
         }
-        else if((time>=20 && time<=24) || (time>0 && time<5) | time === 0){
-            document.querySelector('h1').innerText = "Good Night"
+        else{
+            document.querySelector('h1').innerText = "Good Night! "+user
+        }
         }
     </script>
   </body>
