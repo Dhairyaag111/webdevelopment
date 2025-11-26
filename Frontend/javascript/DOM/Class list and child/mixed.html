@@ -32,7 +32,8 @@
         <h1></h1>
     </div>
     <script>
-        let time = 0
+        let variable = new Date()
+        let time = variable.getHours()
         console.log(time)
         if(time>=5 && time<12){
             document.querySelector('h1').innerText = "Good Morning"
