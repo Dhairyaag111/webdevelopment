@@ -7,3 +7,12 @@
 
 
 
+
+// Create a method to return an element at a particular position in the array.
+
+// let user = Number(prompt("Enter the position whise data you want to delete: "))
+// let arr1 = [1,2,3,4,5,6,7,8,9,10]
+// let func = function(){
+//     console.log(arr1[user])
+// }
+// func()
