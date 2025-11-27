@@ -16,3 +16,12 @@
 //     console.log(arr1[user])
 // }
 // func()
+
+
+
+
+// Create an array copy using slice method
+
+// let arr1 = [1,2,3,4,5,6,7,8,9,10]
+// let arr2 = arr1.slice(0,10)
+// console.log(arr2)
