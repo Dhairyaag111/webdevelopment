@@ -49,3 +49,15 @@
 // for(i=100;i>0;i--){
 //     console.log(i)
 // }
+
+
+
+
+// Using continue only print the numbers divisible by both 3 and 9
+
+// for(i=100;i>0;i--){
+//     if(i%3!==0 && i%9!==0){
+//         continue
+//     }
+//     console.log(i)
+// }
