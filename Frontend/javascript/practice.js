@@ -61,3 +61,21 @@
 //     }
 //     console.log(i)
 // }
+
+
+
+
+// Ask for multiple words form the user , add it inside an array and concatinate all the words into a single sentence from the array
+
+// let a = prompt("Enter the number of words you want in setence: ")
+// let arr = []
+// let arr2 = []
+// let sum = ""
+// for(i=1;i<=a;i++){
+//     let user = prompt("Enter word: ")
+//     arr.push(user)
+// }
+// for(i=0;i<arr.length;i++){
+//     sum = sum+" "+arr[i]
+// }
+// console.log(sum+".")
