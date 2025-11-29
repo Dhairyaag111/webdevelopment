@@ -79,3 +79,8 @@
 //     sum = sum+" "+arr[i]
 // }
 // console.log(sum+".")
+
+
+
+
+// Create a while loop that exits after counting 5 prime numbers. Modify the above loop using break

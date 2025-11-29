@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            flex-direction: column;
+        }
+
+        .main {
+            display: flex;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 100px;
+            height: 250px;
+            width: 450px;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 15px;
+        }
+
+        .userInput {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .border {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .userInput input {
+            padding: 10px 20px 10px 5px;
+            border-radius: 8px;
+            border: 1px solid gray
+        }
+
+        button {
+            padding: 5px 8px 5px 8px;
+            border: transparent;
+            background-color: blue;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: rgb(255, 0, 0);
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="userInput">
+            <input type="text" class="workInput" placeholder="Enter your work">
+            <input type="date" class="date">
+            <button class="add">Click to add</button>
+        </div>
+        <div class="border">
+            <p>To-Do List</p>
+        </div>
+        <div class="list">
+        </div>
+    </div>
+    <script>
+        document.querySelector('.add').onclick = () => {
+            let work = document.querySelector('.workInput').value
+            let date = document.querySelector('.date').value
+            document.querySelector('.list').innerHTML += 
+            `<p>`+work+`</p> <p>`+date+`</p> <button class="delete">Delete</button>`
+        }
+        document.querySelector('.delete').onclick=()=>{
+            document.querySelector('.list').innerHTML = ``
+        }
+    </script>
+</body>
+
+</html>
