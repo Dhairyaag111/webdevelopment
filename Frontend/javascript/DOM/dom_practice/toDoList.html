@@ -51,6 +51,18 @@
         button:hover {
             background-color: red;
         }
+
+        .newContainer {
+            display: flex;
+            margin: 20px 0 20px 0;
+            gap: 130px;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .output{
+            overflow-x: auto;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,14 +94,19 @@
         function result() {
             let mycode = ''
             for (i = 0; i < taskArray.length; i++) {
-               mycode+=
-                    `<p>` + taskArray[i] + `</p>
-                <p>`+ dateArray[i] + `</p>
-                <button>Delete</button>
-                `
+                mycode +=
+                    `<div class="newContainer"> 
+                    <p> ${taskArray[i]}</p>   <p> ${dateArray[i]}</p>        
+                    <button class="delete" onclick='taskArray.splice(${i},1)
+                     dateArray.splice(${i},1)
+                      result()'>
+                      Delete
+                    </button>
+                </div>`
             }
             document.querySelector('.output').innerHTML = mycode
         }
+
 
     </script>
 </body>
