@@ -1,13 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventLListner</title>
+</head>
+<body>
+    <div class="main">
+        <button>Click</button>
+    </div>
+    <script>
+        let button = document.querySelector('button')
+        let mouseOutEvent = event =>{
+            console.log('Mouse out')
+        }
+        button.addEventListener('mouseover',event=>{
+            console.log('mouse over')
+        })
+        button.addEventListener('mouseout',mouseOutEvent)
 
-
-
-
-
-
-
-
-
-
-
-
-
+        button.removeEventListener('mouseout',mouseOutEvent)
+    </script>
+</body>
+</html>
