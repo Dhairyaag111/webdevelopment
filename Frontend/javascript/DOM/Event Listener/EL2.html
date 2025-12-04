@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>hello</h1>
+    </div>
+    <script>
+        let variable = document.querySelector('h1')
+        variable.addEventListener('copy', event => {
+            event.clipboardData.setData('text/plain', '🤔')
+            event.preventDefault()
+        })
+    </script>
+</body>
+
+</html>
