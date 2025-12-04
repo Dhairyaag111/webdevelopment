@@ -72,7 +72,7 @@
         let box = document.querySelector('.main')
         let button1 = document.querySelector('.click')
         button1.addEventListener('click',event=>{
-            console.log(event.target)
+            console.log(event.currentTarget)
         })
         box.addEventListener('click',event=>{
             console.log(event.currentTarget)
@@ -86,3 +86,20 @@
 
 
 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('mousemove',event=>{
+            console.log(event.screenX)
+            console.log(event.screenY)
+        })
+    </script>
+</body>
+</html> -->
