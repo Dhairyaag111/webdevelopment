@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,29 @@
         let button1 = document.querySelector('.click')
         button1.addEventListener('click',event=>{
             console.log(event.type)
+        })
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Properties</title>
+</head>
+<body>
+    <button class="click">Clcik me</button>
+    <script>
+        let button1 = document.querySelector('.click')
+        button1.addEventListener('click',event=>{
+            console.log(event.target)
         })
     </script>
 </body>
