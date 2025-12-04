@@ -21,7 +21,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,4 +37,52 @@
         })
     </script>
 </body>
-</html>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+     <button class="click">Click me</button>
+     </div>
+     <script>
+        let box = document.querySelector('.main')
+        let button1 = document.querySelector('.click')
+        button1.addEventListener('click',event=>{
+            console.log(event.target)
+        })
+        box.addEventListener('click',event=>{
+            console.log(event.currentTarget)
+        })
+     </script>
+</body>
+</html> -->
+
+
+
+
+
+
