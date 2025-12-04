@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,4 +20,32 @@
     </script>
 </body>
 
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <div class="main">
+        <input type="text" class="input1">
+        <p class="p1"></p>
+    </div>
+    <script>
+        let inp = document.querySelector('.input1')
+        let text = document.querySelector('.p1')
+        inp.addEventListener('keyup',event=>{
+            text.innerText = inp.value
+        })
+    </script>
+</body>
 </html>
