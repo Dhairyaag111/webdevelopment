@@ -258,3 +258,43 @@
  </script>
 </body>
 </html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <button class="button1">click</button>
+    </div>
+    <script>
+        let click1 = document.querySelector('.button1')
+        click1.addEventListener('click',event=>{
+            console.log('clicked')
+            event.stopPropagation()
+        })
+        let box = document.querySelector('.main')
+        box.addEventListener('click',event=>{
+            console.log('div clicked')
+        })
+    </script>
+</body>
+</html> -->
