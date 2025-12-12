@@ -28,9 +28,7 @@ allItems.forEach(item => {
                 <del>Rs.${item.price.original_price}</del>
                 <p class="discount">(${item.price.discount}% OFF)</p>
             </div>
-            <div class="button1">
-                <button>Add to cart</button>
-            </div>
+               <button>Add to cart</button>
             </div>
         </div>`
 
