@@ -1,7 +1,7 @@
 let allItems = [
     {
         id: '001',
-        image:"/Frontend/project/Myntra Final/myntra img/1.jpg",
+        image: "/Frontend/project/Myntra Final/myntra img/1.jpg",
         company_name: 'Carlton London',
         item_name: 'Rhodium-Plated CZ Floral Studs',
         price: {

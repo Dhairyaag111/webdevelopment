@@ -1,15 +1,28 @@
+let bagItems = []
+
+
+window.addEventListener('load', event => {
+    showData()
+    let localStorageData = localStorage.getItem('bagItems')
+    bagItems = localStorageData ? JSON.parse(localStorageData) : []
+    displayBagCount()
+})
 
 
 
 
 
-let mainContainer =  document.querySelector('.photo_container')
-let innerHTMLCode = ""
 
 
-allItems.forEach(item => {
-    innerHTMLCode +=
-        `<div class="photo1">
+
+
+
+function showData() {
+    let mainContainer = document.querySelector('.photo_container')
+    let innerHTMLCode = ""
+    allItems.forEach(item => {
+        innerHTMLCode +=
+            `<div class="photo1">
             <div class="img1">
                 <img src="${item.image}" alt="">
             </div>
@@ -28,10 +41,29 @@ allItems.forEach(item => {
                 <del>Rs.${item.price.original_price}</del>
                 <p class="discount">(${item.price.discount}% OFF)</p>
             </div>
-               <button>Add to cart</button>
+               <button onclick = "addToBag(${item.id})">Add to cart</button>
             </div>
         </div>`
 
+    }
+    )
+    mainContainer.innerHTML = innerHTMLCode
 }
-)
-mainContainer.innerHTML = innerHTMLCode
+
+
+function addToBag(itemId) {
+    bagItems.push(itemId)
+    displayBagCount()
+    localStorage.setItem("bagItems", JSON.stringify(bagItems))
+}
+
+function displayBagCount() {
+    let bagItemCount = document.querySelector('.itemCount')
+    if (bagItems.length > 0) {
+        bagItemCount.style.visibility = 'visible'
+        bagItemCount.innerText = bagItems.length
+    }
+    else {
+        bagItemCount.style.visibility = 'hidden'
+    }
+}
