@@ -13,10 +13,6 @@ window.addEventListener('load', event => {
 
 
 
-
-
-
-
 function showData() {
     let mainContainer = document.querySelector('.photo_container')
     let innerHTMLCode = ""
@@ -41,7 +37,7 @@ function showData() {
                 <del>Rs.${item.price.original_price}</del>
                 <p class="discount">(${item.price.discount}% OFF)</p>
             </div>
-               <button onclick = "addToBag(${item.id})">Add to cart</button>
+               <button onclick = "addToBag('${item.id}')">Add to cart</button>
             </div>
         </div>`
 
