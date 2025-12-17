@@ -5,8 +5,8 @@ let allItems = [
         company_name: 'Carlton London',
         item_name: 'Rhodium-Plated CZ Floral Studs',
         price: {
-            original_price: 1045,
             current_price: 606,
+            original_price: 1045,
             discount: 42,
         },
         return_period: 14,
@@ -22,8 +22,8 @@ let allItems = [
         company_name: 'CUKOO',
         item_name: 'Women Padded Halter Neck Swimming Dress',
         price: {
-            original_price: 2599,
             current_price: 1507,
+            original_price: 2599,
             discount: 42,
         },
         return_period: 14,
@@ -39,8 +39,8 @@ let allItems = [
         company_name: 'NUEVOSDAMAS',
         item_name: 'Women Red & White Printed A-Line Knee-Length Skirts',
         price: {
-            original_price: 1599,
             current_price: 495,
+            original_price: 1599,
             discount: 69,
         },
         return_period: 14,
@@ -56,8 +56,8 @@ let allItems = [
         company_name: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         price: {
-            original_price: 999,
             current_price: 999,
+            original_price: 999,
             discount: 0,
         },
         return_period: 14,
@@ -73,8 +73,8 @@ let allItems = [
         company_name: 'Roadster',
         item_name: 'Pure Cotton T-shirt',
         price: {
-            original_price: 1399,
             current_price: 489,
+            original_price: 1399,
             discount: 65,
         },
         return_period: 14,
@@ -89,8 +89,8 @@ let allItems = [
         image: "../myntra_img/6.jpg",
         company_name: 'Nike',
         item_name: 'Men ReactX Running Shoes',
+        current_price: 14995,
         price: {
-            current_price: 14995,
             original_price: 14995,
             discount: 0,
         },
@@ -107,8 +107,8 @@ let allItems = [
         company_name: 'The Indian Garage Co',
         item_name: 'Men Slim Fit Regular Shorts',
         price: {
-            original_price: 1599,
             current_price: 639,
+            original_price: 1599,
             discount: 60,
         },
         rating: {
@@ -122,8 +122,8 @@ let allItems = [
         company_name: 'Nivea',
         item_name: 'Men Fresh Deodrant 150ml',
         price: {
-            original_price: 285,
             current_price: 142,
+            original_price: 285,
             discount: 50,
         },
         return_period: 14,

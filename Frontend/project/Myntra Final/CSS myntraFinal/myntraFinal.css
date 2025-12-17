@@ -86,7 +86,8 @@ sup {
     flex-direction: column;
     align-items: center;
 }
-.bag a{
+
+.bag a {
     text-decoration: none;
     color: black;
 }
@@ -100,6 +101,7 @@ sup {
     font-family: sans-serif;
     background-color: rgba(238, 237, 237, 0.671);
     border-bottom: 1px solid gray;
+    width: 100%;
 }
 
 .footer1 {
@@ -187,6 +189,7 @@ sup {
     font-size: 14px;
     color: rgb(134, 134, 134);
 }
+
 .discount {
     font-size: 12px;
     color: #ff7300;
@@ -277,7 +280,7 @@ sup {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .details .heading p {
@@ -289,7 +292,7 @@ sup {
 .mrp_list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     font-size: 15px;
 }
 
@@ -332,8 +335,15 @@ sup {
     background-color: #f74e77;
     font-size: 15px;
 }
-.itemBoxParent{
+
+.itemBoxParent {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+}
+
+.cross a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(104, 104, 104);
 }

@@ -5,27 +5,27 @@ window.addEventListener('load', event => {
     showDataInfo()
 })
 
-function loadBagItemObjects(){
-    bagItemObjects = bagItems.map(itemId=>{
-        for(let i=0; i<allItems.length; i++){
-            if(itemId === allItems[i].id)
+function loadBagItemObjects() {
+    bagItemObjects = bagItems.map(itemId => {
+        for (let i = 0; i < allItems.length; i++) {
+            if (itemId === allItems[i].id)
                 return allItems[i]
         }
     })
-    
+
 }
 
-function showDataInfo(){
+function showDataInfo() {
     let itemContainer = document.querySelector('.itemBoxParent')
     let innerHTMLCode = ''
     bagItemObjects.forEach(bagItem => {
-        innerHTMLCode += generateItemCode(bagItem)
+        innerHTMLCode = innerHTMLCode + generateItemCode(bagItem)
     })
     itemContainer.innerHTML = innerHTMLCode
 }
 
 
-function generateItemCode(item){
+function generateItemCode(item) {
     return `<div class="item_box">
             <div class="label">
                 <div class="img_box">
@@ -39,8 +39,8 @@ function generateItemCode(item){
                         <p>${item.item_name}</p>
                     </div>
                     <div class="price_box">
-                        <p>Rs ${item.price.original_price}</p>
-                        <del>Rs ${(item.price).current_price}</del>
+                        <p>Rs ${item.price.current_price}</p>
+                        <del>Rs ${(item.price).original_price}</del>
                         <p class="discount">(${(item.price).discount}% OFF)</p>
                     </div>
                     <div class="return_days">
@@ -52,7 +52,8 @@ function generateItemCode(item){
                 </div>
             </div>
             <div class="cross">
-                <p style="color: rgb(103, 103, 103);">X</p>
+                <a href="#">X</a>
             </div>
         </div>`
 }
+

@@ -16,7 +16,7 @@ window.addEventListener('load', event => {
 function showData() {
     let mainContainer = document.querySelector('.photo_container')
     let innerHTMLCode = ""
-    if(!mainContainer){
+    if (!mainContainer) {
         return
     }
     allItems.forEach(item => {
