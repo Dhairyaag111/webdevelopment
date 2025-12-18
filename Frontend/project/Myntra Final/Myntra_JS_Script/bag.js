@@ -25,6 +25,8 @@ function showDataInfo() {
 }
 
 
+
+
 function generateItemCode(item) {
     return `<div class="item_box">
             <div class="label">
@@ -52,8 +54,18 @@ function generateItemCode(item) {
                 </div>
             </div>
             <div class="cross">
-                <a href="#">X</a>
+                <a href="#" onclick="removeFroBag(${item.id})">X</a>
             </div>
         </div>`
 }
 
+
+function removeFroBag(itemId){
+    bagItems = bagItems.filter(bagId=>{ 
+        return bagId!= itemId
+    })
+    localStorage.setItem('bagItems',JSON.stringify(bagItems))
+    loadBagItemObjects()
+    showDataInfo()
+    displayBagCount()
+}

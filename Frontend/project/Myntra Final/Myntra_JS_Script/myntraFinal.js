@@ -66,3 +66,4 @@ function displayBagCount() {
         bagItemCount.style.visibility = 'hidden'
     }
 }
+
