@@ -3,6 +3,7 @@ let bagItemObjects;
 window.addEventListener('load', event => {
     loadBagItemObjects()
     showDataInfo()
+    showTotalPrice()
 })
 
 function loadBagItemObjects() {
@@ -68,4 +69,46 @@ function removeFroBag(itemId){
     loadBagItemObjects()
     showDataInfo()
     displayBagCount()
+}
+
+function bag_summary(){
+    return `<div class="heading">
+                <p>PRICE DETAILS (1 items)</p>
+            </div>
+            <div class="mrp_list">
+                <div class="total_mrp">
+                    <p>Total MRP</p>
+                    <p>Rs 0</p>
+                </div>
+                <div class="discounted_mrp">
+                    <p>Discount on MRP</p>
+                    <p style="color: rgb(0, 225, 225);">-Rs 0</p>
+                </div>
+                <div class="delivery_fee" style="border-bottom:2px solid black ; padding-bottom: 15px;">
+                    <p>Delivery Fee</p>
+                    <p>Rs 140</p>
+                </div>
+                <div class="final_amt" style="font-weight: bolder; padding-top: 5px;">
+                    <p>Total Amount</p>
+                    <p>Rs 0</p>
+                </div>
+            </div>
+            <div class="final_button">
+                <button>PLACE ORDER</button>
+            </div>
+        </div>` 
+}
+
+function showTotalPrice() {
+    let priceBox = document.querySelector('.details')
+    let delivery_fee = 140
+    let totalItems = bagItemObjects.length
+    let totalMRP = 0
+    let totalDiscount = 0
+    bagItemObjects.forEach(bagItem=>{
+        totalMRP += bagItem.price.original_price
+        totalDiscount += bagItem.price.original_price - bagItem.price.current_price
+        delivery_fee = totalItems==0? 0:delivery_fee
+    })
+
 }
