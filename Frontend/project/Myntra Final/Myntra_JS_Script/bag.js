@@ -59,8 +59,6 @@ function generateItemCode(item) {
             </div>
         </div>`
 }
-
-
 function removeFroBag(itemId){
     bagItems = bagItems.filter(bagId=>{ 
         return bagId!= itemId
