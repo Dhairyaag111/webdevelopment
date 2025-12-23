@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            height: 80%;
+            width: 40%;
+            gap: 15px;
+            margin-left: 180px;
+            margin-top: 15px;
+        }
+        img{
+            height: 190px;
+            width: 190px;
+            border-radius: 15px;
+        }
+        img:hover{
+            transform: scale(1.1,1.1);
+            transition: all 0.8s;
+        }
+        .main:hover img:not(:hover),body:hover img:not(:hover){
+            transform: scale(1,1);
+            filter: blur(5px);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <img src="../img/20250911_1246_image.png" alt="">
+        </div>
+        <div class="card"><img src="../img/c4241014abef4ab599e92beb2b103e86.png" alt=""></div>
+        <div class="card">
+            <img src="../img/img1.png" alt="">
+        </div>
+        <div class="card">
+            <img src="../img/img2.png" alt="">
+        </div>
+        <div class="card">
+            <img src="../img/photo-1614850523011-8f49ffc73908.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../img/img4.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
