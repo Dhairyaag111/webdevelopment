@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .main {
+            padding: 30px 50px;
+            color: white;
+            background-color: #008B8B;
+            margin-top: 250px;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        select {
+            padding: 5px;
+            border: transparent;
+        }
+
+        .first_layer,
+        .second_layer {
+            font-size: 20px;
+            display: flex;
+            gap: 150px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h2>Currency Converter</h2>
+        </div>
+        <div class="first_layer">
+            <div class="currency_one">
+                <select name="one" id="one">
+                    <option value="aud">AUD</option>
+                    <option value="cad">CAD</option>
+                    <option value="eur">EUR</option>
+                    <option value="usd">USD</option>
+                    <option value="inr">INR</option>
+                </select>
+            </div>
+            <div class="value_one">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="second_layer">
+            <div class="currency_two">
+                <select name="two" id="two">
+                    <option value="inr">INR</option>
+                    <option value="cad">CAD</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="aud">AUD</option>
+                </select>
+            </div>
+            <div class="value_two">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currencyOne = document.querySelector('.currency_one select').value
+        let currencyTwo = document.querySelector('.currency_two select').value
+        let valueTwo = document.querySelector(".value_two p")
+        let aud_inr = 60.35
+        let cad_aud = 1.09
+        let eur_aud = 1.75
+        let aud_usd = 1.5
+        let eur_cad = 1.6
+        let cad_inr = 65.62
+        let usd_cad = 1.37
+        let eur_inr = 105.7
+        let eur_usd = 1.18     
+        let usd_inr = 89.95 
+        if(currencyOne=="aud" && currencyTwo=="inr"){
+            valueTwo.innerText = aud_inr 
+        }
+        else if(currencyOne=="aud" && currencyTwo=="cad"){
+            valueTwo.innerText = 1/cad_aud
+        }
+    </script>
+</body>
+
+</html>
