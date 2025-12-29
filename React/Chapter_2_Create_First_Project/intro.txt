@@ -1,2 +1,30 @@
 How to create a react project?
+i.   npm create vite@latest
+ii.  give project name
+iii. cd project
+iv.  npm install
+v.   npm run dev
 
+
+Project Structure
+
+i. node_module - This folder has all the installed node packages. It is created after npm install comand. This folder is never to be deleted, edited and uploaded.
+
+ii. public - This folder contains all the static files of our project 
+
+iii. src - This is the major folder where we write our react code. It usuall contains main.jsx(Entry point), App.jsx(root component), pages, hooks, styles etc.
+
+    a. App.jsx - It is the main react component which is called by main.jsx
+    b. App.css - This is the css file for App.jsx
+    c. index.css - It is the global css used for body styles, reset css etc
+    d. main.jsx - This is the entry point and this is where react starts
+
+iv. .gitignore - This files tells git what not to track
+
+v. eslint.config.js - It defines linting rules, helps catch bugs and bad practices
+
+vi. index.html - This is the single HTML files, react mounts into this
+
+vii. package-lock.json - This flie locks exact dependency version
+
+viii. package.json - This file stores project names, dependency, scripts etc. When we run npm run dev, everything comes from here. This is the meta data of our project

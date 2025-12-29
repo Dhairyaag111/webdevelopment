@@ -20,11 +20,13 @@
             padding: 30px 50px;
             color: white;
             background-color: #008B8B;
-            margin-top: 250px;
+            margin-top: 200px;
             gap: 30px;
             display: flex;
             flex-direction: column;
             border-radius: 10px;
+            align-items: center;
+
         }
 
         select {
@@ -36,7 +38,8 @@
         .second_layer {
             font-size: 20px;
             display: flex;
-            gap: 150px;
+            justify-content: space-between;
+            width: 350px;
         }
     </style>
     <meta charset="UTF-8">
@@ -53,10 +56,10 @@
             <div class="currency_one">
                 <select name="one" id="one">
                     <option value="aud">AUD</option>
-                    <option value="cad">CAD</option>
-                    <option value="eur">EUR</option>
-                    <option value="usd">USD</option>
                     <option value="inr">INR</option>
+                    <option value="eur">EUR</option>
+                    <option value="cad">CAD</option>
+                    <option value="usd">USD</option>
                 </select>
             </div>
             <div class="value_one">
@@ -67,36 +70,202 @@
             <div class="currency_two">
                 <select name="two" id="two">
                     <option value="inr">INR</option>
+                    <option value="aud">AUD</option>
                     <option value="cad">CAD</option>
                     <option value="usd">USD</option>
                     <option value="eur">EUR</option>
-                    <option value="aud">AUD</option>
                 </select>
             </div>
             <div class="value_two">
                 <p></p>
             </div>
         </div>
+        <p class="final"></p>
     </div>
     <script>
         let currencyOne = document.querySelector('.currency_one select').value
         let currencyTwo = document.querySelector('.currency_two select').value
+        console.log(currencyOne,currencyTwo)
         let valueTwo = document.querySelector(".value_two p")
+        let value_shower = document.querySelector('.final')
         let aud_inr = 60.35
         let cad_aud = 1.09
         let eur_aud = 1.75
-        let aud_usd = 1.5
+        let usd_aud = 1.5
         let eur_cad = 1.6
         let cad_inr = 65.62
         let usd_cad = 1.37
         let eur_inr = 105.7
-        let eur_usd = 1.18     
-        let usd_inr = 89.95 
-        if(currencyOne=="aud" && currencyTwo=="inr"){
-            valueTwo.innerText = aud_inr 
+        let eur_usd = 1.18
+        let usd_inr = 89.95
+        if (currencyOne == "aud" && currencyTwo == "inr") {
+            valueTwo.innerText = aud_inr
+            value_shower.innerText = "1 AUD = " + aud_inr + " INR"
         }
-        else if(currencyOne=="aud" && currencyTwo=="cad"){
-            valueTwo.innerText = 1/cad_aud
+        else if (currencyOne == "aud" && currencyTwo == "cad") {
+            valueTwo.innerText = 1 / cad_aud
+            value_shower.innerText = "1 AUD = " + 1 / cad_aud + " CAD"
+        }
+        else if (currencyOne == "aud" && currencyTwo == "usd") {
+            valueTwo.innerText = 1 / usd_aud
+            value_shower.innerText = "1 AUD = " + 1 / usd_aud + " USD"
+        }
+        else if (currencyOne == "aud" && currencyTwo == "eur") {
+            valueTwo.innerText = 1 / eur_aud
+            value_shower.innerText = "1 AUD = " + 1 / eur_aud + " EUR"
+        }
+        else if (currencyOne == "aud" && currencyTwo == "aud") {
+            valueTwo.innerText = 1
+            value_shower.innerText = "1 AUD = 1 AUD"
+        }
+
+        else if (currencyOne == "cad" && currencyTwo == "cad") {
+            valueTwo.innerText = 1
+            value_shower.innerText = "1 CAD = 1 CAD"
+        }
+        else if (currencyOne == "cad" && currencyTwo == "usd") {
+            valueTwo.innerText = 1 / usd_cad
+            value_shower.innerText = "1 CAD = " + 1/usd_cad + " USD"
+        }
+        else if (currencyOne == "cad" && currencyTwo == "eur") {
+            valueTwo.innerText = 1 / eur_cad
+            value_shower.innerText = "1 CAD = " + 1/eur_cad + " EUR"
+        }
+        else if (currencyOne == "cad" && currencyTwo == "aud") {
+            valueTwo.innerText = cad_aud
+            value_shower.innerText = "1 CAD = " + cad_aud + " AUD"
+        }
+        else if (currencyOne == "cad" && currencyTwo == "inr") {
+            valueTwo.innerText = 1 / cad_inr
+            value_shower.innerText = "1 CAD = " + 1/cad_inr + " INR"
+        }
+
+        else if (currencyOne == "usd" && currencyTwo == "cad") {
+            valueTwo.innerText = usd_cad
+        }
+        else if (currencyOne == "usd" && currencyTwo == "usd") {
+            valueTwo.innerText = 1
+        }
+        else if (currencyOne == "usd" && currencyTwo == "eur") {
+            valueTwo.innerText = 1 / eur_usd
+        }
+        else if (currencyOne == "usd" && currencyTwo == "aud") {
+            valueTwo.innerText = usd_aud
+        }
+        else if (currencyOne == "usd" && currencyTwo == "inr") {
+            valueTwo.innerText = 1 / usd_inr
+        }
+
+        else if (currencyOne == "inr" && currencyTwo == "cad") {
+            valueTwo.innerText = 1 / cad_inr
+        }
+        else if (currencyOne == "inr" && currencyTwo == "usd") {
+            valueTwo.innerText = usd_inr
+        }
+        else if (currencyOne == "inr" && currencyTwo == "eur") {
+            valueTwo.innerText = eur_inr
+        }
+        else if (currencyOne == "inr" && currencyTwo == "aud") {
+            valueTwo.innerText = aud_inr
+        }
+        else if (currencyOne == "inr" && currencyTwo == "inr") {
+            valueTwo.innerText = 1
+        }
+
+        else if (currencyOne == "eur" && currencyTwo == "cad") {
+            valueTwo.innerText = eur_cad
+        }
+        else if (currencyOne == "eur" && currencyTwo == "usd") {
+            valueTwo.innerText = eur_usd
+        }
+        else if (currencyOne == "eur" && currencyTwo == "eur") {
+            valueTwo.innerText = 1
+        }
+        else if (currencyOne == "eur" && currencyTwo == "aud") {
+            valueTwo.innerText = eur_aud
+        }
+        else if (currencyOne == "eur" && currencyTwo == "inr") {
+            valueTwo.innerText = eur_inr
+        }
+
+        else if (currencyTwo == "aud" && currencyOne == "inr") {
+            valueTwo.innerText = 1 / aud_inr
+        }
+        else if (currencyTwo == "aud" && currencyOne == "cad") {
+            valueTwo.innerText = cad_aud
+        }
+        else if (currencyTwo == "aud" && currencyOne == "usd") {
+            valueTwo.innerText = usd_aud
+        }
+        else if (currencyTwo == "aud" && currencyOne == "eur") {
+            valueTwo.innerText = eur_aud
+        }
+        else if (currencyTwo == "aud" && currencyOne == "aud") {
+            valueTwo.innerText = 1
+        }
+
+        else if (currencyTwo == "cad" && currencyOne == "cad") {
+            valueTwo.innerText = 1
+        }
+        else if (currencyTwo == "cad" && currencyOne == "usd") {
+            valueTwo.innerText = usd_cad
+        }
+        else if (currencyTwo == "cad" && currencyOne == "eur") {
+            valueTwo.innerText = eur_cad
+        }
+        else if (currencyTwo == "cad" && currencyOne == "aud") {
+            valueTwo.innerText = 1 / cad_aud
+        }
+        else if (currencyTwo == "cad" && currencyOne == "inr") {
+            valueTwo.innerText = cad_inr
+        }
+
+        else if (currencyTwo == "usd" && currencyOne == "cad") {
+            valueTwo.innerText = 1 / usd_cad
+        }
+        else if (currencyTwo == "usd" && currencyOne == "usd") {
+            valueTwo.innerText = 1
+        }
+        else if (currencyTwo == "usd" && currencyOne == "eur") {
+            valueTwo.innerText = eur_usd
+        }
+        else if (currencyTwo == "usd" && currencyOne == "aud") {
+            valueTwo.innerText = 1 / usd_aud
+        }
+        else if (currencyTwo == "usd" && currencyOne == "inr") {
+            valueTwo.innerText = usd_inr
+        }
+
+        else if (currencyTwo == "inr" && currencyOne == "cad") {
+            valueTwo.innerText = cad_inr
+        }
+        else if (currencyTwo == "inr" && currencyOne == "usd") {
+            valueTwo.innerText = 1 / usd_inr
+        }
+        else if (currencyTwo == "inr" && currencyOne == "eur") {
+            valueTwo.innerText = 1 / eur_inr
+        }
+        else if (currencyTwo == "inr" && currencyOne == "aud") {
+            valueTwo.innerText = 1 / aud_inr
+        }
+        else if (currencyTwo == "inr" && currencyOne == "inr") {
+            valueTwo.innerText = 1
+        }
+
+        else if (currencyTwo == "eur" && currencyOne == "cad") {
+            valueTwo.innerText = 1 / eur_cad
+        }
+        else if (currencyTwo == "eur" && currencyOne == "usd") {
+            valueTwo.innerText = 1 / eur_usd
+        }
+        else if (currencyTwo == "eur" && currencyOne == "eur") {
+            valueTwo.innerText = 1
+        }
+        else if (currencyTwo == "eur" && currencyOne == "aud") {
+            valueTwo.innerText = 1 / eur_aud
+        }
+        else if (currencyTwo == "eur" && currencyOne == "inr") {
+            valueTwo.innerText = 1 / eur_inr
         }
     </script>
 </body>
