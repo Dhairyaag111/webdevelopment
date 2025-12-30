@@ -3,9 +3,9 @@ function FirstButton(){
 }
 export default FirstButton
 
-// export default function SecondButton(){
-//     return <button>Click2</button>
-// }
+export function SecondButton(){
+    return <button>Click2</button>
+}
 
 export function ThirdButton(){
     return <button>Click3</button>
