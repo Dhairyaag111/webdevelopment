@@ -54,3 +54,7 @@
 // date15.setFullYear(2025)
 // date15.setMonth(11)
 // console.log(date15)
+
+
+let dt = new Date()
+console.log(dt.getHours()+':'+dt.getMinutes()+':'+dt.getSeconds())

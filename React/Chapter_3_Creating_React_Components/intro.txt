@@ -9,6 +9,3 @@ File Extention:-
 
     i.   JS 
     ii.  JSX - It stands for JS + XML. Combines JS with HTML like structure. Its not HTML. Though it resemble HTML, its acctually JS with XML.
-
-    
-.
