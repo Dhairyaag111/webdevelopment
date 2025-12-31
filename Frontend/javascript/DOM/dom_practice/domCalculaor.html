@@ -13,32 +13,38 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #FF7629;
+            font-family: sans-serif;
         }
 
         .zero {
-            height: 70px;
-            width: 144px;
+            height: 65px;
+            width: 134px;
         }
 
         .plus {
-            height: 150px;
-            width: 70px;
+            height: 140px;
+            width: 65px;
             position: relative;
             right: 83px;
-            top: 96px;
+            top: 94px;
+            background-color: #FF7629;
+            color: black;
         }
 
         button {
-            height: 70px;
-            width: 70px;
-            font-size: 30px;
+            height: 65px;
+            width: 65px;
+            font-size: 35px;
             border-radius: 10px;
-            border: 1px solid grey;
+            border: transparent;
+            color: #FF7629;
+            background-color: #272525;
         }
 
         .main {
             flex-wrap: wrap;
-            height: 520px;
+            height: 510px;
             width: 293px;
             padding: 5px 10px 5px 10px;
             display: flex;
@@ -48,13 +54,20 @@
             gap: 10px;
             border: 1px solid black;
             margin-top: 60px;
+            background-color: black;
+            align-items: center;
         }
 
         input {
-            padding-top: 70px;
-            font-size: 24px;
+            display: flex;
+            width: 270px;
+            font-size: 45px;
             text-align: right;
-            border: 1 px solid grey;
+            background-color: black;
+            border: transparent;
+            padding:10px 10px;
+            border-radius: 10px;
+            color: white;
         }
     </style>
     <meta charset="UTF-8">
@@ -64,25 +77,26 @@
 
 <body>
     <div class="main">
+        <p style="color: white; border-bottom:1px solid white ;">CALCULATOR</p>
         <input type="text" readonly>
         <div class="first">
-            <button class="clear">C</button>
-            <button class="backspace">⌫</button>
-            <button class="divide">/</button>
-            <button class="multiply">*</button>
+            <button class="clear" style="background-color: #5B5757; color: white;">C</button>
+            <button class="backspace" style="position: relative; top: 0.08em; background-color: #5B5757; color: white;">⌫</button>
+            <button class="divide" style="background-color: #FF7629; color: black;">/</button>
+            <button class="multiply" style="background-color: #FF7629; color: black;">*</button>
         </div>
         <div class="second">
             <button class="seven">7</button>
             <button class="eight">8</button>
             <button class="nine">9</button>
-            <button class="minus">-</button>
+            <button class="minus"  style="background-color: #FF7629; color: black;">-</button>
         </div>
-        <div class="third">
+        <div class="third" style="margin-right: 70px;">
             <button class="four">4</button>
             <button class="five">5</button>
             <button class="six">6</button>
         </div>
-        <div class="fourth">
+        <div class="fourth" style="margin-right: 70px;">
             <button class="one">1</button>
             <button class="two">2</button>
             <button class="three">3</button>
@@ -90,12 +104,34 @@
         <div class="fifth">
             <button class="zero">0</button>
             <button class="dot">.</button>
-            <button class="equal">=</button>
+            <button class="equal" style="background-color: white; color: black;">=</button>
         </div>
         <button class="plus">+</button>
     </div>
     <script>
         let currentValue = ""
+        const display = document.querySelector("input")
+
+        document.addEventListener("keydown", (event) => {
+            let key = event.key
+            if ("0123456789+-*/.".includes(key)) {
+                currentValue += key
+                display.value = currentValue
+            }
+            else if (key === "Backspace") {
+                currentValue = currentValue.slice(0, -1);
+                display.value = currentValue
+            }
+            else if (key === "Enter") {
+                    currentValue = eval(currentValue).toString();
+                    display.value = currentValue;    
+            }
+            else if (key === "Escape") {
+                currentValue = ""
+                display.value = ""
+            }
+        })
+
         document.querySelector('.seven').onclick = () => {
             currentValue = currentValue + 7
             document.querySelector('input').value = currentValue
@@ -161,15 +197,17 @@
             document.querySelector('input').value = currentValue
         }
         document.querySelector('.equal').onclick = () => {
-            let result = eval(currentValue)
+            result = eval(currentValue)
             currentValue = result
             document.querySelector('input').value = currentValue
             currentValue = ""
         }
         document.querySelector('.backspace').onclick = () => {
-            currentValue = currentValue.slice(0,-1)
+            currentValue = currentValue.slice(0, -1)
             document.querySelector('input').value = currentValue
         }
+
     </script>
 </body>
+
 </html>
