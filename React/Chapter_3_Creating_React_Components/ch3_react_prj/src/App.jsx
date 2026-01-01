@@ -19,12 +19,22 @@
 
 
 
-import { Hello } from "./HelloDynamic"
-function App(){
-  return (
-    <div>
-    <Hello></Hello>
-    </div>
-  )
-}
-export default App
+// import { Hello } from "./helloDynamic"
+// function App(){
+//   return (
+//     <div>
+//     <Hello></Hello>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+
+// import { RandomNumber } from "./random";
+// import { Otp } from "./random"
+// function App() {
+//   return <Otp></Otp>
+// }
+// export default App
