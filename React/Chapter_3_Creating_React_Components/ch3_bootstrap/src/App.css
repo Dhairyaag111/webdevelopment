@@ -15,6 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    border: 1px solid black;
 }
 .heading h1{
     border-bottom:2px solid black;
@@ -42,17 +43,18 @@ button{
 }
 p{
     position: relative;
-    right: 238px;
-    bottom: -89px;
-    background-color:orange ;
+    background-color:rgb(255, 255, 255) ;
     width: 136px;
     height: 18px;
     align-items: center;
     display: flex;
     justify-content: left;
     font-size: 14px;
+    top: 137px;
+    left: 28px;
+    z-index: 1;
 }
 p:hover{
     transition: all 2s;
-    bottom: 1px;
+    margin-bottom: 32px;
 }

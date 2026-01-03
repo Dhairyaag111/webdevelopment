@@ -128,13 +128,14 @@
 // }
 
 
-import Heading from './heading.jsx'
+import Heading from './Heading.jsx'
 import AddToDo from './AddToDo.jsx'
 import ToDoItem1 from './ToDoItem1.jsx'
 import ToDoItem2 from './ToDoItem2.jsx'
 import './App.css'
 export default function App(){
   return <div>
+    <p>Enter Your ToDo Here</p>
     <Heading></Heading>
     <AddToDo></AddToDo>
     <ToDoItem1></ToDoItem1>
