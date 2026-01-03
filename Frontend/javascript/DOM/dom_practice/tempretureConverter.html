@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #CBE793;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 480px;
+            height: 320px;
+            background-color: #D4EAC5;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 3px 3px 6px grey;
+            border-radius: 10px;
+            margin-top: 120px;
+            justify-content: top;
+            align-items: center;
+        }
+
+        .celcius_input,
+        .fahrenheit_input,
+        .kelvin_input,
+        .rankine_input{
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+            font-size: 20px;
+        }
+
+        input {
+            border-radius: 5px;
+            box-shadow: 3px 2px 6px grey;
+            border: 1px solid grey;
+            padding: 5px 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1 style="font-size: 40px;">Temperature Converter</h1>
+        </div>
+        <br>
+        <div class="celcius_input">
+            <h3>Celcius:</h3>
+            <input type="number" class="celcius" name="celcius">
+        </div>
+        <div class="fahrenheit_input">
+            <h3>Fahrenheit:</h3>
+            <input type="number" class="fahrenheit" name="fahrenheit">
+        </div>
+        <div class="kelvin_input">
+            <h3>Kelivn:</h3>
+            <input type="number" class="kelvin" name="kelvin">
+        </div>
+        <div class="rankine_input">
+            <h3>Rankine:</h3>
+            <input type="number" class="rankine" name="rankine">
+        </div>
+    </div>
+    <script>
+        const Celcius_variable = document.querySelector('.celcius_input input')
+        const Fahrenheit_variable = document.querySelector('.fahrenheit_input input')
+        const Kelvin_variable = document.querySelector('.kelvin_input input')
+        const Rankine_variable = document.querySelector('.rankine_input input')
+
+
+        function calc(event) {
+    const calcValue = Number(event.target.value);
+
+    if (event.target.name === "celcius") {
+        Fahrenheit_variable.value = ((calcValue * 9 / 5) + 32).toFixed(2);
+        Kelvin_variable.value = (calcValue + 273.15).toFixed(2);
+        Rankine_variable.value = ((calcValue * 1.8) + 491.67).toFixed(2);
+    }
+
+    else if (event.target.name === "fahrenheit") {
+        Celcius_variable.value = ((calcValue - 32) * 5 / 9).toFixed(2);
+        Kelvin_variable.value = (((calcValue - 32) * 5 / 9) + 273.15).toFixed(2);
+        Rankine_variable.value = (calcValue + 459.67).toFixed(2);
+    }
+
+    else if (event.target.name === "kelvin") {
+        Celcius_variable.value = (calcValue - 273.15).toFixed(2);
+        Fahrenheit_variable.value = (((calcValue - 273.15) * 1.8) + 32).toFixed(2);
+        Rankine_variable.value = (calcValue * 1.8).toFixed(2);
+    }
+
+    else if (event.target.name === "rankine") {
+        Celcius_variable.value = ((calcValue - 491.67) * 5 / 9).toFixed(2);
+        Fahrenheit_variable.value = (calcValue - 459.67).toFixed(2);
+        Kelvin_variable.value = (calcValue * 5 / 9).toFixed(2);
+    }
+}
+
+        Celcius_variable.addEventListener("input",calc)
+        Fahrenheit_variable.addEventListener("input",calc)
+        Kelvin_variable.addEventListener("input",calc)
+        Rankine_variable.addEventListener("input",calc)
+    </script>
+</body>
+
+</html>
