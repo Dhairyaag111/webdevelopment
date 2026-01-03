@@ -10,24 +10,26 @@
         }
 
         body {
-            background-color: #CBE793;
+            background-color:#FBBC2F;
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: sans-serif;
+
         }
 
         .main {
             width: 480px;
             height: 320px;
-            background-color: #D4EAC5;
+            background: #C9E491;
+            background: linear-gradient(0deg, rgba(201, 228, 145, 1) 0%, rgba(253, 187, 45, 1) 100%);
             padding: 15px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            box-shadow: 3px 3px 6px grey;
+            box-shadow: 4px 4px 15px rgb(0, 0, 0);
             border-radius: 10px;
-            margin-top: 120px;
+            margin-top: 150px;
             justify-content: top;
             align-items: center;
         }
@@ -35,7 +37,7 @@
         .celcius_input,
         .fahrenheit_input,
         .kelvin_input,
-        .rankine_input{
+        .rankine_input {
             width: 400px;
             display: flex;
             flex-direction: row;
@@ -49,6 +51,11 @@
             box-shadow: 3px 2px 6px grey;
             border: 1px solid grey;
             padding: 5px 10px;
+            background-color: #d4eac541;
+        }
+
+        input::placeholder {
+            color: black;
         }
     </style>
     <meta charset="UTF-8">
@@ -64,19 +71,19 @@
         <br>
         <div class="celcius_input">
             <h3>Celcius:</h3>
-            <input type="number" class="celcius" name="celcius">
+            <input type="number" class="celcius" name="celcius" placeholder="0">
         </div>
         <div class="fahrenheit_input">
             <h3>Fahrenheit:</h3>
-            <input type="number" class="fahrenheit" name="fahrenheit">
+            <input type="number" class="fahrenheit" name="fahrenheit" placeholder="0">
         </div>
         <div class="kelvin_input">
             <h3>Kelivn:</h3>
-            <input type="number" class="kelvin" name="kelvin">
+            <input type="number" class="kelvin" name="kelvin" placeholder="0">
         </div>
         <div class="rankine_input">
             <h3>Rankine:</h3>
-            <input type="number" class="rankine" name="rankine">
+            <input type="number" class="rankine" name="rankine" placeholder="0">
         </div>
     </div>
     <script>
@@ -87,37 +94,37 @@
 
 
         function calc(event) {
-    const calcValue = Number(event.target.value);
+            const calcValue = Number(event.target.value);
 
-    if (event.target.name === "celcius") {
-        Fahrenheit_variable.value = ((calcValue * 9 / 5) + 32).toFixed(2);
-        Kelvin_variable.value = (calcValue + 273.15).toFixed(2);
-        Rankine_variable.value = ((calcValue * 1.8) + 491.67).toFixed(2);
-    }
+            if (event.target.name === "celcius") {
+                Fahrenheit_variable.value = ((calcValue * 9 / 5) + 32).toFixed(2);
+                Kelvin_variable.value = (calcValue + 273.15).toFixed(2);
+                Rankine_variable.value = ((calcValue * 1.8) + 491.67).toFixed(2);
+            }
 
-    else if (event.target.name === "fahrenheit") {
-        Celcius_variable.value = ((calcValue - 32) * 5 / 9).toFixed(2);
-        Kelvin_variable.value = (((calcValue - 32) * 5 / 9) + 273.15).toFixed(2);
-        Rankine_variable.value = (calcValue + 459.67).toFixed(2);
-    }
+            else if (event.target.name === "fahrenheit") {
+                Celcius_variable.value = ((calcValue - 32) * 5 / 9).toFixed(2);
+                Kelvin_variable.value = (((calcValue - 32) * 5 / 9) + 273.15).toFixed(2);
+                Rankine_variable.value = (calcValue + 459.67).toFixed(2);
+            }
 
-    else if (event.target.name === "kelvin") {
-        Celcius_variable.value = (calcValue - 273.15).toFixed(2);
-        Fahrenheit_variable.value = (((calcValue - 273.15) * 1.8) + 32).toFixed(2);
-        Rankine_variable.value = (calcValue * 1.8).toFixed(2);
-    }
+            else if (event.target.name === "kelvin") {
+                Celcius_variable.value = (calcValue - 273.15).toFixed(2);
+                Fahrenheit_variable.value = (((calcValue - 273.15) * 1.8) + 32).toFixed(2);
+                Rankine_variable.value = (calcValue * 1.8).toFixed(2);
+            }
 
-    else if (event.target.name === "rankine") {
-        Celcius_variable.value = ((calcValue - 491.67) * 5 / 9).toFixed(2);
-        Fahrenheit_variable.value = (calcValue - 459.67).toFixed(2);
-        Kelvin_variable.value = (calcValue * 5 / 9).toFixed(2);
-    }
-}
+            else if (event.target.name === "rankine") {
+                Celcius_variable.value = ((calcValue - 491.67) * 5 / 9).toFixed(2);
+                Fahrenheit_variable.value = (calcValue - 459.67).toFixed(2);
+                Kelvin_variable.value = (calcValue * 5 / 9).toFixed(2);
+            }
+        }
 
-        Celcius_variable.addEventListener("input",calc)
-        Fahrenheit_variable.addEventListener("input",calc)
-        Kelvin_variable.addEventListener("input",calc)
-        Rankine_variable.addEventListener("input",calc)
+        Celcius_variable.addEventListener("input", calc)
+        Fahrenheit_variable.addEventListener("input", calc)
+        Kelvin_variable.addEventListener("input", calc)
+        Rankine_variable.addEventListener("input", calc)
     </script>
 </body>
 
