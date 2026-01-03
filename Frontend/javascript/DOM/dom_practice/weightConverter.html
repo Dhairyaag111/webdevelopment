@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #CBE793;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 450px;
+            height: 220px;
+            background-color: #D4EAC5;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 3px 3px 6px grey;
+            border-radius: 10px;
+            margin-top: 120px;
+            justify-content: top;
+            align-items: center;
+        }
+
+        .kg_input,
+        .pound_input {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+            font-size: 20px;
+        }
+
+        input {
+            border-radius: 5px;
+            box-shadow: 3px 2px 6px grey;
+            border: 1px solid grey;
+            padding: 5px 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1 style="font-size: 40px;">Weight Converter</h1>
+        </div>
+        <br>
+        <div class="kg_input">
+            <h3>Weight in Kg:</h3>
+            <input type="number" class="kiloGram" name="kiloGram">
+        </div>
+        <br>
+        <div class="pound_input">
+            <h3>Weight in Pound:</h3>
+            <input type="number" class="Pound" name="Pound">
+        </div>
+    </div>
+    <script>
+        const kiloGram = document.querySelector('.kg_input input')
+        const Pound = document.querySelector('.pound_input input')
+
+        function calculation(event) {
+            const valueCalc = event.target.value
+            if (event.target.name === "kiloGram") {
+                Pound.value = (valueCalc * 2.20462).toFixed(2)
+            }
+            else if (event.target.name === "Pound") {
+                kiloGram.value = (valueCalc / 2.20462).toFixed(2)
+            }
+        }
+        kiloGram.addEventListener("input", calculation)
+        Pound.addEventListener("input", calculation)
+    </script>
+</body>
+
+</html>
