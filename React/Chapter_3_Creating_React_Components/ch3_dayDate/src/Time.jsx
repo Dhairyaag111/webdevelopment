@@ -1,9 +1,11 @@
-// export default function Time() {
-//   let dt = new Date()
+export default function Time() {
+  let dt = new Date()
 
-//   return <div>
-//     <h2>
-//       dsfgfdhgfdhbfdbnh
-//     </h2>
-//   </div>
-// }
+  return (
+    <div>
+      <h2>
+        {dt.toLocaleTimeString()}
+      </h2>
+    </div>
+  )
+}
