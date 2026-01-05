@@ -1,15 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Time } from './Time'
-import { Day } from './Day'
+// import Day from './Day.jsx'
+// import Time from './Time.jsx'
 
 function App() {
-  return <div>
-    <Time></Time>
-    <Day></Day>
-  </div>
+  return <h2>Hehehhe</h2>
 }
-
 export default App
