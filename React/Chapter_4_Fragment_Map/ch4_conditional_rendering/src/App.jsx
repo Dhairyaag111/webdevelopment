@@ -1,16 +1,16 @@
 // export default function App() {
 //     let arr = ["apple", "mango", "orange", "pineapple", "guava"]
-    // arr = []
+// arr = []
 
-    // if (arr.length === 0) {
-    //     return <>
-    //         <h3>Sorry no fruits</h3>
-    //     </>
-    // }
+// if (arr.length === 0) {
+//     return <>
+//         <h3>Sorry no fruits</h3>
+//     </>
+// }
 
-    // let variable = (arr.length === 0) ? <h3>Sorry no fruits</h3> : null
+// let variable = (arr.length === 0) ? <h3>Sorry no fruits</h3> : null
 
-    // let variable = ((arr.length===0) && <><h3>Sorry no fruits</h3></>)
+// let variable = ((arr.length===0) && <><h3>Sorry no fruits</h3></>)
 //     return (
 //         <>
 //             {/* {variable} */}
@@ -23,6 +23,22 @@
 //     )
 
 // }
-
+import Props from "./Props"
 export default function App() {
+    // let arr = ["apple", "mango", "orange", "pineapple", "guava"]
+    let obj = {
+        name: "Dhairya Agrawal",
+        class: 10,
+        roll_no: 12,
+        age: 16
+    }
+    return (
+        <>
+            <ul class="list-group">
+                {arr.map(fruits => (
+                    <li key={fruits} className="list-group-item" dhairya={obj}>{fruits}</li>
+                ))}
+            </ul>
+        </>
+    )
 }
