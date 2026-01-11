@@ -29,7 +29,8 @@ export default function App() {
         name: "Dhairya Agrawal",
         class: 10,
         roll_no: 12,
-        age: 16
+        age: 16,
+        address:"Nepal"
     }
     return (
         <>
