@@ -1,5 +1,37 @@
-export default function Props(props){
+// export default function Props(props){
+//     return (
+//         <ul>
+//         <li className="list-group-item">{props.dhairya.name}</li>
+//         <li className="list-group-item">{props.dhairya.age}</li>
+//         <li className="list-group-item">{props.dhairya.obj2.hulu}</li>
+//         <li className="list-group-item">{props.dhairya.obj2.hela}</li>
+//         <li className="list-group-item">{props.dhairya.obj2.hala}</li>
+//         <li className="list-group-item">{props.dhairya.obj2.hele}</li>
+//         </ul>
+//     )
+// }
+
+
+
+export default function DisplayUserInfo(props) {
     return (
-        <li className="list-group-item">{props.dhairya.name}</li>
+        <ul>
+            <li className="list-group-item">{props.dhairya.basic_info.personal.age}</li>
+            <li className="list-group-item">{props.dhairya.basic_info.education.faculty}</li>
+            <li className="list-group-item">{props.dhairya.basic_info.education.college.university}</li>
+            <li className="list-group-item">{props.dhairya.basic_info.education.college.location.district}</li>
+            <li className="list-group-item">{props.dhairya.address.history.stayed_places[0].duration.from}</li>
+            <li className="list-group-item">{props.dhairya.address.history.stayed_places[1].duration.to}</li>
+            <li className="list-group-item">{props.dhairya.address.current.temporary.postal_code}</li>
+            <li className="list-group-item">{props.dhairya.address.current.temporary.geo.lng}</li>
+            <li className="list-group-item">{props.dhairya.address.current.permanent.province}</li>
+            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.breakfast[1]}</li>
+            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.dinner[2]}</li>
+            <li className="list-group-item">{props.dhairya.address.preferences.travel.favorite_places.countries[1].name}</li>
+            <li className="list-group-item">{props.dhairya.address.preferences.travel.favorite_places.dream_city.reasons.trekking}</li>
+            <li className="list-group-item">{props.dhairya.activities.hobbies[1]}</li>
+            <li className="list-group-item">{props.dhairya.activities.sports.outdoor.position}</li>
+            <li className="list-group-item">{props.dhairya.system_meta.created_at}</li>
+        </ul>
     )
 }
