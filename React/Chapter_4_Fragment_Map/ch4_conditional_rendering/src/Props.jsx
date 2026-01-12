@@ -1,3 +1,5 @@
-export default Props(props){
-    <h1>{dhairay.props.name}</h1>
+export default function Props(props){
+    return (
+        <li className="list-group-item">{props.dhairya.name}</li>
+    )
 }

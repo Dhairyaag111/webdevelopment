@@ -23,6 +23,7 @@
 //     )
 
 // }
+import Props from "./Props"
 export default function App() {
     // let arr = ["apple", "mango", "orange", "pineapple", "guava"]
     let obj = {
@@ -35,9 +36,10 @@ export default function App() {
     return (
         <>
             <ul class="list-group">
-                {arr.map(fruits => (
+                {/* {arr.map(fruits => (
                     <li key={fruits} className="list-group-item" dhairya={obj}></li>
-                ))}
+                ))} */}
+                <Props dhairya={obj} ></Props>
             </ul>
         </>
     )
