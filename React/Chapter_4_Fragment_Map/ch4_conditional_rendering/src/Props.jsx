@@ -25,12 +25,16 @@ export default function DisplayUserInfo(props) {
             <li className="list-group-item">{props.dhairya.address.current.temporary.postal_code}</li>
             <li className="list-group-item">{props.dhairya.address.current.temporary.geo.lng}</li>
             <li className="list-group-item">{props.dhairya.address.current.permanent.province}</li>
-            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.breakfast[1]}</li>
-            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.dinner[2]}</li>
-            <li className="list-group-item">{props.dhairya.address.preferences.travel.favorite_places.countries[1].name}</li>
-            <li className="list-group-item">{props.dhairya.address.preferences.travel.favorite_places.dream_city.reasons.trekking}</li>
+            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.breakfast[1].name}</li>
+            <li className="list-group-item">{props.dhairya.preferences.preferences.dishes.dinner[2].calories}</li>
+            <li className="list-group-item">{props.dhairya.preferences.travel.favorite_places.countries[0].name}</li>
+            <li className="list-group-item">{props.dhairya.preferences.travel.favorite_places.dream_city.name}</li>
+
+            {/* <li className="list-group-item">{props.dhairya.preferences.travel.favorite_places.dream_city.reasons.snow}</li> */} {/*Use turnery operator
+            */}
+            
             <li className="list-group-item">{props.dhairya.activities.hobbies[1]}</li>
-            <li className="list-group-item">{props.dhairya.activities.sports.outdoor.position}</li>
+            <li className="list-group-item">{props.dhairya.activities.sports.outdoor[0].position}</li>
             <li className="list-group-item">{props.dhairya.system_meta.created_at}</li>
         </ul>
     )
