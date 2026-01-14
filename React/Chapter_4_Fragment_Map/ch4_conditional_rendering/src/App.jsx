@@ -58,7 +58,8 @@
 // }
 
 
-import DisplayUserInfo from "./Props";
+// import DisplayUserInfo from "./Props";
+import DisplayAPI from "./Props";
 export default function App(){
     let studentProfile = {
     basic_info: {
@@ -183,9 +184,166 @@ export default function App(){
         is_active: true
     }
 };
+
+
+
+let apiResponse = {
+    status: "success",
+    statusCode: 200,
+    request_id: "req_9xA21Lm",
+    timestamp: "2026-01-12T10:45:30.456Z",
+
+    pagination: {
+        current_page: 1,
+        per_page: 10,
+        total_pages: 5,
+        total_records: 47
+    },
+
+    data: {
+        user: {
+            id: "usr_1029",
+            is_verified: true,
+            profile: {
+                personal: {
+                    name: "Nayan Pathak",
+                    age: 22,
+                    gender: "Male"
+                },
+                contact: {
+                    email: "nayan.pathak@example.com",
+                    phones: [
+                        {
+                            type: "primary",
+                            number: "+977-98XXXXXXX",
+                            verified: true
+                        },
+                        {
+                            type: "secondary",
+                            number: "+977-97XXXXXXX",
+                            verified: false
+                        }
+                    ]
+                }
+            },
+
+            roles: ["student", "developer"],
+
+            permissions: {
+                modules: {
+                    dashboard: {
+                        read: true,
+                        write: false
+                    },
+                    courses: {
+                        read: true,
+                        write: true,
+                        advanced: {
+                            export: false,
+                            import: true
+                        }
+                    }
+                }
+            }
+        },
+
+        academic: {
+            enrolled_courses: [
+                {
+                    course_id: "CS101",
+                    title: "Data Structures",
+                    instructor: {
+                        id: "ins_01",
+                        name: "Dr. Sharma",
+                        contact: {
+                            email: "sharma@college.edu"
+                        }
+                    },
+                    progress: {
+                        completed_percentage: 68,
+                        grades: {
+                            mid_term: 75,
+                            final_term: null
+                        }
+                    }
+                },
+                {
+                    course_id: "CS205",
+                    title: "Operating Systems",
+                    instructor: {
+                        id: "ins_04",
+                        name: "Prof. Thapa"
+                    },
+                    progress: {
+                        completed_percentage: 45,
+                        grades: {
+                            mid_term: 60,
+                            final_term: null
+                        }
+                    }
+                }
+            ]
+        },
+
+        preferences: {
+            ui: {
+                theme: "dark",
+                language: "en",
+                accessibility: {
+                    high_contrast: false,
+                    text_size: "medium"
+                }
+            },
+            notifications: {
+                email: true,
+                sms: false,
+                push: {
+                    enabled: true,
+                    schedule: {
+                        quiet_hours: {
+                            from: "22:00",
+                            to: "06:00"
+                        },
+                        timezone: "Asia/Kathmandu"
+                    }
+                }
+            }
+        }
+    },
+
+    logs: {
+        last_login: {
+            ip: "103.12.45.21",
+            device: {
+                type: "mobile",
+                os: {
+                    name: "Android",
+                    version: "14"
+                },
+                browser: null
+            }
+        },
+        activity_history: [
+            {
+                action: "LOGIN",
+                timestamp: "2026-01-12T08:15:11.000Z"
+            },
+            {
+                action: "COURSE_VIEW",
+                meta: {
+                    course_id: "CS101",
+                    duration_seconds: 320
+                }
+            }
+        ]
+    },
+
+    errors: null
+};
 return(
     <>
-    <DisplayUserInfo dhairya={studentProfile}></DisplayUserInfo>
+    {/* <DisplayUserInfo dhairya={studentProfile}></DisplayUserInfo> */}
+    <DisplayAPI dhairya={apiResponse}></DisplayAPI>
     </>
 )
 }

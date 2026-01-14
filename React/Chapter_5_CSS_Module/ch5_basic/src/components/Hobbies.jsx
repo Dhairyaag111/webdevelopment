@@ -4,7 +4,7 @@ function Hobbies(props) {
             <li>{props.SentData.hobbies[0]}</li>
             <li>{props.SentData.hobbies[1]}</li>
             <li>{props.SentData.hobbies[2]}</li>
-        </ol>
+        </ol> 
     </>
 }
 export default Hobbies
