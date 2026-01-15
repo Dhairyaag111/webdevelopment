@@ -1,7 +1,8 @@
-
+import "./App.css"
 import { Intro } from "./components/Intro"
 import Button from "./components/button"
 import Hobbies from "./components/Hobbies"
+import Test from "./components/Test"
 export default function App(){
   let PersonalInfo = {
     name:"Dhairya Agrawal",
@@ -14,5 +15,6 @@ export default function App(){
     <Intro SentData={PersonalInfo}></Intro>
     <Button SentData={PersonalInfo}></Button>
     <Hobbies SentData={PersonalInfo}></Hobbies>
+    <Test></Test>
   </>
 }
