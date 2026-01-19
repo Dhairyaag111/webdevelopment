@@ -1,4 +1,4 @@
-function Hobbies(props) {
+export default function Hobbies(props) {
     return <>
         <ol type="a">
             <li className="list one">{props.SentData.hobbies[0]}</li>
@@ -7,4 +7,3 @@ function Hobbies(props) {
         </ol>
     </>
 }
-export default Hobbies
