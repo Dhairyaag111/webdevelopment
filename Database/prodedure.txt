@@ -1,1 +1,133 @@
 LEARNING DATABASE AND LEARNED MANY COMMANDS OF ADDING, CREATING MODIFING ETC IN DATABASE
+
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 95
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use student;
+Database changed
+MariaDB [student]>
+
+MariaDB [student]> insert into details(S_id, S_name, S_age, S_fac) values(1, "Dhairya Agrawal", 16, "Science"), (2, "Sahil Agrawal", 15, "Science"), (3, "Nayan Pathak", 22, "Science");
+Query OK, 3 rows affected (0.047 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [student]> truncate table details;
+Query OK, 0 rows affected (0.047 sec)
+
+MariaDB [student]> drop table details;
+Query OK, 0 rows affected (0.044 sec)
+
+MariaDB [student]> drop database student;
+Query OK, 0 rows affected (0.003 sec)
+
+
+
+
+
+
+
+
+
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 208
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database school;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use school;
+Database changed
+MariaDB [school]> drop database school;
+Query OK, 0 rows affected (0.044 sec)
+
+MariaDB [(none)]> create database school;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use school;
+Database changed
+MariaDB [school]> create table students;
+
+MariaDB [school]> create table students (id integer, name varchar(25), age integer);
+Query OK, 0 rows affected (0.041 sec)
+
+MariaDB [school]> drop table students;
+Query OK, 0 rows affected (0.011 sec)
+
+MariaDB [school]> create table employee (emp_id integer, emp_name varchar(30), salary integer);
+Query OK, 0 rows affected (0.050 sec)
+
+MariaDB [school]> alter table employee add department varchar(50);
+Query OK, 0 rows affected (0.037 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table employee drop salary;
+Query OK, 0 rows affected (0.045 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table employee change emp_name employee_name varchar(30);
+Query OK, 0 rows affected (0.045 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table employee modify department integer;
+Query OK, 0 rows affected (0.073 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table employee rename staff;
+Query OK, 0 rows affected (0.014 sec)
+
+
+
+
+
+
+🔹 Advanced Level (DDL Based) : 
+
+Drop the staff table completely.
+Create a table products with two columns of your choice.
+Add a column price to the products table.
+Modify the datatype of the price column.
+Delete the price column from the products table.
+Rename the table products to items.
+Create a table orders and rename it to customer_orders.
+Rename a column in the customer_orders table.
+Empty the products (or items) table.
+Drop the entire database after completing all operations.
+
+
+🔹 Advanced Level (Tricky DDL-Only Questions) : 
+
+Create a table library with three columns, then rename the table to books_library.
+Add two new columns to the books_library table in a single command.
+Rename one column in books_library and change its datatype in the same statement.
+Change the datatype of a column that already exists without renaming it.
+Drop multiple columns from the books_library table using separate commands.
+Add a column to the table and then immediately remove it using DDL commands.
+Truncate the books_library table and explain whether the table structure still exists (DDL concept question).
+Rename the books_library table, then drop the renamed table.
+Create a table temporary_data, truncate it, and then drop it.
+Drop a database only after ensuring all tables inside it are removed.
