@@ -119,6 +119,79 @@ Empty the products (or items) table.
 Drop the entire database after completing all operations.
 
 
+
+C:\>cd xampp
+
+C:\xampp>cd mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use school;
+Database changed
+MariaDB [school]> drop table staff;
+Query OK, 0 rows affected (0.041 sec)
+
+MariaDB [school]> create table products;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [school]> create table products (quantity integer, quality varchar(50));
+Query OK, 0 rows affected (0.044 sec)
+
+MariaDB [school]> alter table products add price integer;
+Query OK, 0 rows affected (0.048 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table products modify price smallint;
+Query OK, 0 rows affected (0.093 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table products drop price;
+Query OK, 0 rows affected (0.035 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [school]> alter table products rename items;
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [school]> create table orders (basic_needs varchar(50));
+Query OK, 0 rows affected (0.043 sec)
+
+MariaDB [school]> alter table orders rename to costomer_orders;
+Query OK, 0 rows affected (0.036 sec)
+
+MariaDB [school]> alter table costomer_orders change basic_needs human_needs varchar(50);
+Query OK, 0 rows affected (0.010 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 🔹 Advanced Level (Tricky DDL-Only Questions) : 
 
 Create a table library with three columns, then rename the table to books_library.
