@@ -168,6 +168,11 @@ MariaDB [school]> alter table costomer_orders change basic_needs human_needs var
 Query OK, 0 rows affected (0.010 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
+MariaDB [school]> truncate table items;
+Query OK, 0 rows affected (0.040 sec)
+
+MariaDB [school]> drop database school;
+Query OK, 2 rows affected (0.022 sec)
 
 
 
