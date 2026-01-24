@@ -1,0 +1,32 @@
+// Types of datatypes
+
+Integer Number datatype : 
+
+INTEGER
+BIG INT
+SMALLINT
+MEDIUMINT
+
+
+point , float, decimal data type:
+
+FLOAT - 
+DECIMAL(10,5) - 
+
+
+Character data type : 
+VARCHAR(20) - 
+TEXT
+CHAR(3) : NP, US, UK
+
+
+Date , time : 
+
+DATE : 2026-01-23
+
+TIME : 18:40:33
+
+DATETIME :
+
+TIMESTAMP - current date time
+

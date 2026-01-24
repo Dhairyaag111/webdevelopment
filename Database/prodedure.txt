@@ -274,3 +274,11 @@ Query OK, 0 rows affected (0.014 sec)
 
 MariaDB [book_hub]> drop database book_hub;
 Query OK, 0 rows affected (0.003 sec)
+
+
+
+
+
+
+
+
