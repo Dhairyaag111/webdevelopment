@@ -186,19 +186,9 @@ Query OK, 2 rows affected (0.022 sec)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 🔹 Advanced Level (Tricky DDL-Only Questions) : 
 
+Create a database book_hub.
 Create a table library with three columns, then rename the table to books_library.
 Add two new columns to the books_library table in a single command.
 Rename one column in books_library and change its datatype in the same statement.
@@ -209,3 +199,78 @@ Truncate the books_library table and explain whether the table structure still e
 Rename the books_library table, then drop the renamed table.
 Create a table temporary_data, truncate it, and then drop it.
 Drop a database only after ensuring all tables inside it are removed.
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 65
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database book_hub;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use book_hub;
+Database changed
+MariaDB [book_hub]> create table library (story_books varchar(50),rhymes_book varchar(50),gk_books varchar(50));
+Query OK, 0 rows affected (0.009 sec)
+
+MariaDB [book_hub]> alter table library rename to books_library;
+Query OK, 0 rows affected (0.056 sec)
+
+MariaDB [book_hub]> alter table books_library add exercise_books varchar(50),add note_books varchar(50);
+Query OK, 0 rows affected (0.037 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library change rhymes_book rhymes_books_no integer;
+Query OK, 0 rows affected (0.081 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library modify story_books integer;
+Query OK, 0 rows affected (0.050 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library drop gk_books;
+Query OK, 0 rows affected (0.012 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library drop rhymes_books_no;
+Query OK, 0 rows affected (0.036 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library add rhymes_books2 varchar(50);
+Query OK, 0 rows affected (0.033 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> alter table books_library drop rhymes_books2;
+Query OK, 0 rows affected (0.037 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [book_hub]> truncate table books_library;
+Query OK, 0 rows affected (0.029 sec)
+
+MariaDB [book_hub]> alter table books_library rename to books_lib2;
+Query OK, 0 rows affected (0.018 sec)
+
+MariaDB [book_hub]> drop table books_lib2;
+Query OK, 0 rows affected (0.072 sec)
+
+MariaDB [book_hub]> create table temporary_data (temp_info varchar(10));
+Query OK, 0 rows affected (0.018 sec)
+
+MariaDB [book_hub]> truncate table temporary_data;
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [book_hub]> drop table temporary_data;
+Query OK, 0 rows affected (0.014 sec)
+
+MariaDB [book_hub]> drop database book_hub;
+Query OK, 0 rows affected (0.003 sec)
