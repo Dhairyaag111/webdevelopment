@@ -185,7 +185,6 @@ Query OK, 2 rows affected (0.022 sec)
 
 
 
-
 🔹 Advanced Level (Tricky DDL-Only Questions) : 
 
 Create a database book_hub.
