@@ -30,3 +30,43 @@ DATETIME :
 
 TIMESTAMP - current date time
 
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+
+MariaDB [(none)]> create database datatype;
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [(none)]> use datatype;
+Database changed
+
+MariaDB [datatype]> create table hehe(isMarried BOOLEAN);
+Query OK, 0 rows affected (0.013 sec)
+
+MariaDB [datatype]> insert into hehe VALUES('False');
+Query OK, 1 row affected, 1 warning (0.033 sec)
+
+MariaDB [datatype]> insert into hehe VALUES('True');
+Query OK, 1 row affected, 1 warning (0.024 sec)
+
+MariaDB [datatype]> insert into hehe VALUES(True);
+Query OK, 1 row affected (0.007 sec)
+
+MariaDB [datatype]> insert into hehe VALUES(False), (True);
+Query OK, 2 rows affected (0.003 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> create table enum_demo (courses ENUM('bca','bba','bbs'));
+Query OK, 0 rows affected (0.057 sec)
+
+MariaDB [datatype]> insert into enum_demo values('bba'),('bbs'),('bca');
+Query OK, 3 rows affected (0.003 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> create table json_demo (setting JSON);
+Query OK, 0 rows affected (0.045 sec)
