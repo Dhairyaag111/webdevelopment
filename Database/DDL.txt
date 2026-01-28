@@ -475,3 +475,29 @@ Query OK, 1 row affected (0.043 sec)
 
 
 
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>xampp\mysql\bin
+'xampp\mysql\bin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 258
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use exam;
+Database changed
+
+MariaDB [exam]> insert into student(s_name,s_add,addmission_date,addmission_time,fees,scholarship,choices,is_married,short_name,description,final_data) values ("Dhairya Agrawal","Birtamode","2026-01-27","19:05",50000,20.500,"science",False,"DA","My name is Dhairya Agrawal. I am 16 year old",'{"s_id":"1", "s_name":"Dhairya Agrawal","s_add":"Birtamode","fees":"50000","is_married":"false","short_name":"DA"}'),("Sahil Agrawal","Birtamode","2026-01-27","20:45",80000,12.500,"science",True,"SA","My name is Sahil Agrawal. I am 15 year old",'{"s_id":"2", "s_name":"Sahil Agrawal","s_add":"Birtamode","fees":"80000","is_married":"true","short_name":"SA"}'),("Nayan Pathak","Birtamode","2026-01-27","20:48",100000,13.670,"science",False,"NP","My name is Nayan Pathak. I am 22 year old",'{"s_id":"3", "s_name":"Nayan Pathak","s_add":"Birtamode","fees":"100000","is_married":"false","short_name":"NP"}');
+Query OK, 3 rows affected (0.004 sec)
+Records: 3  Duplicates: 0  Warnings: 0
