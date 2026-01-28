@@ -273,3 +273,177 @@ Query OK, 0 rows affected (0.014 sec)
 
 MariaDB [book_hub]> drop database book_hub;
 Query OK, 0 rows affected (0.003 sec)
+
+
+
+
+
+
+
+
+
+
+// Types of datatypes
+
+Integer Number datatype : 
+
+INTEGER
+BIG INT
+SMALLINT
+MEDIUMINT
+
+
+point , float, decimal data type:
+
+FLOAT - 
+DECIMAL(10,5) - 
+
+
+Character data type : 
+VARCHAR(20) - 
+TEXT
+CHAR(3) : NP, US, UK
+
+
+Date , time : 
+
+DATE : 2026-01-23
+
+TIME : 18:40:33
+
+DATETIME :
+
+TIMESTAMP - current date time
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+
+MariaDB [(none)]> create database datatype;
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [(none)]> use datatype;
+Database changed
+
+MariaDB [datatype]> create table hehe(isMarried BOOLEAN);
+Query OK, 0 rows affected (0.013 sec)
+
+MariaDB [datatype]> insert into hehe VALUES('False');
+Query OK, 1 row affected, 1 warning (0.033 sec)
+
+MariaDB [datatype]> insert into hehe VALUES('True');
+Query OK, 1 row affected, 1 warning (0.024 sec)
+
+MariaDB [datatype]> insert into hehe VALUES(True);
+Query OK, 1 row affected (0.007 sec)
+
+MariaDB [datatype]> insert into hehe VALUES(False), (True);
+Query OK, 2 rows affected (0.003 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> create table enum_demo (courses ENUM('bca','bba','bbs'));
+Query OK, 0 rows affected (0.057 sec)
+
+MariaDB [datatype]> insert into enum_demo values('bba'),('bbs'),('bca');
+Query OK, 3 rows affected (0.003 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> create table json_demo (setting JSON);
+Query OK, 0 rows affected (0.045 sec)
+
+
+
+
+
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use datatype;
+Database changed
+MariaDB [datatype]> show tables;
++--------------------+
+| Tables_in_datatype |
++--------------------+
+| enum_demo          |
+| hehe               |
+| json_demo          |
++--------------------+
+3 rows in set (0.002 sec)
+
+MariaDB [datatype]> create table prim_demo(id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(20), TodayDate TIMESTAMP DEFAULT CURRENT_T
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [datatype]> create table prim_demo(id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(20), TodayDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+Query OK, 0 rows affected (0.043 sec)
+
+MariaDB [datatype]> INSERT INTO prim_demo VALUES("Nayan Pathak");
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+MariaDB [datatype]> INSERT INTO prim_demo(name) VALUES("Nayan Pathak");
+Query OK, 1 row affected (0.042 sec)
+
+MariaDB [datatype]> INSERT INTO prim_demo(name) ("Sahil G");
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Sahil G")' at line 1
+MariaDB [datatype]> INSERT INTO prim_demo(name) VALUES("Sahil G");
+Query OK, 1 row affected (0.039 sec)
+
+MariaDB [datatype]> INSERT INTO prim_demo(name) VALUES("Dhairya G");
+Query OK, 1 row affected (0.039 sec)
+
+MariaDB [datatype]> INSERT INTO prim_demo(id, name) VALUES(99, "Dhairya G");
+Query OK, 1 row affected (0.029 sec)
+
+MariaDB [datatype]> INSERT INTO prim_demo(name) VALUES("Dhairya G");
+Query OK, 1 row affected (0.044 sec)
+
+MariaDB [datatype]> create table primary2_demo (id integer primary key auto_increment,name varchar(50));
+Query OK, 0 rows affected (0.042 sec)
+
+MariaDB [datatype]> insert into primary2_demo(name) values ("dhairya agrawal");
+Query OK, 1 row affected (0.034 sec)
+
+MariaDB [datatype]> insert into primary2_demo(id, name) values (4,"dhairya agrawal");
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [datatype]> insert into primary2_demo(name) values ("dhairya agrawal");
+Query OK, 1 row affected (0.023 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
