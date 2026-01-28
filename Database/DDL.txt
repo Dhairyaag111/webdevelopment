@@ -436,7 +436,7 @@ Query OK, 1 row affected (0.023 sec)
 
 
 
-
+//Adding many data in columns of a single table in one code
 
 
 MariaDB [(none)]> create database exam;
@@ -468,6 +468,7 @@ MariaDB [exam]> describe student;
 
 MariaDB [exam]> insert into student(s_name,s_add,addmission_date,addmission_time,fees,scholarship,choices,is_married,short_name,description,final_data) values ("Dhairya Agrawal","Birtamode","2026-01-27","19:05",50000,20.500,"science",False,"DA","My name is Dhairya Agrawal. I am 16 year old",'{"s_id":"1", "s_name":"Dhairya Agrawal","s_add":"Birtamode","fees":"50000","is_married":"false","short_name":"DA"}');
 Query OK, 1 row affected (0.043 sec)
+
 
 
 
