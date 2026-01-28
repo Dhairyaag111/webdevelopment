@@ -439,7 +439,35 @@ Query OK, 1 row affected (0.023 sec)
 
 
 
+MariaDB [(none)]> create database exam;
+Query OK, 1 row affected (0.002 sec)
 
+MariaDB [(none)]> use exam;
+Database changed
+MariaDB [exam]> create table student(s_id integer primary key auto_increment,s_name varchar(30),s_add varchar(30),addmission_date date,addmission_time time,fees float,scholarship decimal(5,3), choices enum("science","commerce","arts"),is_married boolean, short_name char(3),description text,final_data json);
+Query OK, 0 rows affected (0.044 sec)
+
+MariaDB [exam]> describe student;
++-----------------+-----------------------------------+------+-----+---------+----------------+
+| Field           | Type                              | Null | Key | Default | Extra          |
++-----------------+-----------------------------------+------+-----+---------+----------------+
+| s_id            | int(11)                           | NO   | PRI | NULL    | auto_increment |
+| s_name          | varchar(30)                       | YES  |     | NULL    |                |
+| s_add           | varchar(30)                       | YES  |     | NULL    |                |
+| addmission_date | date                              | YES  |     | NULL    |                |
+| addmission_time | time                              | YES  |     | NULL    |                |
+| fees            | float                             | YES  |     | NULL    |                |
+| scholarship     | decimal(5,3)                      | YES  |     | NULL    |                |
+| choices         | enum('science','commerce','arts') | YES  |     | NULL    |                |
+| is_married      | tinyint(1)                        | YES  |     | NULL    |                |
+| short_name      | char(3)                           | YES  |     | NULL    |                |
+| description     | text                              | YES  |     | NULL    |                |
+| final_data      | longtext                          | YES  |     | NULL    |                |
++-----------------+-----------------------------------+------+-----+---------+----------------+
+12 rows in set (0.059 sec)
+
+MariaDB [exam]> insert into student(s_name,s_add,addmission_date,addmission_time,fees,scholarship,choices,is_married,short_name,description,final_data) values ("Dhairya Agrawal","Birtamode","2026-01-27","19:05",50000,20.500,"science",False,"DA","My name is Dhairya Agrawal. I am 16 year old",'{"s_id":"1", "s_name":"Dhairya Agrawal","s_add":"Birtamode","fees":"50000","is_married":"false","short_name":"DA"}');
+Query OK, 1 row affected (0.043 sec)
 
 
 
