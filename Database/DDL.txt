@@ -826,3 +826,34 @@ MariaDB [select_query]> SELECT name from first_data where short_name="NP";
 | Nayan Pathak |
 +--------------+
 1 row in set (0.001 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MariaDB [select_query]> drop table first_data;
+Query OK, 0 rows affected (0.034 sec)
+
+MariaDB [select_query]> create table first_data (id integer, name varchar(50), age integer, salary float, is_married boolean, short_name char(3), joined_date date);
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [select_query]> insert into first_data values (1,"Dhairya Agrawal", 16, 123456.76532, True, "DA"," 2026-01-12"), (3,"Nayan Pathak", 22, 123983.23,False, "NP"," 2025-11-11"),(4,"Sahil Agrawal", 15, 6748.32, False, "SA", "2025-09-13"),(7,"Ram",21,123452.23,True,"RRR", "2026-12-12");
+Query OK, 4 rows affected (0.027 sec)
+Records: 4  Duplicates: 0  Warnings: 0
