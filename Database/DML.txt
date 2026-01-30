@@ -303,3 +303,776 @@ MariaDB [select_query]> SELECT name from first_data where short_name="NP";
 1 row in set (0.001 sec)
 
 
+
+
+
+
+
+
+
+C:\Windows\System32>cd \
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| datatype           |
+| exam               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| select_query       |
+| test               |
++--------------------+
+8 rows in set (0.115 sec)
+
+MariaDB [(none)]> use select_query;
+Database changed
+MariaDB [select_query]> show tables;
++------------------------+
+| Tables_in_select_query |
++------------------------+
+| first_data             |
++------------------------+
+1 row in set (0.002 sec)
+
+MariaDB [select_query]> CREATE TABLE second_data (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(100),
+    ->     email VARCHAR(100),
+    ->     age INT,
+    ->     city VARCHAR(50),
+    ->     is_active BOOLEAN
+    -> );
+Query OK, 0 rows affected (0.048 sec)
+
+MariaDB [select_query]> alter column second_data add salary integer;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'column second_data add salary integer' at line 1
+MariaDB [select_query]> alter table second_data add salary integer;
+Query OK, 0 rows affected (0.035 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> INSERT INTO second_data (id, name, email, age, city, is_active, salary) VALUES
+    -> (1, 'Nayan Pathak', 'nayan@gmail.com', 22, 'Birtamode', TRUE, 35000),
+    -> (2, 'Sahil Agrawal', 'sahil@gmail.com', 21, 'Kakarbhitta', TRUE, 28000),
+    -> (3, 'Dhairya Agrawal', 'dhairya@gmail.com', 23, 'Bhadrapur', FALSE, 40000),
+    -> (4, 'Anish Karki', 'anish@gmail.com', 25, 'Kathmandu', TRUE, 45000),
+    -> (5, 'Ramesh Adhikari', 'ramesh@gmail.com', 30, 'Pokhara', TRUE, 50000),
+    -> (6, 'Suman Shrestha', 'suman@gmail.com', 27, 'Lalitpur', FALSE, 38000),
+    -> (7, 'Bikash Thapa', 'bikash@gmail.com', 24, 'Butwal', TRUE, 32000),
+    -> (8, 'Aayush Pandey', 'aayush@gmail.com', 22, 'Biratnagar', TRUE, 30000),
+    -> (9, 'Rohit Sharma', 'rohit@gmail.com', 28, 'Dharan', FALSE, 42000),
+    -> (10, 'Nabin Basnet', 'nabin@gmail.com', 26, 'Hetauda', TRUE, 36000),
+    ->
+    -> (11, 'Nayan Pathak', 'nayan2@gmail.com', 22, 'Birtamode', TRUE, 35000),
+    -> (12, 'Sahil Agrawal', 'sahil2@gmail.com', 21, 'Kakarbhitta', FALSE, 28000),
+    -> (13, 'Prakash Rai', 'prakash@gmail.com', 29, 'Ilam', TRUE, 48000),
+    -> (14, 'Santosh Poudel', 'santosh@gmail.com', 31, 'Bharatpur', TRUE, 52000),
+    -> (15, 'Kiran Gurung', 'kiran@gmail.com', 27, 'Pokhara', FALSE, 41000),
+    -> (16, 'Ashim Bista', 'ashim@gmail.com', 24, 'Dhangadhi', TRUE, 33000),
+    -> (17, 'Manish Chaudhary', 'manish@gmail.com', 26, 'Nepalgunj', TRUE, 37000),
+    -> (18, 'Rupesh Yadav', 'rupesh@gmail.com', 23, 'Janakpur', FALSE, 29000),
+    -> (19, 'Suresh Mahato', 'suresh@gmail.com', 35, 'Birgunj', TRUE, 60000),
+    -> (20, 'Deepak Shah', 'deepak@gmail.com', 32, 'Lahan', TRUE, 55000),
+    ->
+    -> (21, 'Anish Karki', 'anish2@gmail.com', 25, 'Kathmandu', TRUE, 45000),
+    -> (22, 'Bikash Thapa', 'bikash2@gmail.com', 24, 'Butwal', FALSE, 32000),
+    -> (23, 'Roshan KC', 'roshan@gmail.com', 28, 'Banepa', TRUE, 39000),
+    -> (24, 'Sunil Lama', 'sunil@gmail.com', 34, 'Dhulikhel', TRUE, 58000),
+    -> (25, 'Binod Joshi', 'binod@gmail.com', 29, 'Mahendranagar', FALSE, 46000),
+    -> (26, 'Amit Chaudhary', 'amit@gmail.com', 22, 'Biratnagar', TRUE, 27000),
+    -> (27, 'Rajan Tiwari', 'rajan@gmail.com', 31, 'Gorkha', TRUE, 54000),
+    -> (28, 'Suman Shrestha', 'suman2@gmail.com', 27, 'Lalitpur', TRUE, 38000),
+    -> (29, 'Pankaj Gupta', 'pankaj@gmail.com', 36, 'Birgunj', FALSE, 62000),
+    -> (30, 'Alok Mishra', 'alok@gmail.com', 33, 'Nawalpur', TRUE, 57000),
+    ->
+    -> (31, 'Prabin Tamang', 'prabin@gmail.com', 26, 'Sindhupalchok', TRUE, 36000),
+    -> (32, 'Ritesh Sah', 'ritesh@gmail.com', 24, 'Rajbiraj', FALSE, 31000),
+    -> (33, 'Hemant Khadka', 'hemant@gmail.com', 28, 'Dang', TRUE, 43000),
+    -> (34, 'Narayan Bhandari', 'narayan@gmail.com', 40, 'Baglung', TRUE, 65000),
+    -> (35, 'Sagar Acharya', 'sagar@gmail.com', 23, 'Tansen', FALSE, 29000),
+    -> (36, 'Ujjwal Rijal', 'ujjwal@gmail.com', 27, 'Besisahar', TRUE, 40000),
+    -> (37, 'Keshav Neupane', 'keshav@gmail.com', 35, 'Arghakhanchi', TRUE, 61000),
+    -> (38, 'Yogesh Bhusal', 'yogesh@gmail.com', 21, 'Chitwan', TRUE, 26000),
+    -> (39, 'Nabin Basnet', 'nabin2@gmail.com', 26, 'Hetauda', FALSE, 36000),
+    -> (40, 'Rohit Sharma', 'rohit2@gmail.com', 28, 'Dharan', TRUE, 42000);
+Query OK, 40 rows affected (0.047 sec)
+Records: 40  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select id from second_data where age>20;
++----+
+| id |
++----+
+|  1 |
+|  2 |
+|  3 |
+|  4 |
+|  5 |
+|  6 |
+|  7 |
+|  8 |
+|  9 |
+| 10 |
+| 11 |
+| 12 |
+| 13 |
+| 14 |
+| 15 |
+| 16 |
+| 17 |
+| 18 |
+| 19 |
+| 20 |
+| 21 |
+| 22 |
+| 23 |
+| 24 |
+| 25 |
+| 26 |
+| 27 |
+| 28 |
+| 29 |
+| 30 |
+| 31 |
+| 32 |
+| 33 |
+| 34 |
+| 35 |
+| 36 |
+| 37 |
+| 38 |
+| 39 |
+| 40 |
++----+
+40 rows in set (0.001 sec)
+
+MariaDB [select_query]> select id from second_data where age>30;
++----+
+| id |
++----+
+| 14 |
+| 19 |
+| 20 |
+| 24 |
+| 27 |
+| 29 |
+| 30 |
+| 34 |
+| 37 |
++----+
+9 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where age>30;
++------------------+
+| name             |
++------------------+
+| Santosh Poudel   |
+| Suresh Mahato    |
+| Deepak Shah      |
+| Sunil Lama       |
+| Rajan Tiwari     |
+| Pankaj Gupta     |
+| Alok Mishra      |
+| Narayan Bhandari |
+| Keshav Neupane   |
++------------------+
+9 rows in set (0.001 sec)
+
+MariaDB [select_query]> select id from second_data where age>20;
++----+
+| id |
++----+
+|  1 |
+|  2 |
+|  3 |
+|  4 |
+|  5 |
+|  6 |
+|  7 |
+|  8 |
+|  9 |
+| 10 |
+| 11 |
+| 12 |
+| 13 |
+| 14 |
+| 15 |
+| 16 |
+| 17 |
+| 18 |
+| 19 |
+| 20 |
+| 21 |
+| 22 |
+| 23 |
+| 24 |
+| 25 |
+| 26 |
+| 27 |
+| 28 |
+| 29 |
+| 30 |
+| 31 |
+| 32 |
+| 33 |
+| 34 |
+| 35 |
+| 36 |
+| 37 |
+| 38 |
+| 39 |
+| 40 |
++----+
+40 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where age>20;
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Ramesh Adhikari  |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Rohit Sharma     |
+| Nabin Basnet     |
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Prakash Rai      |
+| Santosh Poudel   |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Suresh Mahato    |
+| Deepak Shah      |
+| Anish Karki      |
+| Bikash Thapa     |
+| Roshan KC        |
+| Sunil Lama       |
+| Binod Joshi      |
+| Amit Chaudhary   |
+| Rajan Tiwari     |
+| Suman Shrestha   |
+| Pankaj Gupta     |
+| Alok Mishra      |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Hemant Khadka    |
+| Narayan Bhandari |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Keshav Neupane   |
+| Yogesh Bhusal    |
+| Nabin Basnet     |
+| Rohit Sharma     |
++------------------+
+40 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT DISTINCT name from second_data;
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Ramesh Adhikari  |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Rohit Sharma     |
+| Nabin Basnet     |
+| Prakash Rai      |
+| Santosh Poudel   |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Suresh Mahato    |
+| Deepak Shah      |
+| Roshan KC        |
+| Sunil Lama       |
+| Binod Joshi      |
+| Amit Chaudhary   |
+| Rajan Tiwari     |
+| Pankaj Gupta     |
+| Alok Mishra      |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Hemant Khadka    |
+| Narayan Bhandari |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Keshav Neupane   |
+| Yogesh Bhusal    |
++------------------+
+33 rows in set (0.001 sec)
+
+MariaDB [select_query]> select DISTINCT name, id from second_data;
++------------------+----+
+| name             | id |
++------------------+----+
+| Nayan Pathak     |  1 |
+| Sahil Agrawal    |  2 |
+| Dhairya Agrawal  |  3 |
+| Anish Karki      |  4 |
+| Ramesh Adhikari  |  5 |
+| Suman Shrestha   |  6 |
+| Bikash Thapa     |  7 |
+| Aayush Pandey    |  8 |
+| Rohit Sharma     |  9 |
+| Nabin Basnet     | 10 |
+| Nayan Pathak     | 11 |
+| Sahil Agrawal    | 12 |
+| Prakash Rai      | 13 |
+| Santosh Poudel   | 14 |
+| Kiran Gurung     | 15 |
+| Ashim Bista      | 16 |
+| Manish Chaudhary | 17 |
+| Rupesh Yadav     | 18 |
+| Suresh Mahato    | 19 |
+| Deepak Shah      | 20 |
+| Anish Karki      | 21 |
+| Bikash Thapa     | 22 |
+| Roshan KC        | 23 |
+| Sunil Lama       | 24 |
+| Binod Joshi      | 25 |
+| Amit Chaudhary   | 26 |
+| Rajan Tiwari     | 27 |
+| Suman Shrestha   | 28 |
+| Pankaj Gupta     | 29 |
+| Alok Mishra      | 30 |
+| Prabin Tamang    | 31 |
+| Ritesh Sah       | 32 |
+| Hemant Khadka    | 33 |
+| Narayan Bhandari | 34 |
+| Sagar Acharya    | 35 |
+| Ujjwal Rijal     | 36 |
+| Keshav Neupane   | 37 |
+| Yogesh Bhusal    | 38 |
+| Nabin Basnet     | 39 |
+| Rohit Sharma     | 40 |
++------------------+----+
+40 rows in set (0.001 sec)
+
+MariaDB [select_query]> select DISTINCT id from second_data;_
++----+
+| id |
++----+
+|  1 |
+|  2 |
+|  3 |
+|  4 |
+|  5 |
+|  6 |
+|  7 |
+|  8 |
+|  9 |
+| 10 |
+| 11 |
+| 12 |
+| 13 |
+| 14 |
+| 15 |
+| 16 |
+| 17 |
+| 18 |
+| 19 |
+| 20 |
+| 21 |
+| 22 |
+| 23 |
+| 24 |
+| 25 |
+| 26 |
+| 27 |
+| 28 |
+| 29 |
+| 30 |
+| 31 |
+| 32 |
+| 33 |
+| 34 |
+| 35 |
+| 36 |
+| 37 |
+| 38 |
+| 39 |
+| 40 |
++----+
+40 rows in set (0.001 sec)
+
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '_' at line 1
+MariaDB [select_query]> select name from second_data where city="Pokhara";
++-----------------+
+| name            |
++-----------------+
+| Ramesh Adhikari |
+| Kiran Gurung    |
++-----------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where city="Pokhara" AND city="kathmandu"
+    -> ;
+Empty set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where city="Pokhara" OR city="kathmandu";
++-----------------+
+| name            |
++-----------------+
+| Anish Karki     |
+| Ramesh Adhikari |
+| Kiran Gurung    |
+| Anish Karki     |
++-----------------+
+4 rows in set (0.000 sec)
+
+MariaDB [select_query]> select name from second_data where city=("pokhara", "kathmandu");
+ERROR 4078 (HY000): Illegal parameter data types varchar and row for operation '='
+MariaDB [select_query]> select name from second_data where city=("pokhara" or "kathmandu");
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Ramesh Adhikari  |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Rohit Sharma     |
+| Nabin Basnet     |
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Prakash Rai      |
+| Santosh Poudel   |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Suresh Mahato    |
+| Deepak Shah      |
+| Anish Karki      |
+| Bikash Thapa     |
+| Roshan KC        |
+| Sunil Lama       |
+| Binod Joshi      |
+| Amit Chaudhary   |
+| Rajan Tiwari     |
+| Suman Shrestha   |
+| Pankaj Gupta     |
+| Alok Mishra      |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Hemant Khadka    |
+| Narayan Bhandari |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Keshav Neupane   |
+| Yogesh Bhusal    |
+| Nabin Basnet     |
+| Rohit Sharma     |
++------------------+
+40 rows in set, 50 warnings (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where age>30 and city="kathmandu";
+Empty set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where age>30 and city="pokhara";
+Empty set (0.001 sec)
+
+MariaDB [select_query]> select name from second_data where age>25 and city="pokhara";
++-----------------+
+| name            |
++-----------------+
+| Ramesh Adhikari |
+| Kiran Gurung    |
++-----------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT name from second_data where age>=23 and city="kathmandu";
++-------------+
+| name        |
++-------------+
+| Anish Karki |
+| Anish Karki |
++-------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT name from second_data where age>=21 or age<=27;
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Ramesh Adhikari  |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Rohit Sharma     |
+| Nabin Basnet     |
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Prakash Rai      |
+| Santosh Poudel   |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Suresh Mahato    |
+| Deepak Shah      |
+| Anish Karki      |
+| Bikash Thapa     |
+| Roshan KC        |
+| Sunil Lama       |
+| Binod Joshi      |
+| Amit Chaudhary   |
+| Rajan Tiwari     |
+| Suman Shrestha   |
+| Pankaj Gupta     |
+| Alok Mishra      |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Hemant Khadka    |
+| Narayan Bhandari |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Keshav Neupane   |
+| Yogesh Bhusal    |
+| Nabin Basnet     |
+| Rohit Sharma     |
++------------------+
+40 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT name from second_data where age>=21 and  age<=27;
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Nabin Basnet     |
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Anish Karki      |
+| Bikash Thapa     |
+| Amit Chaudhary   |
+| Suman Shrestha   |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Yogesh Bhusal    |
+| Nabin Basnet     |
++------------------+
+24 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT name from second_data where age BETWEEN 21 and 27;
++------------------+
+| name             |
++------------------+
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Dhairya Agrawal  |
+| Anish Karki      |
+| Suman Shrestha   |
+| Bikash Thapa     |
+| Aayush Pandey    |
+| Nabin Basnet     |
+| Nayan Pathak     |
+| Sahil Agrawal    |
+| Kiran Gurung     |
+| Ashim Bista      |
+| Manish Chaudhary |
+| Rupesh Yadav     |
+| Anish Karki      |
+| Bikash Thapa     |
+| Amit Chaudhary   |
+| Suman Shrestha   |
+| Prabin Tamang    |
+| Ritesh Sah       |
+| Sagar Acharya    |
+| Ujjwal Rijal     |
+| Yogesh Bhusal    |
+| Nabin Basnet     |
++------------------+
+24 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email from second_data where salary between 30000 and 40000;
++----+------------------+-------------------+
+| id | name             | email             |
++----+------------------+-------------------+
+|  1 | Nayan Pathak     | nayan@gmail.com   |
+|  3 | Dhairya Agrawal  | dhairya@gmail.com |
+|  6 | Suman Shrestha   | suman@gmail.com   |
+|  7 | Bikash Thapa     | bikash@gmail.com  |
+|  8 | Aayush Pandey    | aayush@gmail.com  |
+| 10 | Nabin Basnet     | nabin@gmail.com   |
+| 11 | Nayan Pathak     | nayan2@gmail.com  |
+| 16 | Ashim Bista      | ashim@gmail.com   |
+| 17 | Manish Chaudhary | manish@gmail.com  |
+| 22 | Bikash Thapa     | bikash2@gmail.com |
+| 23 | Roshan KC        | roshan@gmail.com  |
+| 28 | Suman Shrestha   | suman2@gmail.com  |
+| 31 | Prabin Tamang    | prabin@gmail.com  |
+| 32 | Ritesh Sah       | ritesh@gmail.com  |
+| 36 | Ujjwal Rijal     | ujjwal@gmail.com  |
+| 39 | Nabin Basnet     | nabin2@gmail.com  |
++----+------------------+-------------------+
+16 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email from second_data where salary not between 30000 and 40000;
++----+------------------+-------------------+
+| id | name             | email             |
++----+------------------+-------------------+
+|  2 | Sahil Agrawal    | sahil@gmail.com   |
+|  4 | Anish Karki      | anish@gmail.com   |
+|  5 | Ramesh Adhikari  | ramesh@gmail.com  |
+|  9 | Rohit Sharma     | rohit@gmail.com   |
+| 12 | Sahil Agrawal    | sahil2@gmail.com  |
+| 13 | Prakash Rai      | prakash@gmail.com |
+| 14 | Santosh Poudel   | santosh@gmail.com |
+| 15 | Kiran Gurung     | kiran@gmail.com   |
+| 18 | Rupesh Yadav     | rupesh@gmail.com  |
+| 19 | Suresh Mahato    | suresh@gmail.com  |
+| 20 | Deepak Shah      | deepak@gmail.com  |
+| 21 | Anish Karki      | anish2@gmail.com  |
+| 24 | Sunil Lama       | sunil@gmail.com   |
+| 25 | Binod Joshi      | binod@gmail.com   |
+| 26 | Amit Chaudhary   | amit@gmail.com    |
+| 27 | Rajan Tiwari     | rajan@gmail.com   |
+| 29 | Pankaj Gupta     | pankaj@gmail.com  |
+| 30 | Alok Mishra      | alok@gmail.com    |
+| 33 | Hemant Khadka    | hemant@gmail.com  |
+| 34 | Narayan Bhandari | narayan@gmail.com |
+| 35 | Sagar Acharya    | sagar@gmail.com   |
+| 37 | Keshav Neupane   | keshav@gmail.com  |
+| 38 | Yogesh Bhusal    | yogesh@gmail.com  |
+| 40 | Rohit Sharma     | rohit2@gmail.com  |
++----+------------------+-------------------+
+24 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email, salary from second_data where salary not between 30000 and 40000;
++----+------------------+-------------------+--------+
+| id | name             | email             | salary |
++----+------------------+-------------------+--------+
+|  2 | Sahil Agrawal    | sahil@gmail.com   |  28000 |
+|  4 | Anish Karki      | anish@gmail.com   |  45000 |
+|  5 | Ramesh Adhikari  | ramesh@gmail.com  |  50000 |
+|  9 | Rohit Sharma     | rohit@gmail.com   |  42000 |
+| 12 | Sahil Agrawal    | sahil2@gmail.com  |  28000 |
+| 13 | Prakash Rai      | prakash@gmail.com |  48000 |
+| 14 | Santosh Poudel   | santosh@gmail.com |  52000 |
+| 15 | Kiran Gurung     | kiran@gmail.com   |  41000 |
+| 18 | Rupesh Yadav     | rupesh@gmail.com  |  29000 |
+| 19 | Suresh Mahato    | suresh@gmail.com  |  60000 |
+| 20 | Deepak Shah      | deepak@gmail.com  |  55000 |
+| 21 | Anish Karki      | anish2@gmail.com  |  45000 |
+| 24 | Sunil Lama       | sunil@gmail.com   |  58000 |
+| 25 | Binod Joshi      | binod@gmail.com   |  46000 |
+| 26 | Amit Chaudhary   | amit@gmail.com    |  27000 |
+| 27 | Rajan Tiwari     | rajan@gmail.com   |  54000 |
+| 29 | Pankaj Gupta     | pankaj@gmail.com  |  62000 |
+| 30 | Alok Mishra      | alok@gmail.com    |  57000 |
+| 33 | Hemant Khadka    | hemant@gmail.com  |  43000 |
+| 34 | Narayan Bhandari | narayan@gmail.com |  65000 |
+| 35 | Sagar Acharya    | sagar@gmail.com   |  29000 |
+| 37 | Keshav Neupane   | keshav@gmail.com  |  61000 |
+| 38 | Yogesh Bhusal    | yogesh@gmail.com  |  26000 |
+| 40 | Rohit Sharma     | rohit2@gmail.com  |  42000 |
++----+------------------+-------------------+--------+
+24 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email, salary from second_data where city IN ('Birtamode', 'Kathmandu');
++----+--------------+------------------+--------+
+| id | name         | email            | salary |
++----+--------------+------------------+--------+
+|  1 | Nayan Pathak | nayan@gmail.com  |  35000 |
+|  4 | Anish Karki  | anish@gmail.com  |  45000 |
+| 11 | Nayan Pathak | nayan2@gmail.com |  35000 |
+| 21 | Anish Karki  | anish2@gmail.com |  45000 |
++----+--------------+------------------+--------+
+4 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email, city from second_data where city IN ('Nepalgunj', 'Kathmandu');
++----+------------------+------------------+-----------+
+| id | name             | email            | city      |
++----+------------------+------------------+-----------+
+|  4 | Anish Karki      | anish@gmail.com  | Kathmandu |
+| 17 | Manish Chaudhary | manish@gmail.com | Nepalgunj |
+| 21 | Anish Karki      | anish2@gmail.com | Kathmandu |
++----+------------------+------------------+-----------+
+3 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT id, name, email, city from second_data where city NOT IN ('Nepalgunj', 'Kathmandu');
++----+------------------+-------------------+---------------+
+| id | name             | email             | city          |
++----+------------------+-------------------+---------------+
+|  1 | Nayan Pathak     | nayan@gmail.com   | Birtamode     |
+|  2 | Sahil Agrawal    | sahil@gmail.com   | Kakarbhitta   |
+|  3 | Dhairya Agrawal  | dhairya@gmail.com | Bhadrapur     |
+|  5 | Ramesh Adhikari  | ramesh@gmail.com  | Pokhara       |
+|  6 | Suman Shrestha   | suman@gmail.com   | Lalitpur      |
+|  7 | Bikash Thapa     | bikash@gmail.com  | Butwal        |
+|  8 | Aayush Pandey    | aayush@gmail.com  | Biratnagar    |
+|  9 | Rohit Sharma     | rohit@gmail.com   | Dharan        |
+| 10 | Nabin Basnet     | nabin@gmail.com   | Hetauda       |
+| 11 | Nayan Pathak     | nayan2@gmail.com  | Birtamode     |
+| 12 | Sahil Agrawal    | sahil2@gmail.com  | Kakarbhitta   |
+| 13 | Prakash Rai      | prakash@gmail.com | Ilam          |
+| 14 | Santosh Poudel   | santosh@gmail.com | Bharatpur     |
+| 15 | Kiran Gurung     | kiran@gmail.com   | Pokhara       |
+| 16 | Ashim Bista      | ashim@gmail.com   | Dhangadhi     |
+| 18 | Rupesh Yadav     | rupesh@gmail.com  | Janakpur      |
+| 19 | Suresh Mahato    | suresh@gmail.com  | Birgunj       |
+| 20 | Deepak Shah      | deepak@gmail.com  | Lahan         |
+| 22 | Bikash Thapa     | bikash2@gmail.com | Butwal        |
+| 23 | Roshan KC        | roshan@gmail.com  | Banepa        |
+| 24 | Sunil Lama       | sunil@gmail.com   | Dhulikhel     |
+| 25 | Binod Joshi      | binod@gmail.com   | Mahendranagar |
+| 26 | Amit Chaudhary   | amit@gmail.com    | Biratnagar    |
+| 27 | Rajan Tiwari     | rajan@gmail.com   | Gorkha        |
+| 28 | Suman Shrestha   | suman2@gmail.com  | Lalitpur      |
+| 29 | Pankaj Gupta     | pankaj@gmail.com  | Birgunj       |
+| 30 | Alok Mishra      | alok@gmail.com    | Nawalpur      |
+| 31 | Prabin Tamang    | prabin@gmail.com  | Sindhupalchok |
+| 32 | Ritesh Sah       | ritesh@gmail.com  | Rajbiraj      |
+| 33 | Hemant Khadka    | hemant@gmail.com  | Dang          |
+| 34 | Narayan Bhandari | narayan@gmail.com | Baglung       |
+| 35 | Sagar Acharya    | sagar@gmail.com   | Tansen        |
+| 36 | Ujjwal Rijal     | ujjwal@gmail.com  | Besisahar     |
+| 37 | Keshav Neupane   | keshav@gmail.com  | Arghakhanchi  |
+| 38 | Yogesh Bhusal    | yogesh@gmail.com  | Chitwan       |
+| 39 | Nabin Basnet     | nabin2@gmail.com  | Hetauda       |
+| 40 | Rohit Sharma     | rohit2@gmail.com  | Dharan        |
++----+------------------+-------------------+---------------+
+37 rows in set (0.001 sec)
