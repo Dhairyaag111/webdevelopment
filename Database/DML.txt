@@ -1332,3 +1332,66 @@ MariaDB [select_query]> select name from employee_practice where city not in ("K
 | Rupesh Yadav  |
 +---------------+
 5 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name , emp_id from employee_practice where department in ("IT") and (salary between 30000 and 45000 OR age between 22 and 24);
++----------------+--------+
+| name           | emp_id |
++----------------+--------+
+| Nabin Shrestha |      1 |
+| Anish Thapa    |      4 |
+| Santosh Poudel |      7 |
+| Aayush Pandey  |     10 |
++----------------+--------+
+4 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from employee_practice where salary in (28000,32000,45000,70000) and city not in ("Janakpur", "Butwal");
++--------+----------------+------------+------+--------+-----------+
+| emp_id | name           | department | age  | salary | city      |
++--------+----------------+------------+------+--------+-----------+
+|      1 | Nabin Shrestha | IT         |   22 |  28000 | Kathmandu |
+|      7 | Santosh Poudel | IT         |   28 |  45000 | Kathmandu |
+|      9 | Deepak Shah    | Finance    |   40 |  70000 | Pokhara   |
+|     10 | Aayush Pandey  | IT         |   23 |  32000 | Kathmandu |
++--------+----------------+------------+------+--------+-----------+
+4 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name,department from employee_practice where department in ("IT","HR") and age not between 25 and 30 and city="Kathmandu";
++----------------+------------+
+| name           | department |
++----------------+------------+
+| Nabin Shrestha | IT         |
+| Aayush Pandey  | IT         |
++----------------+------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name,  department from employee_practice where salary between 35000 and 70000 and department not in ("Sales");
++-----------------+------------+
+| name            | department |
++-----------------+------------+
+| Suman Karki     | HR         |
+| Ramesh Adhikari | Finance    |
+| Anish Thapa     | IT         |
+| Santosh Poudel  | IT         |
+| Deepak Shah     | Finance    |
++-----------------+------------+
+5 rows in set (0.002 sec)
+
+MariaDB [select_query]> select * from employee_practice where salary between 30000 and 50000 and department= "IT" and city not in ("Pokhara");
++--------+----------------+------------+------+--------+-----------+
+| emp_id | name           | department | age  | salary | city      |
++--------+----------------+------------+------+--------+-----------+
+|      4 | Anish Thapa    | IT         |   26 |  38000 | Lalitpur  |
+|      7 | Santosh Poudel | IT         |   28 |  45000 | Kathmandu |
+|     10 | Aayush Pandey  | IT         |   23 |  32000 | Kathmandu |
++--------+----------------+------------+------+--------+-----------+
+3 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from employee_practice where (salary between 28000 and 45000 OR age between 21 and 24) and department not in ("Finance","Sales") and city in ("Kathmnady", "Lalitpur");
++--------+-------------+------------+------+--------+----------+
+| emp_id | name        | department | age  | salary | city     |
++--------+-------------+------------+------+--------+----------+
+|      4 | Anish Thapa | IT         |   26 |  38000 | Lalitpur |
++--------+-------------+------------+------+--------+----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]>
