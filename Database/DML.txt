@@ -1099,11 +1099,6 @@ MariaDB [select_query]> SELECT id, name, email, city from second_data where city
 
 
 
-
-
-
-
-
 MariaDB [select_query]> truncate second_data;
 Query OK, 0 rows affected (0.062 sec)
 
@@ -1166,3 +1161,174 @@ MariaDB [select_query]> select city from second_data where city not in ("Birtamo
 | Dhangadi |
 +----------+
 1 row in set (0.000 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧩 1. BETWEEN + IN (combo)
+
+Select name, salary, city of employees whose:
+
+salary is between 30000 and 60000
+
+city is Kathmandu or Pokhara
+
+department is IT or Finance
+
+🧩 2. NOT IN + NOT BETWEEN
+
+Find employees whose:
+
+department is NOT IN (HR, Sales)
+
+salary is NOT BETWEEN 28000 and 52000
+
+🧩 3. Range Filtering 
+
+Select all employees whose:
+
+age is between 23 and 35
+
+salary is greater than 30000
+
+
+🧩 4. Exclusion Logic (tricky one 👀)
+
+Select employees who:
+
+do NOT live in Kathmandu
+
+salary is between 25000 and 60000
+
+department is NOT IN (Finance)
+
+🧩 5. Multiple Conditions (AND / OR brain test)
+
+Select employees where:
+
+department is IT
+
+AND (salary is between 30000 and 45000
+OR age is between 22 and 24)
+
+👉 (Bracket placement matters here 🔥)
+
+🧩 6. Specific Value Hunt
+
+Find employees whose:
+
+salary is IN (28000, 32000, 45000, 70000)
+
+city is NOT IN (Janakpur, Butwal)
+
+🧩 7. Almost Real-World Filter
+
+Select employees where:
+
+department is IN (IT, HR)
+
+age is NOT BETWEEN 25 and 30
+
+city is Kathmandu
+
+🧩 8. Column Control
+
+Select only name and department for employees whose:
+
+salary is between 35000 and 70000
+
+department is NOT IN (Sales)
+
+🧩 9. Logical Trap (common interview style)
+
+Select employees where:
+
+salary is between 30000 and 50000
+
+department is IT
+
+city is NOT Pokhara
+
+🧩 10. Boss-Level Combo 💀
+
+Select employees who:
+
+(salary is between 28000 and 45000
+OR age is between 21 and 24)
+
+department is NOT IN (Finance, Sales)
+
+city is IN (Kathmandu, Lalitpur)
+
+
+
+
+
+
+
+
+MariaDB [select_query]> create table employee_practice (emp_id integer primary key auto_increment, name varchar(50),department varchar(30), age int, salary int, city varchar(30));
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [select_query]> insert into employee_practice(name, department, age, salary, city) values("Nabin Shrestha", "IT", 22, 28000, "Kathmandu"),("Suman Karki", "HR",29,42000,"Pokhara"),("Ramesh Adhikari","Finance", 35,60000,"Biratnagar"),("Anish Thapa","IT",26,38000,"Lalitpur"),("Bikash Gurung","Sales",31,52000,"Butwal"),("Prakash Rai","HR",24,30000,"Dharan"),("Santosh Poudel","IT",28,45000,"Kathmandu"),("Rupesh Yadav","Sales",21,25000, "Janakpur"),("Deepak Shah","Finance",40,70000,"Pokhara"),("Aayush Pandey","IT",23,32000,"Kathmandu");
+Query OK, 10 rows affected (0.031 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select name,salary, city from employee_practice where salary between 30000 and 60000 and city in ("Kathmandu","Pokhara") and department in ("IT","Finance");
++----------------+--------+-----------+
+| name           | salary | city      |
++----------------+--------+-----------+
+| Santosh Poudel |  45000 | Kathmandu |
+| Aayush Pandey  |  32000 | Kathmandu |
++----------------+--------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from employee_practice where department not in ("HR", "Sales") and salary not between 28000 and 52000;
++--------+-----------------+------------+------+--------+------------+
+| emp_id | name            | department | age  | salary | city       |
++--------+-----------------+------------+------+--------+------------+
+|      3 | Ramesh Adhikari | Finance    |   35 |  60000 | Biratnagar |
+|      9 | Deepak Shah     | Finance    |   40 |  70000 | Pokhara    |
++--------+-----------------+------------+------+--------+------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from employee_practice where age between 23 and 35 and salary>30000;
++--------+-----------------+------------+------+--------+------------+
+| emp_id | name            | department | age  | salary | city       |
++--------+-----------------+------------+------+--------+------------+
+|      2 | Suman Karki     | HR         |   29 |  42000 | Pokhara    |
+|      3 | Ramesh Adhikari | Finance    |   35 |  60000 | Biratnagar |
+|      4 | Anish Thapa     | IT         |   26 |  38000 | Lalitpur   |
+|      5 | Bikash Gurung   | Sales      |   31 |  52000 | Butwal     |
+|      7 | Santosh Poudel  | IT         |   28 |  45000 | Kathmandu  |
+|     10 | Aayush Pandey   | IT         |   23 |  32000 | Kathmandu  |
++--------+-----------------+------------+------+--------+------------+
+6 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from employee_practice not in ("Kathmandu") and salary between 25000 and 60000 and department not in ("Finance");
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'not in ("Kathmandu") and salary between 25000 and 60000 and department not in...' at line 1
+MariaDB [select_query]> select name from employee_practice where city not in ("Kathmandu") and salary between 25000 and 60000 and department not in ("Finance");
++---------------+
+| name          |
++---------------+
+| Suman Karki   |
+| Anish Thapa   |
+| Bikash Gurung |
+| Prakash Rai   |
+| Rupesh Yadav  |
++---------------+
+5 rows in set (0.001 sec)
