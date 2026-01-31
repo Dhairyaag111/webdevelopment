@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #F2F2F2;
+            font-family: sans-serif;
+        }
+
+        .main {
+            background-color: rgb(255, 255, 255);
+            padding: 25px;
+            margin-top: 100px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 20px 2px gray;
+            width: 600px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+
+        .title {
+            height: 40px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .user_input {
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input {
+            width: 150px;
+            padding: 5px 8px;
+            border-radius: 10px;
+            border: 0.01em solid grey;
+            font-size: 20px;
+        }
+        .buttonBox{
+            padding: 15px 0px;
+            display: flex;
+            justify-content: left;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            border: transparent;
+            font-size: 25px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .finalOutput{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .totalBill,.totalTip,.finalBill{
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate you tip</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="title">
+            <h3>Enter the bill amount and tip percentage to calculate the total.</h3>
+        </div>
+        <div class="user_input">
+            <div class="bill">
+                <label for="billAmt">Bill Amount:</label>
+                <input type="number" class="billAmt">
+            </div>
+            <div class="tip">
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="number" class="tipPercentage">
+            </div>
+        </div>
+        <div class="buttonBox">
+            <button class="calculate">CALCULATE</button>
+        </div>
+        <div class="finalOutput">
+            <div class="totalBill">
+                <p>Bill Amount:</p>
+                <h3></h3>
+            </div>
+            <div class="totalTip">
+                <p>Tip Amount:</p>
+                <h3></h3>
+            </div>
+            <div class="finalBill" style="border-top: 1px solid black;">
+                <p>Final Bill:</p>
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("button").onclick=()=>{
+            let bill_input = Number(document.querySelector(".billAmt").value)
+            let tip_input = Number(document.querySelector(".tipPercentage").value)
+            let tip_amt = bill_input * (tip_input/100)
+            let finalOutput = bill_input + tip_amt
+            document.querySelector(".totalBill h3").innerText = "Rs "+bill_input
+            document.querySelector(".totalTip h3").innerText = "Rs "+tip_amt
+            document.querySelector(".finalBill h2").innerText = "Rs "+finalOutput
+        }
+    </script>
+</body>
+
+</html>
