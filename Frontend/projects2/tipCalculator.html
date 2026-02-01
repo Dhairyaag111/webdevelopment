@@ -19,6 +19,7 @@
             flex-direction: column;
             box-shadow: 0px 0px 20px 2px gray;
             width: 600px;
+            height: 350px;
         }
 
         .heading {
@@ -69,7 +70,6 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            
         }
         .totalBill,.totalTip,.finalBill{
             height: 25px;
@@ -78,6 +78,14 @@
             justify-content: space-between;
             width: 250px;
         }
+        .nonValid{
+            color: red;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            height: 20px;
+        }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +111,7 @@
             </div>
         </div>
         <div class="buttonBox">
-            <button class="calculate">CALCULATE</button>
+            <button class="calculate" type="submit">CALCULATE</button>
         </div>
         <div class="finalOutput">
             <div class="totalBill">
@@ -119,6 +127,7 @@
                 <h2></h2>
             </div>
         </div>
+        <p class="nonValid"></p>
     </div>
     <script>
         document.querySelector("button").onclick=()=>{
@@ -126,9 +135,15 @@
             let tip_input = Number(document.querySelector(".tipPercentage").value)
             let tip_amt = bill_input * (tip_input/100)
             let finalOutput = bill_input + tip_amt
-            document.querySelector(".totalBill h3").innerText = "Rs "+bill_input
+            if(bill_input<=0){
+                document.querySelector(".nonValid").innerText = "Please enter a valid amount"
+            }
+            else{
+                document.querySelector(".totalBill h3").innerText = "Rs "+bill_input
             document.querySelector(".totalTip h3").innerText = "Rs "+tip_amt
             document.querySelector(".finalBill h2").innerText = "Rs "+finalOutput
+            document.querySelector(".nonValid").innerText = "Thanks for visiting!"
+            }
         }
     </script>
 </body>
