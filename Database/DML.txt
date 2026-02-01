@@ -1394,4 +1394,212 @@ MariaDB [select_query]> select * from employee_practice where (salary between 28
 +--------+-------------+------------+------+--------+----------+
 1 row in set (0.001 sec)
 
-MariaDB [select_query]>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Like operator in select Query
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 32
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [datatype]> use select_query;
+Database changed
+MariaDB [select_query]> create table like_demo(id integer,name varchar(30),salary integer,address varchar(50),isMarried boolean,age integer, city varchar(0));
+Query OK, 0 rows affected (0.050 sec)
+
+MariaDB [select_query]>insert into like_demo(name,city) values ("Dhairya Agrawal","Birtamode"),("Deepak","Birgunj"),("Aarogya","Nepalgunj");
+Query OK, 3 rows affected (0.036 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select * from like_demo;
++------+-----------------+--------+---------+-----------+------+-----------+
+| id   | name            | salary | address | isMarried | age  | city      |
++------+-----------------+--------+---------+-----------+------+-----------+
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Deepak          |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Aarogya         |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL | Birtamode |
+| NULL | Deepak          |   NULL | NULL    |      NULL | NULL | Birgunj   |
+| NULL | Aarogya         |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+-----------------+--------+---------+-----------+------+-----------+
+6 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from like_demo where name like "D%";
++-----------------+
+| name            |
++-----------------+
+| Dhairya Agrawal |
+| Deepak          |
+| Dhairya Agrawal |
+| Deepak          |
++-----------------+
+4 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name from like_demo where name like "%a";
++---------+
+| name    |
++---------+
+| Aarogya |
+| Aarogya |
++---------+
+2 rows in set (0.000 sec)
+
+MariaDB [select_query]> select name from like_demo where name like "%l";
++-----------------+
+| name            |
++-----------------+
+| Dhairya Agrawal |
+| Dhairya Agrawal |
++-----------------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select city from like_demo where name like "%j";
+Empty set (0.001 sec)
+
+MariaDB [select_query]> select name,city from like_demo where city like "%j";
++---------+-----------+
+| name    | city      |
++---------+-----------+
+| Deepak  | Birgunj   |
+| Aarogya | Nepalgunj |
++---------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "_________";
++------+-----------------+--------+---------+-----------+------+-----------+
+| id   | name            | salary | address | isMarried | age  | city      |
++------+-----------------+--------+---------+-----------+------+-----------+
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL | Birtamode |
+| NULL | Aarogya         |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+-----------------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "_______";
++------+--------+--------+---------+-----------+------+---------+
+| id   | name   | salary | address | isMarried | age  | city    |
++------+--------+--------+---------+-----------+------+---------+
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL | Birgunj |
++------+--------+--------+---------+-----------+------+---------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "D%k";
++------+--------+--------+---------+-----------+------+---------+
+| id   | name   | salary | address | isMarried | age  | city    |
++------+--------+--------+---------+-----------+------+---------+
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL |         |
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL | Birgunj |
++------+--------+--------+---------+-----------+------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "A%a";
++------+---------+--------+---------+-----------+------+-----------+
+| id   | name    | salary | address | isMarried | age  | city      |
++------+---------+--------+---------+-----------+------+-----------+
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+---------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "%ep%";
++------+--------+--------+---------+-----------+------+---------+
+| id   | name   | salary | address | isMarried | age  | city    |
++------+--------+--------+---------+-----------+------+---------+
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL |         |
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL | Birgunj |
++------+--------+--------+---------+-----------+------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "%hai%";
++------+-----------------+--------+---------+-----------+------+-----------+
+| id   | name            | salary | address | isMarried | age  | city      |
++------+-----------------+--------+---------+-----------+------+-----------+
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL | Birtamode |
++------+-----------------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "%p%";
++------+--------+--------+---------+-----------+------+---------+
+| id   | name   | salary | address | isMarried | age  | city    |
++------+--------+--------+---------+-----------+------+---------+
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL |         |
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL | Birgunj |
++------+--------+--------+---------+-----------+------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "%ya";
++------+---------+--------+---------+-----------+------+-----------+
+| id   | name    | salary | address | isMarried | age  | city      |
++------+---------+--------+---------+-----------+------+-----------+
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+---------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "D%" and name like "______";
++------+--------+--------+---------+-----------+------+---------+
+| id   | name   | salary | address | isMarried | age  | city    |
++------+--------+--------+---------+-----------+------+---------+
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL |         |
+| NULL | Deepak |   NULL | NULL    |      NULL | NULL | Birgunj |
++------+--------+--------+---------+-----------+------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "B________";
++------+-----------------+--------+---------+-----------+------+-----------+
+| id   | name            | salary | address | isMarried | age  | city      |
++------+-----------------+--------+---------+-----------+------+-----------+
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL | Birtamode |
++------+-----------------+--------+---------+-----------+------+-----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "_i";
+Empty set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "_i%";
++------+-----------------+--------+---------+-----------+------+-----------+
+| id   | name            | salary | address | isMarried | age  | city      |
++------+-----------------+--------+---------+-----------+------+-----------+
+| NULL | Dhairya Agrawal |   NULL | NULL    |      NULL | NULL | Birtamode |
+| NULL | Deepak          |   NULL | NULL    |      NULL | NULL | Birgunj   |
++------+-----------------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where name like "___o%";
++------+---------+--------+---------+-----------+------+-----------+
+| id   | name    | salary | address | isMarried | age  | city      |
++------+---------+--------+---------+-----------+------+-----------+
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL |           |
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+---------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from like_demo where city like "%u__";
++------+---------+--------+---------+-----------+------+-----------+
+| id   | name    | salary | address | isMarried | age  | city      |
++------+---------+--------+---------+-----------+------+-----------+
+| NULL | Deepak  |   NULL | NULL    |      NULL | NULL | Birgunj   |
+| NULL | Aarogya |   NULL | NULL    |      NULL | NULL | Nepalgunj |
++------+---------+--------+---------+-----------+------+-----------+
+2 rows in set (0.001 sec)
