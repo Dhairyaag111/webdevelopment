@@ -1856,6 +1856,62 @@ Find the average student ID.
 
 
 
+MariaDB [select_query]> select max(age) from like_demo;
++----------+
+| max(age) |
++----------+
+|       19 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(age) from like_demo;
++----------+
+| min(age) |
++----------+
+|       16 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(age) from like_demo;
++----------+
+| avg(age) |
++----------+
+|  17.3500 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select sum(age) from like_demo;
++----------+
+| sum(age) |
++----------+
+|      347 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select max(id) from like_demo;
++---------+
+| max(id) |
++---------+
+|      20 |
++---------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(id) from like_demo;
++---------+
+| min(id) |
++---------+
+|       1 |
++---------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(id) from like_demo;
++---------+
+| avg(id) |
++---------+
+| 10.5000 |
++---------+
+1 row in set (0.001 sec)
+
 
 
 
