@@ -1603,3 +1603,113 @@ MariaDB [select_query]> select * from like_demo where city like "%u__";
 | NULL | Aarogya |   NULL | NULL    |      NULL | NULL | Nepalgunj |
 +------+---------+--------+---------+-----------+------+-----------+
 2 rows in set (0.001 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 312
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use select_query;
+Database changed
+MariaDB [select_query]> select * from like_demo;
++------+-----------------+--------+-------------------+-----------+------+-----------+
+| id   | name            | salary | address           | isMarried | age  | city      |
++------+-----------------+--------+-------------------+-----------+------+-----------+
+|    1 | Dhairya Agrawal |  12000 | Krishan Hall Road |         1 |   16 | Birtamode |
+|    2 | Sahil Agrawal   |  15000 | Mananda Chowk     |         0 |   15 | Birtamode |
+|    3 | Nayan Pathak    |  20000 | Ram Chowk         |         0 |   22 | Kathmandu |
+|    4 | Ram             |  25000 | Dhimal Chowk      |         1 |   35 | Pokhara   |
++------+-----------------+--------+-------------------+-----------+------+-----------+
+4 rows in set (0.001 sec)
+
+MariaDB [select_query]> select name, max(age) from like_demo;
++-----------------+----------+
+| name            | max(age) |
++-----------------+----------+
+| Dhairya Agrawal |       35 |
++-----------------+----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select name,salary, max(age) from like_demo;
++-----------------+--------+----------+
+| name            | salary | max(age) |
++-----------------+--------+----------+
+| Dhairya Agrawal |  12000 |       35 |
++-----------------+--------+----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(age) from like_demo;
++----------+
+| avg(age) |
++----------+
+|  22.0000 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(age) as "Average age" from like_demo;
++-------------+
+| Average age |
++-------------+
+|     22.0000 |
++-------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(age) as "Average age" from like_demo;
++-------------+
+| Average age |
++-------------+
+|          15 |
++-------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(age) as "minimum age" from like_demo;
++-------------+
+| minimum age |
++-------------+
+|          15 |
++-------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select sum(age) as "sum of age" from like_demo;
++------------+
+| sum of age |
++------------+
+|         88 |
++------------+
+1 row in set (0.001 sec)
+
+
+
+
+
+
+
+
