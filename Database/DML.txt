@@ -1746,38 +1746,118 @@ MariaDB [select_query]> select count(salary) from like_demo;
 
 
 
-🟠 LEVEL 3 – AGGREGATE FUNCTIONS (ONLY ONE AT A TIME)
+AGGREGATE FUNCTIONS (ONLY ONE AT A TIME)
 
 Find the maximum age of students.
-
 Find the minimum age of students.
-
 Find the total sum of student ages.
-
 Find the average age of students.
-
 Find the maximum roll number.
-
 Find the minimum roll number.
-
 Find the average roll number.
-
 Find the sum of all roll numbers.
 
-🔵 LEVEL 4 – SIMPLE AGGREGATE WITH NO CONDITIONS
+
+
+
+MariaDB [select_query]> select max(age) from like_demo;
++----------+
+| max(age) |
++----------+
+|       19 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(age) from like_demo;
++----------+
+| min(age) |
++----------+
+|       16 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select sum(age) from like_demo;
++----------+
+| sum(age) |
++----------+
+|      347 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(age) from like_demo;
++----------+
+| avg(age) |
++----------+
+|  17.3500 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select max(roll_no) from like_demo;
++--------------+
+| max(roll_no) |
++--------------+
+|          120 |
++--------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select min(roll_no) from like_demo;
++--------------+
+| min(roll_no) |
++--------------+
+|          101 |
++--------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select avg(roll_no) from like_demo;
++--------------+
+| avg(roll_no) |
++--------------+
+|     110.5000 |
++--------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select sum(roll_no) from like_demo;
++--------------+
+| sum(roll_no) |
++--------------+
+|         2210 |
++--------------+
+1 row in set (0.001 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SIMPLE AGGREGATE WITH NO CONDITIONS
 
 (Still legal for beginners)
 
 Find the maximum age value present in the table.
-
 Find the minimum age value present in the table.
-
 Find the average age value present in the table.
-
 Find the total number of years (sum of age) of all students.
-
 Find the largest student ID.
-
 Find the smallest student ID.
-
 Find the average student ID.
+
+
+
+
+
+
+
+
+
+
