@@ -1713,3 +1713,43 @@ MariaDB [select_query]> select sum(age) as "sum of age" from like_demo;
 
 
 
+
+
+
+
+
+🟠 LEVEL 3 – AGGREGATE FUNCTIONS (ONLY ONE AT A TIME)
+
+Find the maximum age of students.
+
+Find the minimum age of students.
+
+Find the total sum of student ages.
+
+Find the average age of students.
+
+Find the maximum roll number.
+
+Find the minimum roll number.
+
+Find the average roll number.
+
+Find the sum of all roll numbers.
+
+🔵 LEVEL 4 – SIMPLE AGGREGATE WITH NO CONDITIONS
+
+(Still legal for beginners)
+
+Find the maximum age value present in the table.
+
+Find the minimum age value present in the table.
+
+Find the average age value present in the table.
+
+Find the total number of years (sum of age) of all students.
+
+Find the largest student ID.
+
+Find the smallest student ID.
+
+Find the average student ID.
