@@ -1706,6 +1706,34 @@ MariaDB [select_query]> select sum(age) as "sum of age" from like_demo;
 +------------+
 1 row in set (0.001 sec)
 
+MariaDB [select_query]> insert into like_demo(age) values (15),(11),(42),(27);
+Query OK, 4 rows affected (0.041 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select count(age) from like_demo;
++------------+
+| count(age) |
++------------+
+|          8 |
++------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select count(*) from like_demo;
++----------+
+| count(*) |
++----------+
+|        8 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select count(salary) from like_demo;
++---------------+
+| count(salary) |
++---------------+
+|             4 |
++---------------+
+1 row in set (0.001 sec)
+
 
 
 
