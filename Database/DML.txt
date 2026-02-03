@@ -1917,3 +1917,473 @@ MariaDB [select_query]> select avg(id) from like_demo;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 36
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use select_query;
+Database changed
+MariaDB [select_query]>
+MariaDB [select_query]> CREATE TABLE restaurant_orders (
+    ->     order_id INT,
+    ->     customer_name VARCHAR(50),
+    ->     item_ordered VARCHAR(50),
+    ->     category VARCHAR(30),
+    ->     quantity INT,
+    ->     amount_spent DECIMAL(8,2),
+    ->     order_date DATE
+    -> );
+Query OK, 0 rows affected (0.018 sec)
+
+MariaDB [select_query]> INSERT INTO restaurant_orders
+    -> (order_id, customer_name, item_ordered, category, quantity, amount_spent, order_date)
+    -> VALUES
+    -> (1, 'Amit Sharma', 'Butter Chicken', 'Main Course', 2, 520.00, '2026-01-01'),
+    -> (2, 'Riya Gupta', 'Paneer Tikka', 'Starter', 1, 220.00, '2026-01-01'),
+    -> (3, 'Suman Rai', 'Veg Fried Rice', 'Main Course', 1, 180.00, '2026-01-02'),
+    -> (4, 'Amit Sharma', 'Naan', 'Bread', 4, 120.00, '2026-01-02'),
+    -> (5, 'Neha Verma', 'Chicken Biryani', 'Main Course', 1, 260.00, '2026-01-02'),
+    -> (6, 'Riya Gupta', 'Cold Coffee', 'Beverage', 2, 300.00, '2026-01-03'),
+    -> (7, 'Suman Rai', 'Spring Roll', 'Starter', 2, 240.00, '2026-01-03'),
+    -> (8, 'Amit Sharma', 'Butter Chicken', 'Main Course', 1, 260.00, '2026-01-04'),
+    -> (9, 'Neha Verma', 'Masala Dosa', 'Main Course', 2, 200.00, '2026-01-04'),
+    -> (10, 'Karan Singh', 'Veg Burger', 'Fast Food', 3, 270.00, '2026-01-04'),
+    -> (11, 'Riya Gupta', 'French Fries', 'Fast Food', 1, 120.00, '2026-01-05'),
+    -> (12, 'Karan Singh', 'Cold Coffee', 'Beverage', 1, 150.00, '2026-01-05'),
+    -> (13, 'Suman Rai', 'Veg Thali', 'Main Course', 1, 300.00, '2026-01-06'),
+    -> (14, 'Neha Verma', 'Ice Cream', 'Dessert', 2, 160.00, '2026-01-06'),
+    -> (15, 'Amit Sharma', 'Chicken Biryani', 'Main Course', 1, 260.00, '2026-01-06');
+Query OK, 15 rows affected (0.044 sec)
+Records: 15  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select * from resturant_orders;
+ERROR 1146 (42S02): Table 'select_query.resturant_orders' doesn't exist
+MariaDB [select_query]> select * from restaurant_orders;
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+| order_id | customer_name | item_ordered    | category    | quantity | amount_spent | order_date |
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+|        1 | Amit Sharma   | Butter Chicken  | Main Course |        2 |       520.00 | 2026-01-01 |
+|        2 | Riya Gupta    | Paneer Tikka    | Starter     |        1 |       220.00 | 2026-01-01 |
+|        3 | Suman Rai     | Veg Fried Rice  | Main Course |        1 |       180.00 | 2026-01-02 |
+|        4 | Amit Sharma   | Naan            | Bread       |        4 |       120.00 | 2026-01-02 |
+|        5 | Neha Verma    | Chicken Biryani | Main Course |        1 |       260.00 | 2026-01-02 |
+|        6 | Riya Gupta    | Cold Coffee     | Beverage    |        2 |       300.00 | 2026-01-03 |
+|        7 | Suman Rai     | Spring Roll     | Starter     |        2 |       240.00 | 2026-01-03 |
+|        8 | Amit Sharma   | Butter Chicken  | Main Course |        1 |       260.00 | 2026-01-04 |
+|        9 | Neha Verma    | Masala Dosa     | Main Course |        2 |       200.00 | 2026-01-04 |
+|       10 | Karan Singh   | Veg Burger      | Fast Food   |        3 |       270.00 | 2026-01-04 |
+|       11 | Riya Gupta    | French Fries    | Fast Food   |        1 |       120.00 | 2026-01-05 |
+|       12 | Karan Singh   | Cold Coffee     | Beverage    |        1 |       150.00 | 2026-01-05 |
+|       13 | Suman Rai     | Veg Thali       | Main Course |        1 |       300.00 | 2026-01-06 |
+|       14 | Neha Verma    | Ice Cream       | Dessert     |        2 |       160.00 | 2026-01-06 |
+|       15 | Amit Sharma   | Chicken Biryani | Main Course |        1 |       260.00 | 2026-01-06 |
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+15 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders group by amount_spent;
++---------------+-----------------+-------------------+
+| customer_name | item_ordered    | sum(amount_spent) |
++---------------+-----------------+-------------------+
+| Amit Sharma   | Naan            |            240.00 |
+| Karan Singh   | Cold Coffee     |            150.00 |
+| Neha Verma    | Ice Cream       |            160.00 |
+| Suman Rai     | Veg Fried Rice  |            180.00 |
+| Neha Verma    | Masala Dosa     |            200.00 |
+| Riya Gupta    | Paneer Tikka    |            220.00 |
+| Suman Rai     | Spring Roll     |            240.00 |
+| Neha Verma    | Chicken Biryani |            780.00 |
+| Karan Singh   | Veg Burger      |            270.00 |
+| Riya Gupta    | Cold Coffee     |            600.00 |
+| Amit Sharma   | Butter Chicken  |            520.00 |
++---------------+-----------------+-------------------+
+11 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders group by customer_name;
++---------------+-----------------+-------------------+
+| customer_name | item_ordered    | sum(amount_spent) |
++---------------+-----------------+-------------------+
+| Amit Sharma   | Butter Chicken  |           1160.00 |
+| Karan Singh   | Veg Burger      |            420.00 |
+| Neha Verma    | Chicken Biryani |            620.00 |
+| Riya Gupta    | Paneer Tikka    |            640.00 |
+| Suman Rai     | Veg Fried Rice  |            720.00 |
++---------------+-----------------+-------------------+
+5 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders group by sum(customer_name);
+ERROR 1111 (HY000): Invalid use of group function
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders where customer_name="Amit Sharma" group by sum(customer_name);
+ERROR 1111 (HY000): Invalid use of group function
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders where customer_name="Amit Sharma" group by ustomer_name;
+ERROR 1054 (42S22): Unknown column 'ustomer_name' in 'group statement'
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders where customer_name="Amit Sharma" group by customer_name;
++---------------+----------------+-------------------+
+| customer_name | item_ordered   | sum(amount_spent) |
++---------------+----------------+-------------------+
+| Amit Sharma   | Butter Chicken |           1160.00 |
++---------------+----------------+-------------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, item_ordered, sum(amount_spent) from restaurant_orders where customer_name="Amit Sharma";
++---------------+----------------+-------------------+
+| customer_name | item_ordered   | sum(amount_spent) |
++---------------+----------------+-------------------+
+| Amit Sharma   | Butter Chicken |           1160.00 |
++---------------+----------------+-------------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, sum(amount_spent) from restaurant_orders where customer_name="Amit Sharma";
++---------------+-------------------+
+| customer_name | sum(amount_spent) |
++---------------+-------------------+
+| Amit Sharma   |           1160.00 |
++---------------+-------------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select customer_name from restaurant_orders where category='Main course';
++---------------+
+| customer_name |
++---------------+
+| Amit Sharma   |
+| Suman Rai     |
+| Neha Verma    |
+| Amit Sharma   |
+| Neha Verma    |
+| Suman Rai     |
+| Amit Sharma   |
++---------------+
+7 rows in set (0.001 sec)
+
+MariaDB [select_query]> select customer_name, category from restaurant_orders where category='Main course';
++---------------+-------------+
+| customer_name | category    |
++---------------+-------------+
+| Amit Sharma   | Main Course |
+| Suman Rai     | Main Course |
+| Neha Verma    | Main Course |
+| Amit Sharma   | Main Course |
+| Neha Verma    | Main Course |
+| Suman Rai     | Main Course |
+| Amit Sharma   | Main Course |
++---------------+-------------+
+7 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT customer_name, SUM(amount_spent) AS total_spent
+    -> FROM restaurant_orders
+    -> GROUP BY customer_name;
++---------------+-------------+
+| customer_name | total_spent |
++---------------+-------------+
+| Amit Sharma   |     1160.00 |
+| Karan Singh   |      420.00 |
+| Neha Verma    |      620.00 |
+| Riya Gupta    |      640.00 |
+| Suman Rai     |      720.00 |
++---------------+-------------+
+5 rows in set (0.001 sec)
+
+MariaDB [select_query]> SELECT category, SUM(amount_spent) AS total_sales
+    -> FROM restaurant_orders
+    -> GROUP BY category;
++-------------+-------------+
+| category    | total_sales |
++-------------+-------------+
+| Beverage    |      450.00 |
+| Bread       |      120.00 |
+| Dessert     |      160.00 |
+| Fast Food   |      390.00 |
+| Main Course |     1980.00 |
+| Starter     |      460.00 |
++-------------+-------------+
+6 rows in set (0.001 sec)
+
+MariaDB [select_query]> select * from restaurant_orders;
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+| order_id | customer_name | item_ordered    | category    | quantity | amount_spent | order_date |
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+|        1 | Amit Sharma   | Butter Chicken  | Main Course |        2 |       520.00 | 2026-01-01 |
+|        2 | Riya Gupta    | Paneer Tikka    | Starter     |        1 |       220.00 | 2026-01-01 |
+|        3 | Suman Rai     | Veg Fried Rice  | Main Course |        1 |       180.00 | 2026-01-02 |
+|        4 | Amit Sharma   | Naan            | Bread       |        4 |       120.00 | 2026-01-02 |
+|        5 | Neha Verma    | Chicken Biryani | Main Course |        1 |       260.00 | 2026-01-02 |
+|        6 | Riya Gupta    | Cold Coffee     | Beverage    |        2 |       300.00 | 2026-01-03 |
+|        7 | Suman Rai     | Spring Roll     | Starter     |        2 |       240.00 | 2026-01-03 |
+|        8 | Amit Sharma   | Butter Chicken  | Main Course |        1 |       260.00 | 2026-01-04 |
+|        9 | Neha Verma    | Masala Dosa     | Main Course |        2 |       200.00 | 2026-01-04 |
+|       10 | Karan Singh   | Veg Burger      | Fast Food   |        3 |       270.00 | 2026-01-04 |
+|       11 | Riya Gupta    | French Fries    | Fast Food   |        1 |       120.00 | 2026-01-05 |
+|       12 | Karan Singh   | Cold Coffee     | Beverage    |        1 |       150.00 | 2026-01-05 |
+|       13 | Suman Rai     | Veg Thali       | Main Course |        1 |       300.00 | 2026-01-06 |
+|       14 | Neha Verma    | Ice Cream       | Dessert     |        2 |       160.00 | 2026-01-06 |
+|       15 | Amit Sharma   | Chicken Biryani | Main Course |        1 |       260.00 | 2026-01-06 |
++----------+---------------+-----------------+-------------+----------+--------------+------------+
+15 rows in set (0.001 sec)
+
+MariaDB [select_query]> select item_ordered,amount_spent from restaurant_orders group by item_ordered;
++-----------------+--------------+
+| item_ordered    | amount_spent |
++-----------------+--------------+
+| Butter Chicken  |       520.00 |
+| Chicken Biryani |       260.00 |
+| Cold Coffee     |       300.00 |
+| French Fries    |       120.00 |
+| Ice Cream       |       160.00 |
+| Masala Dosa     |       200.00 |
+| Naan            |       120.00 |
+| Paneer Tikka    |       220.00 |
+| Spring Roll     |       240.00 |
+| Veg Burger      |       270.00 |
+| Veg Fried Rice  |       180.00 |
+| Veg Thali       |       300.00 |
++-----------------+--------------+
+12 rows in set (0.001 sec)
+
+MariaDB [select_query]>
+MariaDB [select_query]> select item_ordered,sum(amount_spent) from restaurant_orders group by item_ordered;
++-----------------+-------------------+
+| item_ordered    | sum(amount_spent) |
++-----------------+-------------------+
+| Butter Chicken  |            780.00 |
+| Chicken Biryani |            520.00 |
+| Cold Coffee     |            450.00 |
+| French Fries    |            120.00 |
+| Ice Cream       |            160.00 |
+| Masala Dosa     |            200.00 |
+| Naan            |            120.00 |
+| Paneer Tikka    |            220.00 |
+| Spring Roll     |            240.00 |
+| Veg Burger      |            270.00 |
+| Veg Fried Rice  |            180.00 |
+| Veg Thali       |            300.00 |
++-----------------+-------------------+
+12 rows in set (0.001 sec)
+
+MariaDB [select_query]> select item_ordered,sum(amount_spent) from restaurant_orders where sum(amount_spent)<500 group by item_ordered;
+ERROR 1111 (HY000): Invalid use of group function
+MariaDB [select_query]> select item_ordered,sum(amount_spent) from restaurant_orders group by item_ordered where sum(amount_spent)<500;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where sum(amount_spent)<500' at line 1
+MariaDB [select_query]> select item_ordered,sum(amount_spent) from restaurant_orders group by item_ordered having sum(amount_spent);
++-----------------+-------------------+
+| item_ordered    | sum(amount_spent) |
++-----------------+-------------------+
+| Butter Chicken  |            780.00 |
+| Chicken Biryani |            520.00 |
+| Cold Coffee     |            450.00 |
+| French Fries    |            120.00 |
+| Ice Cream       |            160.00 |
+| Masala Dosa     |            200.00 |
+| Naan            |            120.00 |
+| Paneer Tikka    |            220.00 |
+| Spring Roll     |            240.00 |
+| Veg Burger      |            270.00 |
+| Veg Fried Rice  |            180.00 |
+| Veg Thali       |            300.00 |
++-----------------+-------------------+
+12 rows in set (0.001 sec)
+
+MariaDB [select_query]> select item_ordered,sum(amount_spent) from restaurant_orders group by item_ordered having sum(amount_spent)<500;
++----------------+-------------------+
+| item_ordered   | sum(amount_spent) |
++----------------+-------------------+
+| Cold Coffee    |            450.00 |
+| French Fries   |            120.00 |
+| Ice Cream      |            160.00 |
+| Masala Dosa    |            200.00 |
+| Naan           |            120.00 |
+| Paneer Tikka   |            220.00 |
+| Spring Roll    |            240.00 |
+| Veg Burger     |            270.00 |
+| Veg Fried Rice |            180.00 |
+| Veg Thali      |            300.00 |
++----------------+-------------------+
+10 rows in set (0.001 sec)
+
+MariaDB [select_query]> CREATE TABLE students (
+    ->     student_id INT PRIMARY KEY,
+    ->     student_name VARCHAR(50),
+    ->     class VARCHAR(10),
+    ->     section CHAR(1),
+    ->     subject VARCHAR(30),
+    ->     marks INT,
+    ->     age INT,
+    ->     city VARCHAR(30)
+    -> );
+Query OK, 0 rows affected (0.034 sec)
+
+MariaDB [select_query]> INSERT INTO students
+    -> (student_id, student_name, class, section, subject, marks, age, city)
+    -> VALUES
+    -> (1, 'Aarav Sharma', '10', 'A', 'Maths', 88, 15, 'Delhi'),
+    -> (2, 'Riya Gupta', '10', 'A', 'Science', 92, 15, 'Delhi'),
+    -> (3, 'Kunal Verma', '10', 'B', 'Maths', 76, 16, 'Noida'),
+    -> (4, 'Sneha Singh', '9', 'A', 'English', 81, 14, 'Gurgaon'),
+    -> (5, 'Rahul Mehta', '9', 'B', 'Science', 69, 14, 'Faridabad'),
+    -> (6, 'Pooja Patel', '10', 'A', 'English', 85, 15, 'Ahmedabad'),
+    -> (7, 'Aditya Rao', '10', 'B', 'Science', 91, 16, 'Bangalore'),
+    -> (8, 'Neha Jain', '9', 'A', 'Maths', 95, 14, 'Jaipur'),
+    -> (9, 'Vikas Yadav', '10', 'B', 'English', 73, 16, 'Noida'),
+    -> (10, 'Anjali Kapoor', '9', 'B', 'Maths', 67, 14, 'Delhi'),
+    -> (11, 'Rohit Malhotra', '10', 'A', 'Science', 89, 15, 'Delhi'),
+    -> (12, 'Simran Kaur', '9', 'A', 'Science', 78, 14, 'Chandigarh'),
+    -> (13, 'Nikhil Arora', '10', 'B', 'Maths', 82, 16, 'Gurgaon'),
+    -> (14, 'Isha Bansal', '9', 'B', 'English', 90, 14, 'Jaipur'),
+    -> (15, 'Manish Pandey', '10', 'A', 'Maths', 94, 15, 'Lucknow');
+Query OK, 15 rows affected (0.052 sec)
+Records: 15  Duplicates: 0  Warnings: 0
+
+MariaDB [select_query]> select * from students;
++------------+----------------+-------+---------+---------+-------+------+------------+
+| student_id | student_name   | class | section | subject | marks | age  | city       |
++------------+----------------+-------+---------+---------+-------+------+------------+
+|          1 | Aarav Sharma   | 10    | A       | Maths   |    88 |   15 | Delhi      |
+|          2 | Riya Gupta     | 10    | A       | Science |    92 |   15 | Delhi      |
+|          3 | Kunal Verma    | 10    | B       | Maths   |    76 |   16 | Noida      |
+|          4 | Sneha Singh    | 9     | A       | English |    81 |   14 | Gurgaon    |
+|          5 | Rahul Mehta    | 9     | B       | Science |    69 |   14 | Faridabad  |
+|          6 | Pooja Patel    | 10    | A       | English |    85 |   15 | Ahmedabad  |
+|          7 | Aditya Rao     | 10    | B       | Science |    91 |   16 | Bangalore  |
+|          8 | Neha Jain      | 9     | A       | Maths   |    95 |   14 | Jaipur     |
+|          9 | Vikas Yadav    | 10    | B       | English |    73 |   16 | Noida      |
+|         10 | Anjali Kapoor  | 9     | B       | Maths   |    67 |   14 | Delhi      |
+|         11 | Rohit Malhotra | 10    | A       | Science |    89 |   15 | Delhi      |
+|         12 | Simran Kaur    | 9     | A       | Science |    78 |   14 | Chandigarh |
+|         13 | Nikhil Arora   | 10    | B       | Maths   |    82 |   16 | Gurgaon    |
+|         14 | Isha Bansal    | 9     | B       | English |    90 |   14 | Jaipur     |
+|         15 | Manish Pandey  | 10    | A       | Maths   |    94 |   15 | Lucknow    |
++------------+----------------+-------+---------+---------+-------+------+------------+
+15 rows in set (0.001 sec)
+
+MariaDB [select_query]> select student_name,class from students group by class having class=10;
++--------------+-------+
+| student_name | class |
++--------------+-------+
+| Aarav Sharma | 10    |
++--------------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select student_name,class from students where class=10 group by class;
++--------------+-------+
+| student_name | class |
++--------------+-------+
+| Aarav Sharma | 10    |
++--------------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select student_name,class from students where class=10;
++----------------+-------+
+| student_name   | class |
++----------------+-------+
+| Aarav Sharma   | 10    |
+| Riya Gupta     | 10    |
+| Kunal Verma    | 10    |
+| Pooja Patel    | 10    |
+| Aditya Rao     | 10    |
+| Vikas Yadav    | 10    |
+| Rohit Malhotra | 10    |
+| Nikhil Arora   | 10    |
+| Manish Pandey  | 10    |
++----------------+-------+
+9 rows in set (0.001 sec)
+
+MariaDB [select_query]> select student_name,class from students group by class having class>9;
++--------------+-------+
+| student_name | class |
++--------------+-------+
+| Aarav Sharma | 10    |
++--------------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select count(class) from students where class=10;
++--------------+
+| count(class) |
++--------------+
+|            9 |
++--------------+
+1 row in set (0.000 sec)
+
+MariaDB [select_query]> select * from students
+    -> ;
++------------+----------------+-------+---------+---------+-------+------+------------+
+| student_id | student_name   | class | section | subject | marks | age  | city       |
++------------+----------------+-------+---------+---------+-------+------+------------+
+|          1 | Aarav Sharma   | 10    | A       | Maths   |    88 |   15 | Delhi      |
+|          2 | Riya Gupta     | 10    | A       | Science |    92 |   15 | Delhi      |
+|          3 | Kunal Verma    | 10    | B       | Maths   |    76 |   16 | Noida      |
+|          4 | Sneha Singh    | 9     | A       | English |    81 |   14 | Gurgaon    |
+|          5 | Rahul Mehta    | 9     | B       | Science |    69 |   14 | Faridabad  |
+|          6 | Pooja Patel    | 10    | A       | English |    85 |   15 | Ahmedabad  |
+|          7 | Aditya Rao     | 10    | B       | Science |    91 |   16 | Bangalore  |
+|          8 | Neha Jain      | 9     | A       | Maths   |    95 |   14 | Jaipur     |
+|          9 | Vikas Yadav    | 10    | B       | English |    73 |   16 | Noida      |
+|         10 | Anjali Kapoor  | 9     | B       | Maths   |    67 |   14 | Delhi      |
+|         11 | Rohit Malhotra | 10    | A       | Science |    89 |   15 | Delhi      |
+|         12 | Simran Kaur    | 9     | A       | Science |    78 |   14 | Chandigarh |
+|         13 | Nikhil Arora   | 10    | B       | Maths   |    82 |   16 | Gurgaon    |
+|         14 | Isha Bansal    | 9     | B       | English |    90 |   14 | Jaipur     |
+|         15 | Manish Pandey  | 10    | A       | Maths   |    94 |   15 | Lucknow    |
++------------+----------------+-------+---------+---------+-------+------+------------+
+15 rows in set (0.001 sec)
+
+MariaDB [select_query]> select student_name,subject from students group by subject;
++--------------+---------+
+| student_name | subject |
++--------------+---------+
+| Sneha Singh  | English |
+| Aarav Sharma | Maths   |
+| Riya Gupta   | Science |
++--------------+---------+
+3 rows in set (0.001 sec)
+
+MariaDB [select_query]> select subject, avg(marks) from students group by subject;
++---------+------------+
+| subject | avg(marks) |
++---------+------------+
+| English |    82.2500 |
+| Maths   |    83.6667 |
+| Science |    83.8000 |
++---------+------------+
+3 rows in set (0.001 sec)
+
+MariaDB [select_query]> select section, avg()
+    -> select section, avg();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+select section, avg()' at line 1
+MariaDB [select_query]> select section, avg(marks) from students group by section having avg(marks)>85;
++---------+------------+
+| section | avg(marks) |
++---------+------------+
+| A       |    87.7500 |
++---------+------------+
+1 row in set (0.001 sec)
+
+MariaDB [select_query]> select section, avg(marks) from students group by section;
++---------+------------+
+| section | avg(marks) |
++---------+------------+
+| A       |    87.7500 |
+| B       |    78.2857 |
++---------+------------+
+2 rows in set (0.001 sec)
