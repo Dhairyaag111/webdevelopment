@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            height: 280px;
+            width: 500px;
+            align-items: center;
+            margin-top: 160px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 grey;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .inputArea{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+        }
+        input{
+            padding: 2px 10px;
+            font-size: 25px;
+            width: 350px;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+        button{
+            width: 350px;
+            height: 35px;
+            border-radius: 10px;
+            border: transparent;
+            font-size: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate your age</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Age Calculator</h1>
+        </div>
+        <div class="inputArea">
+            <h3>Enter your date of birth</h3>
+            <input type="date">
+        </div>
+        <div class="click">
+            <button>Calculate Age</button>
+        </div>
+        <div class="output">
+            <h2></h2>
+        </div>
+    </div>
+</body>
+
+</html>
