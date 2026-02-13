@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        .main{
+        .main {
             height: 615px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .button_base{
-            background-color: #D3D3D3;
+
+        .button_base {
+            background-color: #c5c5c5;
             height: 40px;
             width: 120px;
             border-radius: 50px;
@@ -17,23 +19,47 @@
             align-items: center;
             justify-content: left;
             padding: 10px;
+            transition: 0.2s;
         }
-        .circle{
+        
+        .circle {
             height: 45px;
             width: 45px;
             background-color: white;
             border-radius: 50px;
+            transition: 0.5s;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access dark mode</title>
 </head>
+
 <body>
     <div class="main">
         <div class="button_base">
             <div class="circle"></div>
         </div>
     </div>
+    <script>
+        let check = 0
+        document.querySelector(".button_base").onclick = () => {
+            if (check == 0) {
+                document.querySelector("body").style.background = "black";
+                document.querySelector(".button_base").style.background = "white";
+                document.querySelector(".circle").style.background = "black";
+                document.querySelector(".circle").style.transform = "translateX(75px)";
+                check++
+            }
+            else if (check == 1) {
+                document.querySelector("body").style.background = "white";
+                document.querySelector(".button_base").style.background = "#D3D3D3";
+                document.querySelector(".circle").style.background = "white";
+                document.querySelector(".circle").style.transform = "translateZ(75px)";
+                check--
+            }
+        }
+    </script>
 </body>
+
 </html>
