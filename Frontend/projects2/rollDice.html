@@ -23,6 +23,9 @@
             color: white;
             padding: 10px 30px;
         }
+        img{
+            transition: 0.5s;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,5 +43,14 @@
             <button type="submit">Roll Dice</button>
         </div>
     </div>
+    <script>
+        let rotate = 360
+    document.querySelector("button").onclick = () => {
+        let random = Math.floor(Math.random() * 6) + 1
+        document.querySelector("img").src = `/Frontend/img/dice ${random}.png`
+        document.querySelector("img").style.transform = `rotate(${rotate}deg)`
+        rotate = rotate + 360
+    }
+    </script>
 </body>
 </html>
