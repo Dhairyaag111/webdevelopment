@@ -1,3 +1,5 @@
+
+
 Microsoft Windows [Version 10.0.26100.7462]
 (c) Microsoft Corporation. All rights reserved.
 
@@ -2387,3 +2389,230 @@ MariaDB [select_query]> select section, avg(marks) from students group by sectio
 | B       |    78.2857 |
 +---------+------------+
 2 rows in set (0.001 sec)
+
+
+
+
+
+
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use datatype;
+Database changed
+MariaDB [datatype]> create table null_values (sid integer, sname varchar(50),sadd varchar(10),sfaculty varchar(20));
+Query OK, 0 rows affected (0.072 sec)
+
+MariaDB [datatype]> insert into null_values values(1,"Nayan","KTM","BCA"),(2,"Saugat","NULL","BBA"),(3,"Dhairya","BTM","BCA"),(4,"Sahil","NULL","BBA");
+Query OK, 4 rows affected (0.038 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> select * from null_values where sadd is null;
+Empty set (0.001 sec)
+
+MariaDB [datatype]> describe null_values;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| sid      | int(11)     | YES  |     | NULL    |       |
+| sname    | varchar(50) | YES  |     | NULL    |       |
+| sadd     | varchar(10) | YES  |     | NULL    |       |
+| sfaculty | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.051 sec)
+
+MariaDB [datatype]> update null_values set sadd=null where sadd="null";
+Query OK, 2 rows affected (0.036 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+MariaDB [datatype]> select * from null_values where sadd is null;
++------+--------+------+----------+
+| sid  | sname  | sadd | sfaculty |
++------+--------+------+----------+
+|    2 | Saugat | NULL | BBA      |
+|    4 | Sahil  | NULL | BBA      |
++------+--------+------+----------+
+2 rows in set (0.001 sec)
+
+MariaDB [datatype]> select * from null_values where sadd is not null;
++------+---------+------+----------+
+| sid  | sname   | sadd | sfaculty |
++------+---------+------+----------+
+|    1 | Nayan   | KTM  | BCA      |
+|    3 | Dhairya | BTM  | BCA      |
++------+---------+------+----------+
+2 rows in set (0.001 sec)
+
+MariaDB [datatype]> CREATE TABLE students (
+    ->     s_id INT PRIMARY KEY,
+    ->     s_name VARCHAR(100),
+    ->     s_address VARCHAR(150),
+    ->     s_roll INT,
+    ->     s_age INT,
+    ->     s_hobby VARCHAR(100),
+    ->     s_house VARCHAR(20),
+    ->     s_scl INT
+    -> );
+Query OK, 0 rows affected (0.021 sec)
+
+MariaDB [datatype]> INSERT INTO students
+    -> (s_id, s_name, s_address, s_roll, s_age, s_hobby, s_house, s_scl)
+    -> VALUES
+    -> (1, 'Rohan Sharma', 'Kathmandu', 101, 18, 'Cricket', 'Red', 15000),
+    -> (2, 'Aarav Gupta', 'Lalitpur', 102, 19, 'Football', 'Green', 20000),
+    -> (3, 'Sita Thapa', 'Pokhara', 103, 17, 'Painting', 'Blue', 12000),
+    -> (4, 'Anita Sharma', 'Bhaktapur', 104, 18, 'Reading', 'Yellow', 18000),
+    -> (5, 'Rohan Adhikari', 'Biratnagar', 105, 20, 'Gaming', 'Red', 25000),
+    -> (6, 'Kiran Rai', 'Dharan', 106, 19, 'Music', 'Green', NULL),
+    -> (7, 'Maya Gurung', 'Chitwan', 107, 18, 'Dance', 'Blue', 30000),
+    -> (8, 'Suman Karki', 'Butwal', 108, 21, 'Cricket', 'Yellow', 22000),
+    -> (9, 'Aarav Shrestha', 'Hetauda', 109, 17, NULL, 'Red', 10000),
+    -> (10, 'Priya Sharma', 'Janakpur', 110, 19, 'Photography', 'Green', 28000),
+    -> (11, 'Nabin Bista', 'Nepalgunj', 111, 20, 'Football', 'Blue', 5000),
+    -> (12, 'Anjali Rai', 'Itahari', 112, 18, 'Reading', 'Yellow', 35000),
+    -> (13, 'Suman Thapa', 'Dhangadhi', 113, 21, 'Music', 'Red', 40000),
+    -> (14, 'Kiran Shrestha', 'Bharatpur', 114, 17, 'Gaming', 'Green', NULL),
+    -> (15, 'Maya Sharma', 'Birgunj', 115, 19, 'Painting', 'Blue', 45000);
+Query OK, 15 rows affected (0.030 sec)
+Records: 15  Duplicates: 0  Warnings: 0
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    101 |    18 | Cricket     | Red     | 15000 |
+|    2 | Aarav Gupta    | Lalitpur   |    102 |    19 | Football    | Green   | 20000 |
+|    3 | Sita Thapa     | Pokhara    |    103 |    17 | Painting    | Blue    | 12000 |
+|    4 | Anita Sharma   | Bhaktapur  |    104 |    18 | Reading     | Yellow  | 18000 |
+|    5 | Rohan Adhikari | Biratnagar |    105 |    20 | Gaming      | Red     | 25000 |
+|    6 | Kiran Rai      | Dharan     |    106 |    19 | Music       | Green   |  NULL |
+|    7 | Maya Gurung    | Chitwan    |    107 |    18 | Dance       | Blue    | 30000 |
+|    8 | Suman Karki    | Butwal     |    108 |    21 | Cricket     | Yellow  | 22000 |
+|    9 | Aarav Shrestha | Hetauda    |    109 |    17 | NULL        | Red     | 10000 |
+|   10 | Priya Sharma   | Janakpur   |    110 |    19 | Photography | Green   | 28000 |
+|   11 | Nabin Bista    | Nepalgunj  |    111 |    20 | Football    | Blue    |  5000 |
+|   12 | Anjali Rai     | Itahari    |    112 |    18 | Reading     | Yellow  | 35000 |
+|   13 | Suman Thapa    | Dhangadhi  |    113 |    21 | Music       | Red     | 40000 |
+|   14 | Kiran Shrestha | Bharatpur  |    114 |    17 | Gaming      | Green   |  NULL |
+|   15 | Maya Sharma    | Birgunj    |    115 |    19 | Painting    | Blue    | 45000 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
+MariaDB [datatype]> update students set s_house="Rato" where s_house="red";
+Query OK, 4 rows affected (0.028 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    101 |    18 | Cricket     | Rato    | 15000 |
+|    2 | Aarav Gupta    | Lalitpur   |    102 |    19 | Football    | Green   | 20000 |
+|    3 | Sita Thapa     | Pokhara    |    103 |    17 | Painting    | Blue    | 12000 |
+|    4 | Anita Sharma   | Bhaktapur  |    104 |    18 | Reading     | Yellow  | 18000 |
+|    5 | Rohan Adhikari | Biratnagar |    105 |    20 | Gaming      | Rato    | 25000 |
+|    6 | Kiran Rai      | Dharan     |    106 |    19 | Music       | Green   |  NULL |
+|    7 | Maya Gurung    | Chitwan    |    107 |    18 | Dance       | Blue    | 30000 |
+|    8 | Suman Karki    | Butwal     |    108 |    21 | Cricket     | Yellow  | 22000 |
+|    9 | Aarav Shrestha | Hetauda    |    109 |    17 | NULL        | Rato    | 10000 |
+|   10 | Priya Sharma   | Janakpur   |    110 |    19 | Photography | Green   | 28000 |
+|   11 | Nabin Bista    | Nepalgunj  |    111 |    20 | Football    | Blue    |  5000 |
+|   12 | Anjali Rai     | Itahari    |    112 |    18 | Reading     | Yellow  | 35000 |
+|   13 | Suman Thapa    | Dhangadhi  |    113 |    21 | Music       | Rato    | 40000 |
+|   14 | Kiran Shrestha | Bharatpur  |    114 |    17 | Gaming      | Green   |  NULL |
+|   15 | Maya Sharma    | Birgunj    |    115 |    19 | Painting    | Blue    | 45000 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
+MariaDB [datatype]> update students set s_address="Dhankuta" where s_address="Dharan";
+Query OK, 1 row affected (0.039 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    101 |    18 | Cricket     | Rato    | 15000 |
+|    2 | Aarav Gupta    | Lalitpur   |    102 |    19 | Football    | Green   | 20000 |
+|    3 | Sita Thapa     | Pokhara    |    103 |    17 | Painting    | Blue    | 12000 |
+|    4 | Anita Sharma   | Bhaktapur  |    104 |    18 | Reading     | Yellow  | 18000 |
+|    5 | Rohan Adhikari | Biratnagar |    105 |    20 | Gaming      | Rato    | 25000 |
+|    6 | Kiran Rai      | Dhankuta   |    106 |    19 | Music       | Green   |  NULL |
+|    7 | Maya Gurung    | Chitwan    |    107 |    18 | Dance       | Blue    | 30000 |
+|    8 | Suman Karki    | Butwal     |    108 |    21 | Cricket     | Yellow  | 22000 |
+|    9 | Aarav Shrestha | Hetauda    |    109 |    17 | NULL        | Rato    | 10000 |
+|   10 | Priya Sharma   | Janakpur   |    110 |    19 | Photography | Green   | 28000 |
+|   11 | Nabin Bista    | Nepalgunj  |    111 |    20 | Football    | Blue    |  5000 |
+|   12 | Anjali Rai     | Itahari    |    112 |    18 | Reading     | Yellow  | 35000 |
+|   13 | Suman Thapa    | Dhangadhi  |    113 |    21 | Music       | Rato    | 40000 |
+|   14 | Kiran Shrestha | Bharatpur  |    114 |    17 | Gaming      | Green   |  NULL |
+|   15 | Maya Sharma    | Birgunj    |    115 |    19 | Painting    | Blue    | 45000 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
+MariaDB [datatype]> update students set s_roll=s_roll+4;
+Query OK, 15 rows affected (0.052 sec)
+Rows matched: 15  Changed: 15  Warnings: 0
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 15000 |
+|    2 | Aarav Gupta    | Lalitpur   |    106 |    19 | Football    | Green   | 20000 |
+|    3 | Sita Thapa     | Pokhara    |    107 |    17 | Painting    | Blue    | 12000 |
+|    4 | Anita Sharma   | Bhaktapur  |    108 |    18 | Reading     | Yellow  | 18000 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25000 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   |  NULL |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30000 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22000 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | NULL        | Rato    | 10000 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28000 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5000 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35000 |
+|   13 | Suman Thapa    | Dhangadhi  |    117 |    21 | Music       | Rato    | 40000 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   |  NULL |
+|   15 | Maya Sharma    | Birgunj    |    119 |    19 | Painting    | Blue    | 45000 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
+MariaDB [datatype]> update students set s_scl=(s_scl+(s_scl*(5/100))) where s_scl<20000;
+Query OK, 5 rows affected (0.031 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 15750 |
+|    2 | Aarav Gupta    | Lalitpur   |    106 |    19 | Football    | Green   | 20000 |
+|    3 | Sita Thapa     | Pokhara    |    107 |    17 | Painting    | Blue    | 12600 |
+|    4 | Anita Sharma   | Bhaktapur  |    108 |    18 | Reading     | Yellow  | 18900 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25000 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   |  NULL |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30000 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22000 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | NULL        | Rato    | 10500 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28000 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5250 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35000 |
+|   13 | Suman Thapa    | Dhangadhi  |    117 |    21 | Music       | Rato    | 40000 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   |  NULL |
+|   15 | Maya Sharma    | Birgunj    |    119 |    19 | Painting    | Blue    | 45000 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
