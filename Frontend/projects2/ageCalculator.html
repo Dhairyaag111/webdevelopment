@@ -22,33 +22,38 @@
             border-radius: 15px;
             box-shadow: 0px 2px 15px;
         }
-        .heading{
+
+        .heading {
             font-size: 40px;
             font-weight: 550;
         }
-        .inputMask{
+
+        .inputMask {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 5px;
             font-size: 18px;
         }
-        input{
+
+        input {
             padding: 4px 5px;
             width: 250px;
             border-radius: 5px;
             border: 1px solid gray;
             font-size: 15px;
         }
-        button{
-            padding:5px 15px;
+
+        button {
+            padding: 5px 15px;
             font-size: 20px;
             border-radius: 8px;
             border: transparent;
             background-color: #007BFF;
             color: white;
         }
-        .output{
+
+        .output {
             font-size: 20px;
             display: flex;
             width: 250px;
@@ -65,7 +70,7 @@
         <div class="heading">
             Age Calculator
         </div>
-        <div class="inputMask" >
+        <div class="inputMask">
             Enter your date of birth:
             <input type="date">
         </div>
@@ -78,7 +83,6 @@
     <script>
         document.querySelector("button").onclick=()=>{
             let birth = document.querySelector("input").value
-
             let birthDate = new Date(birth)
             let currentDate = new Date()
 
@@ -89,17 +93,16 @@
             let birthYear = birthDate.getFullYear()
             let birthMonth = birthDate.getMonth()
             let birthDay = birthDate.getDate()
+
+            let age = currentYear-birthYear
+            let monthDiff = currentMonth-birthMonth
             
-            let age = currentYear - birthYear
-            let month = currentMonth - birthMonth
-            if(month<0 || month===0 && currentDay<birthDay){
-                age = age-1
-                document.querySelector(".output").innerText = "Your current age is "+age
+            if(monthDiff<0 || (monthDiff===0 && currentDay<birthDay)){
+                document.querySelector(".output").innerText = "Your current age is "+(age-1)
             }
             else{
                 document.querySelector(".output").innerText = "Your current age is "+age
             }
-            
         }
     </script>
 </body>
