@@ -2844,3 +2844,140 @@ MariaDB [datatype]> select * from students;
 |   15 | Maya Sharma    | Birgunj    |    119 |    29 | Painting    | Nilo    | 45900 |
 +------+----------------+------------+--------+-------+-------------+---------+-------+
 15 rows in set (0.001 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\LENOVO>cd /
+
+C:\>cd xampp\mysql\bin
+
+C:\xampp\mysql\bin>musql -u root
+'musql' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>mysql-u root
+'mysql-u' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 20
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use datatype;
+Database changed
+MariaDB [datatype]> select * from students
+    -> ;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 16538 |
+|    2 | Aarav Gupta    | Lalitpur   |    106 |    19 | Football    | Green   | 20400 |
+|    3 | Sita Thapa     | Pokhara    |    107 |    17 | Painting    | Blue    | 13230 |
+|    4 | Anita Sharma   | Bhaktapur  |    108 |    18 | Reading     | Yellow  | 19845 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25500 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   | 10500 |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30600 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22440 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | Kabaddi     | Rato    | 11025 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28560 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5513 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35700 |
+|   13 | Suman Thapa    | Dhangadhi  |    117 |    21 | Music       | Rato    | 40800 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   | 10500 |
+|   15 | Maya Sharma    | Birgunj    |    119 |    19 | Painting    | Blue    | 45900 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+15 rows in set (0.001 sec)
+
+MariaDB [datatype]> delete from students where s_name="Maya Sharma";
+Query OK, 1 row affected (0.034 sec)
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 16538 |
+|    2 | Aarav Gupta    | Lalitpur   |    106 |    19 | Football    | Green   | 20400 |
+|    3 | Sita Thapa     | Pokhara    |    107 |    17 | Painting    | Blue    | 13230 |
+|    4 | Anita Sharma   | Bhaktapur  |    108 |    18 | Reading     | Yellow  | 19845 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25500 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   | 10500 |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30600 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22440 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | Kabaddi     | Rato    | 11025 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28560 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5513 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35700 |
+|   13 | Suman Thapa    | Dhangadhi  |    117 |    21 | Music       | Rato    | 40800 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   | 10500 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+14 rows in set (0.001 sec)
+
+MariaDB [datatype]> delete from students where s_name like "S%a";
+Query OK, 2 rows affected (0.004 sec)
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 16538 |
+|    2 | Aarav Gupta    | Lalitpur   |    106 |    19 | Football    | Green   | 20400 |
+|    4 | Anita Sharma   | Bhaktapur  |    108 |    18 | Reading     | Yellow  | 19845 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25500 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   | 10500 |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30600 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22440 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | Kabaddi     | Rato    | 11025 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28560 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5513 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35700 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   | 10500 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+12 rows in set (0.001 sec)
+
+MariaDB [datatype]> delete from students where s_scl>18000 and s_scl<22000;
+Query OK, 2 rows affected (0.042 sec)
+
+MariaDB [datatype]> select * from students;
++------+----------------+------------+--------+-------+-------------+---------+-------+
+| s_id | s_name         | s_address  | s_roll | s_age | s_hobby     | s_house | s_scl |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu  |    105 |    18 | Cricket     | Rato    | 16538 |
+|    5 | Rohan Adhikari | Biratnagar |    109 |    20 | Gaming      | Rato    | 25500 |
+|    6 | Kiran Rai      | Dhankuta   |    110 |    19 | Music       | Green   | 10500 |
+|    7 | Maya Gurung    | Chitwan    |    111 |    18 | Dance       | Blue    | 30600 |
+|    8 | Suman Karki    | Butwal     |    112 |    21 | Cricket     | Yellow  | 22440 |
+|    9 | Aarav Shrestha | Hetauda    |    113 |    17 | Kabaddi     | Rato    | 11025 |
+|   10 | Priya Sharma   | Janakpur   |    114 |    19 | Photography | Green   | 28560 |
+|   11 | Nabin Bista    | Nepalgunj  |    115 |    20 | Football    | Blue    |  5513 |
+|   12 | Anjali Rai     | Itahari    |    116 |    18 | Reading     | Yellow  | 35700 |
+|   14 | Kiran Shrestha | Bharatpur  |    118 |    17 | Gaming      | Green   | 10500 |
++------+----------------+------------+--------+-------+-------------+---------+-------+
+10 rows in set (0.001 sec)
+
+MariaDB [datatype]> select * from students;
++------+----------------+-----------+--------+-------+----------+---------+-------+
+| s_id | s_name         | s_address | s_roll | s_age | s_hobby  | s_house | s_scl |
++------+----------------+-----------+--------+-------+----------+---------+-------+
+|    1 | Rohan Sharma   | Kathmandu |    105 |    18 | Cricket  | Rato    | 16538 |
+|    6 | Kiran Rai      | Dhankuta  |    110 |    19 | Music    | Green   | 10500 |
+|    7 | Maya Gurung    | Chitwan   |    111 |    18 | Dance    | Blue    | 30600 |
+|    9 | Aarav Shrestha | Hetauda   |    113 |    17 | Kabaddi  | Rato    | 11025 |
+|   11 | Nabin Bista    | Nepalgunj |    115 |    20 | Football | Blue    |  5513 |
+|   12 | Anjali Rai     | Itahari   |    116 |    18 | Reading  | Yellow  | 35700 |
+|   14 | Kiran Shrestha | Bharatpur |    118 |    17 | Gaming   | Green   | 10500 |
++------+----------------+-----------+--------+-------+----------+---------+-------+
+7 rows in set (0.001 sec)
