@@ -58,3 +58,7 @@
 
 
 
+# Teacher and Student access status checking
+
+# role = input("Enter your role: ")
+# print("You are granted" if role.capitalize()=="Teacher" else "You are not granted")
