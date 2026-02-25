@@ -24,7 +24,7 @@
 
 
 
-credit =  input("Enter you credit card number: ")
-print(f"XXXX-XXXX-XXXX-{credit[12:16]}")
+# credit =  input("Enter you credit card number: ")
+# print(f"XXXX-XXXX-XXXX-{credit[12:16]}")
 
-print(f"XXXX-XXXX-XXXX-{credit[-4:0]}")
+# print(f"XXXX-XXXX-XXXX-{credit[-4:0]}")
