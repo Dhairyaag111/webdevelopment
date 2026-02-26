@@ -32,13 +32,26 @@
 
 
 
-num = int(input("Enter a number: "))
-counter = 0
-for i in range (1,(num+1)):
-    if(num%i==0):
-        counter = counter+1
-if(counter==2):
-    print(f"{num} is a prime number")
-elif(counter!=2):
-    print(f"{num} is not an prime number")
-        
+# num = int(input("Enter a number: "))
+# counter = 0
+# for i in range (1,(num+1)):
+#     if(num%i==0):
+#         counter = counter+1
+# if(counter==2):
+#     print(f"{num} is a prime number")
+# elif(counter!=2):
+#     print(f"{num} is not an prime number")
+
+
+
+
+
+
+# for i in range (1,101):
+#     counter = 0
+#     for j in range (1,(i+1)):
+#         if(i%j==0):
+#             counter+=1
+#     if(counter==2):
+#         print(i)
+    
