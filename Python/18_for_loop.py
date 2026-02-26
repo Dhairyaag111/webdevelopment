@@ -1,19 +1,44 @@
-for i in range (10):
-    print(f"5 X {i+1} = {5*(i+1)}")
+# for i in range (10):
+#     print(f"5 X {i+1} = {5*(i+1)}")
     
     
     
-for i in range(100,501,100):
-    print(i)
+# for i in range(100,501,100):
+#     print(i)
     
 
 
-for i in reversed(range(100,501,100)):
-    print(i)
+# for i in reversed(range(100,501,100)):
+#     print(i)
+
+
+
+# for i in range(10):
+#     if(i==6):
+#         continue
+#     print(i)
     
-    
-    
-for i in range(10):
-    if(i==6):
-        continue
-    print(i)
+  
+
+# word = input("Enter a word: ")
+# length = len(word)
+# for i in range(length):
+#     single = word[i]
+#     capital = single.upper()
+#     if(capital=="A" or capital=="E" or capital=="I" or capital=="O" or capital=="U"):
+#         print(f"{single}")
+
+
+
+
+
+num = int(input("Enter a number: "))
+counter = 0
+for i in range (1,(num+1)):
+    if(num%i==0):
+        counter = counter+1
+if(counter==2):
+    print(f"{num} is a prime number")
+elif(counter!=2):
+    print(f"{num} is not an prime number")
+        
