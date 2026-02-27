@@ -17,3 +17,13 @@
 #     print(f"{num} is a positive number.")
 # elif(num<0):
 #     print(f"{num} is a negative number.")
+
+
+
+
+
+hobby = input("Enter your hobby [q to quit]: ")
+while(hobby.upper()!="Q"):
+    print("Your hobby is {}".format(hobby))
+    hobby = input("Enter your hobby [q to quit]: ")
+print("You quited")
