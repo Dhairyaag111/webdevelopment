@@ -72,3 +72,28 @@
 #     print("*" * (2*i-1))
 # for j in range(2,0,-1):
 #     print("*" * (2*j-1))
+
+
+
+
+
+# row = int(input("Enter the number of rows: "))
+# column = int(input("Enter the number of columns: "))
+# obj = input("Enter the symbol you wan't: ")
+
+# for i in range (1,(row+1)):
+#     print(f"{obj*column}")
+
+
+
+
+
+# row = int(input("Enter the number of rows: "))
+# column = int(input("Enter the number of columns: "))
+# obj = input("Enter the symbol you wan't: ")
+
+# for i in range (1,row+1):
+#     star = ""
+#     for j in range (1,column+1):
+#         star += obj
+#     print(star)
