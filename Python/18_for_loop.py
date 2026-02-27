@@ -54,4 +54,21 @@
 #             counter+=1
 #     if(counter==2):
 #         print(i)
-    
+
+
+
+
+# str = "*"
+# for i in range(1,6):
+#     print(f"{str}")
+#     str = str+"**"
+
+
+
+
+
+
+# for i in range(1,4):
+#     print("*" * (2*i-1))
+# for j in range(2,0,-1):
+#     print("*" * (2*j-1))
