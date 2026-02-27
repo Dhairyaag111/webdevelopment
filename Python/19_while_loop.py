@@ -22,8 +22,19 @@
 
 
 
-hobby = input("Enter your hobby [q to quit]: ")
-while(hobby.upper()!="Q"):
-    print("Your hobby is {}".format(hobby))
-    hobby = input("Enter your hobby [q to quit]: ")
-print("You quited")
+# hobby = input("Enter your hobby [q to quit]: ")
+# while(hobby.upper()!="Q"):
+#     print("Your hobby is {}".format(hobby))
+#     hobby = input("Enter your hobby [q to quit]: ")
+# print("You quited")
+
+
+
+
+
+
+num = int(input("Enter a number for table: "))
+counter = 0
+while(counter!=11):
+    print(f"{num} X {counter} = {num*counter}")
+    counter+=1
