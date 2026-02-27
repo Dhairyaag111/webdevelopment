@@ -1,15 +1,4 @@
-# name = input("Enter your name: ")
-# while(len(name)==0):
-#     print(f"Enter your valid name.")
-#     name = input("Enter your name: ")
-# print(f"Your name is {name}")
-
-
-
-
-
-
-# num = (input("Enter a number: "))
+num = (input("Enter a number: "))
 # while(type(num)!=int):
 #     print("The input should valid.")
 #     num = (input("Enter a number: "))
