@@ -69,4 +69,5 @@ while(userInput.upper()!="Q"):
     print(fruits)
     userInput = input("Enter any fruit name: (q to quit): ")
 print("You quited.")
-print(fruits)
+if(len(fruits)!=0):
+    print(fruits)
