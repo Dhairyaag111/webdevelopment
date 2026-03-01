@@ -33,8 +33,8 @@
 
 
 
-num = int(input("Enter a number for table: "))
-counter = 0
-while(counter!=11):
-    print(f"{num} X {counter} = {num*counter}")
-    counter+=1
+# num = int(input("Enter a number for table: "))
+# counter = 0
+# while(counter!=11):
+#     print(f"{num} X {counter} = {num*counter}")
+#     counter+=1
