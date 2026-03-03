@@ -108,10 +108,13 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 #         print(account)
 #     elif (userInput == "W"):
 #         withdraw = int(input("Enter money to withdraw: "))
-#         out += withdraw
-#         account.append(-withdraw)
-#         print(f"You withdrew Rs.{withdraw}")
-#         print(account)
+#         if(withdraw>inp):
+#             print("Insufficient Amount!")
+#         else:
+#             out += withdraw
+#             account.append(-withdraw)
+#             print(f"You withdrew Rs.{withdraw}")
+#             print(account)
 #     else:
 #         print("Invalid input! Please enter W, D, or Q.")
 #     userInput = input("Press W for withdraw, D for deposit (Q to quit): ").upper()  
@@ -120,8 +123,6 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 # print(f"Your total deposit is Rs.{inp}")
 # print(f"Your total withdrawal is Rs.{out}")
 # print(f"Your current bank balance is Rs.{inp - out}")      
-# if inp < out:
-#     print("Caution! Your account doesn't have enough money.")
 
 
 
@@ -134,22 +135,22 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 # priority simulator
 
 
-priorities = []
-userInput = input("Enter priority(q to quit): ").upper()
-while(userInput!="Q"):
-    priorities.append(userInput)
-    print(priorities)
-    userInput = input("Enter priority(q to quit): ").upper()
-print("You quited.")
-for priority in priorities:
-    priorityNameNo = len(priority)-4
-    priorityName = priority[0:priorityNameNo]
-    priorityNo = priority[-1]
-    nameList = []
-    noList = []
-    nameList.append(priorityName)
-    noList.append(priorityNo)
-    for i in range(len(nameList)):
-        print(f"{nameList[i]} (Priority {noList[i]})")
+# priorities = []
+# userInput = input("Enter priority(q to quit): ").upper()
+# while(userInput!="Q"):
+#     priorities.append(userInput)
+#     print(priorities)
+#     userInput = input("Enter priority(q to quit): ").upper()
+# print("You quited.")
+# for priority in priorities:
+#     priorityNameNo = len(priority)-4
+#     priorityName = priority[0:priorityNameNo]
+#     priorityNo = int(priority[-1])
+#     nameList = []
+#     noList = []
+#     nameList.append(priorityName)
+#     noList.append(priorityNo)
+#     for i in range(len(nameList)):
+#         print(f"{nameList[i]} (Priority {noList[i]})")
 
     
