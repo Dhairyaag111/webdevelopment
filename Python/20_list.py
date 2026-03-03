@@ -28,7 +28,6 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 # print(vegetables)
 
 
-
 # vegetables.remove("ladyfinger")   # It removes.
 # print(vegetables)
 
@@ -154,3 +153,16 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 #         print(f"{nameList[i]} (Priority {noList[i]})")
 
     
+    
+    
+    
+
+
+
+
+# userInput = list(input("Enter any string: ").upper())
+# for i in userInput:
+#     count = userInput.count(i)
+#     if(count==1):
+#         print(i)
+#         break
