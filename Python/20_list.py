@@ -64,23 +64,32 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 
 
 
-fruits = []
-userInput = input("Enter any fruit name: (q to quit): ")
-while(userInput.upper()!="Q"):
-    fruits.append(userInput.upper())
-    print(fruits)
-    check = input("Do you wan't to remove fruits(y/n): ")
-    if(check.upper()=="Y"):
-        rem = input("What do you wan't to remove?: ")
-        while(fruits.count(rem.upper())==0):
-            print(f"{rem.capitalize()} is not there in the list")
-            rem = input("What do you wan't to remove?: ")
-        fruits.remove(rem.upper())       
-        print(fruits)
-    userInput = input("Enter any fruit name: (q to quit): ")
-if(len(fruits)!=0):
-    print(fruits)
-print("You quited.")
+# fruits = []
+# userInput = input("Enter any fruit name: (q to quit): ").upper()
+# while(userInput!="Q"):
+#     fruits.append(userInput)
+#     print(fruits)
+#     check = input("Do you wan't to remove fruits(y/n): ").upper()
+#     if(check=="Y"):
+#         rem = input("What do you wan't to remove?: ").upper()
+#         while(fruits.count(rem)==0):
+#             print(f"{rem.capitalize()} is not there in the list")
+#             rem = input("What do you wan't to remove?: ").upper()
+#         fruits.remove(rem)       
+#         print(fruits)
+#     userInput = input("Enter any fruit name: (q to quit): ").upper()
+# if(len(fruits)!=0):
+#     print(fruits)
+# print("You quited.")
 
 
 
+
+
+
+
+
+    
+    
+
+    
