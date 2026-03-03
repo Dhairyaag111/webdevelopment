@@ -122,3 +122,34 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 # print(f"Your current bank balance is Rs.{inp - out}")      
 # if inp < out:
 #     print("Caution! Your account doesn't have enough money.")
+
+
+
+
+
+
+
+
+
+# priority simulator
+
+
+priorities = []
+userInput = input("Enter priority(q to quit): ").upper()
+while(userInput!="Q"):
+    priorities.append(userInput)
+    print(priorities)
+    userInput = input("Enter priority(q to quit): ").upper()
+print("You quited.")
+for priority in priorities:
+    priorityNameNo = len(priority)-4
+    priorityName = priority[0:priorityNameNo]
+    priorityNo = priority[-1]
+    nameList = []
+    noList = []
+    nameList.append(priorityName)
+    noList.append(priorityNo)
+    for i in range(len(nameList)):
+        print(f"{nameList[i]} (Priority {noList[i]})")
+
+    
