@@ -28,3 +28,12 @@
 # print(f"XXXX-XXXX-XXXX-{credit[12:16]}")
 
 # print(f"XXXX-XXXX-XXXX-{credit[-4:0]}")
+
+
+
+
+
+
+
+
+

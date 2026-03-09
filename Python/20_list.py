@@ -166,3 +166,34 @@ vegetables = ["potato", "tomato", "cucumber", "spanich", "eggplant" , "brinjal",
 #     if(count==1):
 #         print(i)
 #         break
+
+
+
+
+
+
+
+# food simulator
+
+
+food_name = []
+rate_list = []
+userInput = input("Enter any food name: (q to quit): ").capitalize()
+if(userInput.upper()!="Q"):
+    rate = int(input("Enter any rate: "))
+while(userInput.upper()!="Q"):
+    food_name.append(userInput)
+    rate_list.append(rate)
+    print(f"You ordered {userInput} of Rs {rate}")
+    userInput = input("Enter any food name: (q to quit): ").capitalize()
+    if(userInput.upper()!="Q"):
+        rate = int(input("Enter any rate: "))
+print("You quited.")
+if(len(food_name)==0 or len(rate_list)==0):
+    print("No item purchased")
+for f_name in food_name:
+    print(f_name," | ", end="    ") 
+print()
+for f_rate in rate_list:
+    print(f_rate, " | " ,end="    ")
+    
