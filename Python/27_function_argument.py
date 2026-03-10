@@ -57,6 +57,9 @@ subtractor(2,1)
 # Variable length argument
 
 
+
+# Tuple
+
 def tuple_maker1(*a):
     print(a)
 
@@ -71,3 +74,29 @@ def tuple_maker2(*b):
         sum = sum + i 
     print(sum)
 tuple_maker2(1,2,3,4,5,6,7,8,9,10)
+
+
+
+
+
+
+# Dictionary
+
+def dict_maker1(**c):
+    print(c)
+    
+dict_maker1(name="Dhairya",
+            age=16,
+            address="Birtamode-4")
+
+
+
+
+
+def dict_maker2(**c):
+    for key,val in c.items():
+        print(f"Your {key} is {val}")
+    
+dict_maker2(name="Dhairya",
+            age=16,
+            address="Birtamode-4")
