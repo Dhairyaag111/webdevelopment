@@ -32,45 +32,6 @@ import random
 
 
 
-# Rock Paper Scissor game
 
-
-userInput = input("Enter rock or paper or scissor(q to quit): ").capitalize()
-options = ["Rock","Paper","Scissor"]  
-user_point = 0
-while(userInput!="Q"):
-    computer = random.choice(options)
-    print(f"Computer choosed {computer}")
-    if(userInput=="Rock" and computer == "Rock"):
-        print("Its draw.")
-    elif(userInput=="Paper" and computer == "Paper"):
-        print("Its draw.")
-    elif(userInput=="Scissor" and computer == "Scissor"):
-        print("Its draw.")
-    elif(userInput=="Rock" and computer == "Scissor"):
-        print("You Won")
-        user_point +=1
-    elif(userInput=="Rock" and computer == "Paper"):
-        print("You Lost")
-        user_point -=1
-    elif(userInput=="Paper" and computer == "Scissor"):
-        print("You Lost")
-        user_point -=1
-    elif(userInput=="Paper" and computer == "Rock"):
-        print("You Won")
-        user_point +=1
-    elif(userInput=="Scissor" and computer == "Paper"):
-        print("You Won")
-        user_point +=1
-    elif(userInput=="Scissor" and computer == "Rock"):
-        print("You Lost")
-        user_point -=1
-    else:
-        print("Invalid input")
-    userInput = input("Enter rock or paper or scissor(q to quit): ").capitalize()
-print("You Quited")
-print(f"Your final point is {user_point}")
-print(f"Computer final point is {-user_point}")
-print("*****Thankes for playing*****")
         
 
