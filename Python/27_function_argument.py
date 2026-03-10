@@ -48,3 +48,26 @@ name_show4(lName="Agrawal",fName="Dhairya",mName="Prasad")
 def subtractor(a,b):
     print(a-b)
 subtractor(2,1)
+
+
+
+
+
+
+# Variable length argument
+
+
+def tuple_maker1(*a):
+    print(a)
+
+tuple_maker1(1,2,3,4,5,6,7,8,9,10)
+
+
+
+
+def tuple_maker2(*b):
+    sum=0
+    for i in b:
+        sum = sum + i 
+    print(sum)
+tuple_maker2(1,2,3,4,5,6,7,8,9,10)
