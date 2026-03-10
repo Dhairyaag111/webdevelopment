@@ -17,7 +17,7 @@
 
 def fibonacci(n,a=0,b=1):
     if(n==1):
-        return 0
+        exit()
     else:
         num = a+b
         print(num)
