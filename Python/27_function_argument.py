@@ -100,3 +100,13 @@ def dict_maker2(**c):
 dict_maker2(name="Dhairya",
             age=16,
             address="Birtamode-4")
+
+
+
+
+
+
+# *,** -----> Un-packing argument
+
+# * variable name = args
+# ** variable name = kwargs
