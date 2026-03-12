@@ -65,6 +65,7 @@ import random
 
 
 
+
 # cel = [100,112,1,17]
 # fah = [(9/5)*a+32 for a in cel]
 # print(fah)
@@ -76,3 +77,39 @@ import random
 
 
 
+# list1 = [(i,i*i) for i in range(1,6)]
+# print(list1)
+
+
+
+
+
+
+
+# string = "hell6532o321"
+# list1 = [i for i in string if i.isdigit()]
+# print(list1)
+
+
+
+
+
+
+
+
+# list1 = [1,2,3,4,5]
+# list2 = [2,5,4,7,6,9]
+# list3 = [i for i in list1 if i in list2]
+# print(list3)
+
+
+
+
+
+
+
+
+
+
+# list1 = [i*j for i in range(1,6) for j in range(1,6)]
+# print(list1)
