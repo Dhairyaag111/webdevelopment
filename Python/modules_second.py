@@ -21,3 +21,18 @@ def final(f,s,sign):
         div(f,s)
     else:
         print("Invalid input")
+        
+    
+    
+    
+    
+        
+        
+# age = 16
+# name = "Dhairya Agrawal"
+# def func():
+#     print("My name is Dhairya Agrawal")
+
+
+
+
