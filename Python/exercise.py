@@ -154,3 +154,35 @@ import random
 #     else:
 #         print("In-sufficient amount")
 # print("You quited")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Encrypt Decrypt
+
+
+original_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+encrypt_list = ['q', 'm', 'z', 'a', 'x', 'l', 'p', 'e', 'd', 'r', 't', 'y', 'u', 'o', 'i', 'b', 'c', 's', 'h', 'k', 'j', 'f', 'n', 'g', 'v', 'w']
+user = input("Enter any string: ").lower()
+enc = ""
+for i in user:
+    index = original_list.index(i)
+    enc = enc + encrypt_list[index]
+print(f"{enc}")
+check = input("Do you want to decrypt? (Y/N): ").upper()
+if(check == "Y"):
+    print(user)
+else:
+    print("Bye")
+    
