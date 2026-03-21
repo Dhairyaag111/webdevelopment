@@ -120,3 +120,37 @@ import random
 
 
 
+# bet game
+
+
+
+# import random
+  
+# print("Betting game..")
+# print("Symbols are ⭐ 🏆 💥 🚀 🍟")
+# symbol_list = ["⭐","🏆","💥","🚀","🍟"]
+# balance = 100
+# check = input("Do you want to play? (Y/N): ").upper()
+# while(check!="N" and check=="Y"):
+#     random_sym1 = random.choice(symbol_list)
+#     random_sym2 = random.choice(symbol_list)
+#     random_sym3 = random.choice(symbol_list)
+#     print(f"Your current balance is ${balance}")
+#     amt= int(input("Enter your betting amount: "))
+#     if(amt<=balance):
+#         for i in range(1,4):
+#             first = random_sym1
+#             second = random_sym2
+#             third = random_sym3
+#         print(f"{first}|{second}|{third}")
+#         if(first==second==third):
+#             print(f"You won ${amt*2}")
+#             balance = balance + (amt*2)
+#         else:
+#             print(f"You lost ${amt}")
+#             balance = balance - amt
+#         print(f"Your current balance is ${balance}")
+#         check = input("Do you want to play again? (Y/N): ").upper()
+#     else:
+#         print("In-sufficient amount")
+# print("You quited")
