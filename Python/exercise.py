@@ -79,3 +79,44 @@ import random
 # print(f"Your final point is {user_point}")
 # print(f"Computer final point is {-user_point}")
 # print("*****Thankes for playing*****")
+
+
+
+
+
+
+
+
+
+
+
+# quiz game
+
+
+
+# question_list = ["What is the capital city of Australia?","What gas do plants absorb from the atmosphere during photosynthesis?","In which year did World War II end?","“CPU” stand for?","ho wrote Romeo and Juliet?"]
+# ans_list = ["Canberra","Carbon dioxide","1945","Central Processing Unit","William Shakespeare"]
+# print("*************** Let's play quiz ***************")
+# point = 0
+# for i in  range(0,5):
+#     print(question_list[i])
+#     ans = input("Enter the ans: ").upper()
+#     if(ans==ans_list[i].upper()):
+#         point += 1
+#         print("Correct")
+#     else:
+#         print("Wrong answer")
+#         print(f"The correct answer is {ans_list[i]}")
+# print(f"Your final point is {point}")   
+# print("Thanks for playing...")
+
+
+
+
+
+
+
+
+
+
+
