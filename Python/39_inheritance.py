@@ -99,3 +99,35 @@
 # child_obj = Child("Dhairya")
 # child_obj.child_method()
 # child_obj.parent_method2()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Parent:
+    def __init__(self,a,b):
+        self.method_a = a
+        self.method_b = b
+    def sum(self):
+        print(f"The sum of {self.method_a} and {self.method_b} is {self.method_a+self.method_b}")
+        
+class Child(Parent):
+    def __init__(self,a,b,name):
+        self.method_name = name    
+        Parent.__init__(self,a,b)
+    def display(self):
+        print(f"My name is {self.method_name}")
+
+child_obj = Child(10,20,"Dhairya")
+child_obj.display()
+child_obj.sum()    
+
